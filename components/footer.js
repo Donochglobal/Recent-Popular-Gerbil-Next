@@ -236,58 +236,62 @@ const Footer = (props) => {
                       Lagos, Nigeria | Abuja Office | Port Harcourt
                     </span>
                   </div>
-                  <div className="footer-contact-item">
-                    <span className="footer-icon-box">
-                      <svg
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        ></path>
-                      </svg>
-                    </span>
-                    <span className="section-content footer-contact-text">
-                      +234 (0) 800 DON OCH
-                    </span>
-                  </div>
-                  <div className="footer-contact-item">
-                    <span className="footer-icon-box">
-                      <svg
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <g
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
+                  <a href="tel:+2349132371332">
+                    <div className="footer-thq-footer-contact-item-elm2 footer-contact-item">
+                      <span className="footer-icon-box">
+                        <svg
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24"
+                          viewBox="0 0 24 24"
                         >
-                          <path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                          <rect
-                            x="2"
-                            y="4"
-                            rx="2"
-                            width="20"
-                            height="16"
-                          ></rect>
-                        </g>
-                      </svg>
-                    </span>
-                    <span className="section-content footer-contact-text">
-                      info@donochglobal.com
-                    </span>
-                  </div>
+                          <path
+                            d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span className="section-content footer-contact-text">
+                        +234 (0) 800 DON OCH
+                      </span>
+                    </div>
+                  </a>
+                  <a href="mailto:info@donochglobal.com?subject=Hello DON OCH Global">
+                    <div className="footer-thq-footer-contact-item-elm3 footer-contact-item">
+                      <span className="footer-icon-box">
+                        <svg
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                            <rect
+                              x="2"
+                              y="4"
+                              rx="2"
+                              width="20"
+                              height="16"
+                            ></rect>
+                          </g>
+                        </svg>
+                      </span>
+                      <span className="section-content footer-contact-text">
+                        info@donochglobal.com
+                      </span>
+                    </div>
+                  </a>
                 </div>
               </div>
               <div className="footer-newsletter-column">
@@ -360,7 +364,7 @@ const Footer = (props) => {
                 href="https://www.volues.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="footer-link26"
+                className="footer-link28"
               >
                 <div
                   target="_blank"
@@ -437,6 +441,12 @@ const Footer = (props) => {
           .footer-thq-footer-brand-accent-elm {
             color: var(--color-accent);
           }
+          .footer-thq-footer-contact-item-elm2 {
+            text-decoration: none;
+          }
+          .footer-thq-footer-contact-item-elm3 {
+            text-decoration: none;
+          }
           .footer-thq-footer-credit-row-elm {
             width: 100%;
             display: flex;
@@ -471,7 +481,7 @@ const Footer = (props) => {
             line-height: 1.5;
             letter-spacing: 0.04em;
           }
-          .footer-link26 {
+          .footer-link28 {
             display: contents;
           }
           .footer-container2 {
