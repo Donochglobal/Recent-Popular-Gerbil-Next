@@ -3287,10 +3287,11 @@
 }
  
 .projects-masonry__header {
+  gap: var(--spacing-lg);
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   margin-bottom: var(--spacing-3xl);
-  justify-content: space-between;
+  flex-direction: column;
 }
  
 .projects-masonry__grid {
