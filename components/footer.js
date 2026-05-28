@@ -347,6 +347,15 @@ const Footer = (props) => {
             </div>
             <div className="footer-thq-footer-credit-row-elm">
               <div className="footer-thq-footer-credit-divider-elm"></div>
+              <p className="footer-thq-footer-credit-text-elm">
+                {' '}
+                Designed and Developed by
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: ' ',
+                  }}
+                />
+              </p>
               <a
                 href="https://www.volues.com"
                 target="_blank"
@@ -361,15 +370,6 @@ const Footer = (props) => {
                   <span>www.volues.com</span>
                 </div>
               </a>
-              <p className="footer-thq-footer-credit-text-elm">
-                {' '}
-                Designed and Developed by
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </p>
             </div>
           </div>
         </footer>
@@ -460,9 +460,6 @@ const Footer = (props) => {
             );
             margin-bottom: var(--spacing-md);
           }
-          .footer-link26 {
-            display: contents;
-          }
           .footer-thq-footer-credit-text-elm {
             color: var(--color-neutral);
             margin: 0;
@@ -473,6 +470,9 @@ const Footer = (props) => {
             font-weight: var(--font-weight-body);
             line-height: 1.5;
             letter-spacing: 0.04em;
+          }
+          .footer-link26 {
+            display: contents;
           }
           .footer-container2 {
             display: none;
