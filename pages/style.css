@@ -688,7 +688,7 @@
 }
  
 .hero-title {
-  font-size: var(--font-size-4xl);
+  font-size: clamp(2.25rem, 2.6rem, 3.2rem);
   font-style: var(--font-style-heading);
   font-family: var(--font-family-heading);
   font-weight: var(--font-weight-heading);

@@ -36,7 +36,7 @@ const Home = (props) => {
                 <div className="hero-carousel__overlay"></div>
               </div>
               <div className="hero-carousel__content">
-                <h1 className="hero-title home-hero-title">
+                <h1 className="hero-title home-hero-title home-thq-hero-title-elm1">
                   Powering Homes &amp; Building Futures
                 </h1>
                 <p className="hero-subtitle">
@@ -1098,6 +1098,11 @@ const Home = (props) => {
           }
           .home-container3 {
             display: contents;
+          }
+          @media (max-width: 479px) {
+            .home-thq-hero-title-elm1 {
+              font-size: 35px;
+            }
           }
         `}
       </style>
