@@ -4913,6 +4913,85 @@
   transform: scale(1.1) rotate(5deg);
 }
  
+.whatsapp-float-btn {
+  color: #ffffff;
+  right: 20px;
+  width: 56px;
+  bottom: 20px;
+  cursor: pointer;
+  height: 56px;
+  display: flex;
+  z-index: 9999;
+  position: fixed;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #25D366;
+}
+ 
+.whatsapp-float-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);
+}
+ 
+.whatsapp-float-btn  svg {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+ 
+.whatsapp-float-tooltip {
+  top: 50%;
+  color: var(--color-on-primary);
+  right: calc(100% + 12px);
+  opacity: 0;
+  padding: 8px 14px;
+  position: absolute;
+  font-size: var(--font-size-sm);
+  transform: translateY(-50%) scale(0.95);
+  background: var(--color-primary);
+  box-shadow: var(--shadow-level-2);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-medium);
+  white-space: nowrap;
+  border-radius: var(--border-radius-md);
+  pointer-events: none;
+}
+ 
+.whatsapp-float-tooltip::after {
+  top: 50%;
+  left: 100%;
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  border-color: transparent transparent transparent var(--color-primary);
+  border-style: solid;
+  border-width: 6px;
+}
+ 
+.whatsapp-float-btn:hover .whatsapp-float-tooltip {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+ 
+.footer-credit-link {
+  color: var(--color-neutral);
+  transition: color 0.3s ease, opacity 0.3s ease;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+  text-decoration: none;
+}
+ 
+.footer-credit-link:hover {
+  color: var(--color-accent);
+  opacity: 1;
+  border-bottom-color: var(--color-accent);
+}
+ 
 .Headings {
   font-size: 2em;
   font-family: Playfair Display;
@@ -5337,5 +5416,18 @@
   }
   .stat-number {
     font-size: var(--font-size-3xl);
+  }
+  .whatsapp-float-btn {
+    right: 16px;
+    width: 44px;
+    bottom: 16px;
+    height: 44px;
+  }
+  .whatsapp-float-btn  svg {
+    width: 22px;
+    height: 22px;
+  }
+  .whatsapp-float-tooltip {
+    display: none;
   }
 }

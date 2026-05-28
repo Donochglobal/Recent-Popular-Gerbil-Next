@@ -345,26 +345,32 @@ const Footer = (props) => {
                 &amp; Real Estate.
               </p>
             </div>
-          </div>
-          <div className="footer-floating-actions">
-            <a href="https://wa.me/yournumber">
-              <div
-                aria-label="Chat on WhatsApp"
-                className="footer-whatsapp-float"
+            <div className="footer-thq-footer-credit-row-elm">
+              <div className="footer-thq-footer-credit-divider-elm"></div>
+              <a
+                href="https://www.volues.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="footer-link26"
               >
-                <svg
-                  width="32"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="32"
-                  viewBox="0 0 24 24"
+                <div
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-credit-link"
                 >
-                  <path
-                    d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.191 8.191 0 0 1-1.26-4.38c0-4.51 3.67-8.18 8.18-8.18c2.19 0 4.24.85 5.78 2.4a8.13 8.13 0 0 1 2.4 5.78c.01 4.51-3.66 8.19-8.17 8.19zM15.76 13.2c-.2-.1-.1.2-.54.42c-.44.22-.88.44-1.32.22c-.44-.22-1.32-.44-2.2-1.32c-.88-.88-1.1-1.76-1.32-2.2c-.22-.44.22-.44.44-.88c.22-.44.1-.88-.1-1.1c-.2-.2-.88-2.12-1.21-2.93c-.33-.81-.66-.69-.88-.69s-.44-.01-.66-.01s-.66.1-1.1.55c-.44.45-1.76 1.76-1.76 4.29s1.87 5.06 2.12 5.39c.25.33 3.63 5.4 8.71 7.21c1.21.43 2.15.69 2.88.92c1.21.38 2.32.33 3.19.2c.97-.14 2.97-1.21 3.39-2.39c.42-1.18.42-2.2.3-2.39c-.12-.19-.44-.31-.64-.41z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-              </div>
-            </a>
+                  <span>www.volues.com</span>
+                </div>
+              </a>
+              <p className="footer-thq-footer-credit-text-elm">
+                {' '}
+                Designed and Developed by
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: ' ',
+                  }}
+                />
+              </p>
+            </div>
           </div>
         </footer>
         <div className="footer-container2">
@@ -430,6 +436,43 @@ const Footer = (props) => {
           }
           .footer-thq-footer-brand-accent-elm {
             color: var(--color-accent);
+          }
+          .footer-thq-footer-credit-row-elm {
+            width: 100%;
+            display: flex;
+            margin-top: var(--spacing-md);
+            align-items: center;
+            padding-top: var(--spacing-lg);
+            flex-direction: column;
+            justify-content: center;
+          }
+          .footer-thq-footer-credit-divider-elm {
+            width: 100%;
+            height: 1px;
+            opacity: 0.4;
+            max-width: var(--content-max-width);
+            background: linear-gradient(
+              90deg,
+              transparent 0%,
+              var(--color-outline) 20%,
+              var(--color-outline) 80%,
+              transparent 100%
+            );
+            margin-bottom: var(--spacing-md);
+          }
+          .footer-link26 {
+            display: contents;
+          }
+          .footer-thq-footer-credit-text-elm {
+            color: var(--color-neutral);
+            margin: 0;
+            opacity: 0.65;
+            font-size: var(--font-size-xs);
+            text-align: center;
+            font-family: var(--font-family-body);
+            font-weight: var(--font-weight-body);
+            line-height: 1.5;
+            letter-spacing: 0.04em;
           }
           .footer-container2 {
             display: none;
