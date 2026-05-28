@@ -243,7 +243,7 @@ const Navigation = (props) => {
                 <Link href="/contact">
                   <a>
                     <div className="btn-sm navigation-quote-btn btn-primary btn">
-                      <span>Request Quote</span>
+                      <span>Buy Solar</span>
                     </div>
                   </a>
                 </Link>
@@ -253,19 +253,15 @@ const Navigation = (props) => {
                   aria-expanded="false"
                   className="navigation-mobile-toggle"
                 >
-                  <svg
-                    fill="none"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="navigation-icon-open"
-                  >
-                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                  <svg height="24" width="24" viewBox="0 0 24 24">
+                    <g fill="none">
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M2 8a2 2 0 0 1 2-2h16a2 2 0 1 1 0 4H4a2 2 0 0 1-2-2zm0 8a2 2 0 0 1 2-2h16a2 2 0 1 1 0 4H4a2 2 0 0 1-2-2z"
+                        fill="currentColor"
+                      ></path>
+                    </g>
                   </svg>
                 </button>
               </div>
@@ -384,7 +380,7 @@ const Navigation = (props) => {
               </div>
               <Link href="/contact">
                 <a>
-                  <div className="btn-primary btn btn-lg">
+                  <div className="btn-primary btn btn-lg navigation-thq-btn-elm2">
                     <span>Request Quote</span>
                   </div>
                 </a>
@@ -456,6 +452,16 @@ const Navigation = (props) => {
           }
           .navigation-container5 {
             display: contents;
+          }
+          @media (max-width: 767px) {
+            .navigation-thq-btn-elm2 {
+              display: none;
+            }
+          }
+          @media (max-width: 479px) {
+            .navigation-thq-btn-elm2 {
+              display: none;
+            }
           }
         `}
       </style>
