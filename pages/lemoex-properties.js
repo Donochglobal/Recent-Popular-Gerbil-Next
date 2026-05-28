@@ -41,8 +41,8 @@ const LemoexProperties = (props) => {
           </div>
           <div className="lemoex-hero-content-container">
             <div className="lemoex-hero-text-block">
-              <span className="lemoex-hero-badge">Luxury Real Estate Hub</span>
-              <h1 className="hero-title">
+              <span className="lemoex-hero-badge">Luxury Real Estate</span>
+              <h1 className="hero-title lemoex-properties-thq-hero-title-elm">
                 Lemoex Properties: Building Dreams Through Smart Investments
               </h1>
               <p className="hero-subtitle">
@@ -530,7 +530,7 @@ const LemoexProperties = (props) => {
                   </div>
                   <div className="lemoex-contact-text">
                     <strong>Head Office</strong>
-                    <span>Lagos, Nigeria — Premium Infrastructure Hub</span>
+                    <span>Lagos, Nigeria — Premium Infrastructure</span>
                   </div>
                 </div>
                 <div className="lemoex-contact-item">
@@ -553,12 +553,19 @@ const LemoexProperties = (props) => {
                   </div>
                   <div className="lemoex-contact-text">
                     <strong>Phone Support</strong>
-                    <span>+234 800 LEMOEX (Call/WhatsApp)</span>
+                    <a
+                      href="https://wa.me/09132371332"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="lemoex-properties-link4"
+                    >
+                      +234 800 LEMOEX (Call/WhatsApp)
+                    </a>
                   </div>
                 </div>
               </div>
               <div className="lemoex-whatsapp-cta">
-                <a href="https://wa.me/234800000000">
+                <a href="https://wa.me/09132371332">
                   <div className="btn-xl btn-accent btn">
                     <svg
                       width="20"
@@ -792,6 +799,9 @@ opacity: 0;}}@keyframes bounce {0%,20%,50%,80%,100% {transform: translateX(-50%)
             width: 100%;
             min-height: 100vh;
           }
+          .lemoex-properties-link4 {
+            text-decoration: none;
+          }
           .lemoex-properties-container2 {
             display: none;
           }
@@ -803,6 +813,14 @@ opacity: 0;}}@keyframes bounce {0%,20%,50%,80%,100% {transform: translateX(-50%)
           }
           .lemoex-properties-container5 {
             display: contents;
+          }
+          @media (max-width: 479px) {
+            .lemoex-properties-thq-hero-title-elm {
+              font-size: 35px;
+            }
+            .lemoex-properties-link4 {
+              text-decoration: none;
+            }
           }
         `}
       </style>

@@ -367,8 +367,8 @@ const Footer = (props) => {
                 className="footer-link28"
               >
                 <div
-                  target="_blank"
                   rel="noopener noreferrer"
+                  target="_blank"
                   className="footer-credit-link"
                 >
                   <span>www.volues.com</span>

@@ -1092,8 +1092,8 @@ const Home = (props) => {
           rel="noreferrer noopener"
         >
           <div
-            target="_blank"
             rel="noopener noreferrer"
+            target="_blank"
             aria-label="Message DON OCH on WhatsApp"
             className="whatsapp-float-btn"
           >
@@ -1101,12 +1101,12 @@ const Home = (props) => {
               Message DON OCH on WhatsApp
             </span>
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="28"
-              height="28"
-              viewBox="0 0 24 24"
               fill="none"
+              width="28"
+              xmlns="http://www.w3.org/2000/svg"
+              height="28"
               stroke="currentColor"
+              viewBox="0 0 24 24"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
