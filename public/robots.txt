@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://recent-popular-gerbil-i84oq5.teleporthq.site/sitemap.xml
