@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Head from 'next/head'
 
 import Script from 'dangerous-html/react'
@@ -138,6 +139,310 @@ const Home = (props) => {
               data-target="2"
               className="hero-carousel__dot"
             ></button>
+          </div>
+        </section>
+        <section className="home-thq-solutions-showcase-elm">
+          <div className="home-thq-solutions-showcasecontainer-elm">
+            <div className="home-thq-solutions-showcaseheader-elm">
+              <h2 className="home-thq-solutions-showcasetitle-elm">
+                Smart Energy &amp; Property Solutions
+              </h2>
+              <p className="home-thq-solutions-showcasesubtitle-elm">
+                Reliable solar systems, industrial energy solutions, and premium
+                real estate opportunities designed for modern living and
+                business growth.
+              </p>
+            </div>
+            <div className="home-thq-solutions-showcasegrid-elm">
+              <Link href="/solar-solutions">
+                <a>
+                  <div className="solutions-showcase__card">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                      >
+                        <path d="M11 2h2m1.28 12l-4.56 8M21 22l-1.558-4H4.558M3 10v2"></path>
+                        <path d="M6.245 15.04A2 2 0 0 1 8 14h12a1 1 0 0 1 .864 1.505l-3.11 5.457A2 2 0 0 1 16 22H4a1 1 0 0 1-.863-1.506zM7 2a4 4 0 0 1-4 4m5.66 1.66l1.41 1.41"></path>
+                      </g>
+                    </svg>
+                    <div className="solutions-showcase__icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 24 24"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                        >
+                          <path d="M11 2h2m1.28 12l-4.56 8M21 22l-1.558-4H4.558M3 10v2"></path>
+                          <path d="M6.245 15.04A2 2 0 0 1 8 14h12a1 1 0 0 1 .864 1.505l-3.11 5.457A2 2 0 0 1 16 22H4a1 1 0 0 1-.863-1.506zM7 2a4 4 0 0 1-4 4m5.66 1.66l1.41 1.41"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <h3 className="solutions-showcase__card-title">
+                      GO SOLAR TODAY
+                    </h3>
+                    <p className="solutions-showcase__card-text">
+                      Switch to clean, reliable, and cost-effective solar energy
+                      solutions for homes and businesses.
+                    </p>
+                    <span className="solutions-showcase__btn">
+                      {' '}
+                      Explore Solar Solutions
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                  </div>
+                </a>
+              </Link>
+              <Link href="/shop-now">
+                <a>
+                  <div className="solutions-showcase__card">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                      >
+                        <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                        <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                      </g>
+                    </svg>
+                    <div className="solutions-showcase__icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 24 24"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                        >
+                          <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                          <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <h3 className="solutions-showcase__card-title">
+                      BUY HOME SOLAR SYSTEMS
+                    </h3>
+                    <p className="solutions-showcase__card-text">
+                      Discover complete residential solar packages including
+                      panels, batteries, and smart inverters.
+                    </p>
+                    <span className="solutions-showcase__btn">
+                      {' '}
+                      Shop Home Systems
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                  </div>
+                </a>
+              </Link>
+              <Link href="/solar-solutions">
+                <a>
+                  <div className="solutions-showcase__card">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M12 16h.01M16 16h.01M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2zm5-3h.01"
+                      ></path>
+                    </svg>
+                    <div className="solutions-showcase__icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M12 16h.01M16 16h.01M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2zm5-3h.01"
+                        ></path>
+                      </svg>
+                    </div>
+                    <h3 className="solutions-showcase__card-title">
+                      FACTORY SOLAR INSTALLATIONS
+                    </h3>
+                    <p className="solutions-showcase__card-text">
+                      Industrial-grade solar and power backup systems designed
+                      for factories, warehouses, and large facilities.
+                    </p>
+                    <span className="solutions-showcase__btn">
+                      {' '}
+                      Industrial Solutions
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                  </div>
+                </a>
+              </Link>
+              <Link href="/lemoex-properties">
+                <a>
+                  <div className="solutions-showcase__card">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                      >
+                        <path d="M12 10h.01M12 14h.01M12 6h.01M16 10h.01M16 14h.01M16 6h.01M8 10h.01M8 14h.01M8 6h.01M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"></path>
+                        <rect width="16" height="20" x="4" y="2" rx="2"></rect>
+                      </g>
+                    </svg>
+                    <div className="solutions-showcase__icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 24 24"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                        >
+                          <path d="M12 10h.01M12 14h.01M12 6h.01M16 10h.01M16 14h.01M16 6h.01M8 10h.01M8 14h.01M8 6h.01M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"></path>
+                          <rect
+                            width="16"
+                            height="20"
+                            x="4"
+                            y="2"
+                            rx="2"
+                          ></rect>
+                        </g>
+                      </svg>
+                    </div>
+                    <h3 className="solutions-showcase__card-title">
+                      BUY YOUR HOME AT LEMOEX PROPERTIES
+                    </h3>
+                    <p className="solutions-showcase__card-text">
+                      Find premium homes, estates, and smart property investment
+                      opportunities through Lemoex Properties.
+                    </p>
+                    <span className="solutions-showcase__btn">
+                      {' '}
+                      Explore Properties
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                  </div>
+                </a>
+              </Link>
+              <Link href="/lemoex-properties">
+                <a>
+                  <div className="solutions-showcase__card">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0zm.894.211v15M9 3.236v15"
+                      ></path>
+                    </svg>
+                    <div className="solutions-showcase__icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0zm.894.211v15M9 3.236v15"
+                        ></path>
+                      </svg>
+                    </div>
+                    <h3 className="solutions-showcase__card-title">
+                      EXPLORE AVAILABLE LANDS
+                    </h3>
+                    <p className="solutions-showcase__card-text">
+                      Secure genuine land opportunities in developing and prime
+                      locations with flexible options.
+                    </p>
+                    <span className="solutions-showcase__btn">
+                      {' '}
+                      View Lands
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                  </div>
+                </a>
+              </Link>
+            </div>
           </div>
         </section>
         <section className="about-impact">
@@ -1123,11 +1428,64 @@ const Home = (props) => {
             width: 100%;
             min-height: 100vh;
           }
+          .home-thq-solutions-showcase-elm {
+            padding: 80px 0;
+            background: linear-gradient(180deg, #fffcf7 0%, #f5f0e8 100%);
+            margin-top: 2rem;
+          }
+          .home-thq-solutions-showcasecontainer-elm {
+            margin: 0 auto;
+            padding: 0 var(--spacing-xl);
+            max-width: var(--content-max-width);
+          }
+          .home-thq-solutions-showcaseheader-elm {
+            max-width: 800px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: var(--spacing-4xl);
+          }
+          .home-thq-solutions-showcasetitle-elm {
+            color: var(--color-primary);
+            font-size: var(--font-size-3xl);
+            font-style: var(--font-style-heading);
+            font-family: var(--font-family-heading);
+            font-weight: var(--font-weight-heading);
+            line-height: var(--line-height-heading);
+            margin-bottom: var(--spacing-md);
+            letter-spacing: var(--letter-spacing-heading);
+            text-transform: var(--text-transform-heading);
+          }
+          .home-thq-solutions-showcasesubtitle-elm {
+            color: var(--color-on-surface-secondary);
+            font-size: var(--font-size-lg);
+            font-family: var(--font-family-body);
+            font-weight: var(--font-weight-body);
+            line-height: var(--line-height-body);
+          }
+          .home-thq-solutions-showcasegrid-elm {
+            gap: var(--spacing-xl);
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+          }
           .home-container2 {
             display: none;
           }
           .home-container3 {
             display: contents;
+          }
+          @media (max-width: 991px) {
+            .home-thq-solutions-showcasegrid-elm {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
+          @media (max-width: 767px) {
+            .home-thq-solutions-showcase-elm {
+              padding: 60px 0;
+            }
+            .home-thq-solutions-showcasegrid-elm {
+              grid-template-columns: 1fr;
+            }
           }
           @media (max-width: 479px) {
             .home-thq-hero-title-elm1 {
