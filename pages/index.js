@@ -96,7 +96,7 @@ const Home = (props) => {
                 <img
                   alt="Property Focus"
                   src="https://images.pexels.com/photos/34973980/pexels-photo-34973980.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                  className="home-thq-hero-carouselimg-elm3 hero-carousel__img"
+                  className="hero-carousel__img"
                 />
                 <div className="hero-carousel__overlay"></div>
               </div>
@@ -324,8 +324,8 @@ const Home = (props) => {
               </Link>
               <Link href="/lemoex-properties">
                 <a>
-                  <div className="solutions-showcase__card lemoex-card-alt">
-                    <div className="home-thq-solutions-showcaseicon-elm5 solutions-showcase__icon">
+                  <div className="solutions-showcase__card">
+                    <div className="solutions-showcase__icon">
                       <svg
                         width="32"
                         xmlns="http://www.w3.org/2000/svg"
@@ -342,14 +342,14 @@ const Home = (props) => {
                         ></path>
                       </svg>
                     </div>
-                    <h3 className="home-thq-solutions-showcasecard-title-elm5 solutions-showcase__card-title">
+                    <h3 className="solutions-showcase__card-title">
                       EXPLORE AVAILABLE LANDS
                     </h3>
-                    <p className="home-thq-solutions-showcasecard-text-elm5 solutions-showcase__card-text">
+                    <p className="solutions-showcase__card-text">
                       Secure genuine land opportunities in developing and prime
                       locations with flexible options.
                     </p>
-                    <span className="home-thq-solutions-showcasebtn-elm5 solutions-showcase__btn">
+                    <span className="solutions-showcase__btn">
                       {' '}
                       View Lands
                       <span
@@ -1378,9 +1378,6 @@ const Home = (props) => {
             width: 100%;
             min-height: 100vh;
           }
-          .home-thq-hero-carouselimg-elm3 {
-            box-shadow: 5px 5px 10px 0px #d4d4d4;
-          }
           .home-thq-solutions-showcase-elm {
             padding: 80px 0;
             background: linear-gradient(180deg, #fffcf7 0%, #f5f0e8 100%);
@@ -1438,20 +1435,6 @@ const Home = (props) => {
             color: #4a90d9;
           }
           .home-thq-solutions-showcasebtn-elm4 {
-            color: #0a1a3a;
-            border-color: #b28e36;
-            background-color: #b28e36;
-          }
-          .home-thq-solutions-showcaseicon-elm5 {
-            color: #b28e36;
-          }
-          .home-thq-solutions-showcasecard-title-elm5 {
-            color: #ffffff;
-          }
-          .home-thq-solutions-showcasecard-text-elm5 {
-            color: #4a90d9;
-          }
-          .home-thq-solutions-showcasebtn-elm5 {
             color: #0a1a3a;
             border-color: #b28e36;
             background-color: #b28e36;
