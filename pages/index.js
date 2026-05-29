@@ -62,8 +62,8 @@ const Home = (props) => {
             <div data-slide="2" className="hero-carousel__slide">
               <div className="hero-carousel__bg-wrap">
                 <img
-                  alt="Solar Focus"
-                  src="https://images.pexels.com/photos/18825426/pexels-photo-18825426.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  alt="Commercial rooftop solar installation"
+                  src="hero-solar-commercial-installation.jpg"
                   className="hero-carousel__img"
                 />
                 <div className="hero-carousel__overlay"></div>
@@ -95,7 +95,7 @@ const Home = (props) => {
               <div className="hero-carousel__bg-wrap">
                 <img
                   alt="Property Focus"
-                  src="https://images.pexels.com/photos/31656145/pexels-photo-31656145.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  src="https://images.pexels.com/photos/12558848/pexels-photo-12558848.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   className="hero-carousel__img"
                 />
                 <div className="hero-carousel__overlay"></div>
