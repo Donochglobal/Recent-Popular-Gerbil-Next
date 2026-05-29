@@ -1066,6 +1066,57 @@ const Home = (props) => {
                   </div>
                 </div>
               </div>
+              <div className="testimonials-carousel__slide">
+                <p className="testimonials-carousel__text">
+                  &quot;The lithium battery and inverter setup from DON OCH
+                  GLOBAL powers our entire factory floor without a single
+                  outage. Their engineering team is exceptional.&quot;
+                </p>
+                <div className="testimonials-carousel__author">
+                  <div className="testimonials-carousel__info">
+                    <span className="testimonials-carousel__name">
+                      Alhaji Musa Ibrahim
+                    </span>
+                    <span className="testimonials-carousel__role">
+                      MD, Northern Textiles Ltd
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="testimonials-carousel__slide">
+                <p className="testimonials-carousel__text">
+                  &quot;From CCTV installation to solar street lights, DON OCH
+                  GLOBAL handled everything for our estate. Security and power
+                  have never been better.&quot;
+                </p>
+                <div className="testimonials-carousel__author">
+                  <div className="testimonials-carousel__info">
+                    <span className="testimonials-carousel__name">
+                      Dr. Ngozi Okonkwo
+                    </span>
+                    <span className="testimonials-carousel__role">
+                      Estate Developer, Abuja
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="testimonials-carousel__slide">
+                <p className="testimonials-carousel__text">
+                  &quot;Lemoex Properties guided us through every step of
+                  acquiring land in a prime location. Their after-sales support
+                  is as impressive as their listings.&quot;
+                </p>
+                <div className="testimonials-carousel__author">
+                  <div className="testimonials-carousel__info">
+                    <span className="testimonials-carousel__name">
+                      Mr. Femi Adeyemi
+                    </span>
+                    <span className="testimonials-carousel__role">
+                      First-Time Land Buyer
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="testimonials-carousel__dots">
               <button
@@ -1075,6 +1126,18 @@ const Home = (props) => {
               <button
                 data-target="1"
                 className="testimonials-carousel__dot"
+              ></button>
+              <button
+                data-target="2"
+                className="testimonials-carousel__dot button"
+              ></button>
+              <button
+                data-target="3"
+                className="testimonials-carousel__dot button"
+              ></button>
+              <button
+                data-target="4"
+                className="testimonials-carousel__dot button"
               ></button>
             </div>
           </div>
@@ -1176,131 +1239,167 @@ const Home = (props) => {
         <div className="home-container2">
           <div className="home-container3">
             <Script
-              html={`<script defer data-name="homepage-interactions">
-(function(){
-  // Hero Carousel Logic
-  const initHero = () => {
-    const slides = document.querySelectorAll(".hero-carousel__slide")
-    const dots = document.querySelectorAll(".hero-carousel__dot")
-    let current = 0
-
-    const showSlide = (index) => {
-      slides.forEach((s) => s.classList.remove("active"))
-      dots.forEach((d) => d.classList.remove("active"))
-      slides[index].classList.add("active")
-      dots[index].classList.add("active")
-      current = index
-    }
-
-    dots.forEach((dot) => {
-      dot.addEventListener("click", () => {
-        showSlide(parseInt(dot.dataset.target))
-      })
-    })
-
-    setInterval(() => {
-      let next = (current + 1) % slides.length
-      showSlide(next)
-    }, 7000)
-  }
-
-  // Counter Animation
-  const initCounters = () => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const target = entry.target
-            const countTo = parseInt(target.dataset.count)
+              html={`<script>
+        ;(function () {
+          // Hero Carousel Logic
+          const initHero = () => {
+            const slides = document.querySelectorAll(".hero-carousel__slide")
+            const dots = document.querySelectorAll(".hero-carousel__dot")
             let current = 0
-            const duration = 2000
-            const increment = countTo / (duration / 16)
-
-            const update = () => {
-              current += increment
-              if (current < countTo) {
-                target.innerText = Math.floor(current).toLocaleString() + (countTo > 100 ? "+" : "")
-                requestAnimationFrame(update)
-              } else {
-                target.innerText = countTo.toLocaleString() + (countTo > 100 ? "+" : "")
-              }
+            const showSlide = (index) => {
+              slides.forEach((s) => s.classList.remove("active"))
+              dots.forEach((d) => d.classList.remove("active"))
+              slides[index].classList.add("active")
+              dots[index].classList.add("active")
+              current = index
             }
-            update()
-            observer.unobserve(target)
+            dots.forEach((dot) => {
+              dot.addEventListener("click", () => {
+                showSlide(parseInt(dot.dataset.target))
+              })
+            })
+            setInterval(() => {
+              let next = (current + 1) % slides.length
+              showSlide(next)
+            }, 7000)
           }
-        })
-      },
-      { threshold: 0.5 }
-    )
-
-    document.querySelectorAll(".about-impact__number").forEach((n) => observer.observe(n))
-  }
-
-  // Product Rail Navigation
-  const initRail = () => {
-    const track = document.getElementById("railTrack")
-    const next = document.getElementById("railNext")
-    const prev = document.getElementById("railPrev")
-
-    if (track && next && prev) {
-      next.addEventListener("click", () => {
-        track.scrollBy({ left: 340, behavior: "smooth" })
-      })
-      prev.addEventListener("click", () => {
-        track.scrollBy({ left: -340, behavior: "smooth" })
-      })
-    }
-  }
-
-  // Project Filtering
-  const initFilters = () => {
-    const buttons = document.querySelectorAll(".projects-masonry__filter-btn")
-    const items = document.querySelectorAll(".projects-masonry__item")
-
-    buttons.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        buttons.forEach((b) => b.classList.remove("active"))
-        btn.classList.add("active")
-
-        const filter = btn.dataset.filter
-        items.forEach((item) => {
-          if (filter === "all" || item.dataset.category === filter) {
-            item.style.display = "block"
-          } else {
-            item.style.display = "none"
+          // Counter Animation
+          const initCounters = () => {
+            const observer = new IntersectionObserver(
+              (entries) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                    const target = entry.target
+                    const countTo = parseInt(target.dataset.count)
+                    let current = 0
+                    const duration = 2000
+                    const increment = countTo / (duration / 16)
+                    const update = () => {
+                      current += increment
+                      if (current < countTo) {
+                        target.innerText = Math.floor(current).toLocaleString() + (countTo > 100 ? "+" : "")
+                        requestAnimationFrame(update)
+                      } else {
+                        target.innerText = countTo.toLocaleString() + (countTo > 100 ? "+" : "")
+                      }
+                    }
+                    update()
+                    observer.unobserve(target)
+                  }
+                })
+              },
+              { threshold: 0.5 }
+            )
+            document.querySelectorAll(".about-impact__number").forEach((n) => observer.observe(n))
           }
-        })
-      })
-    })
-  }
+          // Product Rail Navigation
+          const initRail = () => {
+            const track = document.getElementById("railTrack")
+            const next = document.getElementById("railNext")
+            const prev = document.getElementById("railPrev")
+            if (track && next && prev) {
+              next.addEventListener("click", () => {
+                track.scrollBy({ left: 340, behavior: "smooth" })
+              })
+              prev.addEventListener("click", () => {
+                track.scrollBy({ left: -340, behavior: "smooth" })
+              })
+            }
+          }
+          // Project Filtering
+          const initFilters = () => {
+            const buttons = document.querySelectorAll(".projects-masonry__filter-btn")
+            const items = document.querySelectorAll(".projects-masonry__item")
+            buttons.forEach((btn) => {
+              btn.addEventListener("click", () => {
+                buttons.forEach((b) => b.classList.remove("active"))
+                btn.classList.add("active")
+                const filter = btn.dataset.filter
+                items.forEach((item) => {
+                  if (filter === "all" || item.dataset.category === filter) {
+                    item.style.display = "block"
+                  } else {
+                    item.style.display = "none"
+                  }
+                })
+              })
+            })
+          }
+          // Testimonial Carousel
+          const initTestimonials = () => {
+            const track = document.getElementById("testimonialTrack")
+            const slides = document.querySelectorAll(".testimonials-carousel__slide")
+            const dots = document.querySelectorAll(".testimonials-carousel__dot")
+            let current = 0
+            let autoPlayInterval
+            let touchStartX = 0
+            let touchEndX = 0
+            const total = slides.length
 
-  // Testimonial Carousel
-  const initTestimonials = () => {
-    const slides = document.querySelectorAll(".testimonials-carousel__slide")
-    const dots = document.querySelectorAll(".testimonials-carousel__dot")
-    let current = 0
+            const show = (idx) => {
+              slides.forEach((s) => s.classList.remove("active"))
+              dots.forEach((d) => d.classList.remove("active"))
+              slides[idx].classList.add("active")
+              dots[idx].classList.add("active")
+              current = idx
+            }
 
-    const show = (idx) => {
-      slides.forEach((s) => s.classList.remove("active"))
-      dots.forEach((d) => d.classList.remove("active"))
-      slides[idx].classList.add("active")
-      dots[idx].classList.add("active")
-      current = idx
-    }
+            const next = () => show((current + 1) % total)
+            const prev = () => show((current - 1 + total) % total)
 
-    dots.forEach((dot) => {
-      dot.addEventListener("click", () => show(parseInt(dot.dataset.target)))
-    })
-  }
+            const startAutoPlay = () => {
+              autoPlayInterval = setInterval(next, 6000)
+            }
+            const stopAutoPlay = () => {
+              clearInterval(autoPlayInterval)
+            }
 
-  // Initialize all
-  initHero()
-  initCounters()
-  initRail()
-  initFilters()
-  initTestimonials()
-})()
-</script>`}
+            dots.forEach((dot) => {
+              dot.addEventListener("click", () => {
+                stopAutoPlay()
+                show(parseInt(dot.dataset.target))
+                startAutoPlay()
+              })
+            })
+
+            if (track) {
+              track.addEventListener(
+                "touchstart",
+                (e) => {
+                  touchStartX = e.changedTouches[0].screenX
+                  stopAutoPlay()
+                },
+                { passive: true }
+              )
+
+              track.addEventListener(
+                "touchend",
+                (e) => {
+                  touchEndX = e.changedTouches[0].screenX
+                  const diff = touchStartX - touchEndX
+                  if (Math.abs(diff) > 40) {
+                    if (diff > 0) next()
+                    else prev()
+                  }
+                  startAutoPlay()
+                },
+                { passive: true }
+              )
+
+              track.addEventListener("mouseenter", stopAutoPlay)
+              track.addEventListener("mouseleave", startAutoPlay)
+            }
+
+            startAutoPlay()
+          }
+          // Initialize all
+          initHero()
+          initCounters()
+          initRail()
+          initFilters()
+          initTestimonials()
+        })()
+      </script>`}
             ></Script>
           </div>
         </div>
