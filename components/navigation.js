@@ -145,13 +145,15 @@ const Navigation = (props) => {
                       </a>
                     </Link>
                   </li>
-                  <li className="navigation-menu-item">
-                    <a href="About">
-                      <div className="navigation-menu-link">
-                        <span>About</span>
-                      </div>
+                  <Link href="/about-don-och">
+                    <a>
+                      <li className="navigation-thq-navigation-menu-item-elm2 navigation-menu-item">
+                        <div className="navigation-menu-link">
+                          <span>About</span>
+                        </div>
+                      </li>
                     </a>
-                  </li>
+                  </Link>
                   <li className="navigation-menu-item navigation-has-dropdown">
                     <Link href="/solar-solutions">
                       <a>
@@ -240,13 +242,6 @@ const Navigation = (props) => {
                 </ul>
               </div>
               <div className="navigation-actions">
-                <Link href="/shop-now">
-                  <a>
-                    <div className="btn-sm navigation-quote-btn btn-primary btn">
-                      <span>Buy Solar</span>
-                    </div>
-                  </a>
-                </Link>
                 <button
                   id="mobile-toggle"
                   aria-label="Toggle Menu"
@@ -363,6 +358,36 @@ const Navigation = (props) => {
                   </a>
                 </Link>
               </li>
+              <div data-thq="thq-dropdown" className="navigation-thq-dropdown">
+                <div
+                  data-thq="thq-dropdown-toggle"
+                  className="navigation-thq-dropdown-toggle"
+                >
+                  <span>More</span>
+                  <div
+                    data-thq="thq-dropdown-arrow"
+                    className="navigation-thq-dropdown-arrow"
+                  >
+                    <svg viewBox="0 0 1024 1024" className="navigation-icon31">
+                      <path d="M426 726v-428l214 214z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <ul
+                  data-thq="thq-dropdown-list"
+                  className="navigation-thq-dropdown-list"
+                >
+                  <li className="navigation-mobile-item">
+                    <Link href="/about-don-och">
+                      <a>
+                        <div className="navigation-mobile-link">
+                          <span>About DON OCH</span>
+                        </div>
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </ul>
             <div className="navigation-mobile-footer">
               <div className="navigation-mobile-contact">
@@ -439,6 +464,39 @@ const Navigation = (props) => {
         {`
           .navigation-container1 {
             display: contents;
+          }
+          .navigation-thq-navigation-menu-item-elm2 {
+            text-decoration: none;
+          }
+          .navigation-thq-dropdown {
+            cursor: pointer;
+            display: inline-block;
+            padding: 4px 8px;
+            position: relative;
+            border-color: rgba(0, 0, 0, 0.45);
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 4px;
+          }
+          .navigation-thq-dropdown-toggle {
+            gap: 4px;
+            display: inline-flex;
+            align-items: center;
+          }
+          .navigation-thq-dropdown-arrow {
+            transition: 0.3s;
+          }
+          .navigation-icon31 {
+            width: 18px;
+            height: 18px;
+          }
+          .navigation-thq-dropdown-list {
+            display: none;
+            z-index: 100;
+            position: absolute;
+            min-width: 100%;
+            flex-direction: column;
+            list-style-type: none;
           }
           .navigation-container4 {
             display: none;

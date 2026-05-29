@@ -36,16 +36,16 @@ const ShopNow = (props) => {
         </div>
         <section className="hero-slider">
           <div id="heroSlider" className="slider-track">
-            <div className="slide active">
+            <div className="active slide">
               <div className="slide-media">
                 <img
-                  src="https://images.pexels.com/photos/9875681/pexels-photo-9875681.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   alt="Luxury Solar &amp; Real Estate"
+                  src="https://images.pexels.com/photos/9875681/pexels-photo-9875681.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                 />
                 <div className="overlay"></div>
               </div>
               <div className="slide-content">
-                <h1 className="page-hero-title hero-title">
+                <h1 className="hero-title page-hero-title">
                   Powering Homes &amp; Building Futures
                 </h1>
                 <p className="hero-subtitle">
@@ -54,10 +54,10 @@ const ShopNow = (props) => {
                   housing investments.
                 </p>
                 <div className="hero-btns">
-                  <button className="btn btn-primary btn-lg">
+                  <button className="btn-primary btn btn-lg">
                     Explore Solar Solutions
                   </button>
-                  <button className="btn btn-lg btn-outline">
+                  <button className="btn-outline btn btn-lg">
                     Explore Properties
                   </button>
                 </div>
@@ -66,13 +66,13 @@ const ShopNow = (props) => {
             <div className="slide">
               <div className="slide-media">
                 <img
-                  src="https://images.pexels.com/photos/29923357/pexels-photo-29923357.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   alt="Solar Energy Solutions"
+                  src="https://images.pexels.com/photos/29923357/pexels-photo-29923357.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                 />
                 <div className="overlay"></div>
               </div>
               <div className="slide-content">
-                <h1 className="page-hero-title hero-title">
+                <h1 className="hero-title page-hero-title">
                   Reliable Solar Energy For Homes &amp; Industries
                 </h1>
                 <p className="hero-subtitle">
@@ -81,10 +81,10 @@ const ShopNow = (props) => {
                   solutions.
                 </p>
                 <div className="hero-btns">
-                  <button className="btn btn-accent btn-lg">
+                  <button className="btn-accent btn btn-lg">
                     Get Free Consultation
                   </button>
-                  <button className="btn btn-primary btn-lg">
+                  <button className="btn-primary btn btn-lg">
                     View Products
                   </button>
                 </div>
@@ -93,13 +93,13 @@ const ShopNow = (props) => {
             <div className="slide">
               <div className="slide-media">
                 <img
-                  src="https://images.pexels.com/photos/27151846/pexels-photo-27151846.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   alt="Lemoex Properties"
+                  src="https://images.pexels.com/photos/27151846/pexels-photo-27151846.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                 />
                 <div className="overlay"></div>
               </div>
               <div className="slide-content">
-                <h1 className="page-hero-title hero-title">
+                <h1 className="hero-title page-hero-title">
                   Smart Property Investments With Lemoex Properties
                 </h1>
                 <p className="hero-subtitle">
@@ -107,10 +107,10 @@ const ShopNow = (props) => {
                   and trusted property investment opportunities.
                 </p>
                 <div className="hero-btns">
-                  <button className="btn btn-lg btn-secondary">
+                  <button className="btn-secondary btn btn-lg">
                     View Properties
                   </button>
-                  <button className="btn btn-lg btn-outline">
+                  <button className="btn-outline btn btn-lg">
                     Contact Team
                   </button>
                 </div>
@@ -127,7 +127,7 @@ const ShopNow = (props) => {
           <div className="container">
             <div className="flex-header">
               <h2 className="section-title">Best Sellers</h2>
-              <button className="btn btn-sm btn-outline">
+              <button className="btn-outline btn-sm btn">
                 View All Products
               </button>
             </div>
@@ -138,8 +138,8 @@ const ShopNow = (props) => {
                 </div>
                 <div className="product-image">
                   <img
+                    alt="Mono Solar Panel"
                     src="https://images.pexels.com/photos/7102661/pexels-photo-7102661.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    alt="Mono Solar Panel"
                   />
                 </div>
                 <div className="product-details">
@@ -154,7 +154,7 @@ const ShopNow = (props) => {
                     <span className="old-price">₦160,000</span>
                   </div>
                   <div className="product-actions">
-                    <button className="full-width btn btn-sm btn-primary">
+                    <button className="btn-sm btn-primary btn full-width">
                       Add to Cart
                     </button>
                     <a
@@ -164,22 +164,22 @@ const ShopNow = (props) => {
                       data-action="whatsapp-inquiry"
                     >
                       <div
-                        target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn-sm btn-whatsapp"
+                        target="_blank"
+                        className="btn-sm btn btn-whatsapp"
                       >
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
                           width="18"
+                          xmlns="http://www.w3.org/2000/svg"
                           height="18"
                           viewBox="0 0 24 24"
                         >
                           <g
                             fill="none"
                             stroke="currentColor"
+                            strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            strokeWidth="2"
                           >
                             <path d="m3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"></path>
                             <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0za5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path>
@@ -196,7 +196,7 @@ const ShopNow = (props) => {
                         </span>
                       </div>
                     </a>
-                    <button className="btn btn-sm btn-outline">
+                    <button className="btn-outline btn-sm btn">
                       Quick View
                     </button>
                   </div>
@@ -208,8 +208,8 @@ const ShopNow = (props) => {
                 </div>
                 <div className="product-image">
                   <img
+                    alt="Mono Solar Panel"
                     src="https://images.pexels.com/photos/6158868/pexels-photo-6158868.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    alt="Mono Solar Panel"
                   />
                 </div>
                 <div className="product-details">
@@ -224,7 +224,7 @@ const ShopNow = (props) => {
                     <span className="old-price">₦160,000</span>
                   </div>
                   <div className="product-actions">
-                    <button className="full-width btn btn-sm btn-primary">
+                    <button className="btn-sm btn-primary btn full-width">
                       Add to Cart
                     </button>
                     <a
@@ -234,22 +234,22 @@ const ShopNow = (props) => {
                       data-action="whatsapp-inquiry"
                     >
                       <div
-                        target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn-sm btn-whatsapp"
+                        target="_blank"
+                        className="btn-sm btn btn-whatsapp"
                       >
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
                           width="18"
+                          xmlns="http://www.w3.org/2000/svg"
                           height="18"
                           viewBox="0 0 24 24"
                         >
                           <g
                             fill="none"
                             stroke="currentColor"
+                            strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            strokeWidth="2"
                           >
                             <path d="m3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"></path>
                             <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0za5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path>
@@ -266,7 +266,7 @@ const ShopNow = (props) => {
                         </span>
                       </div>
                     </a>
-                    <button className="btn btn-sm btn-outline">
+                    <button className="btn-outline btn-sm btn">
                       Quick View
                     </button>
                   </div>
@@ -278,8 +278,8 @@ const ShopNow = (props) => {
                 </div>
                 <div className="product-image">
                   <img
+                    alt="Mono Solar Panel"
                     src="https://images.pexels.com/photos/9875448/pexels-photo-9875448.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    alt="Mono Solar Panel"
                   />
                 </div>
                 <div className="product-details">
@@ -294,7 +294,7 @@ const ShopNow = (props) => {
                     <span className="old-price">₦160,000</span>
                   </div>
                   <div className="product-actions">
-                    <button className="full-width btn btn-sm btn-primary">
+                    <button className="btn-sm btn-primary btn full-width">
                       Add to Cart
                     </button>
                     <a
@@ -304,22 +304,22 @@ const ShopNow = (props) => {
                       data-action="whatsapp-inquiry"
                     >
                       <div
-                        target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn-sm btn-whatsapp"
+                        target="_blank"
+                        className="btn-sm btn btn-whatsapp"
                       >
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
                           width="18"
+                          xmlns="http://www.w3.org/2000/svg"
                           height="18"
                           viewBox="0 0 24 24"
                         >
                           <g
                             fill="none"
                             stroke="currentColor"
+                            strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            strokeWidth="2"
                           >
                             <path d="m3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"></path>
                             <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0za5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path>
@@ -336,7 +336,7 @@ const ShopNow = (props) => {
                         </span>
                       </div>
                     </a>
-                    <button className="btn btn-sm btn-outline">
+                    <button className="btn-outline btn-sm btn">
                       Quick View
                     </button>
                   </div>
@@ -348,8 +348,8 @@ const ShopNow = (props) => {
                 </div>
                 <div className="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1615630859219-0459703c34e6?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDg4fHxSRU5FV0FCTEUlMjBFTkVSR1l8ZW58MHx8fHwxNzgwMDM3NjQ5fDA&amp;ixlib=rb-4.1.0&amp;w=1500"
                     alt="Mono Solar Panel"
+                    src="https://images.unsplash.com/photo-1615630859219-0459703c34e6?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDg4fHxSRU5FV0FCTEUlMjBFTkVSR1l8ZW58MHx8fHwxNzgwMDM3NjQ5fDA&amp;ixlib=rb-4.1.0&amp;w=1500"
                   />
                 </div>
                 <div className="product-details">
@@ -362,7 +362,7 @@ const ShopNow = (props) => {
                     <span className="old-price">₦160,000</span>
                   </div>
                   <div className="product-actions">
-                    <button className="full-width btn btn-sm btn-primary">
+                    <button className="btn-sm btn-primary btn full-width">
                       Add to Cart
                     </button>
                     <a
@@ -372,22 +372,22 @@ const ShopNow = (props) => {
                       data-action="whatsapp-inquiry"
                     >
                       <div
-                        target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn-sm btn-whatsapp"
+                        target="_blank"
+                        className="btn-sm btn btn-whatsapp"
                       >
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
                           width="18"
+                          xmlns="http://www.w3.org/2000/svg"
                           height="18"
                           viewBox="0 0 24 24"
                         >
                           <g
                             fill="none"
                             stroke="currentColor"
+                            strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            strokeWidth="2"
                           >
                             <path d="m3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"></path>
                             <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0za5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path>
@@ -404,7 +404,7 @@ const ShopNow = (props) => {
                         </span>
                       </div>
                     </a>
-                    <button className="btn btn-sm btn-outline">
+                    <button className="btn-outline btn-sm btn">
                       Quick View
                     </button>
                   </div>
@@ -416,8 +416,8 @@ const ShopNow = (props) => {
                 </div>
                 <div className="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1768602214330-7f47e076cdca?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDI3fHxTT0xBUiUyMEJBVFRFUll8ZW58MHx8fHwxNzgwMDM3MTk1fDA&amp;ixlib=rb-4.1.0&amp;w=1500"
                     alt="Mono Solar Panel"
+                    src="https://images.unsplash.com/photo-1768602214330-7f47e076cdca?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDI3fHxTT0xBUiUyMEJBVFRFUll8ZW58MHx8fHwxNzgwMDM3MTk1fDA&amp;ixlib=rb-4.1.0&amp;w=1500"
                   />
                 </div>
                 <div className="product-details">
@@ -430,7 +430,7 @@ const ShopNow = (props) => {
                     <span className="old-price">₦160,000</span>
                   </div>
                   <div className="product-actions">
-                    <button className="full-width btn btn-sm btn-primary">
+                    <button className="btn-sm btn-primary btn full-width">
                       Add to Cart
                     </button>
                     <a
@@ -440,22 +440,22 @@ const ShopNow = (props) => {
                       data-action="whatsapp-inquiry"
                     >
                       <div
-                        target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn-sm btn-whatsapp"
+                        target="_blank"
+                        className="btn-sm btn btn-whatsapp"
                       >
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
                           width="18"
+                          xmlns="http://www.w3.org/2000/svg"
                           height="18"
                           viewBox="0 0 24 24"
                         >
                           <g
                             fill="none"
                             stroke="currentColor"
+                            strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            strokeWidth="2"
                           >
                             <path d="m3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"></path>
                             <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0za5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path>
@@ -472,7 +472,7 @@ const ShopNow = (props) => {
                         </span>
                       </div>
                     </a>
-                    <button className="btn btn-sm btn-outline">
+                    <button className="btn-outline btn-sm btn">
                       Quick View
                     </button>
                   </div>
@@ -484,8 +484,8 @@ const ShopNow = (props) => {
                 </div>
                 <div className="product-image">
                   <img
+                    alt="Mono Solar Panel"
                     src="https://images.unsplash.com/photo-1766507680004-1c71007aefe5?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDMwfHxTT0xBUiUyMEJBVFRFUll8ZW58MHx8fHwxNzgwMDM3MTk1fDA&amp;ixlib=rb-4.1.0&amp;w=1500"
-                    alt="Mono Solar Panel"
                   />
                 </div>
                 <div className="product-details">
@@ -500,7 +500,7 @@ const ShopNow = (props) => {
                     <span className="old-price">₦160,000</span>
                   </div>
                   <div className="product-actions">
-                    <button className="full-width btn btn-sm btn-primary">
+                    <button className="btn-sm btn-primary btn full-width">
                       Add to Cart
                     </button>
                     <a
@@ -510,22 +510,22 @@ const ShopNow = (props) => {
                       data-action="whatsapp-inquiry"
                     >
                       <div
-                        target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn-sm btn-whatsapp"
+                        target="_blank"
+                        className="btn-sm btn btn-whatsapp"
                       >
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
                           width="18"
+                          xmlns="http://www.w3.org/2000/svg"
                           height="18"
                           viewBox="0 0 24 24"
                         >
                           <g
                             fill="none"
                             stroke="currentColor"
+                            strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            strokeWidth="2"
                           >
                             <path d="m3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"></path>
                             <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0za5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path>
@@ -542,7 +542,7 @@ const ShopNow = (props) => {
                         </span>
                       </div>
                     </a>
-                    <button className="btn btn-sm btn-outline">
+                    <button className="btn-outline btn-sm btn">
                       Quick View
                     </button>
                   </div>
@@ -554,8 +554,8 @@ const ShopNow = (props) => {
                 </div>
                 <div className="product-image">
                   <img
+                    alt="Mono Solar Panel"
                     src="https://images.pexels.com/photos/9875684/pexels-photo-9875684.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    alt="Mono Solar Panel"
                   />
                 </div>
                 <div className="product-details">
@@ -570,7 +570,7 @@ const ShopNow = (props) => {
                     <span className="old-price">₦160,000</span>
                   </div>
                   <div className="product-actions">
-                    <button className="full-width btn btn-sm btn-primary">
+                    <button className="btn-sm btn-primary btn full-width">
                       Add to Cart
                     </button>
                     <a
@@ -580,22 +580,22 @@ const ShopNow = (props) => {
                       data-action="whatsapp-inquiry"
                     >
                       <div
-                        target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn-sm btn-whatsapp"
+                        target="_blank"
+                        className="btn-sm btn btn-whatsapp"
                       >
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
                           width="18"
+                          xmlns="http://www.w3.org/2000/svg"
                           height="18"
                           viewBox="0 0 24 24"
                         >
                           <g
                             fill="none"
                             stroke="currentColor"
+                            strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            strokeWidth="2"
                           >
                             <path d="m3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"></path>
                             <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0za5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path>
@@ -612,7 +612,7 @@ const ShopNow = (props) => {
                         </span>
                       </div>
                     </a>
-                    <button className="btn btn-sm btn-outline">
+                    <button className="btn-outline btn-sm btn">
                       Quick View
                     </button>
                   </div>
@@ -624,8 +624,8 @@ const ShopNow = (props) => {
                 </div>
                 <div className="product-image">
                   <img
+                    alt="Mono Solar Panel"
                     src="https://images.pexels.com/photos/9875684/pexels-photo-9875684.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    alt="Mono Solar Panel"
                   />
                 </div>
                 <div className="product-details">
@@ -640,7 +640,7 @@ const ShopNow = (props) => {
                     <span className="old-price">₦160,000</span>
                   </div>
                   <div className="product-actions">
-                    <button className="full-width btn btn-sm btn-primary">
+                    <button className="btn-sm btn-primary btn full-width">
                       Add to Cart
                     </button>
                     <a
@@ -650,22 +650,22 @@ const ShopNow = (props) => {
                       data-action="whatsapp-inquiry"
                     >
                       <div
-                        target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn-sm btn-whatsapp"
+                        target="_blank"
+                        className="btn-sm btn btn-whatsapp"
                       >
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
                           width="18"
+                          xmlns="http://www.w3.org/2000/svg"
                           height="18"
                           viewBox="0 0 24 24"
                         >
                           <g
                             fill="none"
                             stroke="currentColor"
+                            strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            strokeWidth="2"
                           >
                             <path d="m3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"></path>
                             <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0za5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path>
@@ -682,7 +682,7 @@ const ShopNow = (props) => {
                         </span>
                       </div>
                     </a>
-                    <button className="btn btn-sm btn-outline">
+                    <button className="btn-outline btn-sm btn">
                       Quick View
                     </button>
                   </div>
@@ -694,8 +694,8 @@ const ShopNow = (props) => {
                 </div>
                 <div className="product-image">
                   <img
+                    alt="Mono Solar Panel"
                     src="https://images.unsplash.com/photo-1676337167748-00b4e684322a?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDIwfHxTT0xBUiUyMEJBVFRFUll8ZW58MHx8fHwxNzgwMDM3MTY0fDA&amp;ixlib=rb-4.1.0&amp;w=1500"
-                    alt="Mono Solar Panel"
                   />
                 </div>
                 <div className="product-details">
@@ -710,7 +710,7 @@ const ShopNow = (props) => {
                     <span className="old-price">₦160,000</span>
                   </div>
                   <div className="product-actions">
-                    <button className="full-width btn btn-sm btn-primary">
+                    <button className="btn-sm btn-primary btn full-width">
                       Add to Cart
                     </button>
                     <a
@@ -720,22 +720,22 @@ const ShopNow = (props) => {
                       data-action="whatsapp-inquiry"
                     >
                       <div
-                        target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn-sm btn-whatsapp"
+                        target="_blank"
+                        className="btn-sm btn btn-whatsapp"
                       >
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
                           width="18"
+                          xmlns="http://www.w3.org/2000/svg"
                           height="18"
                           viewBox="0 0 24 24"
                         >
                           <g
                             fill="none"
                             stroke="currentColor"
+                            strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            strokeWidth="2"
                           >
                             <path d="m3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"></path>
                             <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0za5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path>
@@ -752,7 +752,7 @@ const ShopNow = (props) => {
                         </span>
                       </div>
                     </a>
-                    <button className="btn btn-sm btn-outline">
+                    <button className="btn-outline btn-sm btn">
                       Quick View
                     </button>
                   </div>
@@ -764,8 +764,8 @@ const ShopNow = (props) => {
                 </div>
                 <div className="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1662340696153-ebc6941a0b4b?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEzM3x8U09MQVIlMjBCQVRURVJZfGVufDB8fHx8MTc4MDAzNzQ2M3ww&amp;ixlib=rb-4.1.0&amp;w=1500"
                     alt="Mono Solar Panel"
+                    src="https://images.unsplash.com/photo-1662340696153-ebc6941a0b4b?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEzM3x8U09MQVIlMjBCQVRURVJZfGVufDB8fHx8MTc4MDAzNzQ2M3ww&amp;ixlib=rb-4.1.0&amp;w=1500"
                   />
                 </div>
                 <div className="product-details">
@@ -778,7 +778,7 @@ const ShopNow = (props) => {
                     <span className="old-price">₦160,000</span>
                   </div>
                   <div className="product-actions">
-                    <button className="full-width btn btn-sm btn-primary">
+                    <button className="btn-sm btn-primary btn full-width">
                       Add to Cart
                     </button>
                     <a
@@ -788,22 +788,22 @@ const ShopNow = (props) => {
                       data-action="whatsapp-inquiry"
                     >
                       <div
-                        target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn-sm btn-whatsapp"
+                        target="_blank"
+                        className="btn-sm btn btn-whatsapp"
                       >
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
                           width="18"
+                          xmlns="http://www.w3.org/2000/svg"
                           height="18"
                           viewBox="0 0 24 24"
                         >
                           <g
                             fill="none"
                             stroke="currentColor"
+                            strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            strokeWidth="2"
                           >
                             <path d="m3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"></path>
                             <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0za5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path>
@@ -820,7 +820,7 @@ const ShopNow = (props) => {
                         </span>
                       </div>
                     </a>
-                    <button className="btn btn-sm btn-outline">
+                    <button className="btn-outline btn-sm btn">
                       Quick View
                     </button>
                   </div>
@@ -843,46 +843,46 @@ const ShopNow = (props) => {
                   <div className="form-row">
                     <input
                       type="text"
-                      placeholder="Full Name"
-                      required="true"
                       id="thq_textinput_j0Vk"
                       name="textinput"
+                      required="true"
+                      placeholder="Full Name"
                       data-form-field-id="thq_textinput_j0Vk"
                       className="page-form-input form-input"
                     />
                     <input
                       type="email"
-                      placeholder="Email Address"
-                      required="true"
                       id="thq_textinput_Zq-A"
                       name="textinput"
+                      required="true"
+                      placeholder="Email Address"
                       data-form-field-id="thq_textinput_Zq-A"
                       className="page-form-input form-input"
                     />
                   </div>
                   <input
                     type="text"
-                    placeholder="Subject"
                     id="thq_textinput_mq1W"
                     name="textinput"
+                    placeholder="Subject"
                     data-form-field-id="thq_textinput_mq1W"
                     className="page-form-input form-input"
                   />
                   <textarea
-                    placeholder="Your Message"
-                    required="true"
-                    rows="5"
                     id="thq_textarea_89cZ"
                     name="textarea"
+                    rows="5"
+                    required="true"
+                    placeholder="Your Message"
                     data-form-field-id="thq_textarea_89cZ"
                     className="page-form-input form-input"
                   ></textarea>
                   <button
-                    type="submit"
                     id="thq_button_Xa0Y"
                     name="button"
+                    type="submit"
                     data-form-field-id="thq_button_Xa0Y"
-                    className="btn btn-primary btn-lg"
+                    className="btn-primary btn btn-lg"
                   >
                     Send Message
                   </button>
@@ -894,8 +894,8 @@ const ShopNow = (props) => {
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126844.06348612!2d3.33624!3d6.52437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a397c9523!2sLagos!5e0!3m2!1sen!2sng!4v1625000000000!5m2!1sen!2sng"
                     width="100%"
                     height="100%"
-                    allowFullScreen="true"
                     loading="lazy"
+                    allowFullScreen="true"
                     className="shop-now-iframe"
                   ></iframe>
                 </div>
@@ -914,12 +914,12 @@ const ShopNow = (props) => {
             className="whatsapp-float"
           >
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
               fill="none"
+              width="32"
+              xmlns="http://www.w3.org/2000/svg"
+              height="32"
               stroke="currentColor"
+              viewBox="0 0 24 24"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"

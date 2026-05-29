@@ -26,12 +26,12 @@ const SmartEnergyPropertyCta = (props) => {
                   <div className="smart-energy-property-cta__card">
                     <div className="smart-energy-property-cta__icon-wrapper">
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
                         fill="none"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
                         stroke="currentColor"
+                        viewBox="0 0 24 24"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -56,12 +56,12 @@ const SmartEnergyPropertyCta = (props) => {
                   <div className="smart-energy-property-cta__card">
                     <div className="smart-energy-property-cta__icon-wrapper">
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
                         fill="none"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
                         stroke="currentColor"
+                        viewBox="0 0 24 24"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -86,12 +86,12 @@ const SmartEnergyPropertyCta = (props) => {
                   <div className="smart-energy-property-cta__card">
                     <div className="smart-energy-property-cta__icon-wrapper">
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
                         fill="none"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
                         stroke="currentColor"
+                        viewBox="0 0 24 24"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -115,18 +115,18 @@ const SmartEnergyPropertyCta = (props) => {
                   <div className="smart-energy-property-cta__card">
                     <div className="smart-energy-property-cta__icon-wrapper">
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
                         fill="none"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
                         stroke="currentColor"
+                        viewBox="0 0 24 24"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                       >
                         <path d="M12 10h.01M12 14h.01M12 6h.01M16 10h.01M16 14h.01M16 6h.01M8 10h.01M8 14h.01M8 6h.01M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"></path>
-                        <rect width="16" height="20" x="4" y="2" rx="2"></rect>
+                        <rect x="4" y="2" rx="2" width="16" height="20"></rect>
                       </svg>
                     </div>
                     <h3 className="smart-energy-property-cta__card-title">
@@ -145,12 +145,12 @@ const SmartEnergyPropertyCta = (props) => {
                   <div className="smart-energy-property-cta__card">
                     <div className="smart-energy-property-cta__icon-wrapper">
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
                         fill="none"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
                         stroke="currentColor"
+                        viewBox="0 0 24 24"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -158,12 +158,12 @@ const SmartEnergyPropertyCta = (props) => {
                         <g
                           fill="none"
                           stroke="currentColor"
+                          strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          strokeWidth="2"
                         >
                           <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
-                          <circle cx="12" cy="10" r="3"></circle>
+                          <circle r="3" cx="12" cy="10"></circle>
                         </g>
                       </svg>
                     </div>

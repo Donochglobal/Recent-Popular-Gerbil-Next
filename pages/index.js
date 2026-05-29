@@ -158,17 +158,17 @@ const Home = (props) => {
                 <a>
                   <div className="solutions-showcase__card">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
                       width="18"
+                      xmlns="http://www.w3.org/2000/svg"
                       height="18"
                       viewBox="0 0 24 24"
                     >
                       <g
                         fill="none"
                         stroke="currentColor"
+                        strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        strokeWidth="2"
                       >
                         <path d="M11 2h2m1.28 12l-4.56 8M21 22l-1.558-4H4.558M3 10v2"></path>
                         <path d="M6.245 15.04A2 2 0 0 1 8 14h12a1 1 0 0 1 .864 1.505l-3.11 5.457A2 2 0 0 1 16 22H4a1 1 0 0 1-.863-1.506zM7 2a4 4 0 0 1-4 4m5.66 1.66l1.41 1.41"></path>
@@ -176,17 +176,17 @@ const Home = (props) => {
                     </svg>
                     <div className="solutions-showcase__icon">
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
                         width="32"
+                        xmlns="http://www.w3.org/2000/svg"
                         height="32"
                         viewBox="0 0 24 24"
                       >
                         <g
                           fill="none"
                           stroke="currentColor"
+                          strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          strokeWidth="2"
                         >
                           <path d="M11 2h2m1.28 12l-4.56 8M21 22l-1.558-4H4.558M3 10v2"></path>
                           <path d="M6.245 15.04A2 2 0 0 1 8 14h12a1 1 0 0 1 .864 1.505l-3.11 5.457A2 2 0 0 1 16 22H4a1 1 0 0 1-.863-1.506zM7 2a4 4 0 0 1-4 4m5.66 1.66l1.41 1.41"></path>
@@ -216,17 +216,17 @@ const Home = (props) => {
                 <a>
                   <div className="solutions-showcase__card">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
                       width="18"
+                      xmlns="http://www.w3.org/2000/svg"
                       height="18"
                       viewBox="0 0 24 24"
                     >
                       <g
                         fill="none"
                         stroke="currentColor"
+                        strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        strokeWidth="2"
                       >
                         <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
                         <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
@@ -234,17 +234,17 @@ const Home = (props) => {
                     </svg>
                     <div className="solutions-showcase__icon">
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
                         width="32"
+                        xmlns="http://www.w3.org/2000/svg"
                         height="32"
                         viewBox="0 0 24 24"
                       >
                         <g
                           fill="none"
                           stroke="currentColor"
+                          strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          strokeWidth="2"
                         >
                           <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
                           <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
@@ -274,34 +274,34 @@ const Home = (props) => {
                 <a>
                   <div className="solutions-showcase__card">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
                       width="18"
+                      xmlns="http://www.w3.org/2000/svg"
                       height="18"
                       viewBox="0 0 24 24"
                     >
                       <path
+                        d="M12 16h.01M16 16h.01M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2zm5-3h.01"
                         fill="none"
                         stroke="currentColor"
+                        strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M12 16h.01M16 16h.01M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2zm5-3h.01"
                       ></path>
                     </svg>
                     <div className="solutions-showcase__icon">
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
                         width="32"
+                        xmlns="http://www.w3.org/2000/svg"
                         height="32"
                         viewBox="0 0 24 24"
                       >
                         <path
+                          d="M12 16h.01M16 16h.01M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2zm5-3h.01"
                           fill="none"
                           stroke="currentColor"
+                          strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M12 16h.01M16 16h.01M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2zm5-3h.01"
                         ></path>
                       </svg>
                     </div>
@@ -328,43 +328,43 @@ const Home = (props) => {
                 <a>
                   <div className="solutions-showcase__card">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
                       width="18"
+                      xmlns="http://www.w3.org/2000/svg"
                       height="18"
                       viewBox="0 0 24 24"
                     >
                       <g
                         fill="none"
                         stroke="currentColor"
+                        strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        strokeWidth="2"
                       >
                         <path d="M12 10h.01M12 14h.01M12 6h.01M16 10h.01M16 14h.01M16 6h.01M8 10h.01M8 14h.01M8 6h.01M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"></path>
-                        <rect width="16" height="20" x="4" y="2" rx="2"></rect>
+                        <rect x="4" y="2" rx="2" width="16" height="20"></rect>
                       </g>
                     </svg>
                     <div className="solutions-showcase__icon">
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
                         width="32"
+                        xmlns="http://www.w3.org/2000/svg"
                         height="32"
                         viewBox="0 0 24 24"
                       >
                         <g
                           fill="none"
                           stroke="currentColor"
+                          strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          strokeWidth="2"
                         >
                           <path d="M12 10h.01M12 14h.01M12 6h.01M16 10h.01M16 14h.01M16 6h.01M8 10h.01M8 14h.01M8 6h.01M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"></path>
                           <rect
-                            width="16"
-                            height="20"
                             x="4"
                             y="2"
                             rx="2"
+                            width="16"
+                            height="20"
                           ></rect>
                         </g>
                       </svg>
@@ -392,34 +392,34 @@ const Home = (props) => {
                 <a>
                   <div className="solutions-showcase__card">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
                       width="18"
+                      xmlns="http://www.w3.org/2000/svg"
                       height="18"
                       viewBox="0 0 24 24"
                     >
                       <path
+                        d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0zm.894.211v15M9 3.236v15"
                         fill="none"
                         stroke="currentColor"
+                        strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0zm.894.211v15M9 3.236v15"
                       ></path>
                     </svg>
                     <div className="solutions-showcase__icon">
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
                         width="32"
+                        xmlns="http://www.w3.org/2000/svg"
                         height="32"
                         viewBox="0 0 24 24"
                       >
                         <path
+                          d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0zm.894.211v15M9 3.236v15"
                           fill="none"
                           stroke="currentColor"
+                          strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0zm.894.211v15M9 3.236v15"
                         ></path>
                       </svg>
                     </div>

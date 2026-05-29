@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 import Script from 'dangerous-html/react'
 import { useTranslations } from 'next-intl'
@@ -432,6 +433,32 @@ const Footer = (props) => {
             ></Script>
           </div>
         </div>
+        <nav className="footer-thq-navlinks-elm">
+          <Link href="/lemoex-properties">
+            <a>Lemoex Properties</a>
+          </Link>
+          <Link href="/projects-portfolio">
+            <a>Projects / Portfolio</a>
+          </Link>
+          <Link href="/solar-solutions">
+            <a>Solar Solutions</a>
+          </Link>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
+          <Link href="/shop-now">
+            <a>Shop Now</a>
+          </Link>
+          <Link href="/contact">
+            <a>Contact</a>
+          </Link>
+          <Link href="/ceo-message">
+            <a>CEO Message</a>
+          </Link>
+          <Link href="/about-don-och">
+            <a>About DON OCH</a>
+          </Link>
+        </nav>
       </div>
       <style jsx>
         {`
@@ -489,6 +516,11 @@ const Footer = (props) => {
           }
           .footer-container3 {
             display: contents;
+          }
+          .footer-thq-navlinks-elm {
+            gap: 16px;
+            display: flex;
+            align-items: center;
           }
         `}
       </style>
