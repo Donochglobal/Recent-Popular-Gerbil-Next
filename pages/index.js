@@ -963,7 +963,7 @@ const Home = (props) => {
                 <div className="projects-masonry__media">
                   <img
                     alt="Solar Project"
-                    src="https://images.pexels.com/photos/8457866/pexels-photo-8457866.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/13963757/pexels-photo-13963757.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   />
                   <div className="projects-masonry__overlay">
                     <h3 className="section-subtitle">Industrial 50kW Array</h3>
@@ -978,7 +978,7 @@ const Home = (props) => {
                 <div className="projects-masonry__media">
                   <img
                     alt="Estate Project"
-                    src="https://images.pexels.com/photos/27938900/pexels-photo-27938900.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/17188088/pexels-photo-17188088.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   />
                   <div className="projects-masonry__overlay">
                     <h3 className="section-subtitle">Lemoex View Estate</h3>
@@ -990,7 +990,7 @@ const Home = (props) => {
                 <div className="projects-masonry__media">
                   <img
                     alt="Residential Solar"
-                    src="https://images.pexels.com/photos/6641571/pexels-photo-6641571.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/31912311/pexels-photo-31912311.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   />
                   <div className="projects-masonry__overlay">
                     <h3 className="section-subtitle">Luxury Villa Solar</h3>
