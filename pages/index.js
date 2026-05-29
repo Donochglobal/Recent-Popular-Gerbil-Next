@@ -319,8 +319,8 @@ const Home = (props) => {
               </Link>
               <Link href="/lemoex-properties">
                 <a>
-                  <div className="solutions-showcase__card">
-                    <div className="solutions-showcase__icon">
+                  <div className="home-thq-solutions-showcasecard-elm5 solutions-showcase__card">
+                    <div className="home-thq-solutions-showcaseicon-elm5 solutions-showcase__icon">
                       <svg
                         width="32"
                         xmlns="http://www.w3.org/2000/svg"
@@ -337,14 +337,14 @@ const Home = (props) => {
                         ></path>
                       </svg>
                     </div>
-                    <h3 className="solutions-showcase__card-title">
+                    <h3 className="home-thq-solutions-showcasecard-title-elm5 solutions-showcase__card-title">
                       EXPLORE AVAILABLE LANDS
                     </h3>
-                    <p className="solutions-showcase__card-text">
+                    <p className="home-thq-solutions-showcasecard-text-elm5 solutions-showcase__card-text">
                       Secure genuine land opportunities in developing and prime
                       locations with flexible options.
                     </p>
-                    <span className="solutions-showcase__btn">
+                    <span className="home-thq-solutions-showcasebtn-elm5 solutions-showcase__btn">
                       {' '}
                       View Lands
                       <span
@@ -1436,6 +1436,25 @@ const Home = (props) => {
           }
           .home-thq-solutions-showcasebtn-elm4 {
             color: #0a1a3a;
+            border-color: #b28e36;
+            background-color: #b28e36;
+          }
+          .home-thq-solutions-showcasecard-elm5 {
+            border: 1px solid #b28e36;
+            background: #0a1628;
+            box-shadow: 0 8px 32px rgba(10, 22, 40, 0.5);
+          }
+          .home-thq-solutions-showcaseicon-elm5 {
+            color: #b28e36;
+          }
+          .home-thq-solutions-showcasecard-title-elm5 {
+            color: #b28e36;
+          }
+          .home-thq-solutions-showcasecard-text-elm5 {
+            color: #7eb8da;
+          }
+          .home-thq-solutions-showcasebtn-elm5 {
+            color: #0a1628;
             border-color: #b28e36;
             background-color: #b28e36;
           }
