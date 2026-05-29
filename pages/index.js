@@ -1158,17 +1158,24 @@ const Home = (props) => {
               <div className="contact-cta__shortcuts">
                 <div className="contact-cta__item">
                   <span className="contact-cta__label">Call Us</span>
-                  <span className="contact-cta__value">+2349132371332</span>
+                  <a
+                    href="tel:+2349132371332"
+                    className="home-thq-contact-ctavalue-elm1 contact-cta__value"
+                  >
+                    +2349132371332
+                  </a>
                 </div>
-                <div className="contact-cta__item">
-                  <span className="contact-cta__label">Email Us</span>
-                  <span className="contact-cta__value">
-                    info@donochglobal.com
-                  </span>
-                </div>
+                <a href="mailto:info@donochglobal.com?subject=Hello DON OCH Global">
+                  <div className="home-thq-contact-ctaitem-elm2 contact-cta__item">
+                    <span className="contact-cta__label">Email Us</span>
+                    <span className="contact-cta__value">
+                      info@donochglobal.com
+                    </span>
+                  </div>
+                </a>
               </div>
               <div className="contact-cta__actions">
-                <a href="https://wa.me/2348000000000">
+                <a href="https://wa.me/2349132371332">
                   <div className="btn-accent btn btn-lg">
                     <span>Chat on WhatsApp</span>
                   </div>
@@ -1191,6 +1198,33 @@ const Home = (props) => {
                     placeholder="Full Name"
                     data-form-field-id="thq_textinput_31D7"
                     className="contact-cta__input"
+                  />
+                </div>
+                <div className="contact-cta__field contact-cta__field--phone">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                    ></path>
+                  </svg>
+                  <input
+                    type="tel"
+                    id="thq_textinput_phone"
+                    name="phone"
+                    required="true"
+                    placeholder="Phone Number"
+                    data-form-field-id="thq_textinput_phone"
+                    className="contact-cta__input input"
                   />
                 </div>
                 <div className="contact-cta__field">
@@ -1611,7 +1645,7 @@ to {
             color: #b28e36;
           }
           .home-thq-solutions-showcasecard-title-elm4 {
-            color: #ffffff;
+            color: #b28e36;
           }
           .home-thq-solutions-showcasecard-text-elm4 {
             color: #4a90d9;
@@ -1633,7 +1667,7 @@ to {
             color: #b28e36;
           }
           .home-thq-solutions-showcasecard-text-elm5 {
-            color: #7eb8da;
+            color: #4a90d9;
           }
           .home-thq-solutions-showcasebtn-elm5 {
             color: #0a1628;
@@ -1665,6 +1699,12 @@ to {
           }
           .home-thq-products-railnav-elm {
             display: none;
+          }
+          .home-thq-contact-ctavalue-elm1 {
+            text-decoration: none;
+          }
+          .home-thq-contact-ctaitem-elm2 {
+            text-decoration: none;
           }
           .home-container2 {
             display: none;

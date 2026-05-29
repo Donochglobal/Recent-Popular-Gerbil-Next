@@ -7290,6 +7290,26 @@
   border-width: 1.5px;
 }
  
+.contact-cta__field--phone {
+  position: relative;
+}
+ 
+.contact-cta__field--phone  .contact-cta__input {
+  padding-left: calc(var(--spacing-md) + 28px);
+}
+ 
+.contact-cta__field--phone  .contact-cta__icon {
+  top: 50%;
+  left: var(--spacing-md);
+  color: var(--color-accent);
+  width: 18px;
+  height: 18px;
+  display: block;
+  position: absolute;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+ 
 .Headings {
   font-size: 2em;
   font-family: Playfair Display;
