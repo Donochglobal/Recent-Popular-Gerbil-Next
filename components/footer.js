@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 import Script from 'dangerous-html/react'
 import { useTranslations } from 'next-intl'
@@ -131,13 +132,15 @@ const Footer = (props) => {
                       </div>
                     </a>
                   </li>
-                  <li>
-                    <a href="#">
-                      <div className="footer-link">
-                        <span>About Us</span>
-                      </div>
+                  <Link href="/about">
+                    <a>
+                      <li className="footer-li11">
+                        <div className="footer-link">
+                          <span>About Us</span>
+                        </div>
+                      </li>
                     </a>
-                  </li>
+                  </Link>
                   <li>
                     <a href="#">
                       <div className="footer-link">
@@ -440,6 +443,9 @@ const Footer = (props) => {
           }
           .footer-thq-footer-brand-accent-elm {
             color: var(--color-accent);
+          }
+          .footer-li11 {
+            text-decoration: none;
           }
           .footer-thq-footer-contact-item-elm2 {
             text-decoration: none;
