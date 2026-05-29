@@ -7175,6 +7175,27 @@
   transform: scale(1.15);
 }
  
+.lemoex-card-alt {
+  border: 1px solid #b28e36;
+  background: #0a1a3a;
+  box-shadow: 0 8px 32px rgba(10, 26, 58, 0.4);
+}
+ 
+.lemoex-card-alt:hover {
+  background: #0f2350;
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.18), 0 0 40px rgba(178, 142, 54, 0.12);
+}
+ 
+.lemoex-card-alt:hover .lemoex-card-alt__icon {
+  filter: drop-shadow(0 0 12px rgba(178, 142, 54, 0.5));
+}
+ 
+.lemoex-card-alt:hover .lemoex-card-alt__btn {
+  color: #0a1a3a;
+  border-color: #d4a84a;
+  background-color: #d4a84a;
+}
+ 
 .Headings {
   font-size: 2em;
   font-family: Playfair Display;

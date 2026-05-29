@@ -239,21 +239,6 @@ const Home = (props) => {
               <Link href="/solar-solutions">
                 <a>
                   <div className="solutions-showcase__card">
-                    <svg
-                      width="18"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="18"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 16h.01M16 16h.01M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2zm5-3h.01"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      ></path>
-                    </svg>
                     <div className="solutions-showcase__icon">
                       <svg
                         width="32"
@@ -339,8 +324,8 @@ const Home = (props) => {
               </Link>
               <Link href="/lemoex-properties">
                 <a>
-                  <div className="solutions-showcase__card">
-                    <div className="solutions-showcase__icon">
+                  <div className="solutions-showcase__card lemoex-card-alt">
+                    <div className="home-thq-solutions-showcaseicon-elm5 solutions-showcase__icon">
                       <svg
                         width="32"
                         xmlns="http://www.w3.org/2000/svg"
@@ -357,14 +342,14 @@ const Home = (props) => {
                         ></path>
                       </svg>
                     </div>
-                    <h3 className="solutions-showcase__card-title">
+                    <h3 className="home-thq-solutions-showcasecard-title-elm5 solutions-showcase__card-title">
                       EXPLORE AVAILABLE LANDS
                     </h3>
-                    <p className="solutions-showcase__card-text">
+                    <p className="home-thq-solutions-showcasecard-text-elm5 solutions-showcase__card-text">
                       Secure genuine land opportunities in developing and prime
                       locations with flexible options.
                     </p>
-                    <span className="solutions-showcase__btn">
+                    <span className="home-thq-solutions-showcasebtn-elm5 solutions-showcase__btn">
                       {' '}
                       View Lands
                       <span
@@ -1450,6 +1435,20 @@ const Home = (props) => {
             color: #4a90d9;
           }
           .home-thq-solutions-showcasebtn-elm4 {
+            color: #0a1a3a;
+            border-color: #b28e36;
+            background-color: #b28e36;
+          }
+          .home-thq-solutions-showcaseicon-elm5 {
+            color: #b28e36;
+          }
+          .home-thq-solutions-showcasecard-title-elm5 {
+            color: #ffffff;
+          }
+          .home-thq-solutions-showcasecard-text-elm5 {
+            color: #4a90d9;
+          }
+          .home-thq-solutions-showcasebtn-elm5 {
             color: #0a1a3a;
             border-color: #b28e36;
             background-color: #b28e36;
