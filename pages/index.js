@@ -95,7 +95,7 @@ const Home = (props) => {
               <div className="hero-carousel__bg-wrap">
                 <img
                   alt="Property Focus"
-                  src="https://images.pexels.com/photos/34973980/pexels-photo-34973980.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  src="https://images.pexels.com/photos/31656145/pexels-photo-31656145.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   className="hero-carousel__img"
                 />
                 <div className="hero-carousel__overlay"></div>
