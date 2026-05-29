@@ -96,7 +96,7 @@ const Home = (props) => {
                 <img
                   alt="Property Focus"
                   src="https://images.pexels.com/photos/34973980/pexels-photo-34973980.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                  className="hero-carousel__img"
+                  className="home-thq-hero-carouselimg-elm3 hero-carousel__img"
                 />
                 <div className="hero-carousel__overlay"></div>
               </div>
@@ -1377,6 +1377,9 @@ const Home = (props) => {
           .home-container1 {
             width: 100%;
             min-height: 100vh;
+          }
+          .home-thq-hero-carouselimg-elm3 {
+            box-shadow: 5px 5px 10px 0px #d4d4d4;
           }
           .home-thq-solutions-showcase-elm {
             padding: 80px 0;
