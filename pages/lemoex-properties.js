@@ -56,11 +56,9 @@ const LemoexProperties = (props) => {
                     <span>View Available Properties</span>
                   </div>
                 </a>
-                <a href="#contact">
-                  <div className="btn-outline btn btn-lg lemoex-hero-btn-outline">
-                    <span>Book Inspection</span>
-                  </div>
-                </a>
+                <div className="btn-outline btn btn-lg lemoex-hero-btn-outline">
+                  <span>Book Inspection</span>
+                </div>
               </div>
             </div>
           </div>
@@ -238,11 +236,9 @@ const LemoexProperties = (props) => {
                   <span>Premium Customer Care</span>
                 </div>
               </div>
-              <a href="#contact">
-                <div className="btn-secondary lemoex-about-cta btn btn-lg">
-                  <span>Explore Our Vision</span>
-                </div>
-              </a>
+              <div className="btn-secondary lemoex-about-cta btn btn-lg">
+                <span>Explore Our Vision</span>
+              </div>
             </div>
           </div>
         </section>
@@ -557,7 +553,7 @@ const LemoexProperties = (props) => {
                       href="https://wa.me/09132371332"
                       target="_blank"
                       rel="noreferrer noopener"
-                      className="lemoex-properties-link4"
+                      className="lemoex-properties-link2"
                     >
                       +234 800 LEMOEX (Call/WhatsApp)
                     </a>
@@ -799,7 +795,7 @@ opacity: 0;}}@keyframes bounce {0%,20%,50%,80%,100% {transform: translateX(-50%)
             width: 100%;
             min-height: 100vh;
           }
-          .lemoex-properties-link4 {
+          .lemoex-properties-link2 {
             text-decoration: none;
           }
           .lemoex-properties-container2 {
@@ -818,7 +814,7 @@ opacity: 0;}}@keyframes bounce {0%,20%,50%,80%,100% {transform: translateX(-50%)
             .lemoex-properties-thq-hero-title-elm {
               font-size: 35px;
             }
-            .lemoex-properties-link4 {
+            .lemoex-properties-link2 {
               text-decoration: none;
             }
           }
