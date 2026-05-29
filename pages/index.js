@@ -60,12 +60,7 @@ const Home = (props) => {
               </div>
             </div>
             <div data-slide="2" className="hero-carousel__slide">
-              <div className="hero-carousel__bg-wrap">
-                <img
-                  alt="Commercial rooftop solar installation"
-                  src="hero-solar-commercial-installation.jpg"
-                  className="hero-carousel__img"
-                />
+              <div className="home-thq-hero-carouselbg-wrap-elm2 hero-carousel__bg-wrap">
                 <div className="hero-carousel__overlay"></div>
               </div>
               <div className="hero-carousel__content">
@@ -1377,6 +1372,11 @@ const Home = (props) => {
           .home-container1 {
             width: 100%;
             min-height: 100vh;
+          }
+          .home-thq-hero-carouselbg-wrap-elm2 {
+            background-size: cover;
+            background-image: url('/hero-solar-commercial-installation-1500w.jpg');
+            background-position: center;
           }
           .home-thq-solutions-showcase-elm {
             padding: 80px 0;
