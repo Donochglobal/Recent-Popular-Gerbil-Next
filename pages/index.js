@@ -725,7 +725,7 @@ const Home = (props) => {
           <div className="products-rail__container">
             <div className="products-rail__header">
               <h2 className="section-title">Premium Products</h2>
-              <div className="products-rail__nav">
+              <div className="home-thq-products-railnav-elm products-rail__nav">
                 <button
                   id="railPrev"
                   aria-label="Previous"
@@ -771,7 +771,7 @@ const Home = (props) => {
                 <div className="products-rail__img-box">
                   <img
                     alt="Mono Solar Panels"
-                    src="https://images.pexels.com/photos/19065333/pexels-photo-19065333.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/19065333/pexels-photo-19065333.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
                   />
                 </div>
                 <h3 className="section-subtitle">Premium Mono Panels</h3>
@@ -787,7 +787,7 @@ const Home = (props) => {
                 <div className="products-rail__img-box">
                   <img
                     alt="Lithium Battery"
-                    src="https://images.pexels.com/photos/31462219/pexels-photo-31462219.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/31462219/pexels-photo-31462219.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
                   />
                 </div>
                 <h3 className="section-subtitle">Lithium LifePO4</h3>
@@ -803,7 +803,7 @@ const Home = (props) => {
                 <div className="products-rail__img-box">
                   <img
                     alt="Hybrid Inverter"
-                    src="https://images.pexels.com/photos/9875673/pexels-photo-9875673.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/9875673/pexels-photo-9875673.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
                   />
                 </div>
                 <h3 className="section-subtitle">Smart Hybrid Inverters</h3>
@@ -818,7 +818,7 @@ const Home = (props) => {
                 <div className="products-rail__img-box">
                   <img
                     alt="Smart CCTV"
-                    src="https://images.pexels.com/photos/31723766/pexels-photo-31723766.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/31723766/pexels-photo-31723766.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
                   />
                 </div>
                 <h3 className="section-subtitle">AI CCTV Systems</h3>
@@ -834,7 +834,7 @@ const Home = (props) => {
                 <div className="products-rail__img-box">
                   <img
                     alt="Street Lights"
-                    src="https://images.pexels.com/photos/29923357/pexels-photo-29923357.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/29923357/pexels-photo-29923357.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
                   />
                 </div>
                 <h3 className="section-subtitle">Solar Street Lights</h3>
@@ -1295,16 +1295,84 @@ const Home = (props) => {
           // Product Rail Navigation
           const initRail = () => {
             const track = document.getElementById("railTrack")
-            const next = document.getElementById("railNext")
-            const prev = document.getElementById("railPrev")
-            if (track && next && prev) {
-              next.addEventListener("click", () => {
-                track.scrollBy({ left: 340, behavior: "smooth" })
-              })
-              prev.addEventListener("click", () => {
-                track.scrollBy({ left: -340, behavior: "smooth" })
+            if (!track) return
+            const cards = track.querySelectorAll(".products-rail__card")
+            if (!cards.length) return
+            const cardWidth = cards[0].offsetWidth + parseInt(getComputedStyle(track).gap || 32)
+            let autoScrollInterval
+            let touchStartX = 0
+            let touchEndX = 0
+            let isHovered = false
+            const startAutoScroll = () => {
+              autoScrollInterval = setInterval(() => {
+                if (isHovered) return
+                const maxScroll = track.scrollWidth - track.clientWidth
+                if (track.scrollLeft >= maxScroll - 5) {
+                  track.scrollTo({ left: 0, behavior: "smooth" })
+                } else {
+                  track.scrollBy({ left: cardWidth, behavior: "smooth" })
+                }
+              }, 4000)
+            }
+            const stopAutoScroll = () => {
+              clearInterval(autoScrollInterval)
+            }
+            track.addEventListener("mouseenter", () => {
+              isHovered = true
+              stopAutoScroll()
+            })
+            track.addEventListener("mouseleave", () => {
+              isHovered = false
+              startAutoScroll()
+            })
+            track.addEventListener(
+              "touchstart",
+              (e) => {
+                touchStartX = e.changedTouches[0].screenX
+                stopAutoScroll()
+              },
+              { passive: true }
+            )
+            track.addEventListener(
+              "touchend",
+              (e) => {
+                touchEndX = e.changedTouches[0].screenX
+                const diff = touchStartX - touchEndX
+                if (Math.abs(diff) > 40) {
+                  if (diff > 0) {
+                    track.scrollBy({ left: cardWidth, behavior: "smooth" })
+                  } else {
+                    track.scrollBy({ left: -cardWidth, behavior: "smooth" })
+                  }
+                }
+                startAutoScroll()
+              },
+              { passive: true }
+            )
+            track.addEventListener(
+              "touchmove",
+              (e) => {
+                e.stopPropagation()
+              },
+              { passive: true }
+            )
+            const nextBtn = document.getElementById("railNext")
+            const prevBtn = document.getElementById("railPrev")
+            if (nextBtn) {
+              nextBtn.addEventListener("click", () => {
+                stopAutoScroll()
+                track.scrollBy({ left: cardWidth, behavior: "smooth" })
+                startAutoScroll()
               })
             }
+            if (prevBtn) {
+              prevBtn.addEventListener("click", () => {
+                stopAutoScroll()
+                track.scrollBy({ left: -cardWidth, behavior: "smooth" })
+                startAutoScroll()
+              })
+            }
+            startAutoScroll()
           }
           // Project Filtering
           const initFilters = () => {
@@ -1335,7 +1403,6 @@ const Home = (props) => {
             let touchStartX = 0
             let touchEndX = 0
             const total = slides.length
-
             const show = (idx) => {
               slides.forEach((s) => s.classList.remove("active"))
               dots.forEach((d) => d.classList.remove("active"))
@@ -1343,17 +1410,14 @@ const Home = (props) => {
               dots[idx].classList.add("active")
               current = idx
             }
-
             const next = () => show((current + 1) % total)
             const prev = () => show((current - 1 + total) % total)
-
             const startAutoPlay = () => {
               autoPlayInterval = setInterval(next, 6000)
             }
             const stopAutoPlay = () => {
               clearInterval(autoPlayInterval)
             }
-
             dots.forEach((dot) => {
               dot.addEventListener("click", () => {
                 stopAutoPlay()
@@ -1361,7 +1425,6 @@ const Home = (props) => {
                 startAutoPlay()
               })
             })
-
             if (track) {
               track.addEventListener(
                 "touchstart",
@@ -1371,7 +1434,6 @@ const Home = (props) => {
                 },
                 { passive: true }
               )
-
               track.addEventListener(
                 "touchend",
                 (e) => {
@@ -1385,11 +1447,9 @@ const Home = (props) => {
                 },
                 { passive: true }
               )
-
               track.addEventListener("mouseenter", stopAutoPlay)
               track.addEventListener("mouseleave", startAutoPlay)
             }
-
             startAutoPlay()
           }
           // Initialize all
@@ -1556,6 +1616,9 @@ const Home = (props) => {
             color: #0a1628;
             border-color: #b28e36;
             background-color: #b28e36;
+          }
+          .home-thq-products-railnav-elm {
+            display: none;
           }
           .home-container2 {
             display: none;

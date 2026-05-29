@@ -3170,44 +3170,57 @@
  
 .products-rail {
   padding: var(--spacing-4xl) 0;
-  overflow: hidden;
+  overflow: visible;
   background: var(--color-surface-elevated);
 }
  
 .products-rail__container {
   margin: 0 auto;
   padding: 0 var(--spacing-xl);
+  overflow: visible;
   max-width: var(--content-max-width);
 }
  
 .products-rail__header {
+  gap: var(--spacing-md);
   display: flex;
+  text-align: center;
   align-items: center;
   margin-bottom: var(--spacing-3xl);
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
 }
  
 .products-rail__track {
   gap: var(--spacing-xl);
+  width: calc(100% + 12px);
   display: flex;
   overflow-x: auto;
+  margin-left: -6px;
+  margin-right: -6px;
+  padding-left: 6px;
+  padding-right: 6px;
   padding-bottom: var(--spacing-xl);
   scroll-behavior: smooth;
   scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
  
 .products-rail__nav {
   gap: var(--spacing-sm);
   display: flex;
+  justify-content: center;
 }
  
 .products-rail__card {
-  flex: 0 0 320px;
+  flex: 0 0 380px;
   border: 1px solid var(--color-border);
   padding: var(--spacing-lg);
   background: var(--color-surface);
   transition: all 0.3s ease;
   border-radius: var(--border-radius-lg);
+  scroll-snap-align: start;
 }
  
 .products-rail__btn {
@@ -3226,7 +3239,7 @@
  
 .products-rail__img-box {
   width: 100%;
-  height: 200px;
+  height: 260px;
   overflow: hidden;
   border-radius: var(--border-radius-md);
   margin-bottom: var(--spacing-lg);
@@ -7552,6 +7565,21 @@
   .home-hero-title {
     font-size: var(--font-size-3xl);
   }
+  .products-rail__track {
+    gap: var(--spacing-lg);
+    width: calc(100% + 16px);
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .products-rail__card {
+    flex: 0 0 85vw;
+    min-width: 280px;
+  }
+  .products-rail__img-box {
+    height: 220px;
+  }
   .projects-masonry__grid {
     grid-template-columns: 1fr;
   }
@@ -7825,6 +7853,22 @@
   }
   .services-teaser__grid {
     grid-template-columns: 1fr;
+  }
+  .products-rail__track {
+    gap: var(--spacing-md);
+    width: calc(100% + 12px);
+    margin-left: -6px;
+    margin-right: -6px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .products-rail__card {
+    flex: 0 0 88vw;
+    padding: var(--spacing-md);
+    min-width: 260px;
+  }
+  .products-rail__img-box {
+    height: 200px;
   }
   .lemoex-showcase__grid {
     grid-template-columns: 1fr;
