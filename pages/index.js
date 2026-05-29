@@ -1390,6 +1390,37 @@ const Home = (props) => {
             ></Script>
           </div>
         </div>
+        <div className="home-container4">
+          <div className="home-container5">
+            <Script
+              html={`<script>
+(function(){
+    ;(function () {
+      // Intersection Observer for solutions showcase cards
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px 0px -50px 0px",
+        threshold: 0.1,
+      }
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              entry.target.classList.add("is-visible")
+            }, index * 100)
+            observer.unobserve(entry.target)
+          }
+        })
+      }, observerOptions)
+      document.querySelectorAll(".solutions-showcase__card").forEach((card) => {
+        observer.observe(card)
+      })
+    })()
+  })()
+</script>`}
+            ></Script>
+          </div>
+        </div>
         <Footer></Footer>
         <a
           href="https://wa.me/09132371332"
@@ -1465,8 +1496,10 @@ const Home = (props) => {
           }
           .home-thq-solutions-showcasegrid-elm {
             gap: var(--spacing-xl);
+            margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(5, minmax(0, 1fr));
+            max-width: 800px;
+            grid-template-columns: 1fr;
           }
           .home-container2 {
             display: none;
@@ -1474,9 +1507,15 @@ const Home = (props) => {
           .home-container3 {
             display: contents;
           }
+          .home-container4 {
+            display: none;
+          }
+          .home-container5 {
+            display: contents;
+          }
           @media (max-width: 991px) {
             .home-thq-solutions-showcasegrid-elm {
-              grid-template-columns: repeat(2, 1fr);
+              grid-template-columns: 1fr;
             }
           }
           @media (max-width: 767px) {
@@ -1484,6 +1523,7 @@ const Home = (props) => {
               padding: 60px 0;
             }
             .home-thq-solutions-showcasegrid-elm {
+              max-width: 100%;
               grid-template-columns: 1fr;
             }
           }

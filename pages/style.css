@@ -5629,11 +5629,14 @@
   border: 1px solid rgba(183, 186, 183, 0.4);
   cursor: pointer;
   display: flex;
+  opacity: 0;
   padding: 32px;
+  position: relative;
+  transform: translateY(40px);
   background: rgba(255, 252, 247, 0.75);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
   text-align: left;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), background-color 0.4s ease, border-color 0.4s ease;
   border-radius: 16px;
   flex-direction: column;
   backdrop-filter: blur(12px);
@@ -5641,13 +5644,21 @@
 }
  
 .solutions-showcase__card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
+  transform: translateY(-8px) scale(1.02);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.18), 0 0 40px rgba(224, 122, 47, 0.12);
+}
+ 
+.solutions-showcase__card:hover {
+  transform: translateY(-8px) scale(1.02);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.18), 0 0 40px rgba(224, 122, 47, 0.12);
 }
  
 .solutions-showcase__icon {
   color: var(--color-accent);
   display: inline-flex;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.4s ease;
   margin-bottom: var(--spacing-lg);
 }
  
@@ -7113,6 +7124,55 @@
 .navigation-buy-solar-btn:hover {
   filter: brightness(1.15);
   transform: scale(1.04);
+}
+ 
+.solutions-showcase__card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+ 
+.solutions-showcase__card.is-visible:nth-child(1) {
+  transition-delay: 0ms;
+}
+ 
+.solutions-showcase__card.is-visible:nth-child(2) {
+  transition-delay: 100ms;
+}
+ 
+.solutions-showcase__card.is-visible:nth-child(3) {
+  transition-delay: 200ms;
+}
+ 
+.solutions-showcase__card.is-visible:nth-child(4) {
+  transition-delay: 300ms;
+}
+ 
+.solutions-showcase__card.is-visible:nth-child(5) {
+  transition-delay: 400ms;
+}
+ 
+.solutions-showcase__card::before {
+  inset: -1px;
+  content: '';
+  opacity: 0;
+  padding: 1px;
+  position: absolute;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-secondary), var(--color-accent));
+  transition: opacity 0.4s ease;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  border-radius: 17px;
+  mask-composite: exclude;
+  pointer-events: none;
+  -webkit-mask-composite: xor;
+}
+ 
+.solutions-showcase__card:hover::before {
+  opacity: 1;
+}
+ 
+.solutions-showcase__card:hover .solutions-showcase__icon {
+  filter: drop-shadow(0 0 12px rgba(224, 122, 47, 0.5));
+  transform: scale(1.15);
 }
  
 .Headings {
