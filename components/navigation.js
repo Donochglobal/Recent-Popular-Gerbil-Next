@@ -240,7 +240,7 @@ const Navigation = (props) => {
                 </ul>
               </div>
               <div className="navigation-actions">
-                <Link href="/contact">
+                <Link href="/shop-now">
                   <a>
                     <div className="btn-sm navigation-quote-btn btn-primary btn">
                       <span>Buy Solar</span>
@@ -346,7 +346,7 @@ const Navigation = (props) => {
                 </Link>
               </li>
               <li className="navigation-mobile-item">
-                <Link href="/ceo-message">
+                <Link href="/shop-now">
                   <a>
                     <div className="navigation-mobile-link">
                       <span>CEO Message</span>
@@ -378,13 +378,6 @@ const Navigation = (props) => {
                   </div>
                 </a>
               </div>
-              <Link href="/contact">
-                <a>
-                  <div className="btn-primary btn btn-lg navigation-thq-btn-elm2">
-                    <span>Request Quote</span>
-                  </div>
-                </a>
-              </Link>
             </div>
           </div>
         </div>
@@ -452,16 +445,6 @@ const Navigation = (props) => {
           }
           .navigation-container5 {
             display: contents;
-          }
-          @media (max-width: 767px) {
-            .navigation-thq-btn-elm2 {
-              display: none;
-            }
-          }
-          @media (max-width: 479px) {
-            .navigation-thq-btn-elm2 {
-              display: none;
-            }
           }
         `}
       </style>
