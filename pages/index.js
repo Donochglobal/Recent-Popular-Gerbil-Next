@@ -362,173 +362,178 @@ const Home = (props) => {
         <section className="about-impact">
           <div className="about-impact__container">
             <div className="about-impact__header">
-              <h2 className="section-title">About DON OCH GLOBAL</h2>
+              <h2 className="section-title">
+                How To Own Reliable Solar Power Solutions
+              </h2>
               <p className="section-content">
-                A world-class energy and infrastructure leader, driving
-                sustainability through engineering excellence and premium real
-                estate solutions.
+                We make the transition to reliable solar energy simple,
+                professional, and stress-free for homes and businesses.
               </p>
             </div>
-            <div className="about-impact__grid">
-              <div className="about-impact__card">
-                <div className="about-impact__icon">
+            <div className="home-thq-about-impactgrid-elm">
+              <div className="home-thq-solar-processconnector-elm"></div>
+              <div data-step="1" className="solar-process__card">
+                <div className="solar-process__badge">
+                  <span>01</span>
+                </div>
+                <div className="solar-process__icon">
                   <svg
-                    width="24"
                     xmlns="http://www.w3.org/2000/svg"
-                    height="24"
+                    width="32"
+                    height="32"
                     viewBox="0 0 24 24"
                   >
                     <path
-                      d="M4.28 14h15.44a1 1 0 0 0 .97-1.243l-1.5-6A1 1 0 0 0 18.22 6H5.78a1 1 0 0 0-.97.757l-1.5 6A1 1 0 0 0 4.28 14M4 10h16M10 6l-1 8m5-8l1 8m-3 0v4m-5 0h10"
                       fill="none"
                       stroke="currentColor"
-                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092a10 10 0 1 0-4.777-4.719"
                     ></path>
                   </svg>
                 </div>
-                <div data-count="15" className="about-impact__number">
-                  <span>0</span>
-                </div>
-                <div className="about-impact__label">
-                  <span>Years Experience</span>
-                </div>
+                <h3 className="solar-process__title">
+                  Tell Us Your Energy Needs
+                </h3>
+                <p className="solar-process__desc">
+                  Contact us and explain your home, office, shop, factory, or
+                  business power challenges.
+                </p>
               </div>
-              <div className="about-impact__card">
-                <div className="about-impact__icon">
+              <div data-step="2" className="solar-process__card">
+                <div className="solar-process__badge">
+                  <span>02</span>
+                </div>
+                <div className="solar-process__icon">
                   <svg
-                    width="24"
                     xmlns="http://www.w3.org/2000/svg"
-                    height="24"
+                    width="32"
+                    height="32"
                     viewBox="0 0 24 24"
                   >
                     <g
                       fill="none"
                       stroke="currentColor"
-                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
+                      strokeWidth="2"
                     >
-                      <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
-                      <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                      <path d="m21 21l-4.34-4.34"></path>
+                      <circle cx="11" cy="11" r="8"></circle>
                     </g>
                   </svg>
                 </div>
-                <div data-count="1200" className="about-impact__number">
-                  <span>0</span>
-                </div>
-                <div className="about-impact__label">
-                  <span>Successful Projects</span>
-                </div>
+                <h3 className="solar-process__title">
+                  We Recommend The Right Solution
+                </h3>
+                <p className="solar-process__desc">
+                  Our experts analyze your energy usage and recommend the best
+                  solar panels, batteries, inverters, and backup systems for
+                  you.
+                </p>
               </div>
-              <div className="about-impact__card">
-                <div className="about-impact__icon">
+              <div data-step="3" className="solar-process__card">
+                <div className="solar-process__badge">
+                  <span>03</span>
+                </div>
+                <div className="solar-process__icon">
                   <svg
-                    width="24"
                     xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <g
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
-                      <path d="M6.376 18.91a6 6 0 0 1 11.249.003"></path>
-                      <circle r="4" cx="12" cy="11"></circle>
-                    </g>
-                  </svg>
-                </div>
-                <div data-count="5000" className="about-impact__number">
-                  <span>0</span>
-                </div>
-                <div className="about-impact__label">
-                  <span>Happy Clients</span>
-                </div>
-              </div>
-              <div className="about-impact__card">
-                <div className="about-impact__icon">
-                  <svg
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
+                    width="32"
+                    height="32"
                     viewBox="0 0 24 24"
                   >
                     <path
-                      d="M4 6.28v11.44a1 1 0 0 0 1.243.97l6-1.5a1 1 0 0 0 .757-.97V7.78a1 1 0 0 0-.757-.97l-6-1.5A1 1 0 0 0 4 6.28M8 6v12m4-6H4m16-5l-3 5h4l-3 5"
                       fill="none"
                       stroke="currentColor"
-                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"
                     ></path>
                   </svg>
                 </div>
-                <div data-count="850" className="about-impact__number">
-                  <span>0</span>
-                </div>
-                <div className="about-impact__label">
-                  <span>Installed Systems</span>
-                </div>
+                <h3 className="solar-process__title">
+                  Professional Installation
+                </h3>
+                <p className="solar-process__desc">
+                  We handle installation professionally using quality equipment
+                  and experienced engineers.
+                </p>
               </div>
-              <div className="about-impact__card">
-                <div className="about-impact__icon">
+              <div data-step="4" className="solar-process__card">
+                <div className="solar-process__badge">
+                  <span>04</span>
+                </div>
+                <div className="solar-process__icon">
                   <svg
-                    width="24"
                     xmlns="http://www.w3.org/2000/svg"
-                    height="24"
+                    width="32"
+                    height="32"
                     viewBox="0 0 24 24"
                   >
-                    <g
+                    <path
                       fill="none"
                       stroke="currentColor"
-                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                    >
-                      <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
-                      <path d="m19 9l-5 5l-4-4l-3 3"></path>
-                    </g>
+                      strokeWidth="2"
+                      d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                    ></path>
                   </svg>
                 </div>
-                <div data-count="98" className="about-impact__number">
-                  <span>0</span>
-                </div>
-                <div className="about-impact__label">
-                  <span>Client Satisfaction %</span>
-                </div>
+                <h3 className="solar-process__title">
+                  Enjoy Stable Power &amp; Lower Energy Costs
+                </h3>
+                <p className="solar-process__desc">
+                  Experience uninterrupted electricity, improved efficiency, and
+                  long-term savings.
+                </p>
               </div>
-              <div className="about-impact__card">
-                <div className="about-impact__icon">
+              <div data-step="5" className="solar-process__card">
+                <div className="solar-process__badge">
+                  <span>05</span>
+                </div>
+                <div className="solar-process__icon">
                   <svg
-                    width="24"
                     xmlns="http://www.w3.org/2000/svg"
-                    height="24"
+                    width="32"
+                    height="32"
                     viewBox="0 0 24 24"
                   >
-                    <g
+                    <path
                       fill="none"
                       stroke="currentColor"
-                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                    >
-                      <path d="M22 14v-4"></path>
-                      <rect x="2" y="6" rx="2" width="16" height="12"></rect>
-                    </g>
+                      strokeWidth="2"
+                      d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"
+                    ></path>
                   </svg>
                 </div>
-                <div data-count="250" className="about-impact__number">
-                  <span>0</span>
-                </div>
-                <div className="about-impact__label">
-                  <span>MW Energy Generated</span>
-                </div>
+                <h3 className="solar-process__title">Ongoing Support</h3>
+                <p className="solar-process__desc">
+                  We remain available for maintenance, upgrades, and technical
+                  support whenever needed.
+                </p>
               </div>
+            </div>
+            <div className="solar-process__actions">
+              <Link href="/contact">
+                <a>
+                  <div className="btn btn-primary">
+                    <span>Get Started Today</span>
+                  </div>
+                </a>
+              </Link>
+              <Link href="/contact">
+                <a>
+                  <div className="btn btn-outline">
+                    <span>Speak With Our Experts</span>
+                  </div>
+                </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -1525,6 +1530,24 @@ const Home = (props) => {
             </svg>
           </div>
         </a>
+        <div>
+          <div className="home-container7">
+            <Script
+              html={`<style>
+@keyframes fadeInUp {
+from {
+  opacity: 0;
+  transform: translateY(30px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+</style>`}
+            ></Script>
+          </div>
+        </div>
       </div>
       <style jsx>
         {`
@@ -1617,6 +1640,29 @@ const Home = (props) => {
             border-color: #b28e36;
             background-color: #b28e36;
           }
+          .home-thq-about-impactgrid-elm {
+            gap: var(--spacing-xl);
+            display: grid;
+            position: relative;
+            margin-bottom: var(--spacing-4xl);
+            grid-template-columns: repeat(5, 1fr);
+          }
+          .home-thq-solar-processconnector-elm {
+            top: 40px;
+            left: calc(10% + 20px);
+            right: calc(10% + 20px);
+            height: 3px;
+            opacity: 0.35;
+            z-index: 0;
+            position: absolute;
+            background: linear-gradient(
+              90deg,
+              var(--color-primary) 0%,
+              var(--color-secondary) 50%,
+              var(--color-accent) 100%
+            );
+            border-radius: 2px;
+          }
           .home-thq-products-railnav-elm {
             display: none;
           }
@@ -1632,9 +1678,18 @@ const Home = (props) => {
           .home-container5 {
             display: contents;
           }
+          .home-container7 {
+            display: contents;
+          }
           @media (max-width: 991px) {
             .home-thq-solutions-showcasegrid-elm {
               grid-template-columns: 1fr;
+            }
+            .home-thq-about-impactgrid-elm {
+              grid-template-columns: repeat(3, 1fr);
+            }
+            .home-thq-solar-processconnector-elm {
+              display: none;
             }
           }
           @media (max-width: 767px) {
@@ -1643,6 +1698,10 @@ const Home = (props) => {
             }
             .home-thq-solutions-showcasegrid-elm {
               max-width: 100%;
+              grid-template-columns: 1fr;
+            }
+            .home-thq-about-impactgrid-elm {
+              gap: var(--spacing-lg);
               grid-template-columns: 1fr;
             }
           }

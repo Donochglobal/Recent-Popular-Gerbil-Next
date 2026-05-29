@@ -637,7 +637,7 @@
  
 .btn-outline {
   color: var(--color-primary);
-  border: 1px solid var(--color-primary);
+  border: 1.5px solid var(--color-primary);
   background-color: var(--color-surface);
 }
  
@@ -3083,12 +3083,16 @@
  
 .about-impact {
   padding: var(--spacing-4xl) 0;
+  overflow: hidden;
+  position: relative;
   background: var(--color-surface);
 }
  
 .about-impact__container {
   margin: 0 auto;
   padding: 0 var(--spacing-xl);
+  z-index: 1;
+  position: relative;
   max-width: var(--content-max-width);
 }
  
@@ -3098,43 +3102,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: var(--spacing-4xl);
-}
- 
-.about-impact__grid {
-  gap: var(--spacing-xl);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
- 
-.about-impact__card {
-  border: 1px solid var(--color-border);
-  padding: var(--spacing-2xl);
-  background: var(--color-surface-elevated);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: var(--border-radius-lg);
-  backdrop-filter: blur(10px);
-}
- 
-.about-impact__icon {
-  color: var(--color-primary);
-  margin-bottom: var(--spacing-md);
-}
- 
-.about-impact__number {
-  color: var(--color-primary);
-  font-size: var(--font-size-3xl);
-  font-family: var(--font-family-heading);
-  font-weight: var(--font-weight-heading);
-  margin-bottom: var(--spacing-xs);
-}
- 
-.about-impact__label {
-  color: var(--color-on-surface-secondary);
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-medium);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
  
 .services-teaser {
@@ -3551,11 +3518,6 @@
 .hero-carousel__dot.active {
   width: 32px;
   background: var(--color-accent);
-}
- 
-.about-impact__card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
 }
  
 .services-teaser  .section-title {
@@ -7207,6 +7169,127 @@
   background-position: center;
 }
  
+.about-impact::before {
+  inset: 0;
+  content: '';
+  position: absolute;
+  background: radial-gradient(ellipse at 20% 50%, rgba(19, 60, 46, 0.04) 0%, transparent 50%),radial-gradient(ellipse at 80% 20%, rgba(178, 142, 54, 0.04) 0%, transparent 50%);
+  pointer-events: none;
+}
+ 
+.solar-process__card {
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  z-index: 1;
+  position: relative;
+  animation: fadeInUp 0.7s ease both;
+  background: var(--color-surface-elevated);
+  box-shadow: var(--shadow-level-1);
+  text-align: center;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+  border-radius: var(--border-radius-lg);
+  backdrop-filter: blur(10px);
+}
+ 
+.solar-process__card:nth-child(2) {
+  animation-delay: 0.08s;
+}
+ 
+.solar-process__card:nth-child(3) {
+  animation-delay: 0.16s;
+}
+ 
+.solar-process__card:nth-child(4) {
+  animation-delay: 0.24s;
+}
+ 
+.solar-process__card:nth-child(5) {
+  animation-delay: 0.32s;
+}
+ 
+.solar-process__card:nth-child(6) {
+  animation-delay: 0.40s;
+}
+ 
+.solar-process__card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 50px rgba(19, 60, 46, 0.12), 0 0 0 1px rgba(178, 142, 54, 0.25);
+  border-color: var(--color-secondary);
+}
+ 
+.solar-process__badge {
+  color: var(--color-on-primary);
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  font-size: var(--font-size-sm);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  box-shadow: 0 4px 14px rgba(19, 60, 46, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-items: center;
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+  border-radius: var(--border-radius-full);
+  margin-bottom: var(--spacing-md);
+  justify-content: center;
+}
+ 
+.solar-process__card:hover .solar-process__badge {
+  transform: scale(1.15);
+  box-shadow: 0 6px 20px rgba(178, 142, 54, 0.4);
+}
+ 
+.solar-process__icon {
+  color: var(--color-primary);
+  display: flex;
+  transition: color 0.3s ease;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+  justify-content: center;
+}
+ 
+.solar-process__card:hover .solar-process__icon {
+  color: var(--color-accent);
+}
+ 
+.solar-process__title {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-lg);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+  line-height: var(--line-height-heading);
+  margin-bottom: var(--spacing-xs);
+}
+ 
+.solar-process__desc {
+  color: var(--color-on-surface-secondary);
+  margin: 0;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-body);
+}
+ 
+.solar-process__actions {
+  gap: var(--spacing-lg);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.solar-process__actions  .btn {
+  padding: var(--spacing-md) var(--spacing-xl);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.04em;
+}
+ 
+.solar-process__actions  .btn-primary {
+  box-shadow: 0 4px 16px rgba(19, 60, 46, 0.25);
+}
+ 
+.solar-process__actions  .btn-outline {
+  border-width: 1.5px;
+}
+ 
 .Headings {
   font-size: 2em;
   font-family: Playfair Display;
@@ -7333,9 +7416,6 @@
   }
   .cta-visual-side {
     width: 100%;
-  }
-  .about-impact__grid {
-    grid-template-columns: repeat(2, 1fr);
   }
   .services-teaser__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -7758,6 +7838,42 @@
   .modal-grid {
     grid-template-columns: 1fr;
   }
+  .solar-process__card {
+    gap: 0 var(--spacing-md);
+    display: grid;
+    padding: var(--spacing-lg);
+    text-align: left;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto 1fr;
+  }
+  .solar-process__badge {
+    width: 52px;
+    height: 52px;
+    grid-row: 1 / 3;
+    font-size: var(--font-size-base);
+    align-self: center;
+    margin-bottom: 0;
+  }
+  .solar-process__icon {
+    display: none;
+  }
+  .solar-process__title {
+    grid-row: 1;
+    grid-column: 2;
+    margin-bottom: 4px;
+  }
+  .solar-process__desc {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .solar-process__actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .solar-process__actions  .btn {
+    width: 100%;
+    text-align: center;
+  }
 }
  
 @media(max-width: 479px) {
@@ -7847,9 +7963,6 @@
     width: 100%;
     padding: 0 var(--spacing-xl);
     flex-direction: column;
-  }
-  .about-impact__grid {
-    grid-template-columns: 1fr;
   }
   .services-teaser__grid {
     grid-template-columns: 1fr;
