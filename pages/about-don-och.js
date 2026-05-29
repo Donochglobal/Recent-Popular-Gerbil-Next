@@ -257,13 +257,13 @@ const AboutDONOCH = (props) => {
               <div className="about-image-stack">
                 <div className="image-wrapper main-img">
                   <img
-                    src="https://images.pexels.com/photos/7031594/pexels-photo-7031594.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/7031594/pexels-photo-7031594.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
                     alt="Corporate Excellence"
                   />
                 </div>
                 <div className="image-wrapper overlay-img">
                   <img
-                    src="https://images.pexels.com/photos/32387194/pexels-photo-32387194.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/32387194/pexels-photo-32387194.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900"
                     alt="Solar Innovation"
                   />
                 </div>
@@ -1012,43 +1012,6 @@ const AboutDONOCH = (props) => {
                   </button>
                 </form>
               </div>
-              <div className="contact-cta-side">
-                <div className="page-cta-card">
-                  <h3 className="section-subtitle">Quick Connect</h3>
-                  <p className="section-content">
-                    Speak directly with our experts via WhatsApp for instant
-                    inquiries.
-                  </p>
-                  <div className="cta-links">
-                    <a href="https://wa.me/234000000000">
-                      <div className="whatsapp-btn btn btn-primary btn-xl">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-14h.1c2.3 0 4.4 1.1 5.7 3l1.1-.3a1 1 0 0 1 1.3 1.3l-.3 1.1c1.9 1.3 3 3.4 3 5.7v.1z"></path>
-                        </svg>
-                        <span>
-                          {' '}
-                          Chat on WhatsApp
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: ' ',
-                            }}
-                          />
-                        </span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -1194,6 +1157,52 @@ section {
           </div>
         </div>
         <Footer></Footer>
+        <div>
+          <div className="about-donoch-container7">
+            <Script
+              html={`<style>
+@media (max-width: 1024px) {
+.page-hero-slider {
+  min-height: 650px;
+}
+.hero-slide-content {
+  max-width: 90%;
+  padding: 0 var(--spacing-xl);
+}
+.page-hero-title1 {
+  font-size: 3rem;
+}
+.page-services-grid1 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.page-projects-masonry {
+  grid-template-columns: repeat(2, 1fr);
+}
+.lemoex-grid {
+  grid-template-columns: 1fr;
+}
+.page-ceo-grid {
+  grid-template-columns: 1fr;
+}
+.location-split {
+  grid-template-columns: 1fr;
+  height: auto;
+}
+.page-contact-grid {
+  grid-template-columns: 1fr;
+}
+.about-grid {
+  grid-template-columns: 1fr;
+}
+.footer-top-row {
+  flex-wrap: wrap;
+  gap: var(--spacing-2xl);
+}
+}
+</style>`}
+            ></Script>
+          </div>
+        </div>
       </div>
       <style jsx>
         {`
@@ -1214,6 +1223,9 @@ section {
             display: none;
           }
           .about-donoch-container5 {
+            display: contents;
+          }
+          .about-donoch-container7 {
             display: contents;
           }
         `}
