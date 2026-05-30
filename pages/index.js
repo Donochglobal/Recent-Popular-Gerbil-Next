@@ -1683,6 +1683,59 @@ const Home = (props) => {
               Product added to cart
             </span>
           </div>
+          <div className="home-container11">
+            <div className="home-container12">
+              <Script
+                html={`<style>
+[data-role="cart-drawer"] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+[data-role="cart-drawer"][data-state="open"], [data-role="cart-drawer"][aria-hidden="false"] {
+  pointer-events: auto;
+  opacity: 1;
+}
+[data-role="cart-drawer"] .thq-cart-drawerpanel-elm {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 480px;
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.15);
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+[data-role="cart-drawer"][data-state="open"] .thq-cart-drawerpanel-elm, [data-role="cart-drawer"][aria-hidden="false"] .thq-cart-drawerpanel-elm {
+  transform: translateX(0);
+}
+[data-role="cart-drawer"] .thq-cart-draweroverlay-elm {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 9998;
+}
+[data-role="cart-drawer"][data-state="open"] .thq-cart-draweroverlay-elm, [data-role="cart-drawer"][aria-hidden="false"] .thq-cart-draweroverlay-elm {
+  opacity: 1;
+}
+</style>`}
+              ></Script>
+            </div>
+          </div>
           <div
             data-role="cart-drawer"
             aria-hidden="true"
@@ -1824,7 +1877,7 @@ const Home = (props) => {
                   ></textarea>
                 </div>
               </div>
-              <div className="home-container11"></div>
+              <div className="home-container13"></div>
             </div>
           </div>
           <div
@@ -2697,8 +2750,8 @@ const Home = (props) => {
             </div>
           </div>
         </section>
-        <div className="home-container12">
-          <div className="home-container13">
+        <div className="home-container14">
+          <div className="home-container15">
             <Script
               html={`<script>
         ;(function () {
@@ -3299,8 +3352,8 @@ const Home = (props) => {
             ></Script>
           </div>
         </div>
-        <div className="home-container14">
-          <div className="home-container15">
+        <div className="home-container16">
+          <div className="home-container17">
             <Script
               html={`<script>
 (function(){
@@ -3362,7 +3415,7 @@ const Home = (props) => {
           </div>
         </a>
         <div>
-          <div className="home-container17">
+          <div className="home-container19">
             <Script
               html={`<style>
 @keyframes fadeInUp {
@@ -3380,7 +3433,7 @@ to {
           </div>
         </div>
         <div>
-          <div className="home-container19">
+          <div className="home-container21">
             <Script
               html={`<style>
 @keyframes cartBounce {
@@ -3402,7 +3455,7 @@ to {
           </div>
         </div>
         <div>
-          <div className="home-container21">
+          <div className="home-container23">
             <Script
               html={`<style>
 @keyframes cartBounce {
@@ -3621,6 +3674,12 @@ to {
             font-size: var(--font-size-sm);
             font-weight: var(--font-weight-medium);
           }
+          .home-container11 {
+            display: none;
+          }
+          .home-container12 {
+            display: contents;
+          }
           .home-thq-cart-draweroverlay-elm {
             inset: 0;
             z-index: 1900;
@@ -3713,7 +3772,7 @@ to {
             font-weight: var(--font-weight-heading);
             margin-bottom: var(--spacing-sm);
           }
-          .home-container11 {
+          .home-container13 {
             padding: 0 var(--spacing-xl) var(--spacing-lg) var(--spacing-xl);
             flex-shrink: 0;
           }
@@ -3792,17 +3851,14 @@ to {
           .home-thq-contact-ctaitem-elm2 {
             text-decoration: none;
           }
-          .home-container12 {
-            display: none;
-          }
-          .home-container13 {
-            display: contents;
-          }
           .home-container14 {
             display: none;
           }
           .home-container15 {
             display: contents;
+          }
+          .home-container16 {
+            display: none;
           }
           .home-container17 {
             display: contents;
@@ -3811,6 +3867,9 @@ to {
             display: contents;
           }
           .home-container21 {
+            display: contents;
+          }
+          .home-container23 {
             display: contents;
           }
           @media (max-width: 991px) {
