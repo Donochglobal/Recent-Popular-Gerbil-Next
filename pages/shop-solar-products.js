@@ -29,11 +29,11 @@ const ShopSolarProducts = (props) => {
         <Navigation></Navigation>
         <section className="page-hero-slider2">
           <div className="page-hero-slides-container">
-            <div className="shop-solar-products-thq-hero-slide-elm1 page-hero-slide1 active">
+            <div className="shop-solar-products-thq-hero-slide-elm1 active page-hero-slide1">
               <div className="page-hero-overlay1"></div>
               <div className="hero-content-wrapper">
                 <div className="hero-content">
-                  <h1 className="page-hero-title3 hero-title">
+                  <h1 className="hero-title page-hero-title3">
                     Powering Homes &amp; Building Futures
                   </h1>
                   <p className="hero-subtitle">
@@ -43,12 +43,12 @@ const ShopSolarProducts = (props) => {
                   </p>
                   <div className="page-hero-cta-group">
                     <a href="#services">
-                      <div className="btn btn-primary btn-lg">
+                      <div className="btn-primary btn btn-lg">
                         <span>Explore Solar Solutions</span>
                       </div>
                     </a>
                     <a href="#lemoex">
-                      <div className="btn btn-lg btn-outline">
+                      <div className="btn-outline btn btn-lg">
                         <span>Explore Properties</span>
                       </div>
                     </a>
@@ -60,7 +60,7 @@ const ShopSolarProducts = (props) => {
               <div className="page-hero-overlay1"></div>
               <div className="hero-content-wrapper">
                 <div className="hero-content">
-                  <h1 className="page-hero-title3 hero-title">
+                  <h1 className="hero-title page-hero-title3">
                     Reliable Solar Energy For Homes &amp; Industries
                   </h1>
                   <p className="hero-subtitle">
@@ -70,12 +70,12 @@ const ShopSolarProducts = (props) => {
                   </p>
                   <div className="page-hero-cta-group">
                     <a href="#contact">
-                      <div className="btn btn-lg btn-accent">
+                      <div className="btn-accent btn btn-lg">
                         <span>Get Free Consultation</span>
                       </div>
                     </a>
                     <a href="#products">
-                      <div className="btn btn-lg btn-outline">
+                      <div className="btn-outline btn btn-lg">
                         <span>View Products</span>
                       </div>
                     </a>
@@ -87,7 +87,7 @@ const ShopSolarProducts = (props) => {
               <div className="page-hero-overlay1"></div>
               <div className="hero-content-wrapper">
                 <div className="hero-content">
-                  <h1 className="page-hero-title3 hero-title">
+                  <h1 className="hero-title page-hero-title3">
                     Smart Property Investments With Lemoex Properties
                   </h1>
                   <p className="hero-subtitle">
@@ -96,12 +96,12 @@ const ShopSolarProducts = (props) => {
                   </p>
                   <div className="page-hero-cta-group">
                     <a href="#lemoex">
-                      <div className="btn btn-primary btn-lg">
+                      <div className="btn-primary btn btn-lg">
                         <span>View Properties</span>
                       </div>
                     </a>
                     <a href="#contact">
-                      <div className="btn btn-lg btn-outline">
+                      <div className="btn-outline btn btn-lg">
                         <span>Contact Team</span>
                       </div>
                     </a>
@@ -111,12 +111,12 @@ const ShopSolarProducts = (props) => {
             </div>
           </div>
           <div className="hero-dots">
-            <button data-index="0" className="page-hero-dot active"></button>
+            <button data-index="0" className="active page-hero-dot"></button>
             <button data-index="1" className="page-hero-dot"></button>
             <button data-index="2" className="page-hero-dot"></button>
           </div>
         </section>
-        <section id="about" className="page-about-section1 about-section">
+        <section id="about" className="about-section page-about-section1">
           <div className="container">
             <div className="page-about-grid1">
               <div className="about-text-content">
@@ -173,12 +173,12 @@ const ShopSolarProducts = (props) => {
                 <div className="about-card">
                   <div className="about-card-icon">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 24 24"
                       fill="none"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="32"
                       stroke="currentColor"
+                      viewBox="0 0 24 24"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -195,12 +195,12 @@ const ShopSolarProducts = (props) => {
                 <div className="about-card">
                   <div className="about-card-icon">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 24 24"
                       fill="none"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="32"
                       stroke="currentColor"
+                      viewBox="0 0 24 24"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -217,12 +217,12 @@ const ShopSolarProducts = (props) => {
                 <div className="about-card">
                   <div className="about-card-icon">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 24 24"
                       fill="none"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="32"
                       stroke="currentColor"
+                      viewBox="0 0 24 24"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -236,18 +236,18 @@ const ShopSolarProducts = (props) => {
                 <div className="about-card">
                   <div className="about-card-icon">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 24 24"
                       fill="none"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="32"
                       stroke="currentColor"
+                      viewBox="0 0 24 24"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     >
                       <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                      <circle cx="9" cy="7" r="4"></circle>
+                      <circle r="4" cx="9" cy="7"></circle>
                       <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
                       <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                     </svg>
@@ -263,7 +263,7 @@ const ShopSolarProducts = (props) => {
         </section>
         <section
           id="services"
-          className="page-services-section1 services-section"
+          className="services-section page-services-section1"
         >
           <div className="container">
             <div className="section-header-centered">
@@ -277,12 +277,12 @@ const ShopSolarProducts = (props) => {
               <div className="page-service-card3">
                 <div className="page-service-icon3">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -305,12 +305,12 @@ const ShopSolarProducts = (props) => {
               <div className="page-service-card3">
                 <div className="page-service-icon3">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -318,10 +318,10 @@ const ShopSolarProducts = (props) => {
                     <rect
                       x="2"
                       y="7"
-                      width="20"
-                      height="14"
                       rx="2"
                       ry="2"
+                      width="20"
+                      height="14"
                     ></rect>
                     <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                   </svg>
@@ -340,12 +340,12 @@ const ShopSolarProducts = (props) => {
               <div className="page-service-card3">
                 <div className="page-service-icon3">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -375,17 +375,17 @@ const ShopSolarProducts = (props) => {
               <div className="page-service-card3">
                 <div className="page-service-icon3">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
-                    <rect x="2" y="6" width="16" height="12" rx="2"></rect>
+                    <rect x="2" y="6" rx="2" width="16" height="12"></rect>
                     <path d="M22 10v4"></path>
                   </svg>
                 </div>
@@ -403,12 +403,12 @@ const ShopSolarProducts = (props) => {
               <div className="page-service-card3">
                 <div className="page-service-icon3">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -432,18 +432,18 @@ const ShopSolarProducts = (props) => {
               <div className="page-service-card3">
                 <div className="page-service-icon3">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
                     <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-                    <circle cx="12" cy="13" r="4"></circle>
+                    <circle r="4" cx="12" cy="13"></circle>
                   </svg>
                 </div>
                 <h3>CCTV Installation</h3>
@@ -460,17 +460,17 @@ const ShopSolarProducts = (props) => {
               <div className="page-service-card3">
                 <div className="page-service-icon3">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
-                    <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                    <rect x="3" y="11" rx="2" width="18" height="10"></rect>
                     <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                   </svg>
                 </div>
@@ -488,12 +488,12 @@ const ShopSolarProducts = (props) => {
               <div className="page-service-card3">
                 <div className="page-service-icon3">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -516,19 +516,19 @@ const ShopSolarProducts = (props) => {
               <div className="page-service-card3">
                 <div className="page-service-icon3">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                     <polyline points="7 10 12 15 17 10"></polyline>
-                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                    <line x1="12" x2="12" y1="15" y2="3"></line>
                   </svg>
                 </div>
                 <h3>Energy Consultation</h3>
@@ -545,19 +545,19 @@ const ShopSolarProducts = (props) => {
               <div className="page-service-card3">
                 <div className="page-service-icon3">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
-                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle r="10" cx="12" cy="12"></circle>
                     <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                    <line x1="12" x2="12.01" y1="17" y2="17"></line>
                   </svg>
                 </div>
                 <h3>Maintenance &amp; Support</h3>
@@ -574,18 +574,18 @@ const ShopSolarProducts = (props) => {
               <div className="page-service-card3">
                 <div className="page-service-icon3">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
+                    <circle r="4" cx="12" cy="7"></circle>
                   </svg>
                 </div>
                 <h3>Smart Home Integration</h3>
@@ -611,7 +611,7 @@ const ShopSolarProducts = (props) => {
               </p>
             </div>
             <div className="product-filters">
-              <button data-category="all" className="page-filter-btn active">
+              <button data-category="all" className="active page-filter-btn">
                 All Products
               </button>
               <button data-category="panels" className="page-filter-btn">
@@ -632,16 +632,16 @@ const ShopSolarProducts = (props) => {
                 <div className="product-image-carousel">
                   <div className="carousel-track">
                     <img
-                      src="https://images.pexels.com/photos/9875676/pexels-photo-9875676.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                       alt="Monocrystalline Solar Panel"
+                      src="https://images.pexels.com/photos/9875676/pexels-photo-9875676.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                     />
                     <img
-                      src="https://images.pexels.com/photos/9875674/pexels-photo-9875674.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                       alt="Solar Panel Detail"
+                      src="https://images.pexels.com/photos/9875674/pexels-photo-9875674.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                     />
                   </div>
-                  <button className="carousel-nav prev">←</button>
-                  <button className="carousel-nav next">→</button>
+                  <button className="prev carousel-nav">←</button>
+                  <button className="next carousel-nav">→</button>
                 </div>
                 <div className="page-product-info">
                   <span className="product-cat">Solar Panels</span>
@@ -660,11 +660,11 @@ const ShopSolarProducts = (props) => {
                       data-id="1"
                       data-name="550W Solar Panel"
                       data-price="145000"
-                      className="add-to-cart btn btn-primary"
+                      className="btn-primary btn add-to-cart"
                     >
                       Add to Cart
                     </button>
-                    <button className="view-details btn btn-outline">
+                    <button className="btn-outline view-details btn">
                       Details
                     </button>
                   </div>
@@ -674,8 +674,8 @@ const ShopSolarProducts = (props) => {
                 <div className="product-image-carousel">
                   <div className="carousel-track">
                     <img
-                      src="https://images.pexels.com/photos/9800025/pexels-photo-9800025.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                       alt="Lithium Battery"
+                      src="https://images.pexels.com/photos/9800025/pexels-photo-9800025.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                     />
                   </div>
                 </div>
@@ -694,11 +694,11 @@ const ShopSolarProducts = (props) => {
                       data-id="2"
                       data-name="10kWh Lithium Battery"
                       data-price="1250000"
-                      className="add-to-cart btn btn-primary"
+                      className="btn-primary btn add-to-cart"
                     >
                       Add to Cart
                     </button>
-                    <button className="view-details btn btn-outline">
+                    <button className="btn-outline view-details btn">
                       Details
                     </button>
                   </div>
@@ -722,8 +722,8 @@ const ShopSolarProducts = (props) => {
               <div className="property-card">
                 <div className="property-image">
                   <img
-                    src="https://images.pexels.com/photos/15368393/pexels-photo-15368393.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                     alt="Luxury Estate"
+                    src="https://images.pexels.com/photos/15368393/pexels-photo-15368393.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   />
                   <span className="property-tag">For Sale</span>
                 </div>
@@ -736,18 +736,18 @@ const ShopSolarProducts = (props) => {
                   <div className="property-meta">
                     <span>
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
                         fill="none"
+                        width="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="16"
                         stroke="currentColor"
+                        viewBox="0 0 24 24"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                       >
                         <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
-                        <circle cx="12" cy="10" r="3"></circle>
+                        <circle r="3" cx="12" cy="10"></circle>
                       </svg>
                       <span>
                         {' '}
@@ -761,17 +761,17 @@ const ShopSolarProducts = (props) => {
                     </span>
                     <span>
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
                         fill="none"
+                        width="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="16"
                         stroke="currentColor"
+                        viewBox="0 0 24 24"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                       >
-                        <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                        <rect x="3" y="3" rx="2" width="18" height="18"></rect>
                         <path d="M3 9h18"></path>
                         <path d="M9 21V9"></path>
                       </svg>
@@ -786,7 +786,7 @@ const ShopSolarProducts = (props) => {
                       </span>
                     </span>
                   </div>
-                  <button className="btn btn-sm btn-accent">
+                  <button className="btn-sm btn-accent btn">
                     Book Inspection
                   </button>
                 </div>
@@ -800,8 +800,8 @@ const ShopSolarProducts = (props) => {
               <div className="ceo-image-container">
                 <div className="page-ceo-frame">
                   <img
-                    src="https://images.pexels.com/photos/37797447/pexels-photo-37797447.png?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                     alt="CEO Portrait"
+                    src="https://images.pexels.com/photos/37797447/pexels-photo-37797447.png?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   />
                 </div>
               </div>
@@ -819,7 +819,7 @@ const ShopSolarProducts = (props) => {
                   </p>
                 </div>
                 <div className="page-ceo-signature2">
-                  <span className="page-ceo-name1 ceo-name">Engr. Don Och</span>
+                  <span className="ceo-name page-ceo-name1">Engr. Don Och</span>
                   <span className="ceo-title">Founder &amp; CEO</span>
                 </div>
               </div>
@@ -838,12 +838,12 @@ const ShopSolarProducts = (props) => {
               <div className="trust-card">
                 <div className="trust-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -858,12 +858,12 @@ const ShopSolarProducts = (props) => {
               <div className="trust-card">
                 <div className="trust-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -877,12 +877,12 @@ const ShopSolarProducts = (props) => {
               <div className="trust-card">
                 <div className="trust-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -898,17 +898,17 @@ const ShopSolarProducts = (props) => {
               <div className="trust-card">
                 <div className="trust-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
-                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <rect x="2" y="4" rx="2" width="20" height="16"></rect>
                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                   </svg>
                 </div>
@@ -918,19 +918,19 @@ const ShopSolarProducts = (props) => {
               <div className="trust-card">
                 <div className="trust-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                     <polyline points="7 10 12 15 17 10"></polyline>
-                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                    <line x1="12" x2="12" y1="15" y2="3"></line>
                   </svg>
                 </div>
                 <h3>Technical Consultation</h3>
@@ -939,18 +939,18 @@ const ShopSolarProducts = (props) => {
               <div className="trust-card">
                 <div className="trust-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
                     <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="9" cy="7" r="4"></circle>
+                    <circle r="4" cx="9" cy="7"></circle>
                     <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
                     <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                   </svg>
@@ -963,18 +963,18 @@ const ShopSolarProducts = (props) => {
         </section>
         <div id="cartToggle" className="floating-cart-toggle">
           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
             fill="none"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
             stroke="currentColor"
+            viewBox="0 0 24 24"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           >
-            <circle cx="8" cy="21" r="1"></circle>
-            <circle cx="19" cy="21" r="1"></circle>
+            <circle r="1" cx="8" cy="21"></circle>
+            <circle r="1" cx="19" cy="21"></circle>
             <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
           </svg>
           <span id="cartBadge" className="cart-badge">
@@ -996,7 +996,7 @@ const ShopSolarProducts = (props) => {
             </div>
             <button
               id="proceedToCheckout"
-              className="w-full btn btn-primary btn-lg"
+              className="btn-primary btn btn-lg w-full"
             >
               Proceed to Checkout
             </button>
@@ -1013,49 +1013,49 @@ const ShopSolarProducts = (props) => {
                   data-form-id="cc6df3cf-8187-490c-bb8f-ce72b636c197"
                   className="contact-form"
                 >
-                  <div className="page-form-group form-group">
+                  <div className="form-group page-form-group">
                     <input
                       type="text"
-                      name="true"
-                      placeholder="Your Name"
-                      required="true"
                       id="thq_true_3dUi"
+                      name="true"
+                      required="true"
+                      placeholder="Your Name"
                       data-form-field-id="thq_true_3dUi"
                     />
                   </div>
-                  <div className="page-form-group form-group">
+                  <div className="form-group page-form-group">
                     <input
                       type="email"
-                      name="email"
-                      placeholder="Your Email"
-                      required="true"
                       id="thq_email_wywP"
+                      name="email"
+                      required="true"
+                      placeholder="Your Email"
                       data-form-field-id="thq_email_wywP"
                     />
                   </div>
-                  <div className="page-form-group form-group">
+                  <div className="form-group page-form-group">
                     <textarea
+                      id="thq_message_IbEL"
                       name="message"
-                      placeholder="Hello DON OCH Global, I am interested in your solar products."
                       rows="5"
                       required="true"
-                      id="thq_message_IbEL"
+                      placeholder="Hello DON OCH Global, I am interested in your solar products."
                       data-form-field-id="thq_message_IbEL"
                     ></textarea>
                   </div>
                   <button
-                    type="submit"
                     id="thq_button_5Ztg"
                     name="button"
+                    type="submit"
                     data-form-field-id="thq_button_5Ztg"
-                    className="btn btn-primary"
+                    className="btn-primary btn"
                   >
                     Send Message
                   </button>
                 </form>
                 <div className="contact-quick-links">
                   <a href="https://wa.me/234000000000">
-                    <div className="w-full btn btn-secondary">
+                    <div className="btn-secondary btn w-full">
                       <span>Chat on WhatsApp</span>
                     </div>
                   </a>
@@ -1066,8 +1066,8 @@ const ShopSolarProducts = (props) => {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126844.06348615016!2d3.351486326620542!3d6.536378413156649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a3da577a9!2sLagos!5e0!3m2!1sen!2sng!4v1715600000000!5m2!1sen!2sng"
                   width="100%"
                   height="100%"
-                  allowFullScreen="true"
                   loading="lazy"
+                  allowFullScreen="true"
                   className="shop-solar-products-iframe"
                 ></iframe>
               </div>
@@ -1080,12 +1080,12 @@ const ShopSolarProducts = (props) => {
             className="page-floating-whatsapp2"
           >
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
               fill="none"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
               stroke="currentColor"
+              viewBox="0 0 24 24"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"

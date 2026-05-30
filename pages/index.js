@@ -756,12 +756,12 @@ const Home = (props) => {
                   className="home-thq-filter-icon-elm"
                 >
                   <path d="m21 21l-4.34-4.34"></path>
-                  <circle cx="11" cy="11" r="8"></circle>
+                  <circle r="8" cx="11" cy="11"></circle>
                 </svg>
                 <input
                   type="text"
-                  placeholder="Search products..."
                   data-filter="search"
+                  placeholder="Search products..."
                   className="input filter-input"
                 />
               </div>
@@ -817,10 +817,10 @@ const Home = (props) => {
                 className="products-marketplace__track"
               >
                 <div
-                  data-product-id="panel-550"
-                  data-category="panels"
                   data-price="850000"
                   data-stock="in-stock"
+                  data-category="panels"
+                  data-product-id="panel-550"
                   className="product-card"
                 >
                   <div className="product-card__img-box">
@@ -844,7 +844,7 @@ const Home = (props) => {
                     </div>
                     <div className="product-card__meta">
                       <span className="stock-dot"></span>
-                      <span className="product-card__stock product-card__stock--in">
+                      <span className="product-card__stock--in product-card__stock">
                         {' '}
                         In Stock
                         <span
@@ -860,13 +860,13 @@ const Home = (props) => {
                     <div className="product-card__actions">
                       <button
                         data-action="add-to-cart"
-                        className="btn-sm btn-accent btn button"
+                        className="btn-sm button btn-accent btn"
                       >
                         Add to Cart
                       </button>
                       <button
                         data-action="quick-view"
-                        className="btn-sm btn-outline btn button"
+                        className="btn-outline btn-sm button btn"
                       >
                         View
                       </button>
@@ -874,10 +874,10 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div
-                  data-product-id="panel-600"
-                  data-category="panels"
                   data-price="980000"
                   data-stock="in-stock"
+                  data-category="panels"
+                  data-product-id="panel-600"
                   className="product-card"
                 >
                   <div className="product-card__img-box">
@@ -901,7 +901,7 @@ const Home = (props) => {
                     </div>
                     <div className="product-card__meta">
                       <span className="stock-dot"></span>
-                      <span className="product-card__stock product-card__stock--in">
+                      <span className="product-card__stock--in product-card__stock">
                         {' '}
                         In Stock
                         <span
@@ -917,13 +917,13 @@ const Home = (props) => {
                     <div className="product-card__actions">
                       <button
                         data-action="add-to-cart"
-                        className="btn-sm btn-accent btn button"
+                        className="btn-sm button btn-accent btn"
                       >
                         Add to Cart
                       </button>
                       <button
                         data-action="quick-view"
-                        className="btn-sm btn-outline btn button"
+                        className="btn-outline btn-sm button btn"
                       >
                         View
                       </button>
@@ -931,10 +931,10 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div
-                  data-product-id="panel-bifacial"
-                  data-category="panels"
                   data-price="1200000"
                   data-stock="limited"
+                  data-category="panels"
+                  data-product-id="panel-bifacial"
                   className="product-card"
                 >
                   <div className="product-card__img-box">
@@ -974,13 +974,13 @@ const Home = (props) => {
                     <div className="product-card__actions">
                       <button
                         data-action="add-to-cart"
-                        className="btn-sm btn-accent btn button"
+                        className="btn-sm button btn-accent btn"
                       >
                         Add to Cart
                       </button>
                       <button
                         data-action="quick-view"
-                        className="btn-sm btn-outline btn button"
+                        className="btn-outline btn-sm button btn"
                       >
                         View
                       </button>
@@ -1010,10 +1010,10 @@ const Home = (props) => {
                 className="products-marketplace__track"
               >
                 <div
-                  data-product-id="battery-2-5"
-                  data-category="batteries"
                   data-price="450000"
                   data-stock="in-stock"
+                  data-category="batteries"
+                  data-product-id="battery-2-5"
                   className="product-card"
                 >
                   <div className="product-card__img-box">
@@ -1037,7 +1037,7 @@ const Home = (props) => {
                     </div>
                     <div className="product-card__meta">
                       <span className="stock-dot"></span>
-                      <span className="product-card__stock product-card__stock--in">
+                      <span className="product-card__stock--in product-card__stock">
                         {' '}
                         In Stock
                         <span
@@ -1053,13 +1053,13 @@ const Home = (props) => {
                     <div className="product-card__actions">
                       <button
                         data-action="add-to-cart"
-                        className="btn-sm btn-accent btn button"
+                        className="btn-sm button btn-accent btn"
                       >
                         Add to Cart
                       </button>
                       <button
                         data-action="quick-view"
-                        className="btn-sm btn-outline btn button"
+                        className="btn-outline btn-sm button btn"
                       >
                         View
                       </button>
@@ -1067,10 +1067,10 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div
-                  data-product-id="battery-5"
-                  data-category="batteries"
                   data-price="850000"
                   data-stock="in-stock"
+                  data-category="batteries"
+                  data-product-id="battery-5"
                   className="product-card"
                 >
                   <div className="product-card__img-box">
@@ -1092,7 +1092,7 @@ const Home = (props) => {
                     </div>
                     <div className="product-card__meta">
                       <span className="stock-dot"></span>
-                      <span className="product-card__stock product-card__stock--in">
+                      <span className="product-card__stock--in product-card__stock">
                         {' '}
                         In Stock
                         <span
@@ -1108,13 +1108,13 @@ const Home = (props) => {
                     <div className="product-card__actions">
                       <button
                         data-action="add-to-cart"
-                        className="btn-sm btn-accent btn button"
+                        className="btn-sm button btn-accent btn"
                       >
                         Add to Cart
                       </button>
                       <button
                         data-action="quick-view"
-                        className="btn-sm btn-outline btn button"
+                        className="btn-outline btn-sm button btn"
                       >
                         View
                       </button>
@@ -1122,10 +1122,10 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div
-                  data-product-id="battery-10"
-                  data-category="batteries"
                   data-price="1600000"
                   data-stock="limited"
+                  data-category="batteries"
+                  data-product-id="battery-10"
                   className="product-card"
                 >
                   <div className="product-card__img-box">
@@ -1165,13 +1165,13 @@ const Home = (props) => {
                     <div className="product-card__actions">
                       <button
                         data-action="add-to-cart"
-                        className="btn-sm btn-accent btn button"
+                        className="btn-sm button btn-accent btn"
                       >
                         Add to Cart
                       </button>
                       <button
                         data-action="quick-view"
-                        className="btn-sm btn-outline btn button"
+                        className="btn-outline btn-sm button btn"
                       >
                         View
                       </button>
@@ -1201,10 +1201,10 @@ const Home = (props) => {
                 className="products-marketplace__track"
               >
                 <div
-                  data-product-id="inverter-3kva"
-                  data-category="inverters"
                   data-price="320000"
                   data-stock="in-stock"
+                  data-category="inverters"
+                  data-product-id="inverter-3kva"
                   className="product-card"
                 >
                   <div className="product-card__img-box">
@@ -1226,7 +1226,7 @@ const Home = (props) => {
                     </div>
                     <div className="product-card__meta">
                       <span className="stock-dot"></span>
-                      <span className="product-card__stock product-card__stock--in">
+                      <span className="product-card__stock--in product-card__stock">
                         {' '}
                         In Stock
                         <span
@@ -1242,13 +1242,13 @@ const Home = (props) => {
                     <div className="product-card__actions">
                       <button
                         data-action="add-to-cart"
-                        className="btn-sm btn-accent btn button"
+                        className="btn-sm button btn-accent btn"
                       >
                         Add to Cart
                       </button>
                       <button
                         data-action="quick-view"
-                        className="btn-sm btn-outline btn button"
+                        className="btn-outline btn-sm button btn"
                       >
                         View
                       </button>
@@ -1256,10 +1256,10 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div
-                  data-product-id="inverter-5kva"
-                  data-category="inverters"
                   data-price="520000"
                   data-stock="in-stock"
+                  data-category="inverters"
+                  data-product-id="inverter-5kva"
                   className="product-card"
                 >
                   <div className="product-card__img-box">
@@ -1281,7 +1281,7 @@ const Home = (props) => {
                     </div>
                     <div className="product-card__meta">
                       <span className="stock-dot"></span>
-                      <span className="product-card__stock product-card__stock--in">
+                      <span className="product-card__stock--in product-card__stock">
                         {' '}
                         In Stock
                         <span
@@ -1297,13 +1297,13 @@ const Home = (props) => {
                     <div className="product-card__actions">
                       <button
                         data-action="add-to-cart"
-                        className="btn-sm btn-accent btn button"
+                        className="btn-sm button btn-accent btn"
                       >
                         Add to Cart
                       </button>
                       <button
                         data-action="quick-view"
-                        className="btn-sm btn-outline btn button"
+                        className="btn-outline btn-sm button btn"
                       >
                         View
                       </button>
@@ -1311,10 +1311,10 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div
-                  data-product-id="inverter-10kva"
-                  data-category="inverters"
                   data-price="950000"
                   data-stock="limited"
+                  data-category="inverters"
+                  data-product-id="inverter-10kva"
                   className="product-card"
                 >
                   <div className="product-card__img-box">
@@ -1354,13 +1354,13 @@ const Home = (props) => {
                     <div className="product-card__actions">
                       <button
                         data-action="add-to-cart"
-                        className="btn-sm btn-accent btn button"
+                        className="btn-sm button btn-accent btn"
                       >
                         Add to Cart
                       </button>
                       <button
                         data-action="quick-view"
-                        className="btn-sm btn-outline btn button"
+                        className="btn-outline btn-sm button btn"
                       >
                         View
                       </button>
@@ -1368,10 +1368,10 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div
-                  data-product-id="controller-60a"
-                  data-category="accessories"
                   data-price="85000"
                   data-stock="in-stock"
+                  data-category="accessories"
+                  data-product-id="controller-60a"
                   className="product-card"
                 >
                   <div className="product-card__img-box">
@@ -1393,7 +1393,7 @@ const Home = (props) => {
                     </div>
                     <div className="product-card__meta">
                       <span className="stock-dot"></span>
-                      <span className="product-card__stock product-card__stock--in">
+                      <span className="product-card__stock--in product-card__stock">
                         {' '}
                         In Stock
                         <span
@@ -1409,13 +1409,13 @@ const Home = (props) => {
                     <div className="product-card__actions">
                       <button
                         data-action="add-to-cart"
-                        className="btn-sm btn-accent btn button"
+                        className="btn-sm button btn-accent btn"
                       >
                         Add to Cart
                       </button>
                       <button
                         data-action="quick-view"
-                        className="btn-sm btn-outline btn button"
+                        className="btn-outline btn-sm button btn"
                       >
                         View
                       </button>
@@ -1423,10 +1423,10 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div
-                  data-product-id="cable-solar"
-                  data-category="accessories"
                   data-price="45000"
                   data-stock="in-stock"
+                  data-category="accessories"
+                  data-product-id="cable-solar"
                   className="product-card"
                 >
                   <div className="product-card__img-box">
@@ -1450,7 +1450,7 @@ const Home = (props) => {
                     </div>
                     <div className="product-card__meta">
                       <span className="stock-dot"></span>
-                      <span className="product-card__stock product-card__stock--in">
+                      <span className="product-card__stock--in product-card__stock">
                         {' '}
                         In Stock
                         <span
@@ -1466,13 +1466,13 @@ const Home = (props) => {
                     <div className="product-card__actions">
                       <button
                         data-action="add-to-cart"
-                        className="btn-sm btn-accent btn button"
+                        className="btn-sm button btn-accent btn"
                       >
                         Add to Cart
                       </button>
                       <button
                         data-action="quick-view"
-                        className="btn-sm btn-outline btn button"
+                        className="btn-outline btn-sm button btn"
                       >
                         View
                       </button>
@@ -1480,10 +1480,10 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div
-                  data-product-id="mounting-kit"
-                  data-category="accessories"
                   data-price="120000"
                   data-stock="in-stock"
+                  data-category="accessories"
+                  data-product-id="mounting-kit"
                   className="product-card"
                 >
                   <div className="product-card__img-box">
@@ -1507,7 +1507,7 @@ const Home = (props) => {
                     </div>
                     <div className="product-card__meta">
                       <span className="stock-dot"></span>
-                      <span className="product-card__stock product-card__stock--in">
+                      <span className="product-card__stock--in product-card__stock">
                         {' '}
                         In Stock
                         <span
@@ -1523,13 +1523,13 @@ const Home = (props) => {
                     <div className="product-card__actions">
                       <button
                         data-action="add-to-cart"
-                        className="btn-sm btn-accent btn button"
+                        className="btn-sm button btn-accent btn"
                       >
                         Add to Cart
                       </button>
                       <button
                         data-action="quick-view"
-                        className="btn-sm btn-outline btn button"
+                        className="btn-outline btn-sm button btn"
                       >
                         View
                       </button>
@@ -1540,25 +1540,25 @@ const Home = (props) => {
             </div>
           </div>
           <button
-            data-action="toggle-cart"
             aria-label="Shopping Cart"
-            className="button marketplace-cart-fab"
+            data-action="toggle-cart"
+            className="marketplace-cart-fab button"
           >
             <svg
-              xmlns="http://www.w3.org/2000/svg"
               width="22"
+              xmlns="http://www.w3.org/2000/svg"
               height="22"
               viewBox="0 0 24 24"
             >
               <g
                 fill="none"
                 stroke="currentColor"
+                strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth="2"
               >
-                <circle cx="8" cy="21" r="1"></circle>
-                <circle cx="19" cy="21" r="1"></circle>
+                <circle r="1" cx="8" cy="21"></circle>
+                <circle r="1" cx="19" cy="21"></circle>
                 <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
               </g>
             </svg>
@@ -1582,23 +1582,23 @@ const Home = (props) => {
               <div className="home-thq-cart-drawerheader-elm">
                 <h3 className="home-thq-cart-drawertitle-elm">Your Cart</h3>
                 <button
-                  data-action="close-cart"
                   aria-label="Close cart"
+                  data-action="close-cart"
                   className="button cart-drawer__close"
                 >
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="20"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="20"
                     viewBox="0 0 24 24"
                   >
                     <path
+                      d="M18 6L6 18M6 6l12 12"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M18 6L6 18M6 6l12 12"
                     ></path>
                   </svg>
                 </button>
@@ -1626,7 +1626,7 @@ const Home = (props) => {
                 </div>
                 <button
                   data-action="checkout"
-                  className="home-thq-btn-elm24 btn btn-primary button"
+                  className="home-thq-btn-elm24 button btn-primary btn"
                 >
                   Proceed to Checkout
                 </button>
@@ -1644,29 +1644,29 @@ const Home = (props) => {
             ></div>
             <div className="home-thq-quick-view-modalpanel-elm">
               <button
-                data-action="close-quick-view"
                 aria-label="Close quick view"
+                data-action="close-quick-view"
                 className="home-thq-quick-view-modalclose-elm button"
               >
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
                   width="20"
+                  xmlns="http://www.w3.org/2000/svg"
                   height="20"
                   viewBox="0 0 24 24"
                 >
                   <path
+                    d="M18 6L6 18M6 6l12 12"
                     fill="none"
                     stroke="currentColor"
+                    strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M18 6L6 18M6 6l12 12"
                   ></path>
                 </svg>
               </button>
               <div className="home-thq-quick-view-modalcontent-elm">
                 <div className="quick-view-modal__img-box">
-                  <img data-role="qv-image" src="true" alt="true" />
+                  <img alt="true" src="true" data-role="qv-image" />
                 </div>
                 <div className="home-thq-quick-view-modaldetails-elm">
                   <h3
@@ -1719,7 +1719,7 @@ const Home = (props) => {
                   </div>
                   <button
                     data-action="qv-add-to-cart"
-                    className="home-thq-btn-elm25 btn btn-accent button"
+                    className="home-thq-btn-elm25 button btn-accent btn"
                   >
                     Add to Cart
                   </button>
@@ -1738,23 +1738,23 @@ const Home = (props) => {
             ></div>
             <div className="home-thq-checkout-modalpanel-elm">
               <button
-                data-action="close-checkout"
                 aria-label="Close checkout"
+                data-action="close-checkout"
                 className="home-thq-checkout-modalclose-elm button"
               >
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
                   width="20"
+                  xmlns="http://www.w3.org/2000/svg"
                   height="20"
                   viewBox="0 0 24 24"
                 >
                   <path
+                    d="M18 6L6 18M6 6l12 12"
                     fill="none"
                     stroke="currentColor"
+                    strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M18 6L6 18M6 6l12 12"
                   ></path>
                 </svg>
               </button>
@@ -1791,18 +1791,18 @@ const Home = (props) => {
                   <div className="checkout-form__field">
                     <label>Delivery Address</label>
                     <textarea
+                      rows="3"
                       data-field="address"
                       placeholder="Enter delivery address"
-                      rows="3"
                       className="textarea"
                     ></textarea>
                   </div>
                   <div className="checkout-form__field">
                     <label>Order Notes (Optional)</label>
                     <textarea
+                      rows="2"
                       data-field="notes"
                       placeholder="Any special instructions..."
-                      rows="2"
                       className="textarea"
                     ></textarea>
                   </div>
@@ -1851,7 +1851,7 @@ const Home = (props) => {
                   </div>
                   <button
                     data-action="proceed-payment"
-                    className="home-thq-btn-elm26 btn btn-accent button"
+                    className="home-thq-btn-elm26 button btn-accent btn"
                   >
                     Proceed to Payment
                   </button>
@@ -1871,18 +1871,18 @@ const Home = (props) => {
             <div className="payment-result__panel">
               <div className="home-thq-payment-resulticon-elm1 payment-result__icon">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
                   width="48"
+                  xmlns="http://www.w3.org/2000/svg"
                   height="48"
                   viewBox="0 0 24 24"
                 >
                   <path
+                    d="M20 6L9 17l-5-5"
                     fill="none"
                     stroke="currentColor"
+                    strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M20 6L9 17l-5-5"
                   ></path>
                 </svg>
               </div>
@@ -1925,13 +1925,13 @@ const Home = (props) => {
               <div className="payment-result__actions">
                 <button
                   data-action="continue-shopping"
-                  className="btn btn-primary button"
+                  className="button btn-primary btn"
                 >
                   Continue Shopping
                 </button>
                 <Link href="/contact">
                   <a>
-                    <div className="btn btn-outline">
+                    <div className="btn-outline btn">
                       <span>Contact Support</span>
                     </div>
                   </a>
@@ -1951,18 +1951,18 @@ const Home = (props) => {
             <div className="payment-result__panel">
               <div className="home-thq-payment-resulticon-elm2 payment-result__icon">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
                   width="48"
+                  xmlns="http://www.w3.org/2000/svg"
                   height="48"
                   viewBox="0 0 24 24"
                 >
                   <path
+                    d="M18 6L6 18M6 6l12 12"
                     fill="none"
                     stroke="currentColor"
+                    strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M18 6L6 18M6 6l12 12"
                   ></path>
                 </svg>
               </div>
@@ -1973,13 +1973,13 @@ const Home = (props) => {
               <div className="payment-result__actions">
                 <button
                   data-action="retry-payment"
-                  className="btn btn-accent button"
+                  className="button btn-accent btn"
                 >
                   Retry Payment
                 </button>
                 <Link href="/contact">
                   <a>
-                    <div className="btn btn-outline">
+                    <div className="btn-outline btn">
                       <span>Contact Support</span>
                     </div>
                   </a>
@@ -3105,9 +3105,11 @@ to {
             inset: 0;
             position: absolute;
             background: var(--color-scrim);
+            pointer-events: none;
           }
           .home-thq-cart-drawerpanel-elm {
             width: 100%;
+            height: 100%;
             display: flex;
             max-width: 420px;
             transform: translateX(100%);
@@ -3160,6 +3162,7 @@ to {
             inset: 0;
             position: absolute;
             background: var(--color-scrim);
+            pointer-events: none;
           }
           .home-thq-quick-view-modalpanel-elm {
             width: 100%;
@@ -3235,6 +3238,7 @@ to {
             inset: 0;
             position: absolute;
             background: var(--color-scrim);
+            pointer-events: none;
           }
           .home-thq-checkout-modalpanel-elm {
             width: 100%;
