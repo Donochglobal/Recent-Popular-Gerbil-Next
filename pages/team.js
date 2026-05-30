@@ -38,12 +38,12 @@ const Team = (props) => {
             </p>
             <div className="team-hero-btns">
               <a href="#leadership">
-                <div className="btn btn-primary btn-lg">
+                <div className="btn-primary btn btn-lg">
                   <span>Our Leadership</span>
                 </div>
               </a>
               <a href="#join">
-                <div className="btn btn-lg btn-outline">
+                <div className="btn-outline btn btn-lg">
                   <span>Join Our Team</span>
                 </div>
               </a>
@@ -66,8 +66,8 @@ const Team = (props) => {
             <div className="team-stats-grid">
               <div data-role="stat-card" className="team-stat-card">
                 <span
-                  data-target="10"
                   data-role="counter"
+                  data-target="10"
                   data-counter="true"
                   className="page-stat-number4"
                 >
@@ -78,8 +78,8 @@ const Team = (props) => {
               </div>
               <div data-role="stat-card" className="team-stat-card">
                 <span
-                  data-target="100"
                   data-role="counter"
+                  data-target="100"
                   data-counter="true"
                   className="page-stat-number4"
                 >
@@ -90,8 +90,8 @@ const Team = (props) => {
               </div>
               <div data-role="stat-card" className="team-stat-card">
                 <span
-                  data-target="500"
                   data-role="counter"
+                  data-target="500"
                   data-counter="true"
                   className="page-stat-number4"
                 >
@@ -102,8 +102,8 @@ const Team = (props) => {
               </div>
               <div data-role="stat-card" className="team-stat-card">
                 <span
-                  data-target="100"
                   data-role="counter"
+                  data-target="100"
                   data-counter="true"
                   className="page-stat-number4"
                 >
@@ -117,44 +117,44 @@ const Team = (props) => {
         </section>
         <section id="leadership" className="leadership-section">
           <div className="leadership-container">
-            <h2 className="section-title text-center">Executive Leadership</h2>
+            <h2 className="text-center section-title">Executive Leadership</h2>
             <div className="leadership-grid">
               <div className="executive-card">
                 <div className="exec-image-wrapper">
                   <img
-                    src="https://images.pexels.com/photos/36453960/pexels-photo-36453960.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                     alt="CEO"
+                    src="https://images.pexels.com/photos/36453960/pexels-photo-36453960.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                     className="exec-image"
                   />
                   <div className="exec-socials">
                     <a href="#">
                       <div aria-label="LinkedIn">
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 24 24"
                           fill="none"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
                           stroke="currentColor"
+                          viewBox="0 0 24 24"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                         >
                           <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                           <rect x="2" y="9" width="4" height="12"></rect>
-                          <circle cx="4" cy="4" r="2"></circle>
+                          <circle r="2" cx="4" cy="4"></circle>
                         </svg>
                       </div>
                     </a>
                     <a href="#">
                       <div aria-label="Email">
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 24 24"
                           fill="none"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
                           stroke="currentColor"
+                          viewBox="0 0 24 24"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -178,39 +178,39 @@ const Team = (props) => {
               <div className="executive-card">
                 <div className="exec-image-wrapper">
                   <img
-                    src="https://images.unsplash.com/photo-1581092570490-cc40829efaae?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDR8fEZlbWFsZSUyMGVuZ2luZWVyfGVufDB8fHx8MTc4MDE3Mzk1NHww&amp;ixlib=rb-4.1.0&amp;w=1500"
                     alt="Managing Director"
+                    src="https://images.unsplash.com/photo-1581092570490-cc40829efaae?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDR8fEZlbWFsZSUyMGVuZ2luZWVyfGVufDB8fHx8MTc4MDE3Mzk1NHww&amp;ixlib=rb-4.1.0&amp;w=1500"
                     className="exec-image"
                   />
                   <div className="exec-socials">
                     <a href="#">
                       <div aria-label="LinkedIn">
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 24 24"
                           fill="none"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
                           stroke="currentColor"
+                          viewBox="0 0 24 24"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                         >
                           <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                           <rect x="2" y="9" width="4" height="12"></rect>
-                          <circle cx="4" cy="4" r="2"></circle>
+                          <circle r="2" cx="4" cy="4"></circle>
                         </svg>
                       </div>
                     </a>
                     <a href="#">
                       <div aria-label="Email">
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 24 24"
                           fill="none"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
                           stroke="currentColor"
+                          viewBox="0 0 24 24"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -236,39 +236,39 @@ const Team = (props) => {
               <div className="executive-card">
                 <div className="exec-image-wrapper">
                   <img
-                    src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDMyfHxFbmdpbmVlcnxlbnwwfHx8fDE3ODAxNzQwOTR8MA&amp;ixlib=rb-4.1.0&amp;w=1500"
                     alt="Operations Director"
+                    src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDMyfHxFbmdpbmVlcnxlbnwwfHx8fDE3ODAxNzQwOTR8MA&amp;ixlib=rb-4.1.0&amp;w=1500"
                     className="exec-image"
                   />
                   <div className="exec-socials">
                     <a href="#">
                       <div aria-label="LinkedIn">
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 24 24"
                           fill="none"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
                           stroke="currentColor"
+                          viewBox="0 0 24 24"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                         >
                           <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                           <rect x="2" y="9" width="4" height="12"></rect>
-                          <circle cx="4" cy="4" r="2"></circle>
+                          <circle r="2" cx="4" cy="4"></circle>
                         </svg>
                       </div>
                     </a>
                     <a href="#">
                       <div aria-label="Email">
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 24 24"
                           fill="none"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
                           stroke="currentColor"
+                          viewBox="0 0 24 24"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -292,39 +292,39 @@ const Team = (props) => {
               <div className="executive-card">
                 <div className="exec-image-wrapper">
                   <img
-                    src="https://images.unsplash.com/photo-1649955879980-ea2625d2ade4?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE3fHxBZnJpY2FuJTIwRmVtYWxlJTIwRW5naW5lZXJ8ZW58MHx8fHwxNzgwMTc0MjI0fDA&amp;ixlib=rb-4.1.0&amp;w=1500"
                     alt="Business Development"
+                    src="https://images.unsplash.com/photo-1649955879980-ea2625d2ade4?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE3fHxBZnJpY2FuJTIwRmVtYWxlJTIwRW5naW5lZXJ8ZW58MHx8fHwxNzgwMTc0MjI0fDA&amp;ixlib=rb-4.1.0&amp;w=1500"
                     className="exec-image"
                   />
                   <div className="exec-socials">
                     <a href="#">
                       <div aria-label="LinkedIn">
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 24 24"
                           fill="none"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
                           stroke="currentColor"
+                          viewBox="0 0 24 24"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                         >
                           <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                           <rect x="2" y="9" width="4" height="12"></rect>
-                          <circle cx="4" cy="4" r="2"></circle>
+                          <circle r="2" cx="4" cy="4"></circle>
                         </svg>
                       </div>
                     </a>
                     <a href="#">
                       <div aria-label="Email">
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 24 24"
                           fill="none"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
                           stroke="currentColor"
+                          viewBox="0 0 24 24"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -350,7 +350,7 @@ const Team = (props) => {
         </section>
         <section className="team-structure">
           <div className="structure-container">
-            <h2 className="section-title text-center">
+            <h2 className="text-center section-title">
               Organizational Departments
             </h2>
             <div className="accordion-group">
@@ -360,12 +360,12 @@ const Team = (props) => {
                     Solar &amp; Energy Solutions
                   </span>
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -395,12 +395,12 @@ const Team = (props) => {
                     Engineering &amp; Technical Operations
                   </span>
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -430,12 +430,12 @@ const Team = (props) => {
                     Real Estate &amp; Property Management
                   </span>
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -463,7 +463,7 @@ const Team = (props) => {
         </section>
         <section className="featured-experts">
           <div className="experts-container">
-            <h2 className="section-title text-center">
+            <h2 className="text-center section-title">
               Meet The Experts Behind Our Success
             </h2>
             <div className="experts-horizontal-scroll">
@@ -473,8 +473,8 @@ const Team = (props) => {
                 </div>
                 <div className="expert-card-inner">
                   <img
-                    src="https://images.pexels.com/photos/15010364/pexels-photo-15010364.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
                     alt="Solar Engineer"
+                    src="https://images.pexels.com/photos/15010364/pexels-photo-15010364.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
                     className="expert-img"
                   />
                   <div className="expert-details">
@@ -493,8 +493,8 @@ const Team = (props) => {
                 </div>
                 <div className="expert-card-inner">
                   <img
-                    src="https://images.pexels.com/photos/20433881/pexels-photo-20433881.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
                     alt="Project Manager"
+                    src="https://images.pexels.com/photos/20433881/pexels-photo-20433881.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
                     className="expert-img"
                   />
                   <div className="expert-details">
@@ -513,8 +513,8 @@ const Team = (props) => {
                 </div>
                 <div className="expert-card-inner">
                   <img
-                    src="https://images.pexels.com/photos/32388465/pexels-photo-32388465.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
                     alt="Property Consultant"
+                    src="https://images.pexels.com/photos/32388465/pexels-photo-32388465.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
                     className="expert-img"
                   />
                   <div className="expert-details">
@@ -532,17 +532,17 @@ const Team = (props) => {
         </section>
         <section className="core-values">
           <div className="values-container">
-            <h2 className="section-title text-center">Our Core Values</h2>
+            <h2 className="text-center section-title">Our Core Values</h2>
             <div className="values-grid">
               <div className="value-card">
                 <div className="value-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -559,12 +559,12 @@ const Team = (props) => {
               <div className="value-card">
                 <div className="value-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -581,12 +581,12 @@ const Team = (props) => {
               <div className="value-card">
                 <div className="value-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -594,10 +594,10 @@ const Team = (props) => {
                     <rect
                       x="2"
                       y="7"
-                      width="20"
-                      height="14"
                       rx="2"
                       ry="2"
+                      width="20"
+                      height="14"
                     ></rect>
                     <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                   </svg>
@@ -610,18 +610,18 @@ const Team = (props) => {
               <div className="value-card">
                 <div className="value-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
                     <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="9" cy="7" r="4"></circle>
+                    <circle r="4" cx="9" cy="7"></circle>
                     <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                     <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                   </svg>
@@ -635,12 +635,12 @@ const Team = (props) => {
               <div className="value-card">
                 <div className="value-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -657,12 +657,12 @@ const Team = (props) => {
               <div className="value-card">
                 <div className="value-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -689,10 +689,10 @@ const Team = (props) => {
               commitment to innovation, sustainability, and excellence.
             </p>
             <div className="join-btns">
-              <button className="btn btn-primary btn-lg">
+              <button className="btn-primary btn btn-lg">
                 Submit Application
               </button>
-              <button className="btn btn-lg btn-outline">
+              <button className="btn-outline btn btn-lg">
                 View Opportunities
               </button>
             </div>
@@ -700,7 +700,7 @@ const Team = (props) => {
         </section>
         <section className="team-testimonials">
           <div className="page-testimonials-container">
-            <h2 className="section-title text-center">
+            <h2 className="text-center section-title">
               What Clients Say About Working With Our Team
             </h2>
             <div className="testimonial-slider">
@@ -714,8 +714,8 @@ const Team = (props) => {
                 </div>
                 <div className="page-testimonial-author">
                   <img
-                    src="https://images.pexels.com/photos/15389268/pexels-photo-15389268.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
                     alt="Client"
+                    src="https://images.pexels.com/photos/15389268/pexels-photo-15389268.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
                     className="page-author-img"
                   />
                   <div className="author-info">
@@ -740,12 +740,12 @@ const Team = (props) => {
               </p>
               <div className="prefooter-btns">
                 <a href="#">
-                  <div className="btn btn-lg btn-accent">
+                  <div className="btn-accent btn btn-lg">
                     <span>Contact Us</span>
                   </div>
                 </a>
                 <a href="#">
-                  <div className="btn btn-lg btn-outline">
+                  <div className="btn-outline btn btn-lg">
                     <span>Request Consultation</span>
                   </div>
                 </a>
@@ -756,11 +756,11 @@ const Team = (props) => {
         <a href="https://wa.me/2340000000000">
           <div aria-label="Chat on WhatsApp" className="page-whatsapp-float">
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
               width="32"
+              xmlns="http://www.w3.org/2000/svg"
               height="32"
               viewBox="0 0 24 24"
-              fill="currentColor"
             >
               <path d="M12.031 6.172c-2.32 0-4.591.908-6.23 2.558a8.811 8.811 0 0 0-2.558 6.226c0 1.548.42 3.03 1.213 4.316l-1.29 4.708 4.82-1.265A8.775 8.775 0 0 0 12.03 24c4.856 0 8.811-3.954 8.811-8.811 0-4.857-3.955-8.811-8.81-8.811zm5.758 12.425c-.244.688-1.42 1.25-1.946 1.336-.527.085-1.022.126-2.88-.614-2.22-.888-3.655-3.142-3.766-3.29-.111-.149-.906-1.205-.906-2.298 0-1.093.573-1.631.777-1.855.204-.224.446-.28.594-.28.148 0 .296.002.425.01.135.006.315-.052.493.376.182.44.62 1.512.673 1.623.054.111.09.24.016.39-.074.15-.111.24-.22.37-.11.13-.23.29-.328.39-.11.11-.225.23-.096.45.13.22.576.95 1.238 1.54.853.76 1.57.994 1.793 1.104.223.111.353.093.484-.056.13-.149.558-.65.706-.873.149-.224.297-.186.494-.112.197.074 1.25.59 1.464.7.214.11.357.166.41.257.053.09.053.52-.19.1.208z"></path>
             </svg>

@@ -150,6 +150,15 @@ const Footer = (props) => {
                       </li>
                     </a>
                   </Link>
+                  <Link href="/about-us">
+                    <a>
+                      <li className="footer-li13">
+                        <div className="footer-link">
+                          <span>About Us</span>
+                        </div>
+                      </li>
+                    </a>
+                  </Link>
                   <li>
                     <a href="#">
                       <div className="footer-link">
@@ -376,7 +385,7 @@ const Footer = (props) => {
                 href="https://www.volues.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="footer-link29"
+                className="footer-link30"
               >
                 <div
                   rel="noopener noreferrer"
@@ -459,6 +468,9 @@ const Footer = (props) => {
           .footer-li12 {
             text-decoration: none;
           }
+          .footer-li13 {
+            text-decoration: none;
+          }
           .footer-thq-footer-contact-item-elm2 {
             text-decoration: none;
           }
@@ -499,7 +511,7 @@ const Footer = (props) => {
             line-height: 1.5;
             letter-spacing: 0.04em;
           }
-          .footer-link29 {
+          .footer-link30 {
             display: contents;
           }
           .footer-container2 {

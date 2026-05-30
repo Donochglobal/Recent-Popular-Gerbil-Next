@@ -27,37 +27,56 @@ const AboutUs = (props) => {
           />
         </Head>
         <Navigation></Navigation>
-        <section id="home" className="page-hero-slider1">
-          <div id="mainHeroSlider" className="slider-container">
-            <div data-index="0" className="page-slide active">
-              <div className="page-slide-media">
+        <section id="hero" className="page-hero-slider3">
+          <div className="page-hero-slides-container1">
+            <div data-slide="1" className="page-hero-slide2 active">
+              <div className="hero-bg-media">
                 <video
                   autoPlay="true"
                   muted="true"
                   loop="true"
                   playsInline="true"
-                  poster="https://images.pexels.com/videos/9790192/pictures/preview-0.jpeg"
-                  src="https://videos.pexels.com/video-files/9790192/9790192-hd_1280_720_30fps.mp4"
+                  src="https://videos.pexels.com/video-files/26547062/11958297_640_360_30fps.mp4"
+                  className="hero-video"
                 ></video>
-                <div className="slide-overlay"></div>
+                <div className="page-hero-overlay2"></div>
               </div>
-              <div className="page-slide-content">
-                <div className="content-inner">
-                  <h1 className="page-hero-title2 hero-title">
-                    Powering Homes &amp; Building Futures
+              <div className="page-hero-content-wrapper">
+                <div className="page-hero-text-content">
+                  <h1 className="page-hero-title5 hero-title">
+                    <span>
+                      {' '}
+                      Building Sustainable Energy.
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                    <br></br>
+                    <span>
+                      {' '}
+                      Creating Lasting Value.
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
                   </h1>
-                  <p className="hero-subtitle">
-                    DON OCH GLOBAL delivers premium solar energy solutions while
-                    Lemoex Properties helps clients secure quality lands and
-                    housing investments.
+                  <p className="page-hero-subtitle1 hero-subtitle">
+                    DON OCH Global delivers reliable solar energy solutions,
+                    infrastructure services, and real estate opportunities that
+                    empower homes, businesses, institutions, and communities
+                    across Nigeria.
                   </p>
-                  <div className="page-hero-actions">
+                  <div className="page-hero-cta-group1">
                     <a href="#services">
                       <div className="btn btn-primary btn-lg">
                         <span>Explore Solar Solutions</span>
                       </div>
                     </a>
-                    <a href="#lemoex">
+                    <a href="#properties">
                       <div className="btn btn-lg btn-outline">
                         <span>Explore Properties</span>
                       </div>
@@ -66,26 +85,26 @@ const AboutUs = (props) => {
                 </div>
               </div>
             </div>
-            <div data-index="1" className="page-slide">
-              <div className="page-slide-media">
+            <div data-slide="2" className="page-hero-slide2">
+              <div className="hero-bg-media">
                 <img
-                  src="https://images.pexels.com/photos/35454189/pexels-photo-35454189.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                  alt="Reliable Solar Energy"
+                  src="https://images.pexels.com/photos/9799766/pexels-photo-9799766.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  alt="Solar Infrastructure"
+                  className="hero-image"
                 />
-                <div className="slide-overlay"></div>
-                <div className="sunlight-effect"></div>
+                <div className="page-hero-overlay2"></div>
               </div>
-              <div className="page-slide-content">
-                <div className="content-inner">
-                  <h2 className="page-hero-title2 hero-title">
+              <div className="page-hero-content-wrapper">
+                <div className="page-hero-text-content">
+                  <h2 className="page-hero-title5 hero-title">
                     Reliable Solar Energy For Homes &amp; Industries
                   </h2>
-                  <p className="hero-subtitle">
+                  <p className="page-hero-subtitle1 hero-subtitle">
                     Installation of solar systems, lithium batteries, inverters,
                     electric fencing, CCTV systems and industrial energy
                     solutions.
                   </p>
-                  <div className="page-hero-actions">
+                  <div className="page-hero-cta-group1">
                     <a href="#contact">
                       <div className="btn btn-lg btn-accent">
                         <span>Get Free Consultation</span>
@@ -100,26 +119,27 @@ const AboutUs = (props) => {
                 </div>
               </div>
             </div>
-            <div data-index="2" className="page-slide">
-              <div className="page-slide-media">
+            <div data-slide="3" className="page-hero-slide2">
+              <div className="hero-bg-media">
                 <img
-                  src="https://images.pexels.com/photos/34823930/pexels-photo-34823930.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                  alt="Smart Property Investments"
+                  src="https://images.pexels.com/photos/36622005/pexels-photo-36622005.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  alt="Luxury Real Estate"
+                  className="hero-image"
                 />
-                <div className="slide-overlay"></div>
+                <div className="page-hero-overlay2"></div>
               </div>
-              <div className="page-slide-content">
-                <div className="content-inner">
-                  <h2 className="page-hero-title2 hero-title">
+              <div className="page-hero-content-wrapper">
+                <div className="page-hero-text-content">
+                  <h2 className="page-hero-title5 hero-title">
                     Smart Property Investments With Lemoex Properties
                   </h2>
-                  <p className="hero-subtitle">
+                  <p className="page-hero-subtitle1 hero-subtitle">
                     Affordable lands, housing projects, real estate development
                     and trusted property investment opportunities.
                   </p>
-                  <div className="page-hero-actions">
-                    <a href="#lemoex">
-                      <div className="btn btn-primary btn-lg">
+                  <div className="page-hero-cta-group1">
+                    <a href="#properties">
+                      <div className="btn btn-lg btn-secondary">
                         <span>View Properties</span>
                       </div>
                     </a>
@@ -133,124 +153,167 @@ const AboutUs = (props) => {
               </div>
             </div>
           </div>
-          <div className="page-slider-nav">
+          <div className="page-hero-controls">
             <button
-              data-slide="0"
-              aria-label="Slide 1"
-              className="page-nav-dot active"
-            ></button>
+              id="heroPrev"
+              aria-label="Previous Slide"
+              className="page-hero-nav-btn prev"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </button>
+            <div className="hero-indicators">
+              <span data-index="0" className="indicator active"></span>
+              <span data-index="1" className="indicator"></span>
+              <span data-index="2" className="indicator"></span>
+            </div>
             <button
-              data-slide="1"
-              aria-label="Slide 2"
-              className="page-nav-dot"
-            ></button>
-            <button
-              data-slide="2"
-              aria-label="Slide 3"
-              className="page-nav-dot"
-            ></button>
+              id="heroNext"
+              aria-label="Next Slide"
+              className="page-hero-nav-btn next"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
           </div>
         </section>
-        <section id="about" className="page-about-section about-section">
-          <div className="page-container">
-            <div className="page-about-grid">
-              <div className="about-content">
-                <h2 className="section-title">About DON OCH GLOBAL</h2>
-                <p className="section-content">
-                  DON OCH Global is a leading energy and infrastructure company
-                  headquartered in Abuja, Nigeria. We operate at the
-                  intersection of sustainability, technology, and modern living,
-                  delivering world-class solutions across renewable energy, CCTV
-                  security, and smart home automation.
-                </p>
-                <div className="page-stats-grid1">
-                  <div className="page-stat-card">
-                    <span data-target="500" className="page-stat-number2">
+        <section id="about" className="page-about-section2 about-section">
+          <div className="container-max">
+            <div className="page-about-grid2">
+              <div className="about-visual">
+                <div className="page-about-image-stack">
+                  <img
+                    src="https://images.pexels.com/photos/8457866/pexels-photo-8457866.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    alt="Project Delivery"
+                    className="about-img-main"
+                  />
+                  <div className="about-experience-badge">
+                    <span data-target="15" className="page-badge-number">
                       0
                     </span>
-                    <span className="page-stat-label1 stat-label">
-                      Projects Completed
-                    </span>
-                  </div>
-                  <div className="page-stat-card">
-                    <span data-target="150" className="page-stat-number2">
-                      0
-                    </span>
-                    <span className="page-stat-label1 stat-label">
-                      Solar MW Installed
-                    </span>
-                  </div>
-                  <div className="page-stat-card">
-                    <span data-target="1200" className="page-stat-number2">
-                      0
-                    </span>
-                    <span className="page-stat-label1 stat-label">
-                      Happy Clients
-                    </span>
-                  </div>
-                  <div className="page-stat-card">
-                    <span data-target="15" className="page-stat-number2">
-                      0
-                    </span>
-                    <span className="page-stat-label1 stat-label">
-                      Years Experience
-                    </span>
+                    <span className="page-badge-text">Years of Excellence</span>
                   </div>
                 </div>
               </div>
-              <div className="vision-mission-grid">
-                <div className="glass-card vision-card">
-                  <div className="page-card-icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"
-                      ></path>
-                      <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
-                    </svg>
+              <div className="about-content-area">
+                <span className="section-subtitle">WHO WE ARE</span>
+                <h2 className="section-title">
+                  A Trusted Partner For Energy &amp; Infrastructure Growth
+                </h2>
+                <p className="section-content">
+                  DON OCH Global is a forward-thinking energy and infrastructure
+                  company committed to providing innovative solar solutions,
+                  professional project delivery, and strategic real estate
+                  opportunities. With a focus on quality, sustainability, and
+                  customer satisfaction, we help individuals, businesses,
+                  institutions, and organizations achieve energy independence
+                  and long-term value creation.
+                </p>
+                <div className="page-about-stats-grid">
+                  <div className="page-stat-card1">
+                    <span data-target="100" className="page-stat-number5">
+                      0
+                    </span>
+                    <span className="stat-suffix">+</span>
+                    <span className="page-stat-label3 stat-label">
+                      Projects Supported
+                    </span>
                   </div>
-                  <h3>VISION</h3>
-                  <p>
-                    To become Africa’s most trusted and innovative energy and
-                    infrastructure brand.
-                  </p>
+                  <div className="page-stat-card1">
+                    <span data-target="500" className="page-stat-number5">
+                      0
+                    </span>
+                    <span className="stat-suffix">+</span>
+                    <span className="page-stat-label3 stat-label">
+                      Customers Served
+                    </span>
+                  </div>
+                  <div className="page-stat-card1">
+                    <span data-target="100" className="page-stat-number5">
+                      0
+                    </span>
+                    <span className="stat-suffix">%</span>
+                    <span className="page-stat-label3 stat-label">
+                      Commitment
+                    </span>
+                  </div>
                 </div>
-                <div className="glass-card mission-card">
-                  <div className="page-card-icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <g
+                <div className="about-mission-vision">
+                  <div className="mv-card">
+                    <div className="mv-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
+                        strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        strokeWidth="2"
                       >
-                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8c0 5.5-4.78 10-10 10"></path>
-                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
-                      </g>
-                    </svg>
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                    </div>
+                    <div className="mv-text">
+                      <h3 className="mv-title">Our Vision</h3>
+                      <p>
+                        To become a leading force in sustainable energy,
+                        infrastructure development, and real estate innovation
+                        across Africa.
+                      </p>
+                    </div>
                   </div>
-                  <h3>MISSION</h3>
-                  <p>
-                    To provide world-class renewable energy, smart
-                    infrastructure, and real estate solutions through
-                    innovation, integrity, technical excellence, and
-                    customer-centered service delivery.
-                  </p>
+                  <div className="mv-card">
+                    <div className="mv-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                      </svg>
+                    </div>
+                    <div className="mv-text">
+                      <h3 className="mv-title">Our Mission</h3>
+                      <p>
+                        To deliver reliable, innovative, and customer-focused
+                        solutions that improve lives and support sustainable
+                        economic growth.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -258,123 +321,185 @@ const AboutUs = (props) => {
         </section>
         <section
           id="services"
-          className="page-services-section services-section"
+          className="page-services-section2 services-section"
         >
-          <div className="page-container">
-            <div className="section-header">
-              <h2 className="section-title">Our Premium Services</h2>
-              <p className="section-subtitle">
-                Excellence in Energy, Security, and Real Estate
-              </p>
+          <div className="container-max">
+            <div className="text-center-wrapper">
+              <span className="section-subtitle">WHAT WE DO</span>
+              <h2 className="section-title">
+                Premium Energy &amp; Infrastructure Services
+              </h2>
             </div>
-            <div className="page-services-grid2">
-              <div className="page-service-card2 glass-card">
-                <div className="page-service-icon2">
+            <div className="page-services-grid4">
+              <div className="page-service-card4">
+                <div className="page-service-icon4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
+                    width="32"
+                    height="32"
                     viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   >
-                    <path
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4.28 14h15.44a1 1 0 0 0 .97-1.243l-1.5-6A1 1 0 0 0 18.22 6H5.78a1 1 0 0 0-.97.757l-1.5 6A1 1 0 0 0 4.28 14M4 10h16M10 6l-1 8m5-8l1 8m-3 0v4m-5 0h10"
-                    ></path>
+                    <path d="M11 2h2m1.28 12l-4.56 8M21 22l-1.558-4H4.558M3 10v2"></path>
+                    <path d="M6.245 15.04A2 2 0 0 1 8 14h12a1 1 0 0 1 .864 1.505l-3.11 5.457A2 2 0 0 1 16 22H4a1 1 0 0 1-.863-1.506zM7 2a4 4 0 0 1-4 4m5.66 1.66l1.41 1.41"></path>
                   </svg>
                 </div>
-                <h3>Residential Solar</h3>
-                <p>Reliable clean energy for your home with 24/7 support.</p>
-                <a href="#contact">
-                  <div className="btn-link">
-                    <span>Learn More</span>
-                  </div>
-                </a>
-              </div>
-              <div className="page-service-card2 glass-card">
-                <div className="page-service-icon2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 6.28v11.44a1 1 0 0 0 1.243.97l6-1.5a1 1 0 0 0 .757-.97V7.78a1 1 0 0 0-.757-.97l-6-1.5A1 1 0 0 0 4 6.28M8 6v12m4-6H4m16-5l-3 5h4l-3 5"
-                    ></path>
-                  </svg>
-                </div>
-                <h3>Commercial Solar</h3>
-                <p>
-                  Optimize your business operations with industrial-grade
-                  energy.
+                <h3 className="service-name">Residential Solar</h3>
+                <p className="service-desc">
+                  Complete home solar installations tailored to your
+                  family&apos;s energy needs and budget.
                 </p>
-                <a href="#contact">
+                <a href="#">
                   <div className="btn-link">
                     <span>Learn More</span>
                   </div>
                 </a>
               </div>
-              <div className="page-service-card2 glass-card">
-                <div className="page-service-icon2">
+              <div className="page-service-card4">
+                <div className="page-service-icon4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
+                    width="32"
+                    height="32"
                     viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   >
-                    <g
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                    >
-                      <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
-                      <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                    </g>
+                    <path d="M4 6.28v11.44a1 1 0 0 0 1.243.97l6-1.5a1 1 0 0 0 .757-.97V7.78a1 1 0 0 0-.757-.97l-6-1.5A1 1 0 0 0 4 6.28M8 6v12m4-6H4m16-5l-3 5h4l-3 5"></path>
                   </svg>
                 </div>
-                <h3>Smart Homes</h3>
-                <p>Intelligent automation for modern living and convenience.</p>
-                <a href="#contact">
-                  <div className="btn-link">
-                    <span>Learn More</span>
-                  </div>
-                </a>
-              </div>
-              <div className="page-service-card2 glass-card">
-                <div className="page-service-icon2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
-                    ></path>
-                  </svg>
-                </div>
-                <h3>CCTV &amp; Security</h3>
-                <p>
-                  Advanced surveillance and perimeter fencing for total peace of
-                  mind.
+                <h3 className="service-name">Commercial Solar</h3>
+                <p className="service-desc">
+                  Scalable energy solutions for businesses to reduce overheads
+                  and ensure 24/7 power.
                 </p>
-                <a href="#contact">
+                <a href="#">
+                  <div className="btn-link">
+                    <span>Learn More</span>
+                  </div>
+                </a>
+              </div>
+              <div className="page-service-card4">
+                <div className="page-service-icon4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M22 14v-4"></path>
+                    <rect width="16" height="12" x="2" y="6" rx="2"></rect>
+                  </svg>
+                </div>
+                <h3 className="service-name">Lithium Battery Supply</h3>
+                <p className="service-desc">
+                  High-performance energy storage units with long lifespans for
+                  consistent power backup.
+                </p>
+                <a href="#">
+                  <div className="btn-link">
+                    <span>Learn More</span>
+                  </div>
+                </a>
+              </div>
+              <div className="page-service-card4">
+                <div className="page-service-icon4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M5 12H3l9-9l9 9h-2M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"></path>
+                    <path d="M9 21v-6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6"></path>
+                  </svg>
+                </div>
+                <h3 className="service-name">Smart Home Integration</h3>
+                <p className="service-desc">
+                  Automated energy management systems for the ultimate modern
+                  living experience.
+                </p>
+                <a href="#">
+                  <div className="btn-link">
+                    <span>Learn More</span>
+                  </div>
+                </a>
+              </div>
+              <div className="page-service-card4">
+                <div className="page-service-icon4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="5"
+                      ry="5"
+                    ></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </div>
+                <h3 className="service-name">CCTV Installation</h3>
+                <p className="service-desc">
+                  Professional security surveillance systems for comprehensive
+                  property protection.
+                </p>
+                <a href="#">
+                  <div className="btn-link">
+                    <span>Learn More</span>
+                  </div>
+                </a>
+              </div>
+              <div className="page-service-card4">
+                <div className="page-service-icon4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                  </svg>
+                </div>
+                <h3 className="service-name">Electric Fencing</h3>
+                <p className="service-desc">
+                  Secure your perimeter with high-voltage, reliable electric
+                  fencing solutions.
+                </p>
+                <a href="#">
                   <div className="btn-link">
                     <span>Learn More</span>
                   </div>
@@ -383,407 +508,517 @@ const AboutUs = (props) => {
             </div>
           </div>
         </section>
-        <section id="lemoex" className="lemoex-subsidiary">
-          <div className="lemoex-bg">
-            <img
-              src="https://images.pexels.com/photos/27938900/pexels-photo-27938900.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-              alt="Luxury Real Estate"
-            />
-            <div className="lemoex-scrim"></div>
+        <section
+          id="products"
+          className="page-products-section products-section"
+        >
+          <div className="container-max">
+            <div className="flex-row-between">
+              <h2 className="section-title">Hardware Showcase</h2>
+              <div className="carousel-nav">
+                <button id="prodPrev" className="prev carousel-btn">
+                  ←
+                </button>
+                <button id="prodNext" className="next carousel-btn">
+                  →
+                </button>
+              </div>
+            </div>
+            <div className="page-products-carousel-wrapper">
+              <div id="productSlider" className="products-carousel">
+                <div className="page-product-card2">
+                  <div className="product-img-box">
+                    <img
+                      src="https://images.pexels.com/photos/9800003/pexels-photo-9800003.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                      alt="Solar Panels"
+                    />
+                  </div>
+                  <div className="page-product-info1">
+                    <h4 className="page-product-title">Premium Solar Panels</h4>
+                    <p className="product-specs">
+                      High-efficiency monocrystalline cells.
+                    </p>
+                    <button className="btn btn-primary btn-sm">
+                      Quick Inquiry
+                    </button>
+                  </div>
+                </div>
+                <div className="page-product-card2">
+                  <div className="product-img-box">
+                    <img
+                      src="https://images.pexels.com/photos/159243/solar-solar-cells-photovoltaic-environmentally-friendly-159243.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                      alt="Inverters"
+                    />
+                  </div>
+                  <div className="page-product-info1">
+                    <h4 className="page-product-title">
+                      Smart Hybrid Inverters
+                    </h4>
+                    <p className="product-specs">
+                      Pure sine wave with Wi-Fi monitoring.
+                    </p>
+                    <button className="btn btn-primary btn-sm">
+                      Quick Inquiry
+                    </button>
+                  </div>
+                </div>
+                <div className="page-product-card2">
+                  <div className="product-img-box">
+                    <img
+                      src="https://images.pexels.com/photos/9799767/pexels-photo-9799767.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                      alt="Batteries"
+                    />
+                  </div>
+                  <div className="page-product-info1">
+                    <h4 className="page-product-title">Lithium-Ion Storage</h4>
+                    <p className="product-specs">
+                      5kWh Deep cycle energy wall.
+                    </p>
+                    <button className="btn btn-primary btn-sm">
+                      Quick Inquiry
+                    </button>
+                  </div>
+                </div>
+                <div className="page-product-card2">
+                  <div className="product-img-box">
+                    <img
+                      src="https://images.pexels.com/photos/9799742/pexels-photo-9799742.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                      alt="Street Lights"
+                    />
+                  </div>
+                  <div className="page-product-info1">
+                    <h4 className="page-product-title">Solar Street Lights</h4>
+                    <p className="product-specs">
+                      All-in-one motion sensing LED.
+                    </p>
+                    <button className="btn btn-primary btn-sm">
+                      Quick Inquiry
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="page-container lemoex-container">
-            <div className="lemoex-header">
-              <span className="page-lemoex-tag">Subsidiary Brand</span>
-              <h2 className="section-title">
+        </section>
+        <section id="properties" className="properties-section">
+          <div className="container-max">
+            <div className="properties-header">
+              <div className="brand-badge">
+                <span>LEMOEX PROPERTIES</span>
+              </div>
+              <h2 className="text-gold section-title">
                 Lemoex Properties — Building Dreams Through Smart Investments
               </h2>
               <p className="section-content">
-                Experience the pinnacle of real estate investment with Lemoex
-                Properties. From strategic land acquisitions to luxury housing
-                developments, we provide high-yield opportunities for discerning
-                investors.
+                Strategic real estate opportunities that deliver long-term value
+                and security.
               </p>
             </div>
-            <div className="lemoex-features">
-              <div className="lemoex-feature-item">
-                <div className="feature-dot"></div>
-                <div className="feature-text">
-                  <h4>Property Brokerage</h4>
-                  <p>Trusted mediation for lands and homes.</p>
+            <div className="page-property-grid">
+              <div className="property-card large">
+                <img
+                  src="https://images.pexels.com/photos/37845135/pexels-photo-37845135.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  alt="Land Sales"
+                />
+                <div className="property-overlay">
+                  <h3 className="property-name">Strategic Land Sales</h3>
+                  <p>Verified lands in prime Abuja locations.</p>
+                  <button className="btn btn-accent">View Details</button>
                 </div>
               </div>
-              <div className="lemoex-feature-item">
-                <div className="feature-dot"></div>
-                <div className="feature-text">
-                  <h4>Development</h4>
-                  <p>Architectural excellence in modern housing.</p>
+              <div className="page-property-stats">
+                <div className="page-p-stat">
+                  <span className="p-stat-val">20+</span>
+                  <span className="p-stat-lbl">Active Estates</span>
+                </div>
+                <div className="page-p-stat">
+                  <span className="p-stat-val">1.2k+</span>
+                  <span className="p-stat-lbl">Happy Landowners</span>
+                </div>
+                <div className="page-p-stat">
+                  <span className="p-stat-val">100%</span>
+                  <span className="p-stat-lbl">Verified Titles</span>
                 </div>
               </div>
-              <div className="lemoex-feature-item">
-                <div className="feature-dot"></div>
-                <div className="feature-text">
-                  <h4>Management</h4>
-                  <p>Professional oversight of high-value assets.</p>
-                </div>
-              </div>
-            </div>
-            <div className="lemoex-cta">
-              <button id="openLemoexModal" className="btn btn-accent btn-xl">
-                View Available Properties
-              </button>
-              <button className="btn btn-outline btn-xl">
-                Book Inspection
-              </button>
             </div>
           </div>
         </section>
-        <section className="ceo-message">
-          <div className="page-container">
-            <div className="page-ceo-grid1">
-              <div className="page-ceo-image">
-                <img
-                  src="https://images.pexels.com/photos/27938904/pexels-photo-27938904.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                  alt="CEO Portrait"
-                />
-                <div className="ceo-frame"></div>
+        <section className="page-ceo-section ceo-section">
+          <div className="container-max">
+            <div className="ceo-layout">
+              <div className="ceo-visual">
+                <div className="page-ceo-frame1">
+                  <img
+                    src="https://images.pexels.com/photos/22601673/pexels-photo-22601673.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    alt="CEO Portrait"
+                    className="ceo-img"
+                  />
+                </div>
               </div>
-              <div className="ceo-text">
+              <div className="ceo-content">
+                <span className="section-subtitle">LEADERSHIP VISION</span>
                 <h2 className="section-title">Message From The CEO</h2>
-                <blockquote className="ceo-quote">
+                <blockquote className="page-ceo-quote1">
                   <span>
-                    &quot;As a modern African enterprise with global ambitions,
-                    DON OCH Global continues to position itself as a premium
-                    brand in energy, infrastructure, and real estate. Our
-                    commitment to innovation and technical excellence drives
-                    every project we undertake.&quot;
+                    &quot;At DON OCH Global, we are committed to building
+                    sustainable solutions that empower communities, strengthen
+                    businesses, and create lasting value for future generations.
+                    Our goal is to remain a trusted partner for energy
+                    independence, infrastructure growth, and real estate
+                    development through innovation, professionalism, and
+                    integrity.&quot;
                   </span>
                 </blockquote>
-                <div className="page-ceo-signature1">
-                  <span className="page-signature-font signature-font">
-                    Don Och
+                <div className="page-ceo-signature3">
+                  <span className="page-ceo-name2 ceo-name">
+                    Executive Director
                   </span>
-                  <span className="page-ceo-name ceo-name">Engr. Don Och</span>
-                  <span className="ceo-title">
-                    Founder &amp; CEO, DON OCH GLOBAL
-                  </span>
+                  <span className="ceo-brand">DON OCH GLOBAL</span>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="sustainability-section dark-theme">
-          <div className="page-container">
-            <div className="sustainability-grid">
-              <div className="sustainability-info">
-                <h2 className="section-title">
-                  Our Commitment to Sustainability
-                </h2>
-                <p className="section-content">
-                  We are pioneering a greener future for Nigeria and beyond. Our
-                  infrastructure is built with environmental longevity in mind.
-                </p>
-                <ul className="sustainability-list">
-                  <li>
-                    <span>Clean Energy Integration</span>
-                  </li>
-                  <li>
-                    <span>Green Technology Innovation</span>
-                  </li>
-                  <li>
-                    <span>Sustainable Smart Communities</span>
-                  </li>
-                  <li>
-                    <span>Energy Independence Solutions</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="sustainability-visual">
-                <div className="glowing-orb"></div>
-                <svg
-                  viewBox="0 0 200 200"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="energy-wave"
-                >
-                  <path
-                    fill="var(--color-accent)"
-                    d="M44.7,-76.4C58.1,-69.2,69.2,-58.1,76.4,-44.7C83.7,-31.3,87.1,-15.7,87.1,0C87.1,15.7,83.7,31.3,76.4,44.7C69.2,58.1,58.1,69.2,44.7,76.4C31.3,83.7,15.7,87.1,0,87.1C-15.7,87.1,-31.3,83.7,-44.7,76.4C-58.1,69.2,-69.2,58.1,-76.4,44.7C-83.7,31.3,-87.1,15.7,-87.1,0C-87.1,-15.7,-83.7,-31.3,-76.4,-44.7C-69.2,-58.1,-58.1,-69.2,-44.7,-76.4C-31.3,-83.7,-15.7,-87.1,0,-87.1C15.7,-87.1,31.3,-83.7,44.7,-76.4Z"
-                    transform="translate(100 100)"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="contact" className="page-contact-section contact-section">
-          <div className="page-container">
-            <div className="page-contact-grid1">
-              <div className="contact-form-wrapper glass-card">
-                <h2 className="section-title">
-                  Let’s Build a Smarter Future Together
-                </h2>
-                <form
-                  action="/submit"
-                  method="POST"
-                  data-form-id="4cd90edb-7828-4005-a770-3d57dba47602"
-                  className="modern-form"
-                >
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      name="true"
-                      placeholder="Full Name"
-                      required="true"
-                      id="thq_true_G2pO"
-                      data-form-field-id="thq_true_G2pO"
-                      className="page-form-input1 form-input"
-                    />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Email Address"
-                      required="true"
-                      id="thq_email_h0tN"
-                      data-form-field-id="thq_email_h0tN"
-                      className="page-form-input1 form-input"
-                    />
-                  </div>
-                  <div className="form-group">
-                    <select
-                      name="interest"
-                      id="thq_interest_te6I"
-                      data-form-field-id="thq_interest_te6I"
-                      className="page-form-input1 form-input"
-                    >
-                      <option value="solar">Solar Solutions</option>
-                      <option value="realestate">Lemoex Properties</option>
-                      <option value="security">Security Systems</option>
-                    </select>
-                  </div>
-                  <div className="form-group">
-                    <textarea
-                      name="message"
-                      placeholder="Project Details"
-                      required="true"
-                      rows="4"
-                      id="thq_message_LdS4"
-                      data-form-field-id="thq_message_LdS4"
-                      className="page-form-input1 form-input"
-                    ></textarea>
-                  </div>
-                  <button
-                    type="submit"
-                    id="thq_button_aSuu"
-                    name="button"
-                    data-form-field-id="thq_button_aSuu"
-                    className="btn btn-primary btn-xl"
-                  >
-                    Request Quote
+                <div className="ceo-actions">
+                  <button className="btn btn-primary">Meet Our Team</button>
+                  <button className="btn btn-outline">
+                    Contact Leadership
                   </button>
-                </form>
+                </div>
               </div>
-              <div className="contact-info-wrapper">
-                <div className="page-info-card">
-                  <h3>Visit Our Office</h3>
-                  <p>Plot 45, Infrastructure Way, Abuja, Nigeria</p>
+            </div>
+          </div>
+        </section>
+        <section className="timeline-section">
+          <div className="container-max">
+            <div className="text-center-wrapper">
+              <h2 className="section-title">Our Journey</h2>
+            </div>
+            <div className="timeline-container">
+              <div className="timeline-line"></div>
+              <div className="page-timeline-item">
+                <div className="page-timeline-dot"></div>
+                <div className="timeline-content">
+                  <span className="timeline-year">Founded</span>
+                  <h4 className="timeline-title">Company Establishment</h4>
+                  <p>
+                    Laying the foundation for engineering excellence in Abuja.
+                  </p>
                 </div>
-                <div className="page-info-card">
-                  <h3>Contact Details</h3>
-                  <p>Phone: +234 800 DON OCH</p>
-                  <p>Email: info@donochglobal.com</p>
+              </div>
+              <div className="page-timeline-item">
+                <div className="page-timeline-dot"></div>
+                <div className="timeline-content">
+                  <span className="timeline-year">Expansion</span>
+                  <h4 className="timeline-title">Solar Solutions Division</h4>
+                  <p>
+                    Pioneering renewable energy installations across Nigeria.
+                  </p>
                 </div>
-                <div className="whatsapp-cta">
-                  <a href="https://wa.me/2340000000000">
-                    <div className="btn btn-lg btn-accent">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23c-1.48 0-2.93-.39-4.19-1.15l-.3-.17l-3.12.82l.83-3.04l-.2-.32a8.188 8.188 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24m-3.53 4.75c-.19 0-.52.07-.79.37c-.27.3-.84.82-.84 2s.87 2.35.99 2.51c.12.16 1.71 2.61 4.14 3.65c.58.25 1.03.4 1.38.51c.58.18 1.11.16 1.53.1c.47-.07 1.44-.59 1.64-1.15c.2-.56.2-1.04.14-1.15c-.06-.11-.22-.17-.47-.29c-.25-.12-1.44-.71-1.66-.8c-.22-.08-.38-.12-.54.12c-.16.24-.61.76-.75.91c-.14.15-.28.17-.53.05c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.15-.25-.02-.38.11-.5c.11-.11.25-.29.37-.44c.12-.14.17-.25.25-.41c.08-.17.04-.31-.02-.43c-.06-.11-.54-1.29-.74-1.77c-.19-.48-.39-.42-.54-.42"
-                        ></path>
-                      </svg>
-                      <span>
-                        {' '}
-                        Chat on WhatsApp
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: ' ',
-                          }}
-                        />
-                      </span>
+              </div>
+              <div className="page-timeline-item">
+                <div className="page-timeline-dot"></div>
+                <div className="timeline-content">
+                  <span className="timeline-year">Diversification</span>
+                  <h4 className="timeline-title">Lemoex Properties Launch</h4>
+                  <p>
+                    Venturing into strategic real estate and land development.
+                  </p>
+                </div>
+              </div>
+              <div className="page-timeline-item">
+                <div className="page-timeline-dot"></div>
+                <div className="timeline-content">
+                  <span className="timeline-year">Milestone</span>
+                  <h4 className="timeline-title">Major Project Completion</h4>
+                  <p>
+                    Successfully delivering 100+ large-scale infrastructure
+                    projects.
+                  </p>
+                </div>
+              </div>
+              <div className="page-timeline-item">
+                <div className="page-timeline-dot"></div>
+                <div className="timeline-content">
+                  <span className="timeline-year">Future</span>
+                  <h4 className="timeline-title">Pan-African Vision</h4>
+                  <p>Scaling our sustainable impact beyond national borders.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" className="page-contact-section1 contact-section">
+          <div className="container-max">
+            <div className="page-contact-grid2">
+              <div className="contact-info-panel">
+                <h2 className="section-title">Get In Touch</h2>
+                <p className="section-content">
+                  Ready to power your future? Contact our expert team today for
+                  a free consultation.
+                </p>
+                <div className="contact-methods">
+                  <div className="method-item">
+                    <span className="method-icon">📍</span>
+                    <div className="method-text">
+                      <strong>Office Address</strong>
+                      <p>Headquarters, Abuja, Nigeria</p>
+                    </div>
+                  </div>
+                  <div className="method-item">
+                    <span className="method-icon">📞</span>
+                    <div className="method-text">
+                      <strong>Call Us</strong>
+                      <p>+234 800 000 0000</p>
+                    </div>
+                  </div>
+                  <div className="method-item">
+                    <span className="method-icon">✉️</span>
+                    <div className="method-text">
+                      <strong>Email</strong>
+                      <p>info@donochglobal.com</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="social-links-large">
+                  <a href="#">
+                    <div className="social-link-item">
+                      <span>FB</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div className="social-link-item">
+                      <span>LI</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div className="social-link-item">
+                      <span>IG</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div className="social-link-item">
+                      <span>X</span>
                     </div>
                   </a>
                 </div>
               </div>
+              <div className="contact-form-panel">
+                <form
+                  action="#"
+                  method="POST"
+                  data-form-id="fc6534aa-e183-475d-b173-7b7731227ae3"
+                  className="lead-form"
+                >
+                  <div className="page-form-group1 form-group">
+                    <input
+                      type="text"
+                      placeholder="Full Name"
+                      required="true"
+                      id="thq_textinput_ePvV"
+                      name="textinput"
+                      data-form-field-id="thq_textinput_ePvV"
+                      className="page-form-input2 form-input"
+                    />
+                  </div>
+                  <div className="page-form-group1 form-group">
+                    <input
+                      type="email"
+                      placeholder="Email Address"
+                      required="true"
+                      id="thq_textinput_mwqO"
+                      name="textinput"
+                      data-form-field-id="thq_textinput_mwqO"
+                      className="page-form-input2 form-input"
+                    />
+                  </div>
+                  <div className="page-form-group1 form-group">
+                    <select
+                      required="true"
+                      id="thq_select_erZF"
+                      name="select"
+                      data-form-field-id="thq_select_erZF"
+                      className="page-form-input2 form-input"
+                    >
+                      <option value="true" disabled="true" selected="true">
+                        Select Service
+                      </option>
+                      <option value="solar">Solar Energy</option>
+                      <option value="properties">Real Estate</option>
+                      <option value="infrastructure">Infrastructure</option>
+                    </select>
+                  </div>
+                  <div className="page-form-group1 form-group">
+                    <textarea
+                      placeholder="Your Message"
+                      required="true"
+                      rows="4"
+                      id="thq_textarea_wrMI"
+                      name="textarea"
+                      data-form-field-id="thq_textarea_wrMI"
+                      className="page-form-input2 form-input"
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    id="thq_button_3hDn"
+                    name="button"
+                    data-form-field-id="thq_button_3hDn"
+                    className="btn btn-primary btn-xl"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </section>
-        <dialog id="lemoexModal" className="lemoex-dialog">
-          <div className="page-modal-content">
-            <button id="closeModal" className="close-btn">
-              ×
-            </button>
-            <h2 className="section-title">Available Properties</h2>
-            <div className="modal-grid">
-              <div className="property-mini-card">
-                <img
-                  src="https://images.pexels.com/photos/9875684/pexels-photo-9875684.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                  alt="Estate"
-                />
-                <h4>Greenview Estate</h4>
-                <p>Strategic lands in Abuja prime locations.</p>
-              </div>
-              <div className="property-mini-card">
-                <img
-                  src="https://images.pexels.com/photos/32652321/pexels-photo-32652321.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                  alt="Estate"
-                />
-                <h4>Solar Heights</h4>
-                <p>Modern smart-homes with full solar integration.</p>
-              </div>
+        <section className="pre-footer-cta">
+          <div className="container-max text-center">
+            <h2 className="page-hero-title5 hero-title">
+              Let&apos;s Build A Sustainable Future Together.
+            </h2>
+            <p className="page-hero-subtitle1 hero-subtitle">
+              Partner with DON OCH Global for reliable energy solutions,
+              infrastructure support, and strategic real estate opportunities.
+            </p>
+            <div className="page-cta-actions">
+              <button className="btn btn-lg btn-accent">
+                Request Consultation
+              </button>
+              <button className="btn btn-lg btn-outline">Contact Us</button>
             </div>
           </div>
-        </dialog>
-        <a href="https://wa.me/2340000000000">
+        </section>
+        <a
+          href="https://wa.me/2340000000000"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <div
-            aria-label="WhatsApp Contact"
-            className="page-floating-whatsapp1"
+            target="_blank"
+            aria-label="Chat on WhatsApp"
+            className="page-floating-whatsapp3"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
               height="32"
               viewBox="0 0 24 24"
+              fill="white"
             >
-              <path
-                fill="currentColor"
-                d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23c-1.48 0-2.93-.39-4.19-1.15l-.3-.17l-3.12.82l.83-3.04l-.2-.32a8.188 8.188 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24m-3.53 4.75c-.19 0-.52.07-.79.37c-.27.3-.84.82-.84 2s.87 2.35.99 2.51c.12.16 1.71 2.61 4.14 3.65c.58.25 1.03.4 1.38.51c.58.18 1.11.16 1.53.1c.47-.07 1.44-.59 1.64-1.15c.2-.56.2-1.04.14-1.15c-.06-.11-.22-.17-.47-.29c-.25-.12-1.44-.71-1.66-.8c-.22-.08-.38-.12-.54.12c-.16.24-.61.76-.75.91c-.14.15-.28.17-.53.05c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.15-.25-.02-.38.11-.5c.11-.11.25-.29.37-.44c.12-.14.17-.25.25-.41c.08-.17.04-.31-.02-.43c-.06-.11-.54-1.29-.74-1.77c-.19-.48-.39-.42-.54-.42"
-              ></path>
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
             </svg>
           </div>
         </a>
         <div className="about-us-container2">
           <div className="about-us-container3">
             <Script
-              html={`<script defer data-name="don-och-global-about">
+              html={`<script defer data-name="don-och-global-scripts">
 (function(){
-  // Hero Slider Functionality
-  const slides = document.querySelectorAll(".slide")
-  const dots = document.querySelectorAll(".nav-dot")
-  let currentSlide = 0
+  document.addEventListener("DOMContentLoaded", () => {
+    // Sticky Header Logic
+    const header = document.getElementById("header")
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        header.classList.add("scrolled")
+      } else {
+        header.classList.remove("scrolled")
+      }
+    })
 
-  function showSlide(index) {
-    slides.forEach((slide) => slide.classList.remove("active"))
-    dots.forEach((dot) => dot.classList.remove("active"))
+    // Hero Slider Logic
+    const slides = document.querySelectorAll(".hero-slide")
+    const indicators = document.querySelectorAll(".indicator")
+    const nextBtn = document.getElementById("heroNext")
+    const prevBtn = document.getElementById("heroPrev")
+    let currentSlide = 0
 
-    slides[index].classList.add("active")
-    dots[index].classList.add("active")
-    currentSlide = index
-  }
+    function showSlide(index) {
+      slides.forEach((s) => s.classList.remove("active"))
+      indicators.forEach((i) => i.classList.remove("active"))
 
-  dots.forEach((dot, index) => {
-    dot.addEventListener("click", () => showSlide(index))
-  })
+      slides[index].classList.add("active")
+      indicators[index].classList.add("active")
+      currentSlide = index
+    }
 
-  setInterval(() => {
-    let next = (currentSlide + 1) % slides.length
-    showSlide(next)
-  }, 6000)
+    nextBtn.addEventListener("click", () => {
+      let next = (currentSlide + 1) % slides.length
+      showSlide(next)
+    })
 
-  // Animated Counters
-  const stats = document.querySelectorAll(".stat-number")
-  const observerOptions = {
-    threshold: 0.5,
-  }
+    prevBtn.addEventListener("click", () => {
+      let prev = (currentSlide - 1 + slides.length) % slides.length
+      showSlide(prev)
+    })
 
-  const statsObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const target = parseInt(entry.target.getAttribute("data-target"))
-        let count = 0
-        const duration = 2000
-        const increment = target / (duration / 16)
+    // Auto-advance hero
+    setInterval(() => {
+      let next = (currentSlide + 1) % slides.length
+      showSlide(next)
+    }, 8000)
 
-        const timer = setInterval(() => {
-          count += increment
-          if (count >= target) {
-            entry.target.innerText = target + "+"
-            clearInterval(timer)
-          } else {
-            entry.target.innerText = Math.floor(count) + "+"
+    // Counter Animation Logic
+    const counters = document.querySelectorAll(".stat-number, .badge-number")
+    const counterObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const target = +entry.target.getAttribute("data-target")
+            let count = 0
+            const increment = target / 50
+            const updateCount = () => {
+              if (count < target) {
+                count += increment
+                entry.target.innerText = Math.ceil(count)
+                setTimeout(updateCount, 20)
+              } else {
+                entry.target.innerText = target
+              }
+            }
+            updateCount()
+            counterObserver.unobserve(entry.target)
           }
-        }, 16)
-        statsObserver.unobserve(entry.target)
+        })
+      },
+      { threshold: 0.5 }
+    )
+
+    counters.forEach((c) => counterObserver.observe(c))
+
+    // Product Carousel Basic Navigation
+    const slider = document.getElementById("productSlider")
+    const prodNext = document.getElementById("prodNext")
+    const prodPrev = document.getElementById("prodPrev")
+    let scrollPos = 0
+
+    prodNext.addEventListener("click", () => {
+      scrollPos += 320
+      if (scrollPos > slider.scrollWidth - slider.clientWidth) scrollPos = 0
+      slider.scrollTo({ left: scrollPos, behavior: "smooth" })
+    })
+
+    prodPrev.addEventListener("click", () => {
+      scrollPos -= 320
+      if (scrollPos < 0) scrollPos = slider.scrollWidth - slider.clientWidth
+      slider.scrollTo({ left: scrollPos, behavior: "smooth" })
+    })
+
+    // Mobile Menu Toggle (Simplified)
+    const mobileToggle = document.querySelector(".header-mobile-toggle")
+    mobileToggle.addEventListener("click", () => {
+      const nav = document.querySelector(".header-nav")
+      nav.style.display = nav.style.display === "flex" ? "none" : "flex"
+      if (nav.style.display === "flex") {
+        nav.style.position = "absolute"
+        nav.style.top = "100%"
+        nav.style.left = "0"
+        nav.style.width = "100%"
+        nav.style.background = "var(--color-primary)"
+        nav.style.padding = "20px"
+        document.querySelector(".header-menu").style.flexDirection = "column"
       }
     })
-  }, observerOptions)
-
-  stats.forEach((stat) => statsObserver.observe(stat))
-
-  // Modal Logic
-  const lemoexModal = document.getElementById("lemoexModal")
-  const openModalBtn = document.getElementById("openLemoexModal")
-  const closeModalBtn = document.getElementById("closeModal")
-
-  if (openModalBtn && lemoexModal) {
-    openModalBtn.addEventListener("click", () => {
-      lemoexModal.showModal()
-    })
-  }
-
-  if (closeModalBtn && lemoexModal) {
-    closeModalBtn.addEventListener("click", () => {
-      lemoexModal.close()
-    })
-
-    lemoexModal.addEventListener("click", (e) => {
-      if (e.target === lemoexModal) {
-        lemoexModal.close()
-      }
-    })
-  }
-
-  // Scroll Reveal Animation (Simple Implementation)
-  const revealElements = document.querySelectorAll(".glass-card, .service-card, .ceo-text")
-  const revealObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = "1"
-          entry.target.style.transform = "translateY(0)"
-        }
-      })
-    },
-    { threshold: 0.1 }
-  )
-
-  revealElements.forEach((el) => {
-    el.style.opacity = "0"
-    el.style.transform = "translateY(30px)"
-    el.style.transition = "all 0.6s ease-out"
-    revealObserver.observe(el)
   })
 })()
 </script>`}
-            ></Script>
-          </div>
-        </div>
-        <div className="about-us-container4">
-          <div className="about-us-container5">
-            <Script
-              html={`<style>
-        @keyframes pulse {from {opacity: 0.4;
-transform: scale(1);}
-to {opacity: 0.8;
-transform: scale(1.2);}}@keyframes orbFloat {from {transform: translate(-20px, -20px);}
-to {transform: translate(20px, 20px);}}@keyframes rotate {from {transform: rotate(0deg);}
-to {transform: rotate(360deg);}}
-        </style> `}
             ></Script>
           </div>
         </div>
@@ -799,12 +1034,6 @@ to {transform: rotate(360deg);}}
             display: none;
           }
           .about-us-container3 {
-            display: contents;
-          }
-          .about-us-container4 {
-            display: none;
-          }
-          .about-us-container5 {
             display: contents;
           }
         `}

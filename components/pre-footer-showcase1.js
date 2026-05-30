@@ -24,133 +24,133 @@ const PreFooterShowcase1 = (props) => {
           <div className="pre-footer-showcase__floating-icons">
             <div
               aria-hidden="true"
-              className="pre-footer-showcase__icon pre-footer-showcase__icon--1"
+              className="pre-footer-showcase__icon--1 pre-footer-showcase__icon"
             >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
                 width="24"
+                xmlns="http://www.w3.org/2000/svg"
                 height="24"
                 viewBox="0 0 24 24"
               >
                 <path
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
                   d="M4.28 14h15.44a1 1 0 0 0 .97-1.243l-1.5-6A1 1 0 0 0 18.22 6H5.78a1 1 0 0 0-.97.757l-1.5 6A1 1 0 0 0 4.28 14M4 10h16M10 6l-1 8m5-8l1 8m-3 0v4m-5 0h10"
-                ></path>
-              </svg>
-            </div>
-            <div
-              aria-hidden="true"
-              className="pre-footer-showcase__icon pre-footer-showcase__icon--2"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path
                   fill="none"
                   stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
                   strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <div
+              aria-hidden="true"
+              className="pre-footer-showcase__icon--2 pre-footer-showcase__icon"
+            >
+              <svg
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
                   d="m11 7l-3 5h4l-3 5m5.856-11H16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.935M22 14v-4M5.14 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2.936"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></path>
               </svg>
             </div>
             <div
               aria-hidden="true"
-              className="pre-footer-showcase__icon pre-footer-showcase__icon--3"
+              className="pre-footer-showcase__icon--3 pre-footer-showcase__icon"
             >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
                 width="24"
+                xmlns="http://www.w3.org/2000/svg"
                 height="24"
                 viewBox="0 0 24 24"
               >
                 <path
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
                   d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25m.75-12h9v9h-9z"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></path>
               </svg>
             </div>
             <div
               aria-hidden="true"
-              className="pre-footer-showcase__icon pre-footer-showcase__icon--4"
+              className="pre-footer-showcase__icon--4 pre-footer-showcase__icon"
             >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
                 width="24"
+                xmlns="http://www.w3.org/2000/svg"
                 height="24"
                 viewBox="0 0 24 24"
               >
                 <path
+                  d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-1.5M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819"
                   fill="none"
                   stroke="currentColor"
+                  strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-1.5M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819"
                 ></path>
               </svg>
             </div>
             <div
               aria-hidden="true"
-              className="pre-footer-showcase__icon pre-footer-showcase__icon--5"
+              className="pre-footer-showcase__icon--5 pre-footer-showcase__icon"
             >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
                 width="24"
+                xmlns="http://www.w3.org/2000/svg"
                 height="24"
                 viewBox="0 0 24 24"
               >
                 <g fill="currentColor">
                   <path d="M19.006 3.705a.75.75 0 1 0-.512-1.41L6 6.838V3a.75.75 0 0 0-.75-.75h-1.5A.75.75 0 0 0 3 3v4.93l-1.006.365a.75.75 0 0 0 .512 1.41z"></path>
                   <path
-                    fillRule="evenodd"
                     d="M3.019 11.115L18 5.666v3.421l4.006 1.457a.75.75 0 1 1-.512 1.41l-.494-.18v8.475h.75a.75.75 0 0 1 0 1.5H2.25a.75.75 0 0 1 0-1.5H3V11.12zM18 20.25v-9.565l1.5.545v9.02zm-9-6a.75.75 0 0 0-.75.75v4.5c0 .414.336.75.75.75h3a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75z"
                     clipRule="evenodd"
+                    fillRule="evenodd"
                   ></path>
                 </g>
               </svg>
             </div>
             <div
               aria-hidden="true"
-              className="pre-footer-showcase__icon pre-footer-showcase__icon--6"
+              className="pre-footer-showcase__icon--6 pre-footer-showcase__icon"
             >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
                 width="24"
+                xmlns="http://www.w3.org/2000/svg"
                 height="24"
                 viewBox="0 0 24 24"
               >
                 <g
                   fill="none"
                   stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="2"
                 >
                   <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
-                  <circle cx="12" cy="10" r="3"></circle>
+                  <circle r="3" cx="12" cy="10"></circle>
                 </g>
               </svg>
             </div>
           </div>
           <div className="pre-footer-showcase__container">
             <div className="pre-footer-showcase__content">
-              <h2 className="pre-footer-showcase__title reveal-item section-title">
+              <h2 className="pre-footer-showcase__title section-title reveal-item">
                 Powering The Future. Building Lasting Value.
               </h2>
-              <p className="pre-footer-showcase__subtitle reveal-item section-content">
+              <p className="section-content pre-footer-showcase__subtitle reveal-item">
                 DON OCH Global bridges the gap between sustainable energy and
                 premium real estate, delivering world-class solar solutions
                 while securing your future through strategic property
@@ -160,8 +160,8 @@ const PreFooterShowcase1 = (props) => {
             <div className="pre-footer-showcase__visual reveal-item">
               <div className="pre-footer-showcase__node pre-footer-showcase__node--solar">
                 <img
-                  src="https://images.pexels.com/photos/11455626/pexels-photo-11455626.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
                   alt="Solar Energy"
+                  src="https://images.pexels.com/photos/11455626/pexels-photo-11455626.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
                   className="pre-footer-showcase__node-img"
                 />
                 <span className="pre-footer-showcase__node-label">
@@ -174,26 +174,26 @@ const PreFooterShowcase1 = (props) => {
                 </div>
                 <div className="pre-footer-showcase__bridge-icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
                     <path
+                      d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"
                     ></path>
                   </svg>
                 </div>
               </div>
-              <div className="pre-footer-showcase__node pre-footer-showcase__node--realestate">
+              <div className="pre-footer-showcase__node--realestate pre-footer-showcase__node">
                 <img
-                  src="https://images.pexels.com/photos/18825426/pexels-photo-18825426.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
                   alt="Real Estate"
+                  src="https://images.pexels.com/photos/18825426/pexels-photo-18825426.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
                   className="pre-footer-showcase__node-img"
                 />
                 <span className="pre-footer-showcase__node-label">
@@ -201,7 +201,7 @@ const PreFooterShowcase1 = (props) => {
                 </span>
               </div>
             </div>
-            <div className="pre-footer-showcase__stats grid-layout">
+            <div className="grid-layout pre-footer-showcase__stats">
               <div className="pre-footer-showcase__stat-item reveal-item">
                 <span
                   data-target="100"
@@ -254,14 +254,14 @@ const PreFooterShowcase1 = (props) => {
             <div className="pre-footer-showcase__actions reveal-item">
               <Link href="/solar-solutions">
                 <a>
-                  <div className="pre-footer-showcase__btn btn btn-primary btn-lg">
+                  <div className="btn-primary btn btn-lg pre-footer-showcase__btn">
                     <span>Explore Solar Solutions</span>
                   </div>
                 </a>
               </Link>
               <Link href="/lemoex-properties">
                 <a>
-                  <div className="pre-footer-showcase__btn pre-footer-showcase__btn--alt btn btn-lg btn-outline">
+                  <div className="pre-footer-showcase__btn--alt btn-outline btn btn-lg pre-footer-showcase__btn">
                     <span>View Real Estate Opportunities</span>
                   </div>
                 </a>

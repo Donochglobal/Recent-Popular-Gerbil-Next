@@ -2603,8 +2603,8 @@ const Home = (props) => {
               <div className="ceo-message__portrait-card">
                 <div className="home-thq-ceo-messageportrait-glow-elm"></div>
                 <img
-                  src="https://images.pexels.com/photos/36715735/pexels-photo-36715735.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=400"
                   alt="CEO portrait placeholder - confident businessman in suit"
+                  src="https://images.pexels.com/photos/36715735/pexels-photo-36715735.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=400"
                   loading="lazy"
                   className="home-thq-ceo-messageportrait-img-elm"
                 />
@@ -2677,15 +2677,15 @@ const Home = (props) => {
               <div className="ceo-message__badges">
                 <div data-animate="ceo-badge" className="ceo-message__badge">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="18"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
                   >
                     <path d="M20 6L9 17l-5-5"></path>
                   </svg>
@@ -2694,15 +2694,15 @@ const Home = (props) => {
                 </div>
                 <div data-animate="ceo-badge" className="ceo-message__badge">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="18"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
                   >
                     <path d="M20 6L9 17l-5-5"></path>
                   </svg>
@@ -2711,15 +2711,15 @@ const Home = (props) => {
                 </div>
                 <div data-animate="ceo-badge" className="ceo-message__badge">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 24 24"
                     fill="none"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="18"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
                   >
                     <path d="M20 6L9 17l-5-5"></path>
                   </svg>
@@ -2730,12 +2730,12 @@ const Home = (props) => {
               <div className="ceo-message__actions">
                 <Link href="/team">
                   <a data-animate="ceo-btn">
-                    <div className="btn btn-lg ceo-message__btn-primary">
+                    <div className="ceo-message__btn-primary btn btn-lg">
                       <span>Meet Our Team</span>
                     </div>
                   </a>
                 </Link>
-                <Link href="/about">
+                <Link href="/about-us">
                   <a data-animate="ceo-btn">
                     <div className="btn btn-lg ceo-message__btn-secondary">
                       <span>Company Profile</span>
@@ -3543,12 +3543,12 @@ const Home = (props) => {
                   </div>
                   <div className="solar-panel-anim">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="64"
-                      height="64"
-                      viewBox="0 0 24 24"
                       fill="none"
+                      width="64"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="64"
                       stroke="currentColor"
+                      viewBox="0 0 24 24"
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -3563,12 +3563,12 @@ const Home = (props) => {
                     </div>
                     <div className="charge-bolts">
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
                         fill="none"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20"
                         stroke="currentColor"
+                        viewBox="0 0 24 24"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -3622,7 +3622,7 @@ const Home = (props) => {
               data-animate="stagger-up"
               className="home-thq-pre-footer-counters-elm"
             >
-              <div data-target="100" data-suffix="+" className="counter-card">
+              <div data-suffix="+" data-target="100" className="counter-card">
                 <div className="counter-value">
                   <span className="counter-num">0</span>
                   <span className="counter-suffix">+</span>
@@ -3631,7 +3631,7 @@ const Home = (props) => {
                   <span>Reliable Energy Solutions</span>
                 </div>
               </div>
-              <div data-target="500" data-suffix="+" className="counter-card">
+              <div data-suffix="+" data-target="500" className="counter-card">
                 <div className="counter-value">
                   <span className="counter-num">0</span>
                   <span className="counter-suffix">+</span>
@@ -3640,7 +3640,7 @@ const Home = (props) => {
                   <span>Solar Installations</span>
                 </div>
               </div>
-              <div data-target="200" data-suffix="+" className="counter-card">
+              <div data-suffix="+" data-target="200" className="counter-card">
                 <div className="counter-value">
                   <span className="counter-num">0</span>
                   <span className="counter-suffix">+</span>
@@ -3649,7 +3649,7 @@ const Home = (props) => {
                   <span>Property Opportunities</span>
                 </div>
               </div>
-              <div data-target="100" data-suffix="%" className="counter-card">
+              <div data-suffix="%" data-target="100" className="counter-card">
                 <div className="counter-value">
                   <span className="counter-num">0</span>
                   <span className="counter-suffix">%</span>
@@ -3665,12 +3665,12 @@ const Home = (props) => {
             >
               <div data-animate="float" className="floater">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 24 24"
                   fill="none"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32"
                   stroke="currentColor"
+                  viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -3681,45 +3681,45 @@ const Home = (props) => {
               </div>
               <div data-animate="float" className="floater">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 24 24"
                   fill="none"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32"
                   stroke="currentColor"
+                  viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <rect width="16" height="12" x="2" y="6" rx="2"></rect>
+                  <rect x="2" y="6" rx="2" width="16" height="12"></rect>
                   <path d="M22 14v-4"></path>
                 </svg>
               </div>
               <div data-animate="float" className="floater">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 24 24"
                   fill="none"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32"
                   stroke="currentColor"
+                  viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <rect width="16" height="16" x="4" y="4" rx="2"></rect>
-                  <rect width="8" height="8" x="8" y="8" rx="1"></rect>
+                  <rect x="4" y="4" rx="2" width="16" height="16"></rect>
+                  <rect x="8" y="8" rx="1" width="8" height="8"></rect>
                   <path d="M12 20v2m0-20v2m5 16v2m0-20v2M2 12h2m-2 5h2M2 7h2m16 5h2m-2 5h2M20 7h2M7 20v2M7 2v2"></path>
                 </svg>
               </div>
               <div data-animate="float" className="floater">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 24 24"
                   fill="none"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32"
                   stroke="currentColor"
+                  viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -3730,33 +3730,33 @@ const Home = (props) => {
               </div>
               <div data-animate="float" className="floater">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 24 24"
                   fill="none"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32"
                   stroke="currentColor"
+                  viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
                   <path d="M12 10h.01M12 14h.01M12 6h.01M16 10h.01M16 14h.01M16 6h.01M8 10h.01M8 14h.01M8 6h.01M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"></path>
-                  <rect width="16" height="20" x="4" y="2" rx="2"></rect>
+                  <rect x="4" y="2" rx="2" width="16" height="20"></rect>
                 </svg>
               </div>
               <div data-animate="float" className="floater">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 24 24"
                   fill="none"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32"
                   stroke="currentColor"
+                  viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <circle cx="12" cy="12" r="4"></circle>
+                  <circle r="4" cx="12" cy="12"></circle>
                   <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
                 </svg>
               </div>
@@ -3768,14 +3768,14 @@ const Home = (props) => {
               <div className="home-thq-pre-footer-cta-buttons-elm">
                 <Link href="/solar-solutions">
                   <a className="home-link38">
-                    <div className="btn btn-primary pre-footer-btn-primary">
+                    <div className="pre-footer-btn-primary btn-primary btn">
                       <span>Explore Solar Solutions</span>
                     </div>
                   </a>
                 </Link>
                 <Link href="/lemoex-properties">
                   <a className="home-link39">
-                    <div className="btn btn-outline pre-footer-btn-secondary">
+                    <div className="btn-outline pre-footer-btn-secondary btn">
                       <span>View Real Estate Opportunities</span>
                     </div>
                   </a>
