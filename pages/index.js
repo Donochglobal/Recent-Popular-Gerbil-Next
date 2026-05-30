@@ -726,130 +726,1264 @@ const Home = (props) => {
             </div>
           </div>
         </section>
-        <section className="products-rail">
-          <div className="products-rail__container">
-            <div className="products-rail__header">
-              <h2 className="section-title">Premium Products</h2>
-              <div className="home-thq-products-railnav-elm products-rail__nav">
+        <section
+          data-section="marketplace"
+          className="home-thq-products-rail-elm"
+        >
+          <div className="home-thq-products-railcontainer-elm">
+            <div className="home-thq-products-railheader-elm">
+              <h2 className="section-title">Premium Solar Products</h2>
+              <p className="home-thq-products-marketplacesubtitle-elm">
+                Explore high-performance solar panels, lithium batteries, hybrid
+                inverters, power storage systems, and smart energy devices.
+              </p>
+            </div>
+            <div
+              data-role="marketplace-filters"
+              className="home-thq-products-marketplacefilters-elm"
+            >
+              <div className="home-thq-filter-group-elm1 filter-group">
+                <svg
+                  fill="none"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="18"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="home-thq-filter-icon-elm"
+                >
+                  <path d="m21 21l-4.34-4.34"></path>
+                  <circle cx="11" cy="11" r="8"></circle>
+                </svg>
+                <input
+                  type="text"
+                  placeholder="Search products..."
+                  data-filter="search"
+                  className="input filter-input"
+                />
+              </div>
+              <div className="filter-group">
+                <select data-filter="category" className="filter-select">
+                  <option value="all">All Categories</option>
+                  <option value="panels">Solar Panels</option>
+                  <option value="batteries">Batteries</option>
+                  <option value="inverters">Inverters</option>
+                  <option value="accessories">Accessories</option>
+                </select>
+              </div>
+              <div className="filter-group">
+                <select data-filter="price" className="filter-select">
+                  <option value="all">All Prices</option>
+                  <option value="0-500000">₦0 - ₦500,000</option>
+                  <option value="500000-1000000">₦500,000 - ₦1,000,000</option>
+                  <option value="1000000+">₦1,000,000+</option>
+                </select>
+              </div>
+              <div className="filter-group">
+                <select data-filter="availability" className="filter-select">
+                  <option value="all">Availability</option>
+                  <option value="in-stock">In Stock</option>
+                  <option value="limited">Limited Stock</option>
+                </select>
+              </div>
+              <div className="filter-group">
+                <select data-filter="sort" className="filter-select">
+                  <option value="popular">Sort By</option>
+                  <option value="price-asc">Price: Low to High</option>
+                  <option value="price-desc">Price: High to Low</option>
+                  <option value="newest">Newest</option>
+                  <option value="popular">Most Popular</option>
+                </select>
+              </div>
+            </div>
+            <div data-category="panels" className="products-marketplace__row">
+              <div className="products-marketplace__row-header">
+                <h3 className="products-marketplace__row-title">
+                  Solar Panels
+                </h3>
+                <Link href="/shop-solar-products">
+                  <a>
+                    <div className="products-marketplace__row-link">
+                      <span>View All</span>
+                    </div>
+                  </a>
+                </Link>
+              </div>
+              <div
+                data-role="product-row"
+                className="products-marketplace__track"
+              >
+                <div
+                  data-product-id="panel-550"
+                  data-category="panels"
+                  data-price="850000"
+                  data-stock="in-stock"
+                  className="product-card"
+                >
+                  <div className="product-card__img-box">
+                    <img
+                      alt="550W Mono Solar Panel"
+                      src="https://images.pexels.com/photos/9799702/pexels-photo-9799702.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    />
+                    <div className="product-card__dots">
+                      <span></span>
+                      <span></span>
+                      <span className="active"></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="product-card__info">
+                    <h4 className="product-card__name">
+                      550W Mono Solar Panel
+                    </h4>
+                    <div className="product-card__price">
+                      <span>₦850,000</span>
+                    </div>
+                    <div className="product-card__meta">
+                      <span className="stock-dot"></span>
+                      <span className="product-card__stock product-card__stock--in">
+                        {' '}
+                        In Stock
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: ' ',
+                          }}
+                        />
+                      </span>
+                      <div className="product-card__stars">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                    <div className="product-card__actions">
+                      <button
+                        data-action="add-to-cart"
+                        className="btn-sm btn-accent btn button"
+                      >
+                        Add to Cart
+                      </button>
+                      <button
+                        data-action="quick-view"
+                        className="btn-sm btn-outline btn button"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-product-id="panel-600"
+                  data-category="panels"
+                  data-price="980000"
+                  data-stock="in-stock"
+                  className="product-card"
+                >
+                  <div className="product-card__img-box">
+                    <img
+                      alt="600W Mono Solar Panel"
+                      src="https://images.pexels.com/photos/8853509/pexels-photo-8853509.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    />
+                    <div className="product-card__dots">
+                      <span></span>
+                      <span className="active"></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="product-card__info">
+                    <h4 className="product-card__name">
+                      600W Mono Solar Panel
+                    </h4>
+                    <div className="product-card__price">
+                      <span>₦980,000</span>
+                    </div>
+                    <div className="product-card__meta">
+                      <span className="stock-dot"></span>
+                      <span className="product-card__stock product-card__stock--in">
+                        {' '}
+                        In Stock
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: ' ',
+                          }}
+                        />
+                      </span>
+                      <div className="product-card__stars">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                    <div className="product-card__actions">
+                      <button
+                        data-action="add-to-cart"
+                        className="btn-sm btn-accent btn button"
+                      >
+                        Add to Cart
+                      </button>
+                      <button
+                        data-action="quick-view"
+                        className="btn-sm btn-outline btn button"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-product-id="panel-bifacial"
+                  data-category="panels"
+                  data-price="1200000"
+                  data-stock="limited"
+                  className="product-card"
+                >
+                  <div className="product-card__img-box">
+                    <img
+                      alt="Bifacial Solar Panels"
+                      src="https://images.pexels.com/photos/7102661/pexels-photo-7102661.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    />
+                    <div className="product-card__dots">
+                      <span className="active"></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="product-card__info">
+                    <h4 className="product-card__name">
+                      Bifacial Solar Panels
+                    </h4>
+                    <div className="product-card__price">
+                      <span>₦1,200,000</span>
+                    </div>
+                    <div className="product-card__meta">
+                      <span className="stock-dot"></span>
+                      <span className="product-card__stock product-card__stock--limited">
+                        {' '}
+                        Limited Stock
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: ' ',
+                          }}
+                        />
+                      </span>
+                      <div className="product-card__stars">
+                        <span>★★★★☆</span>
+                      </div>
+                    </div>
+                    <div className="product-card__actions">
+                      <button
+                        data-action="add-to-cart"
+                        className="btn-sm btn-accent btn button"
+                      >
+                        Add to Cart
+                      </button>
+                      <button
+                        data-action="quick-view"
+                        className="btn-sm btn-outline btn button"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-category="batteries"
+              className="products-marketplace__row"
+            >
+              <div className="products-marketplace__row-header">
+                <h3 className="products-marketplace__row-title">
+                  Batteries &amp; Energy Storage
+                </h3>
+                <Link href="/shop-solar-products">
+                  <a>
+                    <div className="products-marketplace__row-link">
+                      <span>View All</span>
+                    </div>
+                  </a>
+                </Link>
+              </div>
+              <div
+                data-role="product-row"
+                className="products-marketplace__track"
+              >
+                <div
+                  data-product-id="battery-2-5"
+                  data-category="batteries"
+                  data-price="450000"
+                  data-stock="in-stock"
+                  className="product-card"
+                >
+                  <div className="product-card__img-box">
+                    <img
+                      alt="2.5kWh Lithium Battery"
+                      src="https://images.pexels.com/photos/698485/pexels-photo-698485.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    />
+                    <div className="product-card__dots">
+                      <span></span>
+                      <span className="active"></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="product-card__info">
+                    <h4 className="product-card__name">
+                      2.5kWh Lithium Battery
+                    </h4>
+                    <div className="product-card__price">
+                      <span>₦450,000</span>
+                    </div>
+                    <div className="product-card__meta">
+                      <span className="stock-dot"></span>
+                      <span className="product-card__stock product-card__stock--in">
+                        {' '}
+                        In Stock
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: ' ',
+                          }}
+                        />
+                      </span>
+                      <div className="product-card__stars">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                    <div className="product-card__actions">
+                      <button
+                        data-action="add-to-cart"
+                        className="btn-sm btn-accent btn button"
+                      >
+                        Add to Cart
+                      </button>
+                      <button
+                        data-action="quick-view"
+                        className="btn-sm btn-outline btn button"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-product-id="battery-5"
+                  data-category="batteries"
+                  data-price="850000"
+                  data-stock="in-stock"
+                  className="product-card"
+                >
+                  <div className="product-card__img-box">
+                    <img
+                      alt="5kWh Lithium Battery"
+                      src="https://images.pexels.com/photos/3639037/pexels-photo-3639037.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    />
+                    <div className="product-card__dots">
+                      <span></span>
+                      <span></span>
+                      <span className="active"></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="product-card__info">
+                    <h4 className="product-card__name">5kWh Lithium Battery</h4>
+                    <div className="product-card__price">
+                      <span>₦850,000</span>
+                    </div>
+                    <div className="product-card__meta">
+                      <span className="stock-dot"></span>
+                      <span className="product-card__stock product-card__stock--in">
+                        {' '}
+                        In Stock
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: ' ',
+                          }}
+                        />
+                      </span>
+                      <div className="product-card__stars">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                    <div className="product-card__actions">
+                      <button
+                        data-action="add-to-cart"
+                        className="btn-sm btn-accent btn button"
+                      >
+                        Add to Cart
+                      </button>
+                      <button
+                        data-action="quick-view"
+                        className="btn-sm btn-outline btn button"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-product-id="battery-10"
+                  data-category="batteries"
+                  data-price="1600000"
+                  data-stock="limited"
+                  className="product-card"
+                >
+                  <div className="product-card__img-box">
+                    <img
+                      alt="10kWh Lithium Battery"
+                      src="https://images.pexels.com/photos/33751638/pexels-photo-33751638.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    />
+                    <div className="product-card__dots">
+                      <span className="active"></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="product-card__info">
+                    <h4 className="product-card__name">
+                      10kWh Lithium Battery
+                    </h4>
+                    <div className="product-card__price">
+                      <span>₦1,600,000</span>
+                    </div>
+                    <div className="product-card__meta">
+                      <span className="stock-dot"></span>
+                      <span className="product-card__stock product-card__stock--limited">
+                        {' '}
+                        Limited Stock
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: ' ',
+                          }}
+                        />
+                      </span>
+                      <div className="product-card__stars">
+                        <span>★★★★☆</span>
+                      </div>
+                    </div>
+                    <div className="product-card__actions">
+                      <button
+                        data-action="add-to-cart"
+                        className="btn-sm btn-accent btn button"
+                      >
+                        Add to Cart
+                      </button>
+                      <button
+                        data-action="quick-view"
+                        className="btn-sm btn-outline btn button"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-category="inverters"
+              className="products-marketplace__row"
+            >
+              <div className="products-marketplace__row-header">
+                <h3 className="products-marketplace__row-title">
+                  Inverters &amp; Accessories
+                </h3>
+                <Link href="/shop-solar-products">
+                  <a>
+                    <div className="products-marketplace__row-link">
+                      <span>View All</span>
+                    </div>
+                  </a>
+                </Link>
+              </div>
+              <div
+                data-role="product-row"
+                className="products-marketplace__track"
+              >
+                <div
+                  data-product-id="inverter-3kva"
+                  data-category="inverters"
+                  data-price="320000"
+                  data-stock="in-stock"
+                  className="product-card"
+                >
+                  <div className="product-card__img-box">
+                    <img
+                      alt="3kVA Hybrid Inverter"
+                      src="https://images.pexels.com/photos/33438229/pexels-photo-33438229.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    />
+                    <div className="product-card__dots">
+                      <span></span>
+                      <span className="active"></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="product-card__info">
+                    <h4 className="product-card__name">3kVA Hybrid Inverter</h4>
+                    <div className="product-card__price">
+                      <span>₦320,000</span>
+                    </div>
+                    <div className="product-card__meta">
+                      <span className="stock-dot"></span>
+                      <span className="product-card__stock product-card__stock--in">
+                        {' '}
+                        In Stock
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: ' ',
+                          }}
+                        />
+                      </span>
+                      <div className="product-card__stars">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                    <div className="product-card__actions">
+                      <button
+                        data-action="add-to-cart"
+                        className="btn-sm btn-accent btn button"
+                      >
+                        Add to Cart
+                      </button>
+                      <button
+                        data-action="quick-view"
+                        className="btn-sm btn-outline btn button"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-product-id="inverter-5kva"
+                  data-category="inverters"
+                  data-price="520000"
+                  data-stock="in-stock"
+                  className="product-card"
+                >
+                  <div className="product-card__img-box">
+                    <img
+                      alt="5kVA Hybrid Inverter"
+                      src="https://images.pexels.com/photos/33751639/pexels-photo-33751639.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    />
+                    <div className="product-card__dots">
+                      <span></span>
+                      <span></span>
+                      <span className="active"></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="product-card__info">
+                    <h4 className="product-card__name">5kVA Hybrid Inverter</h4>
+                    <div className="product-card__price">
+                      <span>₦520,000</span>
+                    </div>
+                    <div className="product-card__meta">
+                      <span className="stock-dot"></span>
+                      <span className="product-card__stock product-card__stock--in">
+                        {' '}
+                        In Stock
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: ' ',
+                          }}
+                        />
+                      </span>
+                      <div className="product-card__stars">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                    <div className="product-card__actions">
+                      <button
+                        data-action="add-to-cart"
+                        className="btn-sm btn-accent btn button"
+                      >
+                        Add to Cart
+                      </button>
+                      <button
+                        data-action="quick-view"
+                        className="btn-sm btn-outline btn button"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-product-id="inverter-10kva"
+                  data-category="inverters"
+                  data-price="950000"
+                  data-stock="limited"
+                  className="product-card"
+                >
+                  <div className="product-card__img-box">
+                    <img
+                      alt="10kVA Hybrid Inverter"
+                      src="https://images.pexels.com/photos/11645013/pexels-photo-11645013.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    />
+                    <div className="product-card__dots">
+                      <span className="active"></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="product-card__info">
+                    <h4 className="product-card__name">
+                      10kVA Hybrid Inverter
+                    </h4>
+                    <div className="product-card__price">
+                      <span>₦950,000</span>
+                    </div>
+                    <div className="product-card__meta">
+                      <span className="stock-dot"></span>
+                      <span className="product-card__stock product-card__stock--limited">
+                        {' '}
+                        Limited Stock
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: ' ',
+                          }}
+                        />
+                      </span>
+                      <div className="product-card__stars">
+                        <span>★★★★☆</span>
+                      </div>
+                    </div>
+                    <div className="product-card__actions">
+                      <button
+                        data-action="add-to-cart"
+                        className="btn-sm btn-accent btn button"
+                      >
+                        Add to Cart
+                      </button>
+                      <button
+                        data-action="quick-view"
+                        className="btn-sm btn-outline btn button"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-product-id="controller-60a"
+                  data-category="accessories"
+                  data-price="85000"
+                  data-stock="in-stock"
+                  className="product-card"
+                >
+                  <div className="product-card__img-box">
+                    <img
+                      alt="60A MPPT Charge Controller"
+                      src="https://images.pexels.com/photos/8853468/pexels-photo-8853468.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    />
+                    <div className="product-card__dots">
+                      <span></span>
+                      <span className="active"></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="product-card__info">
+                    <h4 className="product-card__name">60A MPPT Controller</h4>
+                    <div className="product-card__price">
+                      <span>₦85,000</span>
+                    </div>
+                    <div className="product-card__meta">
+                      <span className="stock-dot"></span>
+                      <span className="product-card__stock product-card__stock--in">
+                        {' '}
+                        In Stock
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: ' ',
+                          }}
+                        />
+                      </span>
+                      <div className="product-card__stars">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                    <div className="product-card__actions">
+                      <button
+                        data-action="add-to-cart"
+                        className="btn-sm btn-accent btn button"
+                      >
+                        Add to Cart
+                      </button>
+                      <button
+                        data-action="quick-view"
+                        className="btn-sm btn-outline btn button"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-product-id="cable-solar"
+                  data-category="accessories"
+                  data-price="45000"
+                  data-stock="in-stock"
+                  className="product-card"
+                >
+                  <div className="product-card__img-box">
+                    <img
+                      alt="Solar Cables &amp; Connectors"
+                      src="https://images.pexels.com/photos/8853526/pexels-photo-8853526.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    />
+                    <div className="product-card__dots">
+                      <span className="active"></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="product-card__info">
+                    <h4 className="product-card__name">
+                      Solar Cables &amp; Connectors
+                    </h4>
+                    <div className="product-card__price">
+                      <span>₦45,000</span>
+                    </div>
+                    <div className="product-card__meta">
+                      <span className="stock-dot"></span>
+                      <span className="product-card__stock product-card__stock--in">
+                        {' '}
+                        In Stock
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: ' ',
+                          }}
+                        />
+                      </span>
+                      <div className="product-card__stars">
+                        <span>★★★★☆</span>
+                      </div>
+                    </div>
+                    <div className="product-card__actions">
+                      <button
+                        data-action="add-to-cart"
+                        className="btn-sm btn-accent btn button"
+                      >
+                        Add to Cart
+                      </button>
+                      <button
+                        data-action="quick-view"
+                        className="btn-sm btn-outline btn button"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-product-id="mounting-kit"
+                  data-category="accessories"
+                  data-price="120000"
+                  data-stock="in-stock"
+                  className="product-card"
+                >
+                  <div className="product-card__img-box">
+                    <img
+                      alt="Mounting Structures Kit"
+                      src="https://images.pexels.com/photos/15751134/pexels-photo-15751134.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    />
+                    <div className="product-card__dots">
+                      <span></span>
+                      <span></span>
+                      <span className="active"></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="product-card__info">
+                    <h4 className="product-card__name">
+                      Mounting Structures Kit
+                    </h4>
+                    <div className="product-card__price">
+                      <span>₦120,000</span>
+                    </div>
+                    <div className="product-card__meta">
+                      <span className="stock-dot"></span>
+                      <span className="product-card__stock product-card__stock--in">
+                        {' '}
+                        In Stock
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: ' ',
+                          }}
+                        />
+                      </span>
+                      <div className="product-card__stars">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                    <div className="product-card__actions">
+                      <button
+                        data-action="add-to-cart"
+                        className="btn-sm btn-accent btn button"
+                      >
+                        Add to Cart
+                      </button>
+                      <button
+                        data-action="quick-view"
+                        className="btn-sm btn-outline btn button"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            data-action="toggle-cart"
+            aria-label="Shopping Cart"
+            className="button marketplace-cart-fab"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+              >
+                <circle cx="8" cy="21" r="1"></circle>
+                <circle cx="19" cy="21" r="1"></circle>
+                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+              </g>
+            </svg>
+            <span
+              data-role="cart-count"
+              className="home-thq-marketplace-cart-fabbadge-elm"
+            >
+              0
+            </span>
+          </button>
+          <div
+            data-role="cart-drawer"
+            aria-hidden="true"
+            className="cart-drawer"
+          >
+            <div
+              data-action="close-cart"
+              className="home-thq-cart-draweroverlay-elm"
+            ></div>
+            <div className="home-thq-cart-drawerpanel-elm">
+              <div className="home-thq-cart-drawerheader-elm">
+                <h3 className="home-thq-cart-drawertitle-elm">Your Cart</h3>
                 <button
-                  id="railPrev"
-                  aria-label="Previous"
-                  className="products-rail__btn"
+                  data-action="close-cart"
+                  aria-label="Close cart"
+                  className="button cart-drawer__close"
                 >
                   <svg
-                    fill="none"
-                    width="24"
                     xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    stroke="currentColor"
+                    width="20"
+                    height="20"
                     viewBox="0 0 24 24"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                   >
-                    <path d="m15 18-6-6 6-6"></path>
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M18 6L6 18M6 6l12 12"
+                    ></path>
                   </svg>
                 </button>
+              </div>
+              <div
+                data-role="cart-items"
+                className="home-thq-cart-draweritems-elm"
+              >
+                <p className="home-thq-cart-drawerempty-elm">
+                  Your cart is empty.
+                </p>
+              </div>
+              <div className="home-thq-cart-drawersummary-elm">
+                <div className="cart-summary__row">
+                  <span>Subtotal</span>
+                  <span data-role="cart-subtotal">₦0</span>
+                </div>
+                <div className="cart-summary__row">
+                  <span>Estimated Delivery</span>
+                  <span>₦5,000</span>
+                </div>
+                <div className="home-thq-cart-summaryrow-elm3 cart-summary__row">
+                  <span>Grand Total</span>
+                  <span data-role="cart-total">₦0</span>
+                </div>
                 <button
-                  id="railNext"
-                  aria-label="Next"
-                  className="products-rail__btn"
+                  data-action="checkout"
+                  className="home-thq-btn-elm24 btn btn-primary button"
                 >
-                  <svg
-                    fill="none"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="m9 18 6-6-6-6"></path>
-                  </svg>
+                  Proceed to Checkout
                 </button>
               </div>
             </div>
-            <div id="railTrack" className="products-rail__track">
-              <div className="products-rail__card">
-                <div className="products-rail__img-box">
-                  <img
-                    alt="Mono Solar Panels"
-                    src="https://images.pexels.com/photos/19065333/pexels-photo-19065333.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
-                  />
+          </div>
+          <div
+            data-role="quick-view-modal"
+            aria-hidden="true"
+            className="quick-view-modal"
+          >
+            <div
+              data-action="close-quick-view"
+              className="home-thq-quick-view-modaloverlay-elm"
+            ></div>
+            <div className="home-thq-quick-view-modalpanel-elm">
+              <button
+                data-action="close-quick-view"
+                aria-label="Close quick view"
+                className="home-thq-quick-view-modalclose-elm button"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M18 6L6 18M6 6l12 12"
+                  ></path>
+                </svg>
+              </button>
+              <div className="home-thq-quick-view-modalcontent-elm">
+                <div className="quick-view-modal__img-box">
+                  <img data-role="qv-image" src="true" alt="true" />
                 </div>
-                <h3 className="section-subtitle">Premium Mono Panels</h3>
-                <p className="section-content">
-                  High-efficiency monocrystalline solar panels with 25-year
-                  warranty.
-                </p>
-                <button className="btn-sm btn-primary btn">
-                  Quick Inquiry
-                </button>
+                <div className="home-thq-quick-view-modaldetails-elm">
+                  <h3
+                    data-role="qv-name"
+                    className="home-thq-quick-view-modalname-elm"
+                  >
+                    Product Name
+                  </h3>
+                  <div
+                    data-role="qv-price"
+                    className="home-thq-quick-view-modalprice-elm"
+                  >
+                    <span>₦0</span>
+                  </div>
+                  <div className="home-thq-quick-view-modalstars-elm">
+                    <span>★★★★★</span>
+                  </div>
+                  <div className="quick-view-modal__specs">
+                    <h4>Specifications</h4>
+                    <ul data-role="qv-specs" className="list">
+                      <li className="list-item">
+                        <span>High-efficiency technology</span>
+                      </li>
+                      <li className="list-item">
+                        <span>25-year warranty</span>
+                      </li>
+                      <li className="list-item">
+                        <span>Premium build quality</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="quick-view-modal__features">
+                    <h4>Key Features</h4>
+                    <ul data-role="qv-features" className="list">
+                      <li className="list-item">
+                        <span>Easy installation</span>
+                      </li>
+                      <li className="list-item">
+                        <span>Low maintenance</span>
+                      </li>
+                      <li className="list-item">
+                        <span>Weather resistant</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="home-thq-quick-view-modalwarranty-elm">
+                    <span className="home-thq-warranty-badge-elm">
+                      2 Years Warranty
+                    </span>
+                  </div>
+                  <button
+                    data-action="qv-add-to-cart"
+                    className="home-thq-btn-elm25 btn btn-accent button"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
               </div>
-              <div className="products-rail__card">
-                <div className="products-rail__img-box">
-                  <img
-                    alt="Lithium Battery"
-                    src="https://images.pexels.com/photos/31462219/pexels-photo-31462219.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
-                  />
+            </div>
+          </div>
+          <div
+            data-role="checkout-modal"
+            aria-hidden="true"
+            className="checkout-modal"
+          >
+            <div
+              data-action="close-checkout"
+              className="home-thq-checkout-modaloverlay-elm"
+            ></div>
+            <div className="home-thq-checkout-modalpanel-elm">
+              <button
+                data-action="close-checkout"
+                aria-label="Close checkout"
+                className="home-thq-checkout-modalclose-elm button"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M18 6L6 18M6 6l12 12"
+                  ></path>
+                </svg>
+              </button>
+              <div className="home-thq-checkout-modalcontent-elm">
+                <div>
+                  <h3 className="home-thq-checkout-modaltitle-elm">Checkout</h3>
+                  <div className="checkout-form__field">
+                    <label>Full Name</label>
+                    <input
+                      type="text"
+                      data-field="name"
+                      placeholder="Enter your full name"
+                      className="input"
+                    />
+                  </div>
+                  <div className="checkout-form__field">
+                    <label>Phone Number</label>
+                    <input
+                      type="tel"
+                      data-field="phone"
+                      placeholder="Enter phone number"
+                      className="input"
+                    />
+                  </div>
+                  <div className="checkout-form__field">
+                    <label>Email Address</label>
+                    <input
+                      type="email"
+                      data-field="email"
+                      placeholder="Enter email address"
+                      className="input"
+                    />
+                  </div>
+                  <div className="checkout-form__field">
+                    <label>Delivery Address</label>
+                    <textarea
+                      data-field="address"
+                      placeholder="Enter delivery address"
+                      rows="3"
+                      className="textarea"
+                    ></textarea>
+                  </div>
+                  <div className="checkout-form__field">
+                    <label>Order Notes (Optional)</label>
+                    <textarea
+                      data-field="notes"
+                      placeholder="Any special instructions..."
+                      rows="2"
+                      className="textarea"
+                    ></textarea>
+                  </div>
                 </div>
-                <h3 className="section-subtitle">Lithium LifePO4</h3>
-                <p className="section-content">
-                  Deep cycle lithium batteries for maximum storage life and
-                  efficiency.
-                </p>
-                <button className="btn-sm btn-primary btn">
-                  Quick Inquiry
-                </button>
+                <div className="checkout-summary">
+                  <h4>Order Summary</h4>
+                  <div
+                    data-role="checkout-items"
+                    className="home-thq-checkout-summaryitems-elm"
+                  ></div>
+                  <div>
+                    <div className="checkout-summary__row">
+                      <span>Subtotal</span>
+                      <span data-role="checkout-subtotal">₦0</span>
+                    </div>
+                    <div className="checkout-summary__row">
+                      <span>Delivery</span>
+                      <span>₦5,000</span>
+                    </div>
+                    <div className="home-thq-checkout-summaryrow-elm3 checkout-summary__row">
+                      <span>Total</span>
+                      <span data-role="checkout-total">₦0</span>
+                    </div>
+                  </div>
+                  <div className="checkout-summary__meta">
+                    <p>
+                      {' '}
+                      Order Ref:
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </p>
+                    <span data-role="checkout-date">--</span>
+                    <span data-role="checkout-ref">DO-0000</span>
+                    <p>
+                      {' '}
+                      Date:
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </p>
+                  </div>
+                  <button
+                    data-action="proceed-payment"
+                    className="home-thq-btn-elm26 btn btn-accent button"
+                  >
+                    Proceed to Payment
+                  </button>
+                </div>
               </div>
-              <div className="products-rail__card">
-                <div className="products-rail__img-box">
-                  <img
-                    alt="Hybrid Inverter"
-                    src="https://images.pexels.com/photos/9875673/pexels-photo-9875673.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
-                  />
-                </div>
-                <h3 className="section-subtitle">Smart Hybrid Inverters</h3>
-                <p className="section-content">
-                  Pure sine wave inverters with integrated MPPT controllers.
-                </p>
-                <button className="btn-sm btn-primary btn">
-                  Quick Inquiry
-                </button>
+            </div>
+          </div>
+          <div
+            data-role="payment-success"
+            aria-hidden="true"
+            className="payment-result"
+          >
+            <div
+              data-action="close-payment"
+              className="payment-result__overlay"
+            ></div>
+            <div className="payment-result__panel">
+              <div className="home-thq-payment-resulticon-elm1 payment-result__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M20 6L9 17l-5-5"
+                  ></path>
+                </svg>
               </div>
-              <div className="products-rail__card">
-                <div className="products-rail__img-box">
-                  <img
-                    alt="Smart CCTV"
-                    src="https://images.pexels.com/photos/31723766/pexels-photo-31723766.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
+              <h3 className="payment-result__title">Payment Successful</h3>
+              <p className="payment-result__text">
+                Thank you for your purchase!
+              </p>
+              <div className="payment-result__details">
+                <p>
+                  {' '}
+                  Order Ref:
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
                   />
-                </div>
-                <h3 className="section-subtitle">AI CCTV Systems</h3>
-                <p className="section-content">
-                  Advanced surveillance cameras with night vision and remote
-                  access.
                 </p>
-                <button className="btn-sm btn-primary btn">
-                  Quick Inquiry
-                </button>
+                <strong data-role="success-name">--</strong>
+                <strong data-role="success-amount">₦0</strong>
+                <strong data-role="success-ref">DO-0000</strong>
+                <p>
+                  {' '}
+                  Amount Paid:
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </p>
+                <p>
+                  {' '}
+                  Customer:
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </p>
               </div>
-              <div className="products-rail__card">
-                <div className="products-rail__img-box">
-                  <img
-                    alt="Street Lights"
-                    src="https://images.pexels.com/photos/29923357/pexels-photo-29923357.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=300"
-                  />
-                </div>
-                <h3 className="section-subtitle">Solar Street Lights</h3>
-                <p className="section-content">
-                  All-in-one solar street lighting for residential and
-                  commercial estates.
-                </p>
-                <button className="btn-sm btn-primary btn">
-                  Quick Inquiry
+              <div className="payment-result__actions">
+                <button
+                  data-action="continue-shopping"
+                  className="btn btn-primary button"
+                >
+                  Continue Shopping
                 </button>
+                <Link href="/contact">
+                  <a>
+                    <div className="btn btn-outline">
+                      <span>Contact Support</span>
+                    </div>
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div
+            data-role="payment-failure"
+            aria-hidden="true"
+            className="payment-result"
+          >
+            <div
+              data-action="close-payment"
+              className="payment-result__overlay"
+            ></div>
+            <div className="payment-result__panel">
+              <div className="home-thq-payment-resulticon-elm2 payment-result__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M18 6L6 18M6 6l12 12"
+                  ></path>
+                </svg>
+              </div>
+              <h3 className="payment-result__title">Payment Incomplete</h3>
+              <p className="payment-result__text">
+                We couldn&apos;t process your payment. Please try again.
+              </p>
+              <div className="payment-result__actions">
+                <button
+                  data-action="retry-payment"
+                  className="btn btn-accent button"
+                >
+                  Retry Payment
+                </button>
+                <Link href="/contact">
+                  <a>
+                    <div className="btn btn-outline">
+                      <span>Contact Support</span>
+                    </div>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -1332,86 +2466,292 @@ const Home = (props) => {
             document.querySelectorAll(".about-impact__number").forEach((n) => observer.observe(n))
           }
           // Product Rail Navigation
+          // Product Rail Navigation
           const initRail = () => {
-            const track = document.getElementById("railTrack")
-            if (!track) return
-            const cards = track.querySelectorAll(".products-rail__card")
-            if (!cards.length) return
-            const cardWidth = cards[0].offsetWidth + parseInt(getComputedStyle(track).gap || 32)
-            let autoScrollInterval
-            let touchStartX = 0
-            let touchEndX = 0
-            let isHovered = false
-            const startAutoScroll = () => {
-              autoScrollInterval = setInterval(() => {
-                if (isHovered) return
-                const maxScroll = track.scrollWidth - track.clientWidth
-                if (track.scrollLeft >= maxScroll - 5) {
-                  track.scrollTo({ left: 0, behavior: "smooth" })
-                } else {
-                  track.scrollBy({ left: cardWidth, behavior: "smooth" })
-                }
-              }, 4000)
-            }
-            const stopAutoScroll = () => {
-              clearInterval(autoScrollInterval)
-            }
-            track.addEventListener("mouseenter", () => {
-              isHovered = true
-              stopAutoScroll()
-            })
-            track.addEventListener("mouseleave", () => {
-              isHovered = false
+            document.querySelectorAll('[data-role="product-row"]').forEach((track) => {
+              const cards = track.querySelectorAll(".product-card")
+              if (!cards.length) return
+              const cardWidth = cards[0].offsetWidth + parseInt(getComputedStyle(track).gap || 16)
+              let autoScrollInterval
+              let touchStartX = 0
+              let touchEndX = 0
+              let isHovered = false
+              const startAutoScroll = () => {
+                autoScrollInterval = setInterval(() => {
+                  if (isHovered) return
+                  const maxScroll = track.scrollWidth - track.clientWidth
+                  if (track.scrollLeft >= maxScroll - 5) {
+                    track.scrollTo({ left: 0, behavior: "smooth" })
+                  } else {
+                    track.scrollBy({ left: cardWidth, behavior: "smooth" })
+                  }
+                }, 4000)
+              }
+              const stopAutoScroll = () => {
+                clearInterval(autoScrollInterval)
+              }
+              track.addEventListener("mouseenter", () => {
+                isHovered = true
+                stopAutoScroll()
+              })
+              track.addEventListener("mouseleave", () => {
+                isHovered = false
+                startAutoScroll()
+              })
+              track.addEventListener(
+                "touchstart",
+                (e) => {
+                  touchStartX = e.changedTouches[0].screenX
+                  stopAutoScroll()
+                },
+                { passive: true }
+              )
+              track.addEventListener(
+                "touchend",
+                (e) => {
+                  touchEndX = e.changedTouches[0].screenX
+                  const diff = touchStartX - touchEndX
+                  if (Math.abs(diff) > 40) {
+                    if (diff > 0) {
+                      track.scrollBy({ left: cardWidth, behavior: "smooth" })
+                    } else {
+                      track.scrollBy({ left: -cardWidth, behavior: "smooth" })
+                    }
+                  }
+                  startAutoScroll()
+                },
+                { passive: true }
+              )
+              track.addEventListener(
+                "touchmove",
+                (e) => {
+                  e.stopPropagation()
+                },
+                { passive: true }
+              )
               startAutoScroll()
             })
-            track.addEventListener(
-              "touchstart",
-              (e) => {
-                touchStartX = e.changedTouches[0].screenX
-                stopAutoScroll()
-              },
-              { passive: true }
-            )
-            track.addEventListener(
-              "touchend",
-              (e) => {
-                touchEndX = e.changedTouches[0].screenX
-                const diff = touchStartX - touchEndX
-                if (Math.abs(diff) > 40) {
-                  if (diff > 0) {
-                    track.scrollBy({ left: cardWidth, behavior: "smooth" })
-                  } else {
-                    track.scrollBy({ left: -cardWidth, behavior: "smooth" })
-                  }
-                }
-                startAutoScroll()
-              },
-              { passive: true }
-            )
-            track.addEventListener(
-              "touchmove",
-              (e) => {
+          }
+          // Marketplace Cart & Modals
+          const initMarketplace = () => {
+            const cart = []
+            const cartFab = document.querySelector('[data-action="toggle-cart"]')
+            const cartDrawer = document.querySelector('[data-role="cart-drawer"]')
+            const cartItems = document.querySelector('[data-role="cart-items"]')
+            const cartCount = document.querySelector('[data-role="cart-count"]')
+            const cartSubtotal = document.querySelector('[data-role="cart-subtotal"]')
+            const cartTotal = document.querySelector('[data-role="cart-total"]')
+            const quickViewModal = document.querySelector('[data-role="quick-view-modal"]')
+            const checkoutModal = document.querySelector('[data-role="checkout-modal"]')
+            const paymentSuccess = document.querySelector('[data-role="payment-success"]')
+            const paymentFailure = document.querySelector('[data-role="payment-failure"]')
+
+            const formatPrice = (n) => "₦" + n.toLocaleString()
+            const genRef = () => "DO-" + Math.floor(1000 + Math.random() * 9000)
+
+            const updateCart = () => {
+              cartCount.textContent = cart.reduce((s, i) => s + i.qty, 0)
+              const sub = cart.reduce((s, i) => s + i.price * i.qty, 0)
+              cartSubtotal.textContent = formatPrice(sub)
+              cartTotal.textContent = formatPrice(sub + 5000)
+              if (!cart.length) {
+                cartItems.innerHTML = '<p class="cart-drawer__empty">Your cart is empty.</p>'
+              } else {
+                cartItems.innerHTML = cart
+                  .map(
+                    (item, idx) => \`
+                    <div class="cart-item">
+                      <img class="cart-item__thumb" src="\${item.image}" alt="" />
+                      <div class="cart-item__info">
+                        <div class="cart-item__name">\${item.name}</div>
+                        <div class="cart-item__price">\${formatPrice(item.price)}</div>
+                      </div>
+                      <div class="cart-item__qty">
+                        <button data-idx="\${idx}" data-delta="-1">-</button>
+                        <span>\${item.qty}</span>
+                        <button data-idx="\${idx}" data-delta="1">+</button>
+                      </div>
+                      <button class="cart-item__remove" data-remove="\${idx}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                      </button>
+                    </div>
+                  \`
+                  )
+                  .join("")
+                cartItems.querySelectorAll("[data-delta]").forEach((btn) => {
+                  btn.addEventListener("click", () => {
+                    const idx = parseInt(btn.dataset.idx)
+                    const delta = parseInt(btn.dataset.delta)
+                    cart[idx].qty += delta
+                    if (cart[idx].qty <= 0) cart.splice(idx, 1)
+                    updateCart()
+                  })
+                })
+                cartItems.querySelectorAll("[data-remove]").forEach((btn) => {
+                  btn.addEventListener("click", () => {
+                    cart.splice(parseInt(btn.dataset.remove), 1)
+                    updateCart()
+                  })
+                })
+              }
+            }
+
+            const addToCart = (card) => {
+              const id = card.dataset.productId
+              const name = card.querySelector(".product-card__name").textContent
+              const priceText = card.querySelector(".product-card__price").textContent
+              const price = parseInt(priceText.replace(/[^0-9]/g, ""))
+              const image = card.querySelector("img").src
+              const existing = cart.find((i) => i.id === id)
+              if (existing) existing.qty++
+              else cart.push({ id, name, price, image, qty: 1 })
+              updateCart()
+              cartDrawer.setAttribute("aria-hidden", "false")
+            }
+
+            document.querySelectorAll('[data-action="add-to-cart"]').forEach((btn) => {
+              btn.addEventListener("click", (e) => {
                 e.stopPropagation()
-              },
-              { passive: true }
-            )
-            const nextBtn = document.getElementById("railNext")
-            const prevBtn = document.getElementById("railPrev")
-            if (nextBtn) {
-              nextBtn.addEventListener("click", () => {
-                stopAutoScroll()
-                track.scrollBy({ left: cardWidth, behavior: "smooth" })
-                startAutoScroll()
+                addToCart(btn.closest(".product-card"))
               })
-            }
-            if (prevBtn) {
-              prevBtn.addEventListener("click", () => {
-                stopAutoScroll()
-                track.scrollBy({ left: -cardWidth, behavior: "smooth" })
-                startAutoScroll()
+            })
+
+            document.querySelectorAll('[data-action="qv-add-to-cart"]').forEach((btn) => {
+              btn.addEventListener("click", () => {
+                const modal = btn.closest(".quick-view-modal__panel")
+                const name = modal.querySelector('[data-role="qv-name"]').textContent
+                const priceText = modal.querySelector('[data-role="qv-price"]').textContent
+                const price = parseInt(priceText.replace(/[^0-9]/g, ""))
+                const image = modal.querySelector('[data-role="qv-image"]').src
+                const id = "qv-" + name.replace(/\s+/g, "-").toLowerCase()
+                const existing = cart.find((i) => i.id === id)
+                if (existing) existing.qty++
+                else cart.push({ id, name, price, image, qty: 1 })
+                updateCart()
+                quickViewModal.setAttribute("aria-hidden", "true")
+                cartDrawer.setAttribute("aria-hidden", "false")
               })
+            })
+
+            document.querySelectorAll('[data-action="quick-view"]').forEach((btn) => {
+              btn.addEventListener("click", (e) => {
+                e.stopPropagation()
+                const card = btn.closest(".product-card")
+                const name = card.querySelector(".product-card__name").textContent
+                const price = card.querySelector(".product-card__price").textContent
+                const image = card.querySelector("img").src
+                quickViewModal.querySelector('[data-role="qv-name"]').textContent = name
+                quickViewModal.querySelector('[data-role="qv-price"]').textContent = price
+                quickViewModal.querySelector('[data-role="qv-image"]').src = image
+                quickViewModal.setAttribute("aria-hidden", "false")
+              })
+            })
+
+            const closeAllModals = () => {
+              cartDrawer.setAttribute("aria-hidden", "true")
+              quickViewModal.setAttribute("aria-hidden", "true")
+              checkoutModal.setAttribute("aria-hidden", "true")
+              paymentSuccess.setAttribute("aria-hidden", "true")
+              paymentFailure.setAttribute("aria-hidden", "true")
             }
-            startAutoScroll()
+
+            document.querySelectorAll('[data-action="close-cart"]').forEach((el) => {
+              el.addEventListener("click", closeAllModals)
+            })
+            document.querySelectorAll('[data-action="close-quick-view"]').forEach((el) => {
+              el.addEventListener("click", () => quickViewModal.setAttribute("aria-hidden", "true"))
+            })
+            document.querySelectorAll('[data-action="close-checkout"]').forEach((el) => {
+              el.addEventListener("click", () => checkoutModal.setAttribute("aria-hidden", "true"))
+            })
+            document.querySelectorAll('[data-action="close-payment"]').forEach((el) => {
+              el.addEventListener("click", () => {
+                paymentSuccess.setAttribute("aria-hidden", "true")
+                paymentFailure.setAttribute("aria-hidden", "true")
+              })
+            })
+
+            cartFab.addEventListener("click", () => {
+              cartDrawer.setAttribute("aria-hidden", "false")
+            })
+
+            document.querySelectorAll('[data-action="checkout"]').forEach((btn) => {
+              btn.addEventListener("click", () => {
+                if (!cart.length) return
+                cartDrawer.setAttribute("aria-hidden", "true")
+                const items = document.querySelector('[data-role="checkout-items"]')
+                items.innerHTML = cart
+                  .map(
+                    (i) => \`
+                    <div class="checkout-summary__item"><span>\${i.name} x\${i.qty}</span><span>\${formatPrice(i.price * i.qty)}</span></div>
+                  \`
+                  )
+                  .join("")
+                const sub = cart.reduce((s, i) => s + i.price * i.qty, 0)
+                document.querySelector('[data-role="checkout-subtotal"]').textContent = formatPrice(sub)
+                document.querySelector('[data-role="checkout-total"]').textContent = formatPrice(sub + 5000)
+                document.querySelector('[data-role="checkout-ref"]').textContent = genRef()
+                document.querySelector('[data-role="checkout-date"]').textContent = new Date().toLocaleString()
+                checkoutModal.setAttribute("aria-hidden", "false")
+              })
+            })
+
+            document.querySelectorAll('[data-action="proceed-payment"]').forEach((btn) => {
+              btn.addEventListener("click", () => {
+                const name = document.querySelector('[data-field="name"]')?.value || "Guest"
+                const sub = cart.reduce((s, i) => s + i.price * i.qty, 0)
+                const total = sub + 5000
+                const ref = genRef()
+                checkoutModal.setAttribute("aria-hidden", "true")
+                if (Math.random() > 0.1) {
+                  document.querySelector('[data-role="success-ref"]').textContent = ref
+                  document.querySelector('[data-role="success-amount"]').textContent = formatPrice(total)
+                  document.querySelector('[data-role="success-name"]').textContent = name
+                  paymentSuccess.setAttribute("aria-hidden", "false")
+                  cart.length = 0
+                  updateCart()
+                } else {
+                  paymentFailure.setAttribute("aria-hidden", "false")
+                }
+              })
+            })
+
+            document.querySelectorAll('[data-action="retry-payment"]').forEach((btn) => {
+              btn.addEventListener("click", () => {
+                paymentFailure.setAttribute("aria-hidden", "true")
+                checkoutModal.setAttribute("aria-hidden", "false")
+              })
+            })
+
+            document.querySelectorAll('[data-action="continue-shopping"]').forEach((btn) => {
+              btn.addEventListener("click", () => {
+                paymentSuccess.setAttribute("aria-hidden", "true")
+              })
+            })
+
+            // Filter functionality
+            document.querySelectorAll("[data-filter]").forEach((filter) => {
+              filter.addEventListener("change", () => {
+                const cat = document.querySelector('[data-filter="category"]')?.value || "all"
+                const search = (document.querySelector('[data-filter="search"]')?.value || "").toLowerCase()
+                document.querySelectorAll(".products-marketplace__row").forEach((row) => {
+                  const rowCat = row.dataset.category
+                  const showRow = cat === "all" || cat === rowCat
+                  row.style.display = showRow ? "" : "none"
+                })
+                document.querySelectorAll(".product-card").forEach((card) => {
+                  const name = card.querySelector(".product-card__name").textContent.toLowerCase()
+                  const matchesSearch = !search || name.includes(search)
+                  const parentRow = card.closest(".products-marketplace__row")
+                  const rowCat = parentRow.dataset.category
+                  const showCat = cat === "all" || cat === rowCat
+                  card.style.display = matchesSearch && showCat ? "" : "none"
+                })
+              })
+            })
+            document.querySelector('[data-filter="search"]')?.addEventListener("input", () => {
+              document.querySelector('[data-filter="category"]')?.dispatchEvent(new Event("change"))
+            })
           }
           // Project Filtering
           const initFilters = () => {
@@ -1495,6 +2835,7 @@ const Home = (props) => {
           initHero()
           initCounters()
           initRail()
+          initMarketplace()
           initFilters()
           initTestimonials()
         })()
@@ -1697,8 +3038,267 @@ to {
             );
             border-radius: 2px;
           }
-          .home-thq-products-railnav-elm {
-            display: none;
+          .home-thq-products-rail-elm {
+            padding: var(--spacing-4xl) 0;
+            overflow: visible;
+            position: relative;
+            background: var(--color-surface-elevated);
+          }
+          .home-thq-products-railcontainer-elm {
+            margin: 0 auto;
+            padding: 0 var(--spacing-xl);
+            overflow: visible;
+            max-width: var(--content-max-width);
+          }
+          .home-thq-products-railheader-elm {
+            gap: var(--spacing-sm);
+            display: flex;
+            text-align: center;
+            align-items: center;
+            margin-bottom: var(--spacing-xl);
+            flex-direction: column;
+            justify-content: center;
+          }
+          .home-thq-products-marketplacesubtitle-elm {
+            color: var(--color-on-surface-secondary);
+            opacity: 0.75;
+            font-size: var(--font-size-base);
+            max-width: 640px;
+            line-height: var(--line-height-body);
+          }
+          .home-thq-products-marketplacefilters-elm {
+            gap: var(--spacing-sm);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: var(--spacing-2xl);
+            justify-content: center;
+          }
+          .home-thq-filter-group-elm1 {
+            gap: var(--spacing-xs);
+            border: 1px solid var(--color-border);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            background: var(--color-surface);
+            border-radius: var(--border-radius-md);
+          }
+          .home-thq-filter-icon-elm {
+            color: var(--color-on-surface-secondary);
+            flex-shrink: 0;
+          }
+          .home-thq-marketplace-cart-fabbadge-elm {
+            top: -4px;
+            color: var(--color-on-accent);
+            right: -4px;
+            height: 22px;
+            display: flex;
+            padding: 0 6px;
+            position: absolute;
+            font-size: 11px;
+            min-width: 22px;
+            background: var(--color-accent);
+            align-items: center;
+            font-weight: var(--font-weight-medium);
+            border-radius: var(--border-radius-full);
+            justify-content: center;
+          }
+          .home-thq-cart-draweroverlay-elm {
+            inset: 0;
+            position: absolute;
+            background: var(--color-scrim);
+          }
+          .home-thq-cart-drawerpanel-elm {
+            width: 100%;
+            display: flex;
+            max-width: 420px;
+            transform: translateX(100%);
+            background: var(--color-surface);
+            box-shadow: var(--shadow-level-3);
+            transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+            flex-direction: column;
+          }
+          .home-thq-cart-drawerheader-elm {
+            display: flex;
+            padding: var(--spacing-lg) var(--spacing-xl);
+            align-items: center;
+            border-bottom: 1px solid var(--color-border);
+            justify-content: space-between;
+          }
+          .home-thq-cart-drawertitle-elm {
+            color: var(--color-primary);
+            font-size: var(--font-size-xl);
+            font-family: var(--font-family-heading);
+          }
+          .home-thq-cart-draweritems-elm {
+            flex: 1;
+            padding: var(--spacing-md) var(--spacing-xl);
+            overflow-y: auto;
+          }
+          .home-thq-cart-drawerempty-elm {
+            color: var(--color-outline);
+            padding: var(--spacing-2xl) 0;
+            font-size: var(--font-size-base);
+            text-align: center;
+          }
+          .home-thq-cart-drawersummary-elm {
+            padding: var(--spacing-lg) var(--spacing-xl);
+            background: rgba(0, 0, 0, 0.02);
+            border-top: 1px solid var(--color-border);
+          }
+          .home-thq-cart-summaryrow-elm3 {
+            color: var(--color-on-surface);
+            font-size: var(--font-size-lg);
+            border-top: 1px dashed var(--color-border);
+            margin-top: var(--spacing-sm);
+            font-weight: var(--font-weight-heading);
+            padding-top: var(--spacing-sm);
+          }
+          .home-thq-btn-elm24 {
+            width: 100%;
+            margin-top: var(--spacing-md);
+          }
+          .home-thq-quick-view-modaloverlay-elm {
+            inset: 0;
+            position: absolute;
+            background: var(--color-scrim);
+          }
+          .home-thq-quick-view-modalpanel-elm {
+            width: 100%;
+            position: relative;
+            max-width: 800px;
+            transform: scale(0.95);
+            background: var(--color-surface);
+            box-shadow: var(--shadow-level-3);
+            max-height: 90vh;
+            overflow-y: auto;
+            transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            border-radius: var(--border-radius-xl);
+          }
+          .home-thq-quick-view-modalclose-elm {
+            top: var(--spacing-md);
+            color: var(--color-on-surface);
+            right: var(--spacing-md);
+            width: 36px;
+            border: none;
+            cursor: pointer;
+            height: 36px;
+            display: flex;
+            z-index: 2;
+            position: absolute;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: var(--shadow-level-1);
+            align-items: center;
+            border-radius: var(--border-radius-full);
+            justify-content: center;
+          }
+          .home-thq-quick-view-modalcontent-elm {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+          }
+          .home-thq-quick-view-modaldetails-elm {
+            display: flex;
+            padding: var(--spacing-2xl);
+            flex-direction: column;
+          }
+          .home-thq-quick-view-modalname-elm {
+            color: var(--color-primary);
+            font-size: var(--font-size-2xl);
+            font-family: var(--font-family-heading);
+            margin-bottom: var(--spacing-xs);
+          }
+          .home-thq-quick-view-modalprice-elm {
+            color: var(--color-secondary);
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-heading);
+            margin-bottom: var(--spacing-sm);
+          }
+          .home-thq-quick-view-modalstars-elm {
+            color: #d4a017;
+            font-size: var(--font-size-base);
+            margin-bottom: var(--spacing-md);
+          }
+          .home-thq-quick-view-modalwarranty-elm {
+            margin-bottom: var(--spacing-md);
+          }
+          .home-thq-warranty-badge-elm {
+            color: var(--color-primary);
+            border: 1px solid var(--color-primary);
+            display: inline-block;
+            padding: 4px 10px;
+            font-size: 11px;
+            font-weight: var(--font-weight-medium);
+            border-radius: var(--border-radius-full);
+          }
+          .home-thq-btn-elm25 {
+            margin-top: auto;
+          }
+          .home-thq-checkout-modaloverlay-elm {
+            inset: 0;
+            position: absolute;
+            background: var(--color-scrim);
+          }
+          .home-thq-checkout-modalpanel-elm {
+            width: 100%;
+            position: relative;
+            max-width: 800px;
+            transform: scale(0.95);
+            background: var(--color-surface);
+            box-shadow: var(--shadow-level-3);
+            max-height: 90vh;
+            overflow-y: auto;
+            transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            border-radius: var(--border-radius-xl);
+          }
+          .home-thq-checkout-modalclose-elm {
+            top: var(--spacing-md);
+            color: var(--color-on-surface);
+            right: var(--spacing-md);
+            width: 36px;
+            border: none;
+            cursor: pointer;
+            height: 36px;
+            display: flex;
+            z-index: 2;
+            position: absolute;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: var(--shadow-level-1);
+            align-items: center;
+            border-radius: var(--border-radius-full);
+            justify-content: center;
+          }
+          .home-thq-checkout-modalcontent-elm {
+            gap: var(--spacing-xl);
+            display: grid;
+            padding: var(--spacing-2xl);
+            grid-template-columns: 1fr 340px;
+          }
+          .home-thq-checkout-modaltitle-elm {
+            color: var(--color-primary);
+            font-size: var(--font-size-2xl);
+            font-family: var(--font-family-heading);
+            margin-bottom: var(--spacing-lg);
+          }
+          .home-thq-checkout-summaryitems-elm {
+            margin-bottom: var(--spacing-md);
+          }
+          .home-thq-checkout-summaryrow-elm3 {
+            color: var(--color-on-surface);
+            font-size: var(--font-size-lg);
+            border-top: 1px dashed var(--color-border);
+            margin-top: var(--spacing-sm);
+            font-weight: var(--font-weight-heading);
+            padding-top: var(--spacing-sm);
+          }
+          .home-thq-btn-elm26 {
+            width: 100%;
+            margin-top: var(--spacing-md);
+          }
+          .home-thq-payment-resulticon-elm1 {
+            color: #2d7a4e;
+            background: rgba(45, 122, 78, 0.1);
+          }
+          .home-thq-payment-resulticon-elm2 {
+            color: #c0392b;
+            background: rgba(192, 57, 43, 0.1);
           }
           .home-thq-contact-ctavalue-elm1 {
             text-decoration: none;
@@ -1744,10 +3344,32 @@ to {
               gap: var(--spacing-lg);
               grid-template-columns: 1fr;
             }
+            .home-thq-products-marketplacefilters-elm {
+              flex-wrap: nowrap;
+              overflow-x: auto;
+              padding-bottom: var(--spacing-sm);
+              justify-content: flex-start;
+              scrollbar-width: none;
+            }
+            .home-thq-filter-group-elm1 {
+              min-width: 180px;
+            }
+            .home-thq-cart-drawerpanel-elm {
+              max-width: 100%;
+            }
+            .home-thq-quick-view-modalcontent-elm {
+              grid-template-columns: 1fr;
+            }
+            .home-thq-checkout-modalcontent-elm {
+              grid-template-columns: 1fr;
+            }
           }
           @media (max-width: 479px) {
             .home-thq-hero-title-elm1 {
               font-size: 35px;
+            }
+            .home-thq-products-railcontainer-elm {
+              padding: 0 var(--spacing-md);
             }
           }
         `}
