@@ -1846,6 +1846,7 @@ const Home = (props) => {
           <button
             aria-label="Shopping Cart"
             data-action="toggle-cart"
+            data-cart-fab="true"
             className="marketplace-cart-fab"
           >
             <svg
@@ -2792,6 +2793,31 @@ const Home = (props) => {
             let cart = []
             const cartFab = document.querySelector('[data-action="toggle-cart"]')
             const cartDrawer = document.querySelector('[data-role="cart-drawer"]')
+
+            // Dynamic cart FAB positioning based on header height
+            const updateCartFabPosition = () => {
+              if (!cartFab) return
+              const nav = document.getElementById("main-nav")
+              if (!nav) return
+              const navRect = nav.getBoundingClientRect()
+              const headerHeight = navRect.height || nav.offsetHeight || 0
+              const scrollY = window.scrollY || window.pageYOffset || 0
+              // When nav is sticky/fixed at top, use its rendered height + offset
+              const cartTopPosition = Math.max(headerHeight + 12, 72)
+              cartFab.style.top = cartTopPosition + "px"
+              cartFab.style.bottom = "auto"
+            }
+            // Initial position
+            updateCartFabPosition()
+            // Recalculate on scroll and resize
+            window.addEventListener("scroll", updateCartFabPosition, { passive: true })
+            window.addEventListener("resize", updateCartFabPosition, { passive: true })
+            // Also update when nav class changes (scrolled state)
+            const navObserver = new MutationObserver(updateCartFabPosition)
+            const navEl = document.getElementById("main-nav")
+            if (navEl) {
+              navObserver.observe(navEl, { attributes: true, attributeFilter: ["class", "style"] })
+            }
             const cartItems = document.querySelector('[data-role="cart-items"]')
             const cartCount = document.querySelector('[data-role="cart-count"]')
             const cartItemsCount = document.querySelector('[data-role="cart-items-count"]')
@@ -2803,7 +2829,6 @@ const Home = (props) => {
             const paymentFailure = document.querySelector('[data-role="payment-failure"]')
             const formatPrice = (n) => "\u20A6" + n.toLocaleString()
             const genRef = () => "DO-" + Math.floor(1000 + Math.random() * 9000)
-
             const loadCart = () => {
               try {
                 const raw = localStorage.getItem(STORAGE_KEY)
@@ -2815,23 +2840,22 @@ const Home = (props) => {
                 cart = []
               }
             }
-
             const saveCart = () => {
               try {
                 localStorage.setItem(STORAGE_KEY, JSON.stringify(cart))
               } catch (e) {}
             }
-
             const updateFabVisibility = () => {
               if (!cartFab) return
               const totalQty = cart.reduce((s, i) => s + i.qty, 0)
               if (totalQty > 0) {
                 cartFab.classList.add("is-visible")
+                // Ensure position is correct when becoming visible
+                updateCartFabPosition()
               } else {
                 cartFab.classList.remove("is-visible")
               }
             }
-
             const showToast = (message) => {
               if (!cartToast) return
               const textEl = cartToast.querySelector(".thq-cart-toasttext-elm")
@@ -2843,13 +2867,11 @@ const Home = (props) => {
                 cartToast.setAttribute("aria-hidden", "true")
               }, 2500)
             }
-
             const animateCartIcon = () => {
               if (!cartFab) return
               cartFab.classList.add("cart-bounce")
               setTimeout(() => cartFab.classList.remove("cart-bounce"), 400)
             }
-
             const updateCart = () => {
               const totalQty = cart.reduce((s, i) => s + i.qty, 0)
               const sub = cart.reduce((s, i) => s + i.price * i.qty, 0)
@@ -2862,17 +2884,17 @@ const Home = (props) => {
               if (!cart.length) {
                 if (cartItems) {
                   cartItems.innerHTML = \`
-                        <div class="cart-drawer__empty">
-                          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="9" cy="21" r="1"></circle>
-                            <circle cx="20" cy="21" r="1"></circle>
-                            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                          </svg>
-                          <p class="cart-drawer__empty-title">Your cart is empty</p>
-                          <p class="cart-drawer__empty-text">Add products to continue shopping</p>
-                          <button data-action="close-cart" class="btn btn-primary btn-sm cart-drawer__empty-btn">Continue Shopping</button>
-                        </div>
-                      \`
+                          <div class="cart-drawer__empty">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                              <circle cx="9" cy="21" r="1"></circle>
+                              <circle cx="20" cy="21" r="1"></circle>
+                              <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                            </svg>
+                            <p class="cart-drawer__empty-title">Your cart is empty</p>
+                            <p class="cart-drawer__empty-text">Add products to continue shopping</p>
+                            <button data-action="close-cart" class="btn btn-primary btn-sm cart-drawer__empty-btn">Continue Shopping</button>
+                          </div>
+                        \`
                   cartItems.querySelectorAll('[data-action="close-cart"]').forEach((btn) => {
                     btn.addEventListener("click", () => {
                       if (cartDrawer) cartDrawer.setAttribute("aria-hidden", "true")
@@ -2884,23 +2906,23 @@ const Home = (props) => {
                   cartItems.innerHTML = cart
                     .map(
                       (item, idx) => \`
-                          <div class="cart-item">
-                            <img class="cart-item__thumb" src="\${item.image}" alt="\${item.name}" />
-                            <div class="cart-item__info">
-                              <div class="cart-item__name">\${item.name}</div>
-                              <div class="cart-item__price">\${formatPrice(item.price)} &times; \${item.qty}</div>
-                              <div class="cart-item__subtotal">\${formatPrice(item.price * item.qty)}</div>
+                            <div class="cart-item">
+                              <img class="cart-item__thumb" src="\\\${item.image}" alt="\\\${item.name}" />
+                              <div class="cart-item__info">
+                                <div class="cart-item__name">\\\${item.name}</div>
+                                <div class="cart-item__price">\\\${formatPrice(item.price)} &times; \\\${item.qty}</div>
+                                <div class="cart-item__subtotal">\\\${formatPrice(item.price * item.qty)}</div>
+                              </div>
+                              <div class="cart-item__qty">
+                                <button class="cart-item__qty-btn" data-idx="\\\${idx}" data-delta="-1" aria-label="Decrease quantity">-</button>
+                                <span class="cart-item__qty-value">\\\${item.qty}</span>
+                                <button class="cart-item__qty-btn" data-idx="\\\${idx}" data-delta="1" aria-label="Increase quantity">+</button>
+                              </div>
+                              <button class="cart-item__remove" data-remove="\\\${idx}" aria-label="Remove item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                              </button>
                             </div>
-                            <div class="cart-item__qty">
-                              <button class="cart-item__qty-btn" data-idx="\${idx}" data-delta="-1" aria-label="Decrease quantity">-</button>
-                              <span class="cart-item__qty-value">\${item.qty}</span>
-                              <button class="cart-item__qty-btn" data-idx="\${idx}" data-delta="1" aria-label="Increase quantity">+</button>
-                            </div>
-                            <button class="cart-item__remove" data-remove="\${idx}" aria-label="Remove item">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
-                            </button>
-                          </div>
-                        \`
+                          \`
                     )
                     .join("")
                   cartItems.querySelectorAll("[data-delta]").forEach((btn) => {
@@ -2921,7 +2943,6 @@ const Home = (props) => {
                 }
               }
             }
-
             const addToCart = (card) => {
               const id = card.dataset.productId
               const name = card.querySelector(".product-card__name").textContent.trim()
@@ -2936,9 +2957,8 @@ const Home = (props) => {
               }
               updateCart()
               animateCartIcon()
-              showToast(\`\u2713 \${name} added to cart\`)
+              showToast(\`\u2713 \\\${name} added to cart\`)
             }
-
             document.querySelectorAll('[data-action="add-to-cart"]').forEach((btn) => {
               btn.addEventListener("click", (e) => {
                 e.stopPropagation()
@@ -2946,22 +2966,18 @@ const Home = (props) => {
                 if (card) addToCart(card)
               })
             })
-
             const closeCartDrawer = () => {
               if (cartDrawer) cartDrawer.setAttribute("aria-hidden", "true")
             }
             const openCartDrawer = () => {
               if (cartDrawer) cartDrawer.setAttribute("aria-hidden", "false")
             }
-
             document.querySelectorAll('[data-action="close-cart"]').forEach((el) => {
               el.addEventListener("click", closeCartDrawer)
             })
-
             if (cartFab) {
               cartFab.addEventListener("click", openCartDrawer)
             }
-
             if (cartDrawer) {
               cartDrawer.addEventListener("click", (e) => {
                 if (e.target === cartDrawer || e.target.classList.contains("thq-cart-draweroverlay-elm")) {
@@ -2969,7 +2985,6 @@ const Home = (props) => {
                 }
               })
             }
-
             // Initialize: load from storage and render
             loadCart()
             updateCart()
@@ -2982,8 +2997,8 @@ const Home = (props) => {
                   items.innerHTML = cart
                     .map(
                       (i) => \`
-                          <div class="checkout-summary__item"><span>\\\${i.name} \u00D7 \\\${i.qty}</span><span>\\\${formatPrice(i.price * i.qty)}</span></div>
-                        \`
+                            <div class="checkout-summary__item"><span>\\\${i.name} \u00D7 \\\${i.qty}</span><span>\\\${formatPrice(i.price * i.qty)}</span></div>
+                          \`
                     )
                     .join("")
                 }
@@ -3625,6 +3640,7 @@ to {
           }
           .home-thq-checkout-modaloverlay-elm {
             inset: 0;
+            z-index: 1900;
             position: absolute;
             background: var(--color-scrim);
             pointer-events: none;

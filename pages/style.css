@@ -4806,7 +4806,7 @@
   cursor: pointer;
   height: 56px;
   display: flex;
-  z-index: 9999;
+  z-index: 1050;
   position: fixed;
   box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
@@ -8242,16 +8242,17 @@
 }
  
 .marketplace-cart-fab {
+  top: 100px;
   color: var(--color-on-primary);
   right: 24px;
   width: 52px;
   border: none;
-  bottom: 24px;
+  bottom: auto;
   cursor: pointer;
   height: 52px;
   display: none;
   opacity: 0;
-  z-index: 100;
+  z-index: 1100;
   position: fixed;
   transform: scale(0.8);
   background: var(--color-primary);
@@ -8392,7 +8393,7 @@
   display: none;
   opacity: 0;
   padding: var(--spacing-md);
-  z-index: 300;
+  z-index: 1800;
   position: fixed;
   transition: opacity 0.3s ease;
   visibility: hidden;
@@ -8427,7 +8428,7 @@
   display: none;
   opacity: 0;
   padding: var(--spacing-md);
-  z-index: 300;
+  z-index: 1800;
   position: fixed;
   transition: opacity 0.3s ease;
   visibility: hidden;
@@ -8794,7 +8795,7 @@
   display: flex;
   opacity: 0;
   padding: 12px 20px;
-  z-index: 250;
+  z-index: 1200;
   position: fixed;
   background: var(--color-primary);
   box-shadow: var(--shadow-level-3);
@@ -9423,9 +9424,10 @@
     height: 120px;
   }
   .marketplace-cart-fab {
+    top: 96px;
     right: 16px;
     width: 52px;
-    bottom: 16px;
+    bottom: auto;
     height: 52px;
   }
   .payment-result__panel {
@@ -9444,7 +9446,8 @@
   .thq-cart-toast-elm {
     left: 16px;
     right: 16px;
-    bottom: 80px;
+    bottom: 88px;
+    z-index: 1200;
     justify-content: center;
   }
 }
@@ -9631,9 +9634,18 @@
     font-size: 10px;
   }
   .marketplace-cart-fab {
+    top: 92px;
     right: 16px;
     width: 48px;
-    bottom: 16px;
+    bottom: auto;
     height: 48px;
+  }
+  .thq-cart-toast-elm {
+    top: auto;
+    left: 16px;
+    right: 16px;
+    bottom: 80px;
+    z-index: 1200;
+    justify-content: center;
   }
 }
