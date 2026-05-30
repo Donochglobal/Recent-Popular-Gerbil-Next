@@ -2580,20 +2580,20 @@ const Home = (props) => {
         </section>
         <section
           data-role="ceo-message-section"
-          className="home-thq-ceo-message-section-elm1"
+          className="home-thq-ceo-message-section-elm"
         >
           <div
             aria-hidden="true"
             className="home-thq-ceo-messagebg-particles-elm"
           >
-            <span className="home-thq-ceo-particle-elm10 ceo-particle"></span>
-            <span className="home-thq-ceo-particle-elm11 ceo-particle"></span>
-            <span className="home-thq-ceo-particle-elm12 ceo-particle"></span>
-            <span className="home-thq-ceo-particle-elm13 ceo-particle"></span>
-            <span className="home-thq-ceo-particle-elm14 ceo-particle"></span>
-            <span className="home-thq-ceo-particle-elm15 ceo-particle"></span>
-            <span className="home-thq-ceo-particle-elm16 ceo-particle"></span>
-            <span className="home-thq-ceo-particle-elm17 ceo-particle"></span>
+            <span className="home-thq-ceo-particle-elm1 ceo-particle"></span>
+            <span className="home-thq-ceo-particle-elm2 ceo-particle"></span>
+            <span className="home-thq-ceo-particle-elm3 ceo-particle"></span>
+            <span className="home-thq-ceo-particle-elm4 ceo-particle"></span>
+            <span className="home-thq-ceo-particle-elm5 ceo-particle"></span>
+            <span className="home-thq-ceo-particle-elm6 ceo-particle"></span>
+            <span className="home-thq-ceo-particle-elm7 ceo-particle"></span>
+            <span className="home-thq-ceo-particle-elm8 ceo-particle"></span>
           </div>
           <div className="home-thq-ceo-messagecontainer-elm">
             <div
@@ -2747,154 +2747,6 @@ const Home = (props) => {
           </div>
         </section>
         <section className="contact-cta">
-          <section data-role="ceo-message-section">
-            <div aria-hidden="true">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div></div>
-            <div className="ceo-message-container">
-              <div>
-                <div>
-                  <div data-animate="ceo-image">
-                    <div className="ceo-portrait-frame">
-                      <img
-                        src="https://images.pexels.com/photos/10031556/pexels-photo-10031556.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                        alt="CEO Portrait - Professional executive leadership"
-                        className="ceo-portrait-img"
-                      />
-                      <div></div>
-                    </div>
-                    <div></div>
-                  </div>
-                </div>
-                <div>
-                  <span data-animate="ceo-label">Leadership Vision</span>
-                  <br></br>
-                  <h2 data-animate="ceo-heading">
-                    <span>
-                      {' '}
-                      Building Sustainable Energy.
-                      <span
-                        dangerouslySetInnerHTML={{
-                          __html: ' ',
-                        }}
-                      />
-                    </span>
-                    <span>
-                      {' '}
-                      Creating Long-Term Value.
-                      <span
-                        dangerouslySetInnerHTML={{
-                          __html: ' ',
-                        }}
-                      />
-                    </span>
-                  </h2>
-                  <p data-animate="ceo-paragraph" className="ceo-message-body">
-                    {' '}
-                    At DON OCH Global, we believe that reliable energy and
-                    quality real estate are essential foundations for growth,
-                    stability, and prosperity. Our mission is to deliver
-                    innovative solar solutions and trusted property
-                    opportunities that empower individuals, businesses,
-                    institutions, and communities to build a better future. We
-                    remain committed to professionalism, integrity, customer
-                    satisfaction, and long-term impact across every project we
-                    undertake.
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </p>
-                  <div data-animate="ceo-signature">
-                    <div>
-                      <span>CEO Name Placeholder</span>
-                    </div>
-                    <div>
-                      <span>Chief Executive Officer</span>
-                    </div>
-                    <div>
-                      <span>DON OCH Global</span>
-                    </div>
-                  </div>
-                  <div>
-                    <div data-animate="ceo-badge" className="ceo-badge">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                      >
-                        <path d="M20 6L9 17l-5-5"></path>
-                      </svg>
-                      <span>Professional Excellence</span>
-                    </div>
-                    <div data-animate="ceo-badge" className="ceo-badge">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                      >
-                        <path d="M20 6L9 17l-5-5"></path>
-                      </svg>
-                      <span>Sustainable Energy Solutions</span>
-                    </div>
-                    <div data-animate="ceo-badge" className="ceo-badge">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                      >
-                        <path d="M20 6L9 17l-5-5"></path>
-                      </svg>
-                      <span>Trusted Real Estate Investments</span>
-                    </div>
-                  </div>
-                  <div>
-                    <Link href="/about">
-                      <a data-animate="ceo-button">
-                        <div>
-                          <span>Meet Our Team</span>
-                        </div>
-                      </a>
-                    </Link>
-                    <Link href="/about">
-                      <a data-animate="ceo-button">
-                        <div>
-                          <span>Company Profile</span>
-                        </div>
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
           <div className="contact-cta__container">
             <div className="contact-cta__content">
               <h2 className="section-title">Ready to Power Your Future?</h2>
@@ -3915,14 +3767,14 @@ const Home = (props) => {
               </h3>
               <div className="home-thq-pre-footer-cta-buttons-elm">
                 <Link href="/solar-solutions">
-                  <a className="home-link40">
+                  <a className="home-link38">
                     <div className="btn btn-primary pre-footer-btn-primary">
                       <span>Explore Solar Solutions</span>
                     </div>
                   </a>
                 </Link>
                 <Link href="/lemoex-properties">
-                  <a className="home-link41">
+                  <a className="home-link39">
                     <div className="btn btn-outline pre-footer-btn-secondary">
                       <span>View Real Estate Opportunities</span>
                     </div>
@@ -4689,7 +4541,7 @@ to {
             color: #c0392b;
             background: rgba(192, 57, 43, 0.1);
           }
-          .home-thq-ceo-message-section-elm1 {
+          .home-thq-ceo-message-section-elm {
             padding: var(--spacing-4xl) var(--spacing-xl);
             overflow: hidden;
             position: relative;
@@ -4701,56 +4553,56 @@ to {
             position: absolute;
             pointer-events: none;
           }
-          .home-thq-ceo-particle-elm10 {
+          .home-thq-ceo-particle-elm1 {
             top: 10%;
             left: 5%;
             width: 120px;
             height: 120px;
             animation-delay: 0s;
           }
-          .home-thq-ceo-particle-elm11 {
+          .home-thq-ceo-particle-elm2 {
             top: 60%;
             left: 15%;
             width: 80px;
             height: 80px;
             animation-delay: 1.5s;
           }
-          .home-thq-ceo-particle-elm12 {
+          .home-thq-ceo-particle-elm3 {
             top: 20%;
             right: 10%;
             width: 160px;
             height: 160px;
             animation-delay: 3s;
           }
-          .home-thq-ceo-particle-elm13 {
+          .home-thq-ceo-particle-elm4 {
             left: 40%;
             width: 60px;
             bottom: 15%;
             height: 60px;
             animation-delay: 2s;
           }
-          .home-thq-ceo-particle-elm14 {
+          .home-thq-ceo-particle-elm5 {
             top: 40%;
             right: 25%;
             width: 100px;
             height: 100px;
             animation-delay: 4s;
           }
-          .home-thq-ceo-particle-elm15 {
+          .home-thq-ceo-particle-elm6 {
             right: 5%;
             width: 140px;
             bottom: 25%;
             height: 140px;
             animation-delay: 0.5s;
           }
-          .home-thq-ceo-particle-elm16 {
+          .home-thq-ceo-particle-elm7 {
             top: 75%;
             left: 60%;
             width: 70px;
             height: 70px;
             animation-delay: 2.5s;
           }
-          .home-thq-ceo-particle-elm17 {
+          .home-thq-ceo-particle-elm8 {
             top: 5%;
             left: 50%;
             width: 90px;
@@ -4813,7 +4665,7 @@ to {
             color: #0f2744;
             margin: 0;
             font-size: clamp(1.8rem, 2.4rem, 2.8rem);
-            font-family: '' Playfair Display ', serif';
+            font-family: '' 'Playfair Display', serif '';
             font-weight: 700;
             line-height: 1.25;
             letter-spacing: 0.02em;
@@ -4823,8 +4675,8 @@ to {
             margin: var(--spacing-sm) 0;
             font-size: var(--font-size-base);
             max-width: 560px;
-            font-family: '' Inter ', system-ui, -apple-system, ' Segoe UI
-              ', Roboto, ' Helvetica Neue ', Arial';
+            font-family: '' 'Inter', system-ui, -apple-system, 'Segoe UI',
+              Roboto, 'Helvetica Neue', Arial '';
             font-weight: 400;
             line-height: 1.7;
             letter-spacing: 0.01em;
@@ -4839,7 +4691,7 @@ to {
             color: #0f2744;
             font-size: var(--font-size-xl);
             font-style: italic;
-            font-family: '' Playfair Display ', serif';
+            font-family: '' 'Playfair Display', serif '';
             font-weight: 600;
             letter-spacing: 0.02em;
           }
@@ -5012,10 +4864,10 @@ to {
             flex-wrap: wrap;
             justify-content: center;
           }
-          .home-link40 {
+          .home-link38 {
             display: contents;
           }
-          .home-link41 {
+          .home-link39 {
             display: contents;
           }
           .home-container18 {
@@ -5128,11 +4980,14 @@ to {
               padding: var(--spacing-lg);
               grid-template-columns: 1fr;
             }
-            .home-thq-ceo-message-section-elm1 {
+            .home-thq-ceo-message-section-elm {
               padding: var(--spacing-2xl) var(--spacing-md);
             }
             .home-thq-ceo-messagecontainer-elm {
               gap: var(--spacing-xl);
+            }
+            .home-thq-ceo-messagecontent-col-elm {
+              gap: var(--spacing-xs);
             }
             .home-thq-ceo-messageheading-elm {
               font-size: clamp(1.4rem, 1.8rem, 2.2rem);
