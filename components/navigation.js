@@ -248,42 +248,6 @@ const Navigation = (props) => {
                       </a>
                     </Link>
                   </li>
-                  <div
-                    data-thq="thq-dropdown"
-                    className="navigation-thq-dropdown1"
-                  >
-                    <div
-                      data-thq="thq-dropdown-toggle"
-                      className="navigation-thq-dropdown-toggle1"
-                    >
-                      <span>More</span>
-                      <div
-                        data-thq="thq-dropdown-arrow"
-                        className="navigation-thq-dropdown-arrow1"
-                      >
-                        <svg
-                          viewBox="0 0 1024 1024"
-                          className="navigation-icon26"
-                        >
-                          <path d="M426 726v-428l214 214z"></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <ul
-                      data-thq="thq-dropdown-list"
-                      className="navigation-thq-dropdown-list1"
-                    >
-                      <li className="navigation-menu-item">
-                        <Link href="/team">
-                          <a>
-                            <div className="navigation-menu-link">
-                              <span>Team</span>
-                            </div>
-                          </a>
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
                 </ul>
               </div>
               <div className="navigation-actions">
@@ -403,36 +367,6 @@ const Navigation = (props) => {
                   </a>
                 </Link>
               </li>
-              <div data-thq="thq-dropdown" className="navigation-thq-dropdown2">
-                <div
-                  data-thq="thq-dropdown-toggle"
-                  className="navigation-thq-dropdown-toggle2"
-                >
-                  <span>More</span>
-                  <div
-                    data-thq="thq-dropdown-arrow"
-                    className="navigation-thq-dropdown-arrow2"
-                  >
-                    <svg viewBox="0 0 1024 1024" className="navigation-icon33">
-                      <path d="M426 726v-428l214 214z"></path>
-                    </svg>
-                  </div>
-                </div>
-                <ul
-                  data-thq="thq-dropdown-list"
-                  className="navigation-thq-dropdown-list2"
-                >
-                  <li className="navigation-mobile-item">
-                    <Link href="/team">
-                      <a>
-                        <div className="navigation-mobile-link">
-                          <span>Team</span>
-                        </div>
-                      </a>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
             </ul>
             <div className="navigation-mobile-footer">
               <div className="navigation-mobile-contact">
@@ -523,66 +457,6 @@ const Navigation = (props) => {
         {`
           .navigation-container1 {
             display: contents;
-          }
-          .navigation-thq-dropdown1 {
-            cursor: pointer;
-            display: inline-block;
-            padding: 4px 8px;
-            position: relative;
-            border-color: rgba(0, 0, 0, 0.45);
-            border-style: solid;
-            border-width: 1px;
-            border-radius: 4px;
-          }
-          .navigation-thq-dropdown-toggle1 {
-            gap: 4px;
-            display: inline-flex;
-            align-items: center;
-          }
-          .navigation-thq-dropdown-arrow1 {
-            transition: 0.3s;
-          }
-          .navigation-icon26 {
-            width: 18px;
-            height: 18px;
-          }
-          .navigation-thq-dropdown-list1 {
-            display: none;
-            z-index: 100;
-            position: absolute;
-            min-width: 100%;
-            flex-direction: column;
-            list-style-type: none;
-          }
-          .navigation-thq-dropdown2 {
-            cursor: pointer;
-            display: inline-block;
-            padding: 4px 8px;
-            position: relative;
-            border-color: rgba(0, 0, 0, 0.45);
-            border-style: solid;
-            border-width: 1px;
-            border-radius: 4px;
-          }
-          .navigation-thq-dropdown-toggle2 {
-            gap: 4px;
-            display: inline-flex;
-            align-items: center;
-          }
-          .navigation-thq-dropdown-arrow2 {
-            transition: 0.3s;
-          }
-          .navigation-icon33 {
-            width: 18px;
-            height: 18px;
-          }
-          .navigation-thq-dropdown-list2 {
-            display: none;
-            z-index: 100;
-            position: absolute;
-            min-width: 100%;
-            flex-direction: column;
-            list-style-type: none;
           }
           .navigation-container5 {
             display: none;

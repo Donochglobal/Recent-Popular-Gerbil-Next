@@ -10197,7 +10197,7 @@
   color: var(--color-surface);
   height: 100vh;
   display: flex;
-  padding: 0 var(--spacing-xl);
+  padding: 120px var(--spacing-xl) 0;
   overflow: hidden;
   position: relative;
   background: var(--color-primary);
@@ -11015,6 +11015,7 @@
   }
   .team-hero {
     height: 80vh;
+    padding-top: 100px;
   }
   .page-hero-title4 {
     font-size: var(--font-size-3xl);
@@ -11687,6 +11688,7 @@
   }
   .team-hero {
     height: 70vh;
+    padding-top: 90px;
   }
   .prefooter-container {
     padding: var(--spacing-xl);

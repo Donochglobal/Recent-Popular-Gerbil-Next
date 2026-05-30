@@ -3785,36 +3785,6 @@ const Home = (props) => {
           </div>
         </section>
         <Footer></Footer>
-        <a
-          href="https://wa.me/09132371332"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <div
-            rel="noopener noreferrer"
-            target="_blank"
-            aria-label="Message DON OCH on WhatsApp"
-            className="whatsapp-float-btn"
-          >
-            <span className="whatsapp-float-tooltip">
-              Message DON OCH on WhatsApp
-            </span>
-            <svg
-              fill="none"
-              width="28"
-              xmlns="http://www.w3.org/2000/svg"
-              height="28"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="m3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"></path>
-              <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0za5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path>
-            </svg>
-          </div>
-        </a>
         <div>
           <div className="home-container18">
             <Script

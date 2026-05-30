@@ -453,7 +453,7 @@ const Team = (props) => {
                 </div>
                 <div className="expert-card-inner">
                   <img
-                    src="https://images.pexels.com/photos/15010364/pexels-photo-15010364.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/15010364/pexels-photo-15010364.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
                     alt="Solar Engineer"
                     className="expert-img"
                   />
@@ -473,7 +473,7 @@ const Team = (props) => {
                 </div>
                 <div className="expert-card-inner">
                   <img
-                    src="https://images.pexels.com/photos/20433881/pexels-photo-20433881.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/20433881/pexels-photo-20433881.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
                     alt="Project Manager"
                     className="expert-img"
                   />
@@ -493,7 +493,7 @@ const Team = (props) => {
                 </div>
                 <div className="expert-card-inner">
                   <img
-                    src="https://images.pexels.com/photos/32388465/pexels-photo-32388465.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/32388465/pexels-photo-32388465.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
                     alt="Property Consultant"
                     className="expert-img"
                   />
@@ -694,7 +694,7 @@ const Team = (props) => {
                 </div>
                 <div className="page-testimonial-author">
                   <img
-                    src="https://images.pexels.com/photos/15389268/pexels-photo-15389268.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+                    src="https://images.pexels.com/photos/15389268/pexels-photo-15389268.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
                     alt="Client"
                     className="page-author-img"
                   />
@@ -733,19 +733,6 @@ const Team = (props) => {
             </div>
           </div>
         </section>
-        <a href="https://wa.me/2340000000000">
-          <div aria-label="Chat on WhatsApp" className="page-whatsapp-float">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path d="M12.031 6.172c-2.32 0-4.591.908-6.23 2.558a8.811 8.811 0 0 0-2.558 6.226c0 1.548.42 3.03 1.213 4.316l-1.29 4.708 4.82-1.265A8.775 8.775 0 0 0 12.03 24c4.856 0 8.811-3.954 8.811-8.811 0-4.857-3.955-8.811-8.81-8.811zm5.758 12.425c-.244.688-1.42 1.25-1.946 1.336-.527.085-1.022.126-2.88-.614-2.22-.888-3.655-3.142-3.766-3.29-.111-.149-.906-1.205-.906-2.298 0-1.093.573-1.631.777-1.855.204-.224.446-.28.594-.28.148 0 .296.002.425.01.135.006.315-.052.493.376.182.44.62 1.512.673 1.623.054.111.09.24.016.39-.074.15-.111.24-.22.37-.11.13-.23.29-.328.39-.11.11-.225.23-.096.45.13.22.576.95 1.238 1.54.853.76 1.57.994 1.793 1.104.223.111.353.093.484-.056.13-.149.558-.65.706-.873.149-.224.297-.186.494-.112.197.074 1.25.59 1.464.7.214.11.357.166.41.257.053.09.053.52-.19.1.208z"></path>
-            </svg>
-          </div>
-        </a>
         <div className="team-container19">
           <div className="team-container20">
             <Script
