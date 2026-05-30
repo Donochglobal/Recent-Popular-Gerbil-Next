@@ -1786,17 +1786,17 @@ const Home = (props) => {
               >
                 <div className="cart-drawer__empty">
                   <svg
+                    fill="none"
                     width="48"
                     height="48"
-                    viewBox="0 0 24 24"
-                    fill="none"
                     stroke="currentColor"
+                    viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
-                    <circle cx="9" cy="21" r="1"></circle>
-                    <circle cx="20" cy="21" r="1"></circle>
+                    <circle r="1" cx="9" cy="21"></circle>
+                    <circle r="1" cx="20" cy="21"></circle>
                     <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
                   </svg>
                   <p className="home-thq-cart-drawerempty-elm2">
@@ -1807,7 +1807,7 @@ const Home = (props) => {
                   </p>
                   <button
                     data-action="close-cart"
-                    className="home-thq-btn-elm18 btn btn-primary btn-sm button"
+                    className="home-thq-btn-elm18 btn-sm button btn-primary btn"
                   >
                     Continue Shopping
                   </button>
@@ -1826,64 +1826,12 @@ const Home = (props) => {
                   <span>Total Amount</span>
                   <span data-role="cart-total">₦0</span>
                 </div>
-              </div>
-              <div className="home-thq-cart-drawerform-elm">
-                <div className="home-thq-cart-drawerform-title-elm">
-                  <span>Customer Details</span>
-                </div>
-                <div className="cart-drawer__field">
-                  <label>Full Name</label>
-                  <input
-                    type="text"
-                    data-field="cart-name"
-                    placeholder="Enter your full name"
-                    className="input"
-                  />
-                </div>
-                <div className="cart-drawer__field">
-                  <label>Phone Number</label>
-                  <input
-                    type="tel"
-                    data-field="cart-phone"
-                    placeholder="Enter phone number"
-                    className="input"
-                  />
-                </div>
-                <div className="cart-drawer__field">
-                  <label>Email Address</label>
-                  <input
-                    type="email"
-                    data-field="cart-email"
-                    placeholder="Enter email address"
-                    className="input"
-                  />
-                </div>
-                <div className="cart-drawer__field">
-                  <label>Delivery Address</label>
-                  <textarea
-                    rows="2"
-                    data-field="cart-address"
-                    placeholder="Enter delivery address"
-                    className="textarea"
-                  ></textarea>
-                </div>
-                <div className="cart-drawer__field">
-                  <label>Order Notes (Optional)</label>
-                  <textarea
-                    rows="2"
-                    data-field="cart-notes"
-                    placeholder="Any special instructions..."
-                    className="textarea"
-                  ></textarea>
-                </div>
-              </div>
-              <div className="home-container13">
                 <button
-                  data-action="checkout"
                   data-role="cart-checkout-btn"
-                  className="home-thq-btn-elm19 btn btn-accent button"
+                  data-action="checkout"
+                  className="home-thq-btn-elm19 btn-primary btn"
                 >
-                  Proceed To Payment
+                  Proceed to Secure Payment
                 </button>
               </div>
             </div>
@@ -2758,8 +2706,8 @@ const Home = (props) => {
             </div>
           </div>
         </section>
-        <div className="home-container14">
-          <div className="home-container15">
+        <div className="home-container13">
+          <div className="home-container14">
             <Script
               html={`<script>
         ;(function () {
@@ -2916,7 +2864,6 @@ const Home = (props) => {
             const cartItemsCount = document.querySelector('[data-role="cart-items-count"]')
             const cartSubtotal = document.querySelector('[data-role="cart-subtotal"]')
             const cartTotal = document.querySelector('[data-role="cart-total"]')
-            const cartTotalBtn = document.querySelector('[data-role="cart-total-btn"]')
             const cartToast = document.querySelector('[data-role="cart-toast"]')
             const checkoutModal = document.querySelector('[data-role="checkout-modal"]')
             const paymentSuccess = document.querySelector('[data-role="payment-success"]')
@@ -2973,23 +2920,22 @@ const Home = (props) => {
               if (cartItemsCount) cartItemsCount.textContent = totalQty + (totalQty === 1 ? " item" : " items")
               if (cartSubtotal) cartSubtotal.textContent = formatPrice(sub)
               if (cartTotal) cartTotal.textContent = formatPrice(sub + 5000)
-              if (cartTotalBtn) cartTotalBtn.textContent = formatPrice(sub + 5000)
               updateFabVisibility()
               saveCart()
               if (!cart.length) {
                 if (cartItems) {
                   cartItems.innerHTML = \`
-                              <div class="cart-drawer__empty">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                  <circle cx="9" cy="21" r="1"></circle>
-                                  <circle cx="20" cy="21" r="1"></circle>
-                                  <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                                </svg>
-                                <p class="cart-drawer__empty-title">Your cart is empty</p>
-                                <p class="cart-drawer__empty-text">Add products to continue shopping</p>
-                                <button data-action="close-cart" class="btn btn-primary btn-sm cart-drawer__empty-btn">Continue Shopping</button>
-                              </div>
-                            \`
+                            <div class="cart-drawer__empty">
+                              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                              </svg>
+                              <p class="cart-drawer__empty-title">Your cart is empty</p>
+                              <p class="cart-drawer__empty-text">Add products to continue shopping</p>
+                              <button data-action="close-cart" class="btn btn-primary btn-sm cart-drawer__empty-btn">Continue Shopping</button>
+                            </div>
+                          \`
                   cartItems.querySelectorAll('[data-action="close-cart"]').forEach((btn) => {
                     btn.addEventListener("click", () => {
                       if (cartDrawer) cartDrawer.setAttribute("aria-hidden", "true")
@@ -3001,23 +2947,23 @@ const Home = (props) => {
                   cartItems.innerHTML = cart
                     .map(
                       (item, idx) => \`
-                                <div class="cart-item">
-                                  <img class="cart-item__thumb" src="\\\\\${item.image}" alt="\\\\\${item.name}" />
-                                  <div class="cart-item__info">
-                                    <div class="cart-item__name">\\\\\${item.name}</div>
-                                    <div class="cart-item__price">\\\\\${formatPrice(item.price)} &times; \\\\\${item.qty}</div>
-                                    <div class="cart-item__subtotal">\\\\\${formatPrice(item.price * item.qty)}</div>
-                                  </div>
-                                  <div class="cart-item__qty">
-                                    <button class="cart-item__qty-btn" data-idx="\\\\\${idx}" data-delta="-1" aria-label="Decrease quantity">-</button>
-                                    <span class="cart-item__qty-value">\\\\\${item.qty}</span>
-                                    <button class="cart-item__qty-btn" data-idx="\\\\\${idx}" data-delta="1" aria-label="Increase quantity">+</button>
-                                  </div>
-                                  <button class="cart-item__remove" data-remove="\\\\\${idx}" aria-label="Remove item">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
-                                  </button>
+                              <div class="cart-item">
+                                <img class="cart-item__thumb" src="\\\${item.image}" alt="\\\${item.name}" />
+                                <div class="cart-item__info">
+                                  <div class="cart-item__name">\\\${item.name}</div>
+                                  <div class="cart-item__price">\\\${formatPrice(item.price)} &times; \\\${item.qty}</div>
+                                  <div class="cart-item__subtotal">\\\${formatPrice(item.price * item.qty)}</div>
                                 </div>
-                              \`
+                                <div class="cart-item__qty">
+                                  <button class="cart-item__qty-btn" data-idx="\\\${idx}" data-delta="-1" aria-label="Decrease quantity">-</button>
+                                  <span class="cart-item__qty-value">\\\${item.qty}</span>
+                                  <button class="cart-item__qty-btn" data-idx="\\\${idx}" data-delta="1" aria-label="Increase quantity">+</button>
+                                </div>
+                                <button class="cart-item__remove" data-remove="\\\${idx}" aria-label="Remove item">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                                </button>
+                              </div>
+                            \`
                     )
                     .join("")
                   cartItems.querySelectorAll("[data-delta]").forEach((btn) => {
@@ -3052,7 +2998,7 @@ const Home = (props) => {
               }
               updateCart()
               animateCartIcon()
-              showToast(\`\u2713 \\\\\${name} added to cart\`)
+              showToast(\`\u2713 \\\${name} added to cart\`)
             }
             document.querySelectorAll('[data-action="add-to-cart"]').forEach((btn) => {
               btn.addEventListener("click", (e) => {
@@ -3106,29 +3052,13 @@ const Home = (props) => {
               btn.addEventListener("click", () => {
                 if (!cart.length) return
                 closeCartDrawer()
-                // Sync cart drawer form fields to checkout modal
-                const cartName = document.querySelector('[data-field="cart-name"]')
-                const cartPhone = document.querySelector('[data-field="cart-phone"]')
-                const cartEmail = document.querySelector('[data-field="cart-email"]')
-                const cartAddress = document.querySelector('[data-field="cart-address"]')
-                const cartNotes = document.querySelector('[data-field="cart-notes"]')
-                const checkoutName = document.querySelector('[data-field="name"]')
-                const checkoutPhone = document.querySelector('[data-field="phone"]')
-                const checkoutEmail = document.querySelector('[data-field="email"]')
-                const checkoutAddress = document.querySelector('[data-field="address"]')
-                const checkoutNotes = document.querySelector('[data-field="notes"]')
-                if (checkoutName && cartName) checkoutName.value = cartName.value
-                if (checkoutPhone && cartPhone) checkoutPhone.value = cartPhone.value
-                if (checkoutEmail && cartEmail) checkoutEmail.value = cartEmail.value
-                if (checkoutAddress && cartAddress) checkoutAddress.value = cartAddress.value
-                if (checkoutNotes && cartNotes) checkoutNotes.value = cartNotes.value
                 const items = document.querySelector('[data-role="checkout-items"]')
                 if (items) {
                   items.innerHTML = cart
                     .map(
                       (i) => \`
-                                <div class="checkout-summary__item"><span>\\\\\${i.name} \u00D7 \\\\\${i.qty}</span><span>\\\\\${formatPrice(i.price * i.qty)}</span></div>
-                              \`
+                              <div class="checkout-summary__item"><span>\\\\\${i.name} \u00D7 \\\\\${i.qty}</span><span>\\\\\${formatPrice(i.price * i.qty)}</span></div>
+                            \`
                     )
                     .join("")
                 }
@@ -3360,8 +3290,8 @@ const Home = (props) => {
             ></Script>
           </div>
         </div>
-        <div className="home-container16">
-          <div className="home-container17">
+        <div className="home-container15">
+          <div className="home-container16">
             <Script
               html={`<script>
 (function(){
@@ -3423,7 +3353,7 @@ const Home = (props) => {
           </div>
         </a>
         <div>
-          <div className="home-container19">
+          <div className="home-container18">
             <Script
               html={`<style>
 @keyframes fadeInUp {
@@ -3441,7 +3371,7 @@ to {
           </div>
         </div>
         <div>
-          <div className="home-container21">
+          <div className="home-container20">
             <Script
               html={`<style>
 @keyframes cartBounce {
@@ -3463,7 +3393,7 @@ to {
           </div>
         </div>
         <div>
-          <div className="home-container23">
+          <div className="home-container22">
             <Script
               html={`<style>
 @keyframes cartBounce {
@@ -3767,34 +3697,11 @@ to {
             flex-shrink: 0;
             flex-direction: column;
           }
-          .home-thq-cart-drawerform-elm {
-            padding: var(--spacing-md) var(--spacing-xl);
-            border-top: 1px solid var(--color-border);
-            flex-shrink: 0;
-          }
-          .home-thq-cart-drawerform-title-elm {
-            color: var(--color-primary);
-            font-size: var(--font-size-sm);
-            font-family: var(--font-family-heading);
-            font-weight: var(--font-weight-heading);
-            margin-bottom: var(--spacing-sm);
-          }
-          .home-container13 {
-            padding: 0 var(--spacing-xl) var(--spacing-lg) var(--spacing-xl);
-            flex-shrink: 0;
-          }
           .home-thq-btn-elm19 {
-            color: #ffffff;
             width: 100%;
-            border: none;
-            cursor: pointer;
-            padding: 0.875rem 1.5rem;
-            font-size: 1rem;
-            font-weight: 600;
-            border-radius: 10px;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            background-color: #e07a2f;
+            margin-top: var(--spacing-md);
+            font-weight: var(--font-weight-medium);
+            letter-spacing: 0.02em;
           }
           .home-thq-checkout-modaloverlay-elm {
             inset: 0;
@@ -3871,25 +3778,25 @@ to {
           .home-thq-contact-ctaitem-elm2 {
             text-decoration: none;
           }
-          .home-container14 {
+          .home-container13 {
             display: none;
+          }
+          .home-container14 {
+            display: contents;
           }
           .home-container15 {
-            display: contents;
-          }
-          .home-container16 {
             display: none;
           }
-          .home-container17 {
+          .home-container16 {
             display: contents;
           }
-          .home-container19 {
+          .home-container18 {
             display: contents;
           }
-          .home-container21 {
+          .home-container20 {
             display: contents;
           }
-          .home-container23 {
+          .home-container22 {
             display: contents;
           }
           @media (max-width: 991px) {
@@ -3937,9 +3844,6 @@ to {
               box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.15);
               max-height: 80vh;
               border-radius: var(--border-radius-xl) var(--border-radius-xl) 0 0;
-            }
-            .home-thq-cart-drawerform-elm {
-              padding: var(--spacing-sm) var(--spacing-lg);
             }
             .home-thq-checkout-modalpanel-elm {
               max-height: 95vh;
