@@ -626,48 +626,6 @@ const Profile = (props) => {
             </div>
           </div>
         </section>
-        <section className="page-ceo-section ceo-section">
-          <div className="container-max">
-            <div className="ceo-layout">
-              <div className="ceo-visual">
-                <div className="page-ceo-frame1">
-                  <img
-                    src="https://images.pexels.com/photos/22601673/pexels-photo-22601673.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    alt="CEO Portrait"
-                    className="ceo-img"
-                  />
-                </div>
-              </div>
-              <div className="ceo-content">
-                <span className="section-subtitle">LEADERSHIP VISION</span>
-                <h2 className="section-title">Message From The CEO</h2>
-                <blockquote className="page-ceo-quote1">
-                  <span>
-                    &quot;At DON OCH Global, we are committed to building
-                    sustainable solutions that empower communities, strengthen
-                    businesses, and create lasting value for future generations.
-                    Our goal is to remain a trusted partner for energy
-                    independence, infrastructure growth, and real estate
-                    development through innovation, professionalism, and
-                    integrity.&quot;
-                  </span>
-                </blockquote>
-                <div className="page-ceo-signature3">
-                  <span className="page-ceo-name2 ceo-name">
-                    Executive Director
-                  </span>
-                  <span className="ceo-brand">DON OCH GLOBAL</span>
-                </div>
-                <div className="ceo-actions">
-                  <button className="btn btn-primary">Meet Our Team</button>
-                  <button className="btn btn-outline">
-                    Contact Leadership
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         <section className="timeline-section">
           <div className="container-max">
             <div className="text-center-wrapper">
