@@ -273,15 +273,7 @@ const Navigation = (props) => {
                       data-thq="thq-dropdown-list"
                       className="navigation-thq-dropdown-list"
                     >
-                      <li className="navigation-menu-item">
-                        <Link href="/shop-solar-products">
-                          <a>
-                            <div className="navigation-menu-link">
-                              <span>Shop Solar Products</span>
-                            </div>
-                          </a>
-                        </Link>
-                      </li>
+                      <li className="navigation-menu-item"></li>
                     </ul>
                   </div>
                 </ul>
@@ -351,17 +343,6 @@ const Navigation = (props) => {
                   </div>
                 </a>
               </li>
-              <Link href="/shop-solar-products">
-                <a>
-                  <li className="navigation-thq-navigation-mobile-item-elm3 navigation-mobile-item list-item">
-                    <div>
-                      <div className="navigation-mobile-link">
-                        <span>Buy Solar</span>
-                      </div>
-                    </div>
-                  </li>
-                </a>
-              </Link>
               <li className="navigation-mobile-item">
                 <Link href="/solar-solutions">
                   <a>
@@ -432,8 +413,8 @@ const Navigation = (props) => {
             </div>
           </div>
         </div>
-        <div className="navigation-container6">
-          <div className="navigation-container7">
+        <div className="navigation-container5">
+          <div className="navigation-container6">
             <Script
               html={`<script defer data-name="navigation-logic">
 (function(){
@@ -486,7 +467,7 @@ const Navigation = (props) => {
           </div>
         </div>
         <div>
-          <div className="navigation-container9">
+          <div className="navigation-container8">
             <Script
               html={`<style>
 @media (min-width: 1024px) {
@@ -535,16 +516,13 @@ const Navigation = (props) => {
             flex-direction: column;
             list-style-type: none;
           }
-          .navigation-thq-navigation-mobile-item-elm3 {
-            text-decoration: none;
-          }
-          .navigation-container6 {
+          .navigation-container5 {
             display: none;
           }
-          .navigation-container7 {
+          .navigation-container6 {
             display: contents;
           }
-          .navigation-container9 {
+          .navigation-container8 {
             display: contents;
           }
         `}

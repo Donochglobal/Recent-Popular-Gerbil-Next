@@ -615,13 +615,9 @@ const Home = (props) => {
                 <h3 className="products-marketplace__row-title">
                   Solar Panels
                 </h3>
-                <Link href="/shop-solar-products">
-                  <a>
-                    <div className="products-marketplace__row-link">
-                      <span>View All</span>
-                    </div>
-                  </a>
-                </Link>
+                <div className="products-marketplace__row-link">
+                  <span>View All</span>
+                </div>
               </div>
               <div
                 data-role="product-row"
@@ -961,13 +957,9 @@ const Home = (props) => {
                 <h3 className="products-marketplace__row-title">
                   Batteries &amp; Energy Storage
                 </h3>
-                <Link href="/shop-solar-products">
-                  <a>
-                    <div className="products-marketplace__row-link">
-                      <span>View All</span>
-                    </div>
-                  </a>
-                </Link>
+                <div className="products-marketplace__row-link">
+                  <span>View All</span>
+                </div>
               </div>
               <div
                 data-role="product-row"
@@ -1303,13 +1295,9 @@ const Home = (props) => {
                 <h3 className="products-marketplace__row-title">
                   Inverters &amp; Accessories
                 </h3>
-                <Link href="/shop-solar-products">
-                  <a>
-                    <div className="products-marketplace__row-link">
-                      <span>View All</span>
-                    </div>
-                  </a>
-                </Link>
+                <div className="products-marketplace__row-link">
+                  <span>View All</span>
+                </div>
               </div>
               <div
                 data-role="product-row"
