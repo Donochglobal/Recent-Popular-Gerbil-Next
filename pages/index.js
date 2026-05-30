@@ -4673,7 +4673,7 @@ to {
             color: #0f2744;
             margin: 0;
             font-size: clamp(1.8rem, 2.4rem, 2.8rem);
-            font-family: '' '' Playfair Display ', serif' '';
+            font-family: '' '' 'Playfair Display', serif '' '';
             font-weight: 700;
             line-height: 1.25;
             letter-spacing: 0.02em;
@@ -4683,8 +4683,8 @@ to {
             margin: var(--spacing-sm) 0;
             font-size: var(--font-size-base);
             max-width: 560px;
-            font-family: '' '' Inter ', system-ui, -apple-system, ' Segoe UI
-              ', Roboto, ' Helvetica Neue ', Arial' '';
+            font-family: '' '' 'Inter', system-ui, -apple-system, 'Segoe UI',
+              Roboto, 'Helvetica Neue', Arial '' '';
             font-weight: 400;
             line-height: 1.7;
             letter-spacing: 0.01em;
@@ -4699,7 +4699,7 @@ to {
             color: #0f2744;
             font-size: var(--font-size-xl);
             font-style: italic;
-            font-family: '' '' Playfair Display ', serif' '';
+            font-family: '' '' 'Playfair Display', serif '' '';
             font-weight: 600;
             letter-spacing: 0.02em;
           }
