@@ -1822,7 +1822,7 @@ const Home = (props) => {
                   <span>Estimated Delivery</span>
                   <span>₦5,000</span>
                 </div>
-                <div className="home-thq-cart-summaryrow-elm3 cart-summary__row">
+                <div className="cart-summary__row thq-cart-summaryrow-elm3">
                   <span>Total Amount</span>
                   <span data-role="cart-total">₦0</span>
                 </div>
@@ -1877,7 +1877,15 @@ const Home = (props) => {
                   ></textarea>
                 </div>
               </div>
-              <div className="home-container13"></div>
+              <div className="home-container13">
+                <button
+                  data-action="checkout"
+                  data-role="cart-checkout-btn"
+                  className="home-thq-btn-elm19 btn btn-accent button"
+                >
+                  Proceed To Payment
+                </button>
+              </div>
             </div>
           </div>
           <div
@@ -2006,7 +2014,7 @@ const Home = (props) => {
                   </div>
                   <button
                     data-action="proceed-payment"
-                    className="home-thq-btn-elm19 btn-accent btn"
+                    className="home-thq-btn-elm20 btn-accent btn"
                   >
                     Proceed to Secure Payment
                   </button>
@@ -3729,8 +3737,11 @@ to {
           .home-thq-cart-draweritems-elm {
             flex: 1;
             padding: var(--spacing-md) var(--spacing-xl);
+            border-top: 1px solid var(--color-border);
             min-height: 0;
             overflow-y: auto;
+            border-bottom: 1px solid var(--color-border);
+            background-color: #ffffff;
           }
           .home-thq-cart-drawerempty-elm2 {
             color: var(--color-on-surface);
@@ -3747,18 +3758,14 @@ to {
             margin-top: var(--spacing-sm);
           }
           .home-thq-cart-drawersummary-elm {
-            padding: var(--spacing-lg) var(--spacing-xl);
-            background: rgba(0, 0, 0, 0.02);
-            border-top: 1px solid var(--color-border);
+            gap: 12px;
+            display: flex;
+            padding: 20px;
+            font-size: var(--font-size-base);
+            background: #f8f8f8;
+            border-top: var(--divider-value);
             flex-shrink: 0;
-          }
-          .home-thq-cart-summaryrow-elm3 {
-            color: var(--color-on-surface);
-            font-size: var(--font-size-lg);
-            border-top: 1px dashed var(--color-border);
-            margin-top: var(--spacing-sm);
-            font-weight: var(--font-weight-heading);
-            padding-top: var(--spacing-sm);
+            flex-direction: column;
           }
           .home-thq-cart-drawerform-elm {
             padding: var(--spacing-md) var(--spacing-xl);
@@ -3775,6 +3782,19 @@ to {
           .home-container13 {
             padding: 0 var(--spacing-xl) var(--spacing-lg) var(--spacing-xl);
             flex-shrink: 0;
+          }
+          .home-thq-btn-elm19 {
+            color: #ffffff;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            padding: 0.875rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 10px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            background-color: #e07a2f;
           }
           .home-thq-checkout-modaloverlay-elm {
             inset: 0;
@@ -3831,7 +3851,7 @@ to {
           .home-thq-checkout-summaryitems-elm {
             margin-bottom: var(--spacing-md);
           }
-          .home-thq-btn-elm19 {
+          .home-thq-btn-elm20 {
             width: 100%;
             margin-top: var(--spacing-md);
             font-weight: var(--font-weight-medium);
@@ -3944,7 +3964,8 @@ to {
               padding: var(--spacing-sm) var(--spacing-lg);
             }
             .home-thq-cart-drawersummary-elm {
-              padding: var(--spacing-md) var(--spacing-lg);
+              gap: 10px;
+              padding: 16px;
             }
           }
         `}
