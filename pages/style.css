@@ -10761,6 +10761,10 @@
   .thq-grid-4 {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .hero-subtitle {
+    font-size: var(--font-size-base);
+    margin-top: var(--spacing-sm);
+  }
   .navigation-top-info {
     gap: var(--spacing-md);
   }
@@ -11014,11 +11018,25 @@
     max-width: 300px;
   }
   .team-hero {
-    height: 80vh;
-    padding-top: 100px;
+    height: auto;
+    padding: 100px var(--spacing-md) var(--spacing-2xl);
+    min-height: 70vh;
+  }
+  .team-hero-content {
+    padding: 0 var(--spacing-sm);
   }
   .page-hero-title4 {
     font-size: var(--font-size-3xl);
+  }
+  .team-hero-btns {
+    gap: var(--spacing-sm);
+    width: 100%;
+    max-width: 300px;
+    margin-top: var(--spacing-xl);
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
   }
   .team-intro-container {
     text-align: center;
@@ -11439,6 +11457,13 @@
     flex-direction: column;
   }
   .team-hero-btns {
+    gap: var(--spacing-sm);
+    width: 100%;
+    max-width: 300px;
+    margin-top: var(--spacing-xl);
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: column;
   }
   .team-stats-grid {
@@ -11496,6 +11521,10 @@
   }
   .thq-grid-auto-300 {
     grid-template-columns: 1fr;
+  }
+  .hero-subtitle {
+    font-size: var(--font-size-sm);
+    margin-top: var(--spacing-xs);
   }
   .navigation-main-container {
     padding: 0 var(--spacing-md);
@@ -11687,8 +11716,22 @@
     width: 100%;
   }
   .team-hero {
-    height: 70vh;
-    padding-top: 90px;
+    height: auto;
+    padding: 90px var(--spacing-sm) var(--spacing-xl);
+    min-height: 60vh;
+  }
+  .team-hero-content {
+    padding: 0 var(--spacing-xs);
+  }
+  .team-hero-btns {
+    gap: var(--spacing-xs);
+    width: 100%;
+    max-width: 280px;
+    margin-top: var(--spacing-lg);
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
   }
   .prefooter-container {
     padding: var(--spacing-xl);
