@@ -201,21 +201,7 @@ const Profile = (props) => {
         <section id="about" className="page-about-section2 about-section">
           <div className="container-max">
             <div className="page-about-grid2">
-              <div className="about-visual">
-                <div className="page-about-image-stack">
-                  <img
-                    src="https://images.pexels.com/photos/8457866/pexels-photo-8457866.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    alt="Project Delivery"
-                    className="about-img-main"
-                  />
-                  <div className="about-experience-badge">
-                    <span data-target="15" className="page-badge-number">
-                      0
-                    </span>
-                    <span className="page-badge-text">Years of Excellence</span>
-                  </div>
-                </div>
-              </div>
+              <div className="profile-thq-about-visual-elm about-visual"></div>
               <div className="about-content-area">
                 <span className="section-subtitle">WHO WE ARE</span>
                 <h2 className="section-title">
@@ -1026,6 +1012,9 @@ const Profile = (props) => {
           .profile-container1 {
             width: 100%;
             min-height: 100vh;
+          }
+          .profile-thq-about-visual-elm {
+            border: 2px dashed rgba(120, 120, 120, 0.4);
           }
           .profile-container2 {
             display: none;

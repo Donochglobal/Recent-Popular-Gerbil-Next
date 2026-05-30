@@ -434,40 +434,6 @@ const About = (props) => {
             </div>
           </div>
         </section>
-        <section className="ceo-message">
-          <div className="page-container">
-            <div className="page-ceo-grid1">
-              <div className="page-ceo-image">
-                <img
-                  alt="CEO Portrait"
-                  src="https://images.pexels.com/photos/27938904/pexels-photo-27938904.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                />
-                <div className="ceo-frame"></div>
-              </div>
-              <div className="ceo-text">
-                <h2 className="section-title">Message From The CEO</h2>
-                <blockquote className="ceo-quote">
-                  <span>
-                    &quot;As a modern African enterprise with global ambitions,
-                    DON OCH Global continues to position itself as a premium
-                    brand in energy, infrastructure, and real estate. Our
-                    commitment to innovation and technical excellence drives
-                    every project we undertake.&quot;
-                  </span>
-                </blockquote>
-                <div className="page-ceo-signature1">
-                  <span className="page-signature-font signature-font">
-                    Don Och
-                  </span>
-                  <span className="ceo-name page-ceo-name">Engr. Don Och</span>
-                  <span className="ceo-title">
-                    Founder &amp; CEO, DON OCH GLOBAL
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         <section className="sustainability-section dark-theme">
           <div className="page-container">
             <div className="sustainability-grid">
