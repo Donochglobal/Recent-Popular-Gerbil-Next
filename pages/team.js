@@ -64,29 +64,49 @@ const Team = (props) => {
               </p>
             </div>
             <div className="team-stats-grid">
-              <div className="team-stat-card">
-                <span data-target="10" className="page-stat-number4">
+              <div data-role="stat-card" className="team-stat-card">
+                <span
+                  data-target="10"
+                  data-role="counter"
+                  data-counter="true"
+                  className="page-stat-number4"
+                >
                   0
                 </span>
                 <span className="page-stat-plus1">+</span>
                 <p className="stat-label">Team Members</p>
               </div>
-              <div className="team-stat-card">
-                <span data-target="100" className="page-stat-number4">
+              <div data-role="stat-card" className="team-stat-card">
+                <span
+                  data-target="100"
+                  data-role="counter"
+                  data-counter="true"
+                  className="page-stat-number4"
+                >
                   0
                 </span>
                 <span className="page-stat-plus1">+</span>
                 <p className="stat-label">Projects Supported</p>
               </div>
-              <div className="team-stat-card">
-                <span data-target="500" className="page-stat-number4">
+              <div data-role="stat-card" className="team-stat-card">
+                <span
+                  data-target="500"
+                  data-role="counter"
+                  data-counter="true"
+                  className="page-stat-number4"
+                >
                   0
                 </span>
                 <span className="page-stat-plus1">+</span>
                 <p className="stat-label">Customers Served</p>
               </div>
-              <div className="team-stat-card">
-                <span data-target="100" className="page-stat-number4">
+              <div data-role="stat-card" className="team-stat-card">
+                <span
+                  data-target="100"
+                  data-role="counter"
+                  data-counter="true"
+                  className="page-stat-number4"
+                >
                   0
                 </span>
                 <span className="stat-percent">%</span>
@@ -749,113 +769,103 @@ const Team = (props) => {
         <div className="team-container19">
           <div className="team-container20">
             <Script
-              html={`<script defer data-name="team-page-logic">
-(function(){
-  // Counter Animation
-  const animateCounters = () => {
-    const counters = document.querySelectorAll(".stat-number")
-    const speed = 200
-
-    const startCounter = (counter) => {
-      const target = +counter.getAttribute("data-target")
-      let count = 0
-      const increment = target / speed
-
-      const updateCount = () => {
-        if (count < target) {
-          count += increment
-          counter.innerText = Math.ceil(count)
-          setTimeout(updateCount, 1)
-        } else {
-          counter.innerText = target
-        }
-      }
-      updateCount()
-    }
-
-    const observerOptions = {
-      threshold: 0.5,
-    }
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          startCounter(entry.target)
-          observer.unobserve(entry.target)
-        }
-      })
-    }, observerOptions)
-
-    counters.forEach((counter) => observer.observe(counter))
-  }
-
-  // Particle Background for Hero
-  const initHeroParticles = () => {
-    const container = document.getElementById("heroParticles")
-    if (!container) return
-
-    for (let i = 0; i < 30; i++) {
-      const particle = document.createElement("div")
-      particle.style.position = "absolute"
-      particle.style.width = Math.random() * 4 + "px"
-      particle.style.height = particle.style.width
-      particle.style.background = "var(--color-accent)"
-      particle.style.borderRadius = "50%"
-      particle.style.top = Math.random() * 100 + "%"
-      particle.style.left = Math.random() * 100 + "%"
-      particle.style.opacity = Math.random() * 0.5
-
-      // Simple float animation
-      particle.animate(
-        [
-          { transform: "translateY(0) translateX(0)", opacity: 0.2 },
-          { transform: \`translateY(-\${Math.random() * 100}px) translateX(\${Math.random() * 50}px)\`, opacity: 0.5 },
-          { transform: "translateY(0) translateX(0)", opacity: 0.2 },
-        ],
-        {
-          duration: 5000 + Math.random() * 5000,
-          iterations: Infinity,
-          easing: "ease-in-out",
-        }
-      )
-
-      container.appendChild(particle)
-    }
-  }
-
-  // Reveal Animations on Scroll
-  const initScrollReveals = () => {
-    const revealElements = document.querySelectorAll(".executive-card, .value-card, .expert-profile-card, .dept-accordion")
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry, index) => {
-          if (entry.isIntersecting) {
-            setTimeout(() => {
-              entry.target.style.opacity = "1"
-              entry.target.style.transform = "translateY(0)"
-            }, index * 100)
-            observer.unobserve(entry.target)
+              html={`<script>
+        ;(function () {
+          // Smooth Count-Up Counter Animation
+          const animateCounters = () => {
+            const counters = document.querySelectorAll("[data-target]")
+            const duration = 2000
+            const easing = (t) => 1 - Math.pow(1 - t, 3)
+            const startCounter = (counter) => {
+              const target = +counter.getAttribute("data-target")
+              const startTime = performance.now()
+              const updateCount = (currentTime) => {
+                const elapsed = currentTime - startTime
+                const progress = Math.min(elapsed / duration, 1)
+                const easedProgress = easing(progress)
+                const currentValue = Math.round(easedProgress * target)
+                counter.innerText = currentValue
+                if (progress < 1) {
+                  requestAnimationFrame(updateCount)
+                } else {
+                  counter.innerText = target
+                }
+              }
+              requestAnimationFrame(updateCount)
+            }
+            const observerOptions = {
+              threshold: 0.3,
+            }
+            const observer = new IntersectionObserver((entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  startCounter(entry.target)
+                  observer.unobserve(entry.target)
+                }
+              })
+            }, observerOptions)
+            counters.forEach((counter) => observer.observe(counter))
           }
-        })
-      },
-      { threshold: 0.1 }
-    )
-
-    revealElements.forEach((el) => {
-      el.style.opacity = "0"
-      el.style.transform = "translateY(30px)"
-      el.style.transition = "all 0.6s cubic-bezier(0.22, 1, 0.36, 1)"
-      observer.observe(el)
-    })
-  }
-
-  // Initialize everything
-  animateCounters()
-  initHeroParticles()
-  initScrollReveals()
-})()
-</script>`}
+          // Particle Background for Hero
+          const initHeroParticles = () => {
+            const container = document.getElementById("heroParticles")
+            if (!container) return
+            for (let i = 0; i < 30; i++) {
+              const particle = document.createElement("div")
+              particle.style.position = "absolute"
+              particle.style.width = Math.random() * 4 + "px"
+              particle.style.height = particle.style.width
+              particle.style.background = "var(--color-accent)"
+              particle.style.borderRadius = "50%"
+              particle.style.top = Math.random() * 100 + "%"
+              particle.style.left = Math.random() * 100 + "%"
+              particle.style.opacity = Math.random() * 0.5
+              // Simple float animation
+              particle.animate(
+                [
+                  { transform: "translateY(0) translateX(0)", opacity: 0.2 },
+                  { transform: \`translateY(-\\\${Math.random() * 100}px) translateX(\\\${Math.random() * 50}px)\`, opacity: 0.5 },
+                  { transform: "translateY(0) translateX(0)", opacity: 0.2 },
+                ],
+                {
+                  duration: 5000 + Math.random() * 5000,
+                  iterations: Infinity,
+                  easing: "ease-in-out",
+                }
+              )
+              container.appendChild(particle)
+            }
+          }
+          // Reveal Animations on Scroll
+          const initScrollReveals = () => {
+            const revealElements = document.querySelectorAll(".executive-card, .value-card, .expert-profile-card, .dept-accordion")
+            const observer = new IntersectionObserver(
+              (entries) => {
+                entries.forEach((entry, index) => {
+                  if (entry.isIntersecting) {
+                    setTimeout(() => {
+                      entry.target.style.opacity = "1"
+                      entry.target.style.transform = "translateY(0)"
+                    }, index * 100)
+                    observer.unobserve(entry.target)
+                  }
+                })
+              },
+              { threshold: 0.1 }
+            )
+            revealElements.forEach((el) => {
+              el.style.opacity = "0"
+              el.style.transform = "translateY(30px)"
+              el.style.transition = "all 0.6s cubic-bezier(0.22, 1, 0.36, 1)"
+              observer.observe(el)
+            })
+          }
+          // Initialize everything
+          animateCounters()
+          initHeroParticles()
+          initScrollReveals()
+        })()
+      </script>`}
             ></Script>
           </div>
         </div>

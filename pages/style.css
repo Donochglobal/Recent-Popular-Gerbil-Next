@@ -10283,8 +10283,13 @@
  
 .page-stat-number4 {
   color: var(--color-primary);
+  display: inline-block;
   font-size: var(--font-size-3xl);
+  min-width: 2ch;
+  text-align: center;
+  transition: color 0.3s ease;
   font-weight: var(--font-weight-heading);
+  font-variant-numeric: tabular-nums;
 }
  
 .page-stat-plus1 {
@@ -10730,6 +10735,10 @@
  
 .page-whatsapp-float:hover {
   transform: scale(1.1);
+}
+ 
+.team-stat-card:hover .page-stat-number4 {
+  color: var(--color-accent);
 }
  
 .Headings {
