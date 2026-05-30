@@ -378,18 +378,18 @@ const Home = (props) => {
                 </div>
                 <div className="solar-process__icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="32"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="32"
                     viewBox="0 0 24 24"
                   >
                     <path
+                      d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092a10 10 0 1 0-4.777-4.719"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092a10 10 0 1 0-4.777-4.719"
                     ></path>
                   </svg>
                 </div>
@@ -407,20 +407,20 @@ const Home = (props) => {
                 </div>
                 <div className="solar-process__icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="32"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="32"
                     viewBox="0 0 24 24"
                   >
                     <g
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
                     >
                       <path d="m21 21l-4.34-4.34"></path>
-                      <circle cx="11" cy="11" r="8"></circle>
+                      <circle r="8" cx="11" cy="11"></circle>
                     </g>
                   </svg>
                 </div>
@@ -439,18 +439,18 @@ const Home = (props) => {
                 </div>
                 <div className="solar-process__icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="32"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="32"
                     viewBox="0 0 24 24"
                   >
                     <path
+                      d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"
                     ></path>
                   </svg>
                 </div>
@@ -468,18 +468,18 @@ const Home = (props) => {
                 </div>
                 <div className="solar-process__icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="32"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="32"
                     viewBox="0 0 24 24"
                   >
                     <path
+                      d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
                     ></path>
                   </svg>
                 </div>
@@ -497,18 +497,18 @@ const Home = (props) => {
                 </div>
                 <div className="solar-process__icon">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="32"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="32"
                     viewBox="0 0 24 24"
                   >
                     <path
+                      d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"
                     ></path>
                   </svg>
                 </div>
@@ -522,14 +522,14 @@ const Home = (props) => {
             <div className="solar-process__actions">
               <Link href="/contact">
                 <a>
-                  <div className="btn btn-primary">
+                  <div className="btn-primary btn">
                     <span>Get Started Today</span>
                   </div>
                 </a>
               </Link>
               <Link href="/contact">
                 <a>
-                  <div className="btn btn-outline">
+                  <div className="btn-outline btn">
                     <span>Speak With Our Experts</span>
                   </div>
                 </a>
@@ -1134,15 +1134,15 @@ const Home = (props) => {
               ></button>
               <button
                 data-target="2"
-                className="testimonials-carousel__dot button"
+                className="button testimonials-carousel__dot"
               ></button>
               <button
                 data-target="3"
-                className="testimonials-carousel__dot button"
+                className="button testimonials-carousel__dot"
               ></button>
               <button
                 data-target="4"
-                className="testimonials-carousel__dot button"
+                className="button testimonials-carousel__dot"
               ></button>
             </div>
           </div>
@@ -1202,19 +1202,19 @@ const Home = (props) => {
                 </div>
                 <div className="contact-cta__field contact-cta__field--phone">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
                   >
                     <path
+                      d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
                     ></path>
                   </svg>
                   <input
@@ -1224,7 +1224,7 @@ const Home = (props) => {
                     required="true"
                     placeholder="Phone Number"
                     data-form-field-id="thq_textinput_phone"
-                    className="contact-cta__input input"
+                    className="input contact-cta__input"
                   />
                 </div>
                 <div className="contact-cta__field">

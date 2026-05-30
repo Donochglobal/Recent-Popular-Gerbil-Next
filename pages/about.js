@@ -26,21 +26,21 @@ const About = (props) => {
         <Navigation></Navigation>
         <section id="home" className="page-hero-slider1">
           <div id="mainHeroSlider" className="slider-container">
-            <div data-index="0" className="page-slide active">
+            <div data-index="0" className="active page-slide">
               <div className="page-slide-media">
                 <video
-                  autoPlay="true"
-                  muted="true"
-                  loop="true"
-                  playsInline="true"
-                  poster="https://images.pexels.com/videos/9790192/pictures/preview-0.jpeg"
                   src="https://videos.pexels.com/video-files/9790192/9790192-hd_1280_720_30fps.mp4"
+                  loop="true"
+                  muted="true"
+                  poster="https://images.pexels.com/videos/9790192/pictures/preview-0.jpeg"
+                  autoPlay="true"
+                  playsInline="true"
                 ></video>
                 <div className="slide-overlay"></div>
               </div>
               <div className="page-slide-content">
                 <div className="content-inner">
-                  <h1 className="page-hero-title2 hero-title">
+                  <h1 className="hero-title page-hero-title2">
                     Powering Homes &amp; Building Futures
                   </h1>
                   <p className="hero-subtitle">
@@ -50,12 +50,12 @@ const About = (props) => {
                   </p>
                   <div className="page-hero-actions">
                     <a href="#services">
-                      <div className="btn btn-primary btn-lg">
+                      <div className="btn-primary btn btn-lg">
                         <span>Explore Solar Solutions</span>
                       </div>
                     </a>
                     <a href="#lemoex">
-                      <div className="btn btn-lg btn-outline">
+                      <div className="btn-outline btn btn-lg">
                         <span>Explore Properties</span>
                       </div>
                     </a>
@@ -66,15 +66,15 @@ const About = (props) => {
             <div data-index="1" className="page-slide">
               <div className="page-slide-media">
                 <img
-                  src="https://images.pexels.com/photos/35454189/pexels-photo-35454189.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   alt="Reliable Solar Energy"
+                  src="https://images.pexels.com/photos/35454189/pexels-photo-35454189.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                 />
                 <div className="slide-overlay"></div>
                 <div className="sunlight-effect"></div>
               </div>
               <div className="page-slide-content">
                 <div className="content-inner">
-                  <h2 className="page-hero-title2 hero-title">
+                  <h2 className="hero-title page-hero-title2">
                     Reliable Solar Energy For Homes &amp; Industries
                   </h2>
                   <p className="hero-subtitle">
@@ -84,12 +84,12 @@ const About = (props) => {
                   </p>
                   <div className="page-hero-actions">
                     <a href="#contact">
-                      <div className="btn btn-lg btn-accent">
+                      <div className="btn-accent btn btn-lg">
                         <span>Get Free Consultation</span>
                       </div>
                     </a>
                     <a href="#products">
-                      <div className="btn btn-lg btn-outline">
+                      <div className="btn-outline btn btn-lg">
                         <span>View Products</span>
                       </div>
                     </a>
@@ -100,14 +100,14 @@ const About = (props) => {
             <div data-index="2" className="page-slide">
               <div className="page-slide-media">
                 <img
-                  src="https://images.pexels.com/photos/34823930/pexels-photo-34823930.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   alt="Smart Property Investments"
+                  src="https://images.pexels.com/photos/34823930/pexels-photo-34823930.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                 />
                 <div className="slide-overlay"></div>
               </div>
               <div className="page-slide-content">
                 <div className="content-inner">
-                  <h2 className="page-hero-title2 hero-title">
+                  <h2 className="hero-title page-hero-title2">
                     Smart Property Investments With Lemoex Properties
                   </h2>
                   <p className="hero-subtitle">
@@ -116,12 +116,12 @@ const About = (props) => {
                   </p>
                   <div className="page-hero-actions">
                     <a href="#lemoex">
-                      <div className="btn btn-primary btn-lg">
+                      <div className="btn-primary btn btn-lg">
                         <span>View Properties</span>
                       </div>
                     </a>
                     <a href="#contact">
-                      <div className="btn btn-lg btn-outline">
+                      <div className="btn-outline btn btn-lg">
                         <span>Contact Team</span>
                       </div>
                     </a>
@@ -132,23 +132,23 @@ const About = (props) => {
           </div>
           <div className="page-slider-nav">
             <button
-              data-slide="0"
               aria-label="Slide 1"
-              className="page-nav-dot active"
+              data-slide="0"
+              className="active page-nav-dot"
             ></button>
             <button
-              data-slide="1"
               aria-label="Slide 2"
+              data-slide="1"
               className="page-nav-dot"
             ></button>
             <button
-              data-slide="2"
               aria-label="Slide 3"
+              data-slide="2"
               className="page-nav-dot"
             ></button>
           </div>
         </section>
-        <section id="about" className="page-about-section about-section">
+        <section id="about" className="about-section page-about-section">
           <div className="page-container">
             <div className="page-about-grid">
               <div className="about-content">
@@ -165,7 +165,7 @@ const About = (props) => {
                     <span data-target="500" className="page-stat-number2">
                       0
                     </span>
-                    <span className="page-stat-label1 stat-label">
+                    <span className="stat-label page-stat-label1">
                       Projects Completed
                     </span>
                   </div>
@@ -173,7 +173,7 @@ const About = (props) => {
                     <span data-target="150" className="page-stat-number2">
                       0
                     </span>
-                    <span className="page-stat-label1 stat-label">
+                    <span className="stat-label page-stat-label1">
                       Solar MW Installed
                     </span>
                   </div>
@@ -181,7 +181,7 @@ const About = (props) => {
                     <span data-target="1200" className="page-stat-number2">
                       0
                     </span>
-                    <span className="page-stat-label1 stat-label">
+                    <span className="stat-label page-stat-label1">
                       Happy Clients
                     </span>
                   </div>
@@ -189,7 +189,7 @@ const About = (props) => {
                     <span data-target="15" className="page-stat-number2">
                       0
                     </span>
-                    <span className="page-stat-label1 stat-label">
+                    <span className="stat-label page-stat-label1">
                       Years Experience
                     </span>
                   </div>
@@ -199,18 +199,18 @@ const About = (props) => {
                 <div className="glass-card vision-card">
                   <div className="page-card-icon">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
                       width="24"
+                      xmlns="http://www.w3.org/2000/svg"
                       height="24"
                       viewBox="0 0 24 24"
                     >
                       <path
+                        d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"
                         fill="none"
                         stroke="currentColor"
+                        strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"
                       ></path>
                       <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
                     </svg>
@@ -221,20 +221,20 @@ const About = (props) => {
                     infrastructure brand.
                   </p>
                 </div>
-                <div className="glass-card mission-card">
+                <div className="mission-card glass-card">
                   <div className="page-card-icon">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
                       width="24"
+                      xmlns="http://www.w3.org/2000/svg"
                       height="24"
                       viewBox="0 0 24 24"
                     >
                       <g
                         fill="none"
                         stroke="currentColor"
+                        strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        strokeWidth="2"
                       >
                         <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8c0 5.5-4.78 10-10 10"></path>
                         <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
@@ -268,18 +268,18 @@ const About = (props) => {
               <div className="page-service-card2 glass-card">
                 <div className="page-service-icon2">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
                     <path
+                      d="M4.28 14h15.44a1 1 0 0 0 .97-1.243l-1.5-6A1 1 0 0 0 18.22 6H5.78a1 1 0 0 0-.97.757l-1.5 6A1 1 0 0 0 4.28 14M4 10h16M10 6l-1 8m5-8l1 8m-3 0v4m-5 0h10"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4.28 14h15.44a1 1 0 0 0 .97-1.243l-1.5-6A1 1 0 0 0 18.22 6H5.78a1 1 0 0 0-.97.757l-1.5 6A1 1 0 0 0 4.28 14M4 10h16M10 6l-1 8m5-8l1 8m-3 0v4m-5 0h10"
                     ></path>
                   </svg>
                 </div>
@@ -294,18 +294,18 @@ const About = (props) => {
               <div className="page-service-card2 glass-card">
                 <div className="page-service-icon2">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
                     <path
+                      d="M4 6.28v11.44a1 1 0 0 0 1.243.97l6-1.5a1 1 0 0 0 .757-.97V7.78a1 1 0 0 0-.757-.97l-6-1.5A1 1 0 0 0 4 6.28M8 6v12m4-6H4m16-5l-3 5h4l-3 5"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 6.28v11.44a1 1 0 0 0 1.243.97l6-1.5a1 1 0 0 0 .757-.97V7.78a1 1 0 0 0-.757-.97l-6-1.5A1 1 0 0 0 4 6.28M8 6v12m4-6H4m16-5l-3 5h4l-3 5"
                     ></path>
                   </svg>
                 </div>
@@ -323,17 +323,17 @@ const About = (props) => {
               <div className="page-service-card2 glass-card">
                 <div className="page-service-icon2">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
                     <g
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
                     >
                       <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
                       <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
@@ -351,18 +351,18 @@ const About = (props) => {
               <div className="page-service-card2 glass-card">
                 <div className="page-service-icon2">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
+                    xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
                     <path
+                      d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
                       fill="none"
                       stroke="currentColor"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
                     ></path>
                   </svg>
                 </div>
@@ -383,8 +383,8 @@ const About = (props) => {
         <section id="lemoex" className="lemoex-subsidiary">
           <div className="lemoex-bg">
             <img
-              src="https://images.pexels.com/photos/27938900/pexels-photo-27938900.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
               alt="Luxury Real Estate"
+              src="https://images.pexels.com/photos/27938900/pexels-photo-27938900.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
             />
             <div className="lemoex-scrim"></div>
           </div>
@@ -425,10 +425,10 @@ const About = (props) => {
               </div>
             </div>
             <div className="lemoex-cta">
-              <button id="openLemoexModal" className="btn btn-accent btn-xl">
+              <button id="openLemoexModal" className="btn-xl btn-accent btn">
                 View Available Properties
               </button>
-              <button className="btn btn-outline btn-xl">
+              <button className="btn-outline btn-xl btn">
                 Book Inspection
               </button>
             </div>
@@ -439,8 +439,8 @@ const About = (props) => {
             <div className="page-ceo-grid1">
               <div className="page-ceo-image">
                 <img
-                  src="https://images.pexels.com/photos/27938904/pexels-photo-27938904.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   alt="CEO Portrait"
+                  src="https://images.pexels.com/photos/27938904/pexels-photo-27938904.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                 />
                 <div className="ceo-frame"></div>
               </div>
@@ -459,7 +459,7 @@ const About = (props) => {
                   <span className="page-signature-font signature-font">
                     Don Och
                   </span>
-                  <span className="page-ceo-name ceo-name">Engr. Don Och</span>
+                  <span className="ceo-name page-ceo-name">Engr. Don Och</span>
                   <span className="ceo-title">
                     Founder &amp; CEO, DON OCH GLOBAL
                   </span>
@@ -497,13 +497,13 @@ const About = (props) => {
               <div className="sustainability-visual">
                 <div className="glowing-orb"></div>
                 <svg
-                  viewBox="0 0 200 200"
                   xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 200 200"
                   className="energy-wave"
                 >
                   <path
-                    fill="var(--color-accent)"
                     d="M44.7,-76.4C58.1,-69.2,69.2,-58.1,76.4,-44.7C83.7,-31.3,87.1,-15.7,87.1,0C87.1,15.7,83.7,31.3,76.4,44.7C69.2,58.1,58.1,69.2,44.7,76.4C31.3,83.7,15.7,87.1,0,87.1C-15.7,87.1,-31.3,83.7,-44.7,76.4C-58.1,69.2,-69.2,58.1,-76.4,44.7C-83.7,31.3,-87.1,15.7,-87.1,0C-87.1,-15.7,-83.7,-31.3,-76.4,-44.7C-69.2,-58.1,-58.1,-69.2,-44.7,-76.4C-31.3,-83.7,-15.7,-87.1,0,-87.1C15.7,-87.1,31.3,-83.7,44.7,-76.4Z"
+                    fill="var(--color-accent)"
                     transform="translate(100 100)"
                   ></path>
                 </svg>
@@ -527,31 +527,31 @@ const About = (props) => {
                   <div className="form-group">
                     <input
                       type="text"
-                      name="true"
-                      placeholder="Full Name"
-                      required="true"
                       id="thq_true_G2pO"
+                      name="true"
+                      required="true"
+                      placeholder="Full Name"
                       data-form-field-id="thq_true_G2pO"
-                      className="page-form-input1 form-input"
+                      className="form-input page-form-input1"
                     />
                   </div>
                   <div className="form-group">
                     <input
                       type="email"
-                      name="email"
-                      placeholder="Email Address"
-                      required="true"
                       id="thq_email_h0tN"
+                      name="email"
+                      required="true"
+                      placeholder="Email Address"
                       data-form-field-id="thq_email_h0tN"
-                      className="page-form-input1 form-input"
+                      className="form-input page-form-input1"
                     />
                   </div>
                   <div className="form-group">
                     <select
-                      name="interest"
                       id="thq_interest_te6I"
+                      name="interest"
                       data-form-field-id="thq_interest_te6I"
-                      className="page-form-input1 form-input"
+                      className="form-input page-form-input1"
                     >
                       <option value="solar">Solar Solutions</option>
                       <option value="realestate">Lemoex Properties</option>
@@ -560,21 +560,21 @@ const About = (props) => {
                   </div>
                   <div className="form-group">
                     <textarea
-                      name="message"
-                      placeholder="Project Details"
-                      required="true"
-                      rows="4"
                       id="thq_message_LdS4"
+                      name="message"
+                      rows="4"
+                      required="true"
+                      placeholder="Project Details"
                       data-form-field-id="thq_message_LdS4"
-                      className="page-form-input1 form-input"
+                      className="form-input page-form-input1"
                     ></textarea>
                   </div>
                   <button
-                    type="submit"
                     id="thq_button_aSuu"
                     name="button"
+                    type="submit"
                     data-form-field-id="thq_button_aSuu"
-                    className="btn btn-primary btn-xl"
+                    className="btn-xl btn-primary btn"
                   >
                     Request Quote
                   </button>
@@ -592,16 +592,16 @@ const About = (props) => {
                 </div>
                 <div className="whatsapp-cta">
                   <a href="https://wa.me/2340000000000">
-                    <div className="btn btn-lg btn-accent">
+                    <div className="btn-accent btn btn-lg">
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
                         width="20"
+                        xmlns="http://www.w3.org/2000/svg"
                         height="20"
                         viewBox="0 0 24 24"
                       >
                         <path
-                          fill="currentColor"
                           d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23c-1.48 0-2.93-.39-4.19-1.15l-.3-.17l-3.12.82l.83-3.04l-.2-.32a8.188 8.188 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24m-3.53 4.75c-.19 0-.52.07-.79.37c-.27.3-.84.82-.84 2s.87 2.35.99 2.51c.12.16 1.71 2.61 4.14 3.65c.58.25 1.03.4 1.38.51c.58.18 1.11.16 1.53.1c.47-.07 1.44-.59 1.64-1.15c.2-.56.2-1.04.14-1.15c-.06-.11-.22-.17-.47-.29c-.25-.12-1.44-.71-1.66-.8c-.22-.08-.38-.12-.54.12c-.16.24-.61.76-.75.91c-.14.15-.28.17-.53.05c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.15-.25-.02-.38.11-.5c.11-.11.25-.29.37-.44c.12-.14.17-.25.25-.41c.08-.17.04-.31-.02-.43c-.06-.11-.54-1.29-.74-1.77c-.19-.48-.39-.42-.54-.42"
+                          fill="currentColor"
                         ></path>
                       </svg>
                       <span>
@@ -629,16 +629,16 @@ const About = (props) => {
             <div className="modal-grid">
               <div className="property-mini-card">
                 <img
-                  src="https://images.pexels.com/photos/9875684/pexels-photo-9875684.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   alt="Estate"
+                  src="https://images.pexels.com/photos/9875684/pexels-photo-9875684.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                 />
                 <h4>Greenview Estate</h4>
                 <p>Strategic lands in Abuja prime locations.</p>
               </div>
               <div className="property-mini-card">
                 <img
-                  src="https://images.pexels.com/photos/32652321/pexels-photo-32652321.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                   alt="Estate"
+                  src="https://images.pexels.com/photos/32652321/pexels-photo-32652321.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                 />
                 <h4>Solar Heights</h4>
                 <p>Modern smart-homes with full solar integration.</p>
@@ -652,14 +652,14 @@ const About = (props) => {
             className="page-floating-whatsapp1"
           >
             <svg
-              xmlns="http://www.w3.org/2000/svg"
               width="32"
+              xmlns="http://www.w3.org/2000/svg"
               height="32"
               viewBox="0 0 24 24"
             >
               <path
-                fill="currentColor"
                 d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23c-1.48 0-2.93-.39-4.19-1.15l-.3-.17l-3.12.82l.83-3.04l-.2-.32a8.188 8.188 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24m-3.53 4.75c-.19 0-.52.07-.79.37c-.27.3-.84.82-.84 2s.87 2.35.99 2.51c.12.16 1.71 2.61 4.14 3.65c.58.25 1.03.4 1.38.51c.58.18 1.11.16 1.53.1c.47-.07 1.44-.59 1.64-1.15c.2-.56.2-1.04.14-1.15c-.06-.11-.22-.17-.47-.29c-.25-.12-1.44-.71-1.66-.8c-.22-.08-.38-.12-.54.12c-.16.24-.61.76-.75.91c-.14.15-.28.17-.53.05c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.15-.25-.02-.38.11-.5c.11-.11.25-.29.37-.44c.12-.14.17-.25.25-.41c.08-.17.04-.31-.02-.43c-.06-.11-.54-1.29-.74-1.77c-.19-.48-.39-.42-.54-.42"
+                fill="currentColor"
               ></path>
             </svg>
           </div>
