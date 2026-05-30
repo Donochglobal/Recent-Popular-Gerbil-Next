@@ -2728,7 +2728,7 @@ const Home = (props) => {
                 </div>
               </div>
               <div className="ceo-message__actions">
-                <Link href="/about">
+                <Link href="/team">
                   <a data-animate="ceo-btn">
                     <div className="btn btn-lg ceo-message__btn-primary">
                       <span>Meet Our Team</span>
