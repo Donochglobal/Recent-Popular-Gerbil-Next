@@ -52,17 +52,17 @@ const PreFooterShowcase = (props) => {
           <div className="pre-footer-showcase-floating-container">
             <div className="pre-footer-showcase-thq-pre-footer-showcase-float-icon-elm1 pre-footer-showcase-float-icon">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
                 width="24"
+                xmlns="http://www.w3.org/2000/svg"
                 height="24"
                 viewBox="0 0 24 24"
               >
                 <g
                   fill="none"
                   stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="2"
                 >
                   <path d="M11 2h2m1.28 12l-4.56 8M21 22l-1.558-4H4.558M3 10v2"></path>
                   <path d="M6.245 15.04A2 2 0 0 1 8 14h12a1 1 0 0 1 .864 1.505l-3.11 5.457A2 2 0 0 1 16 22H4a1 1 0 0 1-.863-1.506zM7 2a4 4 0 0 1-4 4m5.66 1.66l1.41 1.41"></path>
@@ -71,55 +71,55 @@ const PreFooterShowcase = (props) => {
             </div>
             <div className="pre-footer-showcase-thq-pre-footer-showcase-float-icon-elm2 pre-footer-showcase-float-icon">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
                 width="24"
+                xmlns="http://www.w3.org/2000/svg"
                 height="24"
                 viewBox="0 0 24 24"
               >
                 <g
                   fill="none"
                   stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="2"
                 >
                   <path d="M22 14v-4"></path>
-                  <rect width="16" height="12" x="2" y="6" rx="2"></rect>
+                  <rect x="2" y="6" rx="2" width="16" height="12"></rect>
                 </g>
               </svg>
             </div>
             <div className="pre-footer-showcase-thq-pre-footer-showcase-float-icon-elm3 pre-footer-showcase-float-icon">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
                 width="24"
+                xmlns="http://www.w3.org/2000/svg"
                 height="24"
                 viewBox="0 0 24 24"
               >
                 <g
                   fill="none"
                   stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="2"
                 >
                   <path d="M10 14v-4m12 4v-4M6 14v-4"></path>
-                  <rect width="16" height="12" x="2" y="6" rx="2"></rect>
+                  <rect x="2" y="6" rx="2" width="16" height="12"></rect>
                 </g>
               </svg>
             </div>
             <div className="pre-footer-showcase-thq-pre-footer-showcase-float-icon-elm4 pre-footer-showcase-float-icon">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
                 width="24"
+                xmlns="http://www.w3.org/2000/svg"
                 height="24"
                 viewBox="0 0 24 24"
               >
                 <g
                   fill="none"
                   stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="2"
                 >
                   <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
                   <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
@@ -128,39 +128,39 @@ const PreFooterShowcase = (props) => {
             </div>
             <div className="pre-footer-showcase-thq-pre-footer-showcase-float-icon-elm5 pre-footer-showcase-float-icon">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
                 width="24"
+                xmlns="http://www.w3.org/2000/svg"
                 height="24"
                 viewBox="0 0 24 24"
               >
                 <g
                   fill="none"
                   stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="2"
                 >
                   <path d="M17.97 9.304A8 8 0 0 0 2 10c0 4.69 4.887 9.562 7.022 11.468m12.356-4.842a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"></path>
-                  <circle cx="10" cy="10" r="3"></circle>
+                  <circle r="3" cx="10" cy="10"></circle>
                 </g>
               </svg>
             </div>
             <div className="pre-footer-showcase-thq-pre-footer-showcase-float-icon-elm6 pre-footer-showcase-float-icon">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
                 width="24"
+                xmlns="http://www.w3.org/2000/svg"
                 height="24"
                 viewBox="0 0 24 24"
               >
                 <g
                   fill="none"
                   stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="2"
                 >
                   <path d="M12 10h.01M12 14h.01M12 6h.01M16 10h.01M16 14h.01M16 6h.01M8 10h.01M8 14h.01M8 6h.01M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"></path>
-                  <rect width="16" height="20" x="4" y="2" rx="2"></rect>
+                  <rect x="4" y="2" rx="2" width="16" height="20"></rect>
                 </g>
               </svg>
             </div>
@@ -179,20 +179,20 @@ const PreFooterShowcase = (props) => {
             </div>
             <div className="pre-footer-showcase-visual-wrapper">
               <div className="pre-footer-showcase-visual-grid">
-                <div className="pre-footer-showcase-visual-side solar-side">
-                  <div className="pre-footer-showcase-visual-icon-box pulse">
+                <div className="solar-side pre-footer-showcase-visual-side">
+                  <div className="pulse pre-footer-showcase-visual-icon-box">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="64"
-                      height="64"
-                      viewBox="0 0 24 24"
                       fill="none"
+                      width="64"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="64"
                       stroke="currentColor"
+                      viewBox="0 0 24 24"
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     >
-                      <circle cx="12" cy="12" r="4"></circle>
+                      <circle r="4" cx="12" cy="12"></circle>
                       <path d="M12 2v2"></path>
                       <path d="M12 20v2"></path>
                       <path d="M4.93 4.93l1.41 1.41"></path>
@@ -212,12 +212,12 @@ const PreFooterShowcase = (props) => {
                   </div>
                   <div className="pre-footer-showcase-visual-icon-box">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="64"
-                      height="64"
-                      viewBox="0 0 24 24"
                       fill="none"
+                      width="64"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="64"
                       stroke="currentColor"
+                      viewBox="0 0 24 24"
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -239,12 +239,12 @@ const PreFooterShowcase = (props) => {
                   <div className="pre-footer-showcase-bridge-core">
                     <div className="pre-footer-showcase-core-glow"></div>
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="48"
-                      height="48"
-                      viewBox="0 0 24 24"
                       fill="none"
+                      width="48"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="48"
                       stroke="currentColor"
+                      viewBox="0 0 24 24"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -253,18 +253,18 @@ const PreFooterShowcase = (props) => {
                     </svg>
                   </div>
                   <div className="pre-footer-showcase-bridge-line">
-                    <div className="pre-footer-showcase-bridge-pulse delay-pulse"></div>
+                    <div className="delay-pulse pre-footer-showcase-bridge-pulse"></div>
                   </div>
                 </div>
-                <div className="pre-footer-showcase-visual-side property-side">
+                <div className="property-side pre-footer-showcase-visual-side">
                   <div className="pre-footer-showcase-visual-icon-box scroll-reveal-rise">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="64"
-                      height="64"
-                      viewBox="0 0 24 24"
                       fill="none"
+                      width="64"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="64"
                       stroke="currentColor"
+                      viewBox="0 0 24 24"
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -273,37 +273,37 @@ const PreFooterShowcase = (props) => {
                       <rect
                         x="7"
                         y="10"
-                        width="3"
-                        height="3"
                         rx="0.5"
                         fill="#7fbadc"
+                        width="3"
+                        height="3"
                         fillOpacity="0.6"
                       ></rect>
                       <rect
                         x="14"
                         y="10"
-                        width="3"
-                        height="3"
                         rx="0.5"
                         fill="#7fbadc"
+                        width="3"
+                        height="3"
                         fillOpacity="0.6"
                       ></rect>
                       <rect
                         x="7"
                         y="14"
-                        width="3"
-                        height="3"
                         rx="0.5"
                         fill="#7fbadc"
+                        width="3"
+                        height="3"
                         fillOpacity="0.6"
                       ></rect>
                       <rect
                         x="14"
                         y="14"
-                        width="3"
-                        height="3"
                         rx="0.5"
                         fill="#7fbadc"
+                        width="3"
+                        height="3"
                         fillOpacity="0.6"
                       ></rect>
                     </svg>
@@ -312,14 +312,14 @@ const PreFooterShowcase = (props) => {
                   <div className="pre-footer-showcase-flow-path">
                     <div className="pre-footer-showcase-particle-stream reverse"></div>
                   </div>
-                  <div className="pre-footer-showcase-visual-icon-box scroll-reveal-rise delay-1">
+                  <div className="pre-footer-showcase-visual-icon-box delay-1 scroll-reveal-rise">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="64"
-                      height="64"
-                      viewBox="0 0 24 24"
                       fill="none"
+                      width="64"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="64"
                       stroke="currentColor"
+                      viewBox="0 0 24 24"
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -327,16 +327,16 @@ const PreFooterShowcase = (props) => {
                       <path d="M19 12h2l-9-9l-9 9h2v7a2 2 0 0 0 2 2h5m4-2a3 3 0 1 0 6 0a3 3 0 1 0-6 0"></path>
                       <path d="M9 21v-6a2 2 0 0 1 2-2h2c.641 0 1.212.302 1.578.771"></path>
                       <circle
+                        r="1.5"
                         cx="17"
                         cy="10"
-                        r="1.5"
                         fill="#7fbadc"
                         fillOpacity="0.8"
                       ></circle>
                       <circle
+                        r="3"
                         cx="17"
                         cy="10"
-                        r="3"
                         stroke="#7fbadc"
                         strokeOpacity="0.4"
                       ></circle>
@@ -347,7 +347,7 @@ const PreFooterShowcase = (props) => {
               </div>
             </div>
             <div className="pre-footer-showcase-stats-grid">
-              <div className="pre-footer-showcase-stat-card scroll-reveal-up">
+              <div className="scroll-reveal-up pre-footer-showcase-stat-card">
                 <div
                   data-target="100"
                   className="pre-footer-showcase-stat-number"
@@ -358,7 +358,7 @@ const PreFooterShowcase = (props) => {
                   <span>Reliable Energy Solutions</span>
                 </div>
               </div>
-              <div className="pre-footer-showcase-stat-card scroll-reveal-up delay-1">
+              <div className="scroll-reveal-up delay-1 pre-footer-showcase-stat-card">
                 <div
                   data-target="500"
                   className="pre-footer-showcase-stat-number"
@@ -369,7 +369,7 @@ const PreFooterShowcase = (props) => {
                   <span>Solar Installations</span>
                 </div>
               </div>
-              <div className="pre-footer-showcase-stat-card scroll-reveal-up delay-2">
+              <div className="scroll-reveal-up delay-2 pre-footer-showcase-stat-card">
                 <div
                   data-target="200"
                   className="pre-footer-showcase-stat-number"
@@ -380,10 +380,10 @@ const PreFooterShowcase = (props) => {
                   <span>Property Opportunities</span>
                 </div>
               </div>
-              <div className="pre-footer-showcase-stat-card scroll-reveal-up delay-3">
+              <div className="scroll-reveal-up delay-3 pre-footer-showcase-stat-card">
                 <div
-                  data-target="100"
                   data-suffix="%"
+                  data-target="100"
                   className="pre-footer-showcase-stat-number"
                 >
                   <span>0</span>
@@ -393,21 +393,21 @@ const PreFooterShowcase = (props) => {
                 </div>
               </div>
             </div>
-            <div className="pre-footer-showcase-cta-box scroll-reveal-scale">
+            <div className="scroll-reveal-scale pre-footer-showcase-cta-box">
               <h3 className="section-title">
                 Ready To Power Your Home, Business, Or Next Investment?
               </h3>
               <div className="pre-footer-showcase-cta-actions">
                 <Link href="/solar-solutions">
                   <a>
-                    <div className="ripple-effect btn btn-primary btn-lg">
+                    <div className="ripple-effect btn-primary btn btn-lg">
                       <span>Explore Solar Solutions</span>
                     </div>
                   </a>
                 </Link>
                 <Link href="/lemoex-properties">
                   <a>
-                    <div className="btn btn-lg btn-outline ripple-effect">
+                    <div className="btn-outline ripple-effect btn btn-lg">
                       <span>View Real Estate Opportunities</span>
                     </div>
                   </a>

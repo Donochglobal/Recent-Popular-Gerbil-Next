@@ -3321,6 +3321,301 @@ const Home = (props) => {
             ></Script>
           </div>
         </div>
+        <section
+          id="pre-footer-animated"
+          className="home-thq-pre-footer-section-elm"
+        >
+          <div aria-hidden="true" className="pre-footer-particles">
+            <span className="particle"></span>
+            <span className="particle"></span>
+            <span className="particle"></span>
+            <span className="particle"></span>
+            <span className="particle"></span>
+            <span className="particle"></span>
+            <span className="particle"></span>
+            <span className="particle"></span>
+            <span className="particle"></span>
+            <span className="particle"></span>
+            <span className="particle"></span>
+            <span className="particle"></span>
+          </div>
+          <div className="home-thq-pre-footer-content-elm">
+            <div
+              data-animate="fade-up"
+              className="home-thq-pre-footer-header-elm"
+            >
+              <h2 className="home-thq-pre-footer-title-elm">
+                Powering The Future. Building Lasting Value.
+              </h2>
+              <p className="home-thq-pre-footer-subtitle-elm">
+                From reliable solar energy solutions to premium real estate
+                investments, DON OCH Global helps individuals, businesses,
+                factories, institutions, and communities secure a smarter
+                future.
+              </p>
+            </div>
+            <div
+              data-animate="scale-in"
+              className="home-thq-pre-footer-visual-elm"
+            >
+              <div
+                data-animate="slide-left"
+                className="home-thq-visual-left-elm"
+              >
+                <div className="home-thq-solar-visual-elm">
+                  <div className="sun-rays">
+                    <span className="ray"></span>
+                    <span className="ray"></span>
+                    <span className="ray"></span>
+                    <span className="ray"></span>
+                    <span className="ray"></span>
+                    <span className="ray"></span>
+                    <span className="ray"></span>
+                    <span className="ray"></span>
+                  </div>
+                  <div className="solar-panel-anim">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="64"
+                      height="64"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M4.28 14h15.44a1 1 0 0 0 .97-1.243l-1.5-6A1 1 0 0 0 18.22 6H5.78a1 1 0 0 0-.97.757l-1.5 6A1 1 0 0 0 4.28 14"></path>
+                      <path d="M4 10h16M10 6l-1 8m5-8l1 8m-3 0v4m-5 0h10"></path>
+                    </svg>
+                  </div>
+                  <div className="home-thq-battery-charge-elm">
+                    <div className="battery-body">
+                      <div className="battery-level"></div>
+                    </div>
+                    <div className="charge-bolts">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M13 2L4.09 12.11a.5.5 0 0 0 .39.81h6.61l-3.09 7.38a.5.5 0 0 0 .9.42L20 10.5a.5.5 0 0 0-.4-.81h-6.6l3.1-7.38a.5.5 0 0 0-.9-.42z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div aria-hidden="true" className="home-thq-energy-bridge-elm">
+                <div className="home-thq-bridge-line-elm"></div>
+                <div className="bridge-particles">
+                  <span className="bp"></span>
+                  <span className="bp"></span>
+                  <span className="bp"></span>
+                  <span className="bp"></span>
+                  <span className="bp"></span>
+                </div>
+              </div>
+              <div
+                data-animate="slide-right"
+                className="home-thq-visual-right-elm"
+              >
+                <div className="home-thq-property-visual-elm">
+                  <div className="home-thq-building-group-elm">
+                    <div className="building">
+                      <div className="window"></div>
+                      <div className="window"></div>
+                      <div className="window"></div>
+                      <div className="window"></div>
+                    </div>
+                    <div className="building">
+                      <div className="window"></div>
+                      <div className="window"></div>
+                      <div className="window"></div>
+                      <div className="window"></div>
+                      <div className="window"></div>
+                      <div className="window"></div>
+                    </div>
+                    <div className="building">
+                      <div className="window"></div>
+                      <div className="window"></div>
+                      <div className="window"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-animate="stagger-up"
+              className="home-thq-pre-footer-counters-elm"
+            >
+              <div data-target="100" data-suffix="+" className="counter-card">
+                <div className="counter-value">
+                  <span className="counter-num">0</span>
+                  <span className="counter-suffix">+</span>
+                </div>
+                <div className="counter-label">
+                  <span>Reliable Energy Solutions</span>
+                </div>
+              </div>
+              <div data-target="500" data-suffix="+" className="counter-card">
+                <div className="counter-value">
+                  <span className="counter-num">0</span>
+                  <span className="counter-suffix">+</span>
+                </div>
+                <div className="counter-label">
+                  <span>Solar Installations</span>
+                </div>
+              </div>
+              <div data-target="200" data-suffix="+" className="counter-card">
+                <div className="counter-value">
+                  <span className="counter-num">0</span>
+                  <span className="counter-suffix">+</span>
+                </div>
+                <div className="counter-label">
+                  <span>Property Opportunities</span>
+                </div>
+              </div>
+              <div data-target="100" data-suffix="%" className="counter-card">
+                <div className="counter-value">
+                  <span className="counter-num">0</span>
+                  <span className="counter-suffix">%</span>
+                </div>
+                <div className="counter-label">
+                  <span>Customer Satisfaction</span>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              className="home-thq-pre-footer-floaters-elm"
+            >
+              <div data-animate="float" className="floater">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M4.28 14h15.44a1 1 0 0 0 .97-1.243l-1.5-6A1 1 0 0 0 18.22 6H5.78a1 1 0 0 0-.97.757l-1.5 6A1 1 0 0 0 4.28 14"></path>
+                  <path d="M4 10h16M10 6l-1 8m5-8l1 8m-3 0v4m-5 0h10"></path>
+                </svg>
+              </div>
+              <div data-animate="float" className="floater">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <rect width="16" height="12" x="2" y="6" rx="2"></rect>
+                  <path d="M22 14v-4"></path>
+                </svg>
+              </div>
+              <div data-animate="float" className="floater">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <rect width="16" height="16" x="4" y="4" rx="2"></rect>
+                  <rect width="8" height="8" x="8" y="8" rx="1"></rect>
+                  <path d="M12 20v2m0-20v2m5 16v2m0-20v2M2 12h2m-2 5h2M2 7h2m16 5h2m-2 5h2M20 7h2M7 20v2M7 2v2"></path>
+                </svg>
+              </div>
+              <div data-animate="float" className="floater">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                  <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                </svg>
+              </div>
+              <div data-animate="float" className="floater">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M12 10h.01M12 14h.01M12 6h.01M16 10h.01M16 14h.01M16 6h.01M8 10h.01M8 14h.01M8 6h.01M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"></path>
+                  <rect width="16" height="20" x="4" y="2" rx="2"></rect>
+                </svg>
+              </div>
+              <div data-animate="float" className="floater">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                </svg>
+              </div>
+            </div>
+            <div data-animate="fade-up" className="home-thq-pre-footer-cta-elm">
+              <h3 className="home-thq-pre-footer-cta-title-elm">
+                Ready To Power Your Home, Business, Or Next Investment?
+              </h3>
+              <div className="home-thq-pre-footer-cta-buttons-elm">
+                <Link href="/solar-solutions">
+                  <a className="home-link36">
+                    <div className="btn btn-primary pre-footer-btn-primary">
+                      <span>Explore Solar Solutions</span>
+                    </div>
+                  </a>
+                </Link>
+                <Link href="/lemoex-properties">
+                  <a className="home-link37">
+                    <div className="btn btn-outline pre-footer-btn-secondary">
+                      <span>View Real Estate Opportunities</span>
+                    </div>
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
         <Footer></Footer>
         <a
           href="https://wa.me/09132371332"
@@ -3411,6 +3706,253 @@ to {
 }
 100% {
   transform: scale(1);
+}
+}
+</style>`}
+            ></Script>
+          </div>
+        </div>
+        <div className="home-container23">
+          <div className="home-container24">
+            <Script
+              html={`<script>
+(function(){
+    ;(function () {
+      // Pre-footer scroll-triggered animations
+      const pfObserverOptions = {
+        root: null,
+        rootMargin: "0px 0px -80px 0px",
+        threshold: 0.15,
+      }
+
+      const pfObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible")
+            pfObserver.unobserve(entry.target)
+          }
+        })
+      }, pfObserverOptions)
+
+      document.querySelectorAll("#pre-footer-animated [data-animate]").forEach((el) => {
+        pfObserver.observe(el)
+      })
+
+      // Counter animation
+      const counterObserverOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5,
+      }
+
+      const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const card = entry.target
+            const target = parseInt(card.dataset.target, 10)
+            const suffix = card.dataset.suffix || ""
+            const numEl = card.querySelector(".counter-num")
+            if (!numEl || numEl.dataset.animated) return
+            numEl.dataset.animated = "true"
+
+            const duration = 2000
+            const startTime = performance.now()
+
+            const tick = (now) => {
+              const elapsed = now - startTime
+              const progress = Math.min(elapsed / duration, 1)
+              // easeOutQuart
+              const eased = 1 - Math.pow(1 - progress, 4)
+              const current = Math.round(eased * target)
+              numEl.textContent = current.toLocaleString()
+              if (progress < 1) {
+                requestAnimationFrame(tick)
+              } else {
+                numEl.textContent = target.toLocaleString()
+              }
+            }
+
+            requestAnimationFrame(tick)
+            counterObserver.unobserve(card)
+          }
+        })
+      }, counterObserverOptions)
+
+      document.querySelectorAll("#pre-footer-animated .counter-card").forEach((card) => {
+        counterObserver.observe(card)
+      })
+    })()
+  })()
+</script>`}
+            ></Script>
+          </div>
+        </div>
+        <div>
+          <div className="home-container26">
+            <Script
+              html={`<style>
+@keyframes pf-float-particle {
+0% {
+  transform: translateY(0) translateX(0);
+  opacity: 0.15;
+}
+25% {
+  transform: translateY(-30px) translateX(15px);
+  opacity: 0.25;
+}
+50% {
+  transform: translateY(-15px) translateX(-10px);
+  opacity: 0.2;
+}
+75% {
+  transform: translateY(-40px) translateX(20px);
+  opacity: 0.15;
+}
+100% {
+  transform: translateY(0) translateX(0);
+  opacity: 0.15;
+}
+}
+
+@keyframes pf-sun-pulse {
+0%, 100% {
+  transform: scale(1);
+  opacity: 0.9;
+}
+50% {
+  transform: scale(1.15);
+  opacity: 1;
+}
+}
+
+@keyframes pf-ray-rotate {
+0% {
+  opacity: 0.4;
+  transform: rotate(var(--r, 0deg)) translateY(-28px) scaleY(0.8);
+}
+50% {
+  opacity: 0.9;
+  transform: rotate(var(--r, 0deg)) translateY(-30px) scaleY(1.1);
+}
+100% {
+  opacity: 0.4;
+  transform: rotate(var(--r, 0deg)) translateY(-28px) scaleY(0.8);
+}
+}
+
+@keyframes pf-panel-tilt {
+0%, 100% {
+  transform: rotate(-3deg);
+}
+50% {
+  transform: rotate(3deg);
+}
+}
+
+@keyframes pf-charge-fill {
+0% {
+  width: 10%;
+}
+50% {
+  width: 90%;
+}
+100% {
+  width: 10%;
+}
+}
+
+@keyframes pf-bolt-flash {
+0%, 100% {
+  opacity: 0.3;
+  transform: scale(0.9);
+}
+50% {
+  opacity: 1;
+  transform: scale(1.1);
+}
+}
+
+@keyframes pf-bridge-travel {
+0% {
+  left: 0;
+  opacity: 0;
+  transform: translateY(-50%) scale(0.5);
+}
+15% {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+85% {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+100% {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(-50%) scale(0.5);
+}
+}
+
+@keyframes pf-building-rise {
+0% {
+  transform: scaleY(0);
+  opacity: 0;
+}
+100% {
+  transform: scaleY(1);
+  opacity: 1;
+}
+}
+
+@keyframes pf-window-glow {
+0%, 100% {
+  background: rgba(127, 186, 220, 0.2);
+  box-shadow: 0 0 0 transparent;
+}
+50% {
+  background: rgba(127, 186, 220, 0.65);
+  box-shadow: 0 0 6px rgba(127, 186, 220, 0.4);
+}
+}
+
+@keyframes pf-icon-float {
+0%, 100% {
+  transform: translateY(0) rotate(0deg);
+  opacity: 0.3;
+}
+25% {
+  transform: translateY(-15px) rotate(3deg);
+  opacity: 0.45;
+}
+50% {
+  transform: translateY(-8px) rotate(-2deg);
+  opacity: 0.35;
+}
+75% {
+  transform: translateY(-20px) rotate(4deg);
+  opacity: 0.4;
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+.pre-footer-particles .particle, .ray, .sun-rays::before, .solar-panel-anim, .battery-level, .charge-bolts, .bridge-particles .bp, .building, .window, .floater {
+  animation: none !important;
+}
+.building {
+  opacity: 1;
+  transform: scaleY(1);
+}
+.battery-level {
+  width: 75%;
+}
+[data-animate] {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+[data-animate="stagger-up"] .counter-card {
+  opacity: 1;
+  transform: none;
 }
 }
 </style>`}
@@ -3790,6 +4332,148 @@ to {
           .home-container16 {
             display: contents;
           }
+          .home-thq-pre-footer-section-elm {
+            width: 100%;
+            padding: var(--spacing-4xl) var(--spacing-md);
+            overflow: hidden;
+            position: relative;
+            background: #ffffff;
+          }
+          .home-thq-pre-footer-content-elm {
+            gap: var(--spacing-3xl);
+            margin: 0 auto;
+            display: flex;
+            z-index: 2;
+            position: relative;
+            max-width: var(--content-max-width);
+            align-items: center;
+            flex-direction: column;
+          }
+          .home-thq-pre-footer-header-elm {
+            max-width: 56rem;
+            text-align: center;
+          }
+          .home-thq-pre-footer-title-elm {
+            color: var(--color-primary);
+            font-size: var(--font-size-4xl);
+            font-family: var(--font-family-heading);
+            font-weight: var(--font-weight-heading);
+            line-height: var(--line-height-heading);
+            margin-bottom: var(--spacing-lg);
+            letter-spacing: var(--letter-spacing-heading);
+          }
+          .home-thq-pre-footer-subtitle-elm {
+            color: var(--color-on-surface-secondary);
+            margin: 0 auto;
+            font-size: var(--font-size-lg);
+            max-width: 48rem;
+            font-family: var(--font-family-body);
+            line-height: var(--line-height-body);
+          }
+          .home-thq-pre-footer-visual-elm {
+            gap: var(--spacing-xl);
+            width: 100%;
+            display: flex;
+            max-width: 52rem;
+            min-height: 220px;
+            align-items: center;
+            justify-content: center;
+          }
+          .home-thq-visual-left-elm {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .home-thq-solar-visual-elm {
+            gap: var(--spacing-md);
+            display: flex;
+            position: relative;
+            align-items: center;
+            flex-direction: column;
+          }
+          .home-thq-battery-charge-elm {
+            gap: var(--spacing-xs);
+            display: flex;
+            align-items: center;
+          }
+          .home-thq-energy-bridge-elm {
+            width: 120px;
+            height: 40px;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+          }
+          .home-thq-bridge-line-elm {
+            width: 100%;
+            height: 2px;
+            opacity: 0.6;
+            background: linear-gradient(
+              90deg,
+              var(--color-accent),
+              #7fbadc,
+              var(--color-secondary)
+            );
+            border-radius: 1px;
+          }
+          .home-thq-visual-right-elm {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .home-thq-property-visual-elm {
+            height: 140px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+          }
+          .home-thq-building-group-elm {
+            gap: 4px;
+            display: flex;
+            align-items: flex-end;
+          }
+          .home-thq-pre-footer-counters-elm {
+            gap: var(--spacing-lg);
+            width: 100%;
+            display: grid;
+            max-width: 64rem;
+            grid-template-columns: repeat(4, 1fr);
+          }
+          .home-thq-pre-footer-floaters-elm {
+            inset: 0;
+            z-index: 3;
+            position: absolute;
+            pointer-events: none;
+          }
+          .home-thq-pre-footer-cta-elm {
+            gap: var(--spacing-xl);
+            display: flex;
+            max-width: 48rem;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+          }
+          .home-thq-pre-footer-cta-title-elm {
+            color: var(--color-primary);
+            font-size: var(--font-size-2xl);
+            font-family: var(--font-family-heading);
+            font-weight: var(--font-weight-heading);
+            line-height: var(--line-height-heading);
+          }
+          .home-thq-pre-footer-cta-buttons-elm {
+            gap: var(--spacing-md);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+          .home-link36 {
+            display: contents;
+          }
+          .home-link37 {
+            display: contents;
+          }
           .home-container18 {
             display: contents;
           }
@@ -3797,6 +4481,15 @@ to {
             display: contents;
           }
           .home-container22 {
+            display: contents;
+          }
+          .home-container23 {
+            display: none;
+          }
+          .home-container24 {
+            display: contents;
+          }
+          .home-container26 {
             display: contents;
           }
           @media (max-width: 991px) {
@@ -3807,6 +4500,25 @@ to {
               grid-template-columns: repeat(3, 1fr);
             }
             .home-thq-solar-processconnector-elm {
+              display: none;
+            }
+            .home-thq-pre-footer-section-elm {
+              padding: var(--spacing-3xl) var(--spacing-md);
+            }
+            .home-thq-pre-footer-visual-elm {
+              gap: var(--spacing-lg);
+              min-height: auto;
+              flex-direction: column;
+            }
+            .home-thq-energy-bridge-elm {
+              width: 60px;
+              height: 60px;
+              transform: rotate(90deg);
+            }
+            .home-thq-pre-footer-counters-elm {
+              grid-template-columns: repeat(2, 1fr);
+            }
+            .home-thq-pre-footer-floaters-elm {
               display: none;
             }
           }
@@ -3870,6 +4582,23 @@ to {
             .home-thq-cart-drawersummary-elm {
               gap: 10px;
               padding: 16px;
+            }
+            .home-thq-pre-footer-section-elm {
+              padding: var(--spacing-2xl) var(--spacing-sm);
+            }
+            .home-thq-pre-footer-title-elm {
+              font-size: var(--font-size-3xl);
+            }
+            .home-thq-pre-footer-subtitle-elm {
+              font-size: var(--font-size-base);
+            }
+            .home-thq-pre-footer-counters-elm {
+              gap: var(--spacing-md);
+              grid-template-columns: 1fr;
+            }
+            .home-thq-pre-footer-cta-buttons-elm {
+              width: 100%;
+              flex-direction: column;
             }
           }
         `}
