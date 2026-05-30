@@ -1685,61 +1685,14 @@ const Home = (props) => {
           </div>
           <div className="home-container11">
             <div className="home-container12">
-              <Script
-                html={`<style>
-[data-role="cart-drawer"] {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-[data-role="cart-drawer"][data-state="open"], [data-role="cart-drawer"][aria-hidden="false"] {
-  pointer-events: auto;
-  opacity: 1;
-}
-[data-role="cart-drawer"] .thq-cart-drawerpanel-elm {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  max-width: 480px;
-  height: 100vh;
-  background: #ffffff;
-  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.15);
-  transform: translateX(100%);
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 10000;
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-}
-[data-role="cart-drawer"][data-state="open"] .thq-cart-drawerpanel-elm, [data-role="cart-drawer"][aria-hidden="false"] .thq-cart-drawerpanel-elm {
-  transform: translateX(0);
-}
-[data-role="cart-drawer"] .thq-cart-draweroverlay-elm {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 9998;
-}
-[data-role="cart-drawer"][data-state="open"] .thq-cart-draweroverlay-elm, [data-role="cart-drawer"][aria-hidden="false"] .thq-cart-draweroverlay-elm {
-  opacity: 1;
-}
-</style>`}
-              ></Script>
+              <Script html={``}></Script>
             </div>
           </div>
           <div
             data-role="cart-drawer"
             aria-hidden="true"
-            className="cart-drawer"
+            data-state="closed"
+            className="home-thq-cart-drawer-elm cart-drawer"
           >
             <div
               data-action="close-cart"
@@ -3093,17 +3046,17 @@ const Home = (props) => {
               if (!cart.length) {
                 if (cartItems) {
                   cartItems.innerHTML = \`
-                            <div class="cart-drawer__empty">
-                              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="9" cy="21" r="1"></circle>
-                                <circle cx="20" cy="21" r="1"></circle>
-                                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                              </svg>
-                              <p class="cart-drawer__empty-title">Your cart is empty</p>
-                              <p class="cart-drawer__empty-text">Add products to continue shopping</p>
-                              <button data-action="close-cart" class="btn btn-primary btn-sm cart-drawer__empty-btn">Continue Shopping</button>
-                            </div>
-                          \`
+                              <div class="cart-drawer__empty">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                  <circle cx="9" cy="21" r="1"></circle>
+                                  <circle cx="20" cy="21" r="1"></circle>
+                                  <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                                </svg>
+                                <p class="cart-drawer__empty-title">Your cart is empty</p>
+                                <p class="cart-drawer__empty-text">Add products to continue shopping</p>
+                                <button data-action="close-cart" class="btn btn-primary btn-sm cart-drawer__empty-btn">Continue Shopping</button>
+                              </div>
+                            \`
                   cartItems.querySelectorAll('[data-action="close-cart"]').forEach((btn) => {
                     btn.addEventListener("click", () => {
                       if (cartDrawer) cartDrawer.setAttribute("aria-hidden", "true")
@@ -3115,23 +3068,23 @@ const Home = (props) => {
                   cartItems.innerHTML = cart
                     .map(
                       (item, idx) => \`
-                              <div class="cart-item">
-                                <img class="cart-item__thumb" src="\\\${item.image}" alt="\\\${item.name}" />
-                                <div class="cart-item__info">
-                                  <div class="cart-item__name">\\\${item.name}</div>
-                                  <div class="cart-item__price">\\\${formatPrice(item.price)} &times; \\\${item.qty}</div>
-                                  <div class="cart-item__subtotal">\\\${formatPrice(item.price * item.qty)}</div>
+                                <div class="cart-item">
+                                  <img class="cart-item__thumb" src="\\\\\${item.image}" alt="\\\\\${item.name}" />
+                                  <div class="cart-item__info">
+                                    <div class="cart-item__name">\\\\\${item.name}</div>
+                                    <div class="cart-item__price">\\\\\${formatPrice(item.price)} &times; \\\\\${item.qty}</div>
+                                    <div class="cart-item__subtotal">\\\\\${formatPrice(item.price * item.qty)}</div>
+                                  </div>
+                                  <div class="cart-item__qty">
+                                    <button class="cart-item__qty-btn" data-idx="\\\\\${idx}" data-delta="-1" aria-label="Decrease quantity">-</button>
+                                    <span class="cart-item__qty-value">\\\\\${item.qty}</span>
+                                    <button class="cart-item__qty-btn" data-idx="\\\\\${idx}" data-delta="1" aria-label="Increase quantity">+</button>
+                                  </div>
+                                  <button class="cart-item__remove" data-remove="\\\\\${idx}" aria-label="Remove item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                                  </button>
                                 </div>
-                                <div class="cart-item__qty">
-                                  <button class="cart-item__qty-btn" data-idx="\\\${idx}" data-delta="-1" aria-label="Decrease quantity">-</button>
-                                  <span class="cart-item__qty-value">\\\${item.qty}</span>
-                                  <button class="cart-item__qty-btn" data-idx="\\\${idx}" data-delta="1" aria-label="Increase quantity">+</button>
-                                </div>
-                                <button class="cart-item__remove" data-remove="\\\${idx}" aria-label="Remove item">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
-                                </button>
-                              </div>
-                            \`
+                              \`
                     )
                     .join("")
                   cartItems.querySelectorAll("[data-delta]").forEach((btn) => {
@@ -3166,7 +3119,7 @@ const Home = (props) => {
               }
               updateCart()
               animateCartIcon()
-              showToast(\`\u2713 \\\${name} added to cart\`)
+              showToast(\`\u2713 \\\\\${name} added to cart\`)
             }
             document.querySelectorAll('[data-action="add-to-cart"]').forEach((btn) => {
               btn.addEventListener("click", (e) => {
@@ -3180,18 +3133,36 @@ const Home = (props) => {
             let bodyOverflow = ""
             const closeCartDrawer = () => {
               isCartOpen = false
+              console.log("[Cart] closeCartDrawer called")
               if (cartDrawer) {
                 cartDrawer.setAttribute("aria-hidden", "true")
                 cartDrawer.setAttribute("data-state", "closed")
+                console.log("[Cart] Drawer attributes set - aria-hidden: true, data-state: closed")
+                console.log("[Cart] Drawer classes:", cartDrawer.className)
+              } else {
+                console.warn("[Cart] cartDrawer element not found!")
               }
               document.body.style.overflow = bodyOverflow || ""
             }
             const openCartDrawer = () => {
               isCartOpen = true
               bodyOverflow = document.body.style.overflow || ""
+              console.log("[Cart] openCartDrawer called")
               if (cartDrawer) {
                 cartDrawer.setAttribute("aria-hidden", "false")
                 cartDrawer.setAttribute("data-state", "open")
+                console.log("[Cart] Drawer attributes set - aria-hidden: false, data-state: open")
+                console.log("[Cart] Drawer classes:", cartDrawer.className)
+                console.log("[Cart] Drawer computed display:", window.getComputedStyle(cartDrawer).display)
+                console.log("[Cart] Drawer computed z-index:", window.getComputedStyle(cartDrawer).zIndex)
+                const panel = cartDrawer.querySelector(".thq-cart-drawerpanel-elm")
+                if (panel) {
+                  console.log("[Cart] Panel computed transform:", window.getComputedStyle(panel).transform)
+                  console.log("[Cart] Panel computed display:", window.getComputedStyle(panel).display)
+                  console.log("[Cart] Panel computed z-index:", window.getComputedStyle(panel).zIndex)
+                }
+              } else {
+                console.warn("[Cart] cartDrawer element not found!")
               }
               document.body.style.overflow = "hidden"
             }
@@ -3199,7 +3170,19 @@ const Home = (props) => {
               el.addEventListener("click", closeCartDrawer)
             })
             if (cartFab) {
-              cartFab.addEventListener("click", openCartDrawer)
+              console.log("[Cart] Cart FAB found, attaching click listener")
+              cartFab.addEventListener("click", (e) => {
+                e.preventDefault()
+                e.stopPropagation()
+                console.log("[Cart] Cart FAB clicked, isCartOpen:", isCartOpen)
+                if (isCartOpen) {
+                  closeCartDrawer()
+                } else {
+                  openCartDrawer()
+                }
+              })
+            } else {
+              console.warn("[Cart] Cart FAB element not found!")
             }
             if (cartDrawer) {
               cartDrawer.addEventListener("click", (e) => {
@@ -3225,8 +3208,8 @@ const Home = (props) => {
                   items.innerHTML = cart
                     .map(
                       (i) => \`
-                              <div class="checkout-summary__item"><span>\\\\\${i.name} \u00D7 \\\\\${i.qty}</span><span>\\\\\${formatPrice(i.price * i.qty)}</span></div>
-                            \`
+                                <div class="checkout-summary__item"><span>\\\\\${i.name} \u00D7 \\\\\${i.qty}</span><span>\\\\\${formatPrice(i.price * i.qty)}</span></div>
+                              \`
                     )
                     .join("")
                 }
@@ -4387,27 +4370,47 @@ to {
           .home-container12 {
             display: contents;
           }
+          .home-thq-cart-drawer-elm {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            opacity: 0;
+            z-index: 9999;
+            position: fixed;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            visibility: hidden;
+            pointer-events: none;
+          }
           .home-thq-cart-draweroverlay-elm {
             inset: 0;
-            z-index: 1900;
-            position: absolute;
-            background: var(--color-scrim);
+            opacity: 0;
+            z-index: 9998 !important;
+            position: fixed;
+            background: rgba(0, 0, 0, 0.5);
+            transition: opacity 0.3s ease;
             pointer-events: none;
           }
           .home-thq-cart-drawerpanel-elm {
             top: 0;
             right: 0;
-            width: 420px;
-            height: 100%;
+            width: 100%;
+            height: 100vh;
             display: flex;
-            z-index: 2001;
-            position: absolute;
-            max-width: 100%;
+            opacity: 0;
+            z-index: 10000 !important;
+            position: fixed;
+            max-width: 480px;
             transform: translateX(100%);
-            background: var(--color-surface);
-            box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
+            background: #ffffff;
+            box-shadow: -4px 0 24px rgba(0, 0, 0, 0.15);
             max-height: 100vh;
-            transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            overflow-y: auto;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.3s ease, visibility 0.3s ease;
+            visibility: hidden;
+            will-change: transform;
             flex-direction: column;
           }
           .home-thq-cart-drawerheader-elm {
@@ -4441,6 +4444,7 @@ to {
             overflow-y: auto;
             border-bottom: 1px solid var(--color-border);
             background-color: #ffffff;
+            -webkit-overflow-scrolling: touch;
           }
           .home-thq-cart-drawerempty-elm2 {
             color: var(--color-on-surface);
@@ -4460,6 +4464,8 @@ to {
             gap: 12px;
             display: flex;
             padding: 20px;
+            z-index: 1;
+            position: relative;
             font-size: var(--font-size-base);
             background: #f8f8f8;
             border-top: var(--divider-value);
@@ -4468,6 +4474,8 @@ to {
           }
           .home-thq-btn-elm19 {
             width: 100%;
+            z-index: 2;
+            position: relative;
             margin-top: var(--spacing-md);
             font-weight: var(--font-weight-medium);
             letter-spacing: 0.02em;
@@ -4665,7 +4673,7 @@ to {
             color: #0f2744;
             margin: 0;
             font-size: clamp(1.8rem, 2.4rem, 2.8rem);
-            font-family: '' 'Playfair Display', serif '';
+            font-family: '' '' Playfair Display ', serif' '';
             font-weight: 700;
             line-height: 1.25;
             letter-spacing: 0.02em;
@@ -4675,8 +4683,8 @@ to {
             margin: var(--spacing-sm) 0;
             font-size: var(--font-size-base);
             max-width: 560px;
-            font-family: '' 'Inter', system-ui, -apple-system, 'Segoe UI',
-              Roboto, 'Helvetica Neue', Arial '';
+            font-family: '' '' Inter ', system-ui, -apple-system, ' Segoe UI
+              ', Roboto, ' Helvetica Neue ', Arial' '';
             font-weight: 400;
             line-height: 1.7;
             letter-spacing: 0.01em;
@@ -4691,7 +4699,7 @@ to {
             color: #0f2744;
             font-size: var(--font-size-xl);
             font-style: italic;
-            font-family: '' 'Playfair Display', serif '';
+            font-family: '' '' Playfair Display ', serif' '';
             font-weight: 600;
             letter-spacing: 0.02em;
           }
