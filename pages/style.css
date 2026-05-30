@@ -7709,8 +7709,7 @@
   opacity: 0;
   z-index: 2000;
   position: fixed;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  visibility: hidden;
+  transition: opacity 0.3s ease;
   pointer-events: none;
 }
  
@@ -8275,7 +8274,6 @@
  
 .cart-drawer[aria-hidden="false"] {
   opacity: 1;
-  visibility: visible;
   pointer-events: auto;
 }
  
@@ -8723,11 +8721,6 @@
   flex-direction: column;
 }
  
-.cart-drawer__empty  svg {
-  color: var(--color-outline);
-  margin-bottom: var(--spacing-sm);
-}
- 
 .cart-item:last-child {
   border-bottom: none;
 }
@@ -8831,7 +8824,6 @@
  
 .cart-drawer[data-state="open"] {
   opacity: 1;
-  visibility: visible;
   pointer-events: auto;
 }
  
@@ -8841,6 +8833,54 @@
  
 .cart-drawer[data-state="open"] .thq-cart-drawerpanel-elm {
   transform: translateX(0);
+}
+ 
+.cart-drawer__field {
+  margin-bottom: var(--spacing-sm);
+}
+ 
+.cart-drawer__field  label {
+  color: var(--color-on-surface-secondary);
+  display: block;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: 4px;
+}
+ 
+.cart-drawer__field  input {
+  color: var(--color-on-surface);
+  width: 100%;
+  border: 1px solid var(--color-border);
+  outline: none;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  background: var(--color-surface);
+  transition: border-color 0.2s;
+  font-family: var(--font-family-body);
+  border-radius: var(--border-radius-sm);
+}
+ 
+.cart-drawer__field  textarea {
+  color: var(--color-on-surface);
+  width: 100%;
+  border: 1px solid var(--color-border);
+  resize: vertical;
+  outline: none;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  background: var(--color-surface);
+  min-height: 60px;
+  transition: border-color 0.2s;
+  font-family: var(--font-family-body);
+  border-radius: var(--border-radius-sm);
+}
+ 
+.cart-drawer__field  input:focus {
+  border-color: var(--color-primary);
+}
+ 
+.cart-drawer__field  textarea:focus {
+  border-color: var(--color-primary);
 }
  
 .Headings {
