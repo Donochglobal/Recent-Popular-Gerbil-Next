@@ -537,195 +537,6 @@ const Home = (props) => {
             </div>
           </div>
         </section>
-        <section className="services-teaser">
-          <div className="services-teaser__container">
-            <h2 className="section-title">Premium Energy Solutions</h2>
-            <div className="services-teaser__grid">
-              <div className="services-teaser__card">
-                <div className="services-teaser__icon">
-                  <svg
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <g
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
-                      <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                    </g>
-                  </svg>
-                </div>
-                <h3 className="section-subtitle">Residential Solar</h3>
-                <p className="section-content">
-                  Custom solar installations for homes, ensuring 24/7 power and
-                  zero noise pollution.
-                </p>
-                <a href="#">
-                  <div className="btn btn-link">
-                    <span>Learn More</span>
-                  </div>
-                </a>
-              </div>
-              <div className="services-teaser__card">
-                <div className="services-teaser__icon">
-                  <svg
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M4 6.28v11.44a1 1 0 0 0 1.243.97l6-1.5a1 1 0 0 0 .757-.97V7.78a1 1 0 0 0-.757-.97l-6-1.5A1 1 0 0 0 4 6.28M8 6v12m4-6H4m16-5l-3 5h4l-3 5"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                </div>
-                <h3 className="section-subtitle">Commercial Systems</h3>
-                <p className="section-content">
-                  Scalable energy solutions for businesses to reduce overhead
-                  and increase reliability.
-                </p>
-                <a href="#">
-                  <div className="btn btn-link">
-                    <span>Learn More</span>
-                  </div>
-                </a>
-              </div>
-              <div className="services-teaser__card">
-                <div className="services-teaser__icon">
-                  <svg
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <g
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M22 14v-4"></path>
-                      <rect x="2" y="6" rx="2" width="16" height="12"></rect>
-                    </g>
-                  </svg>
-                </div>
-                <h3 className="section-subtitle">Lithium Battery Supply</h3>
-                <p className="section-content">
-                  Premium high-capacity lithium storage for long-lasting backup
-                  energy.
-                </p>
-                <a href="#">
-                  <div className="btn btn-link">
-                    <span>Learn More</span>
-                  </div>
-                </a>
-              </div>
-              <div className="services-teaser__card">
-                <div className="services-teaser__icon">
-                  <svg
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <g
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"></path>
-                      <circle r="3" cx="12" cy="13"></circle>
-                    </g>
-                  </svg>
-                </div>
-                <h3 className="section-subtitle">CCTV &amp; Security</h3>
-                <p className="section-content">
-                  Smart security surveillance and electric fencing for total
-                  peace of mind.
-                </p>
-                <a href="#">
-                  <div className="btn btn-link">
-                    <span>Learn More</span>
-                  </div>
-                </a>
-              </div>
-              <div className="services-teaser__card">
-                <div className="services-teaser__icon">
-                  <svg
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <g
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M5 12H3l9-9l9 9h-2M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"></path>
-                      <path d="M10 12h4v4h-4z"></path>
-                    </g>
-                  </svg>
-                </div>
-                <h3 className="section-subtitle">Smart Home Integration</h3>
-                <p className="section-content">
-                  Automate your lifestyle with intelligent lighting and energy
-                  management.
-                </p>
-                <a href="#">
-                  <div className="btn btn-link">
-                    <span>Learn More</span>
-                  </div>
-                </a>
-              </div>
-              <div className="services-teaser__card">
-                <div className="services-teaser__icon">
-                  <svg
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1zm-8-5v4m0 4h.01"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                </div>
-                <h3 className="section-subtitle">Maintenance &amp; Support</h3>
-                <p className="section-content">
-                  Lifetime support and regular maintenance for all our energy
-                  installations.
-                </p>
-                <a href="#">
-                  <div className="btn btn-link">
-                    <span>Learn More</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
         <section
           data-section="marketplace"
           className="home-thq-products-rail-elm"
@@ -1955,7 +1766,7 @@ const Home = (props) => {
                   </p>
                   <button
                     data-action="close-cart"
-                    className="home-thq-btn-elm24 btn btn-primary btn-sm button"
+                    className="home-thq-btn-elm18 btn btn-primary btn-sm button"
                   >
                     Continue Shopping
                   </button>
@@ -2154,7 +1965,7 @@ const Home = (props) => {
                   </div>
                   <button
                     data-action="proceed-payment"
-                    className="home-thq-btn-elm25 btn-accent btn"
+                    className="home-thq-btn-elm19 btn-accent btn"
                   >
                     Proceed to Secure Payment
                   </button>
@@ -2284,6 +2095,195 @@ const Home = (props) => {
                     </div>
                   </a>
                 </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="services-teaser">
+          <div className="services-teaser__container">
+            <h2 className="section-title">Premium Energy Solutions</h2>
+            <div className="services-teaser__grid">
+              <div className="services-teaser__card">
+                <div className="services-teaser__icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                      <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    </g>
+                  </svg>
+                </div>
+                <h3 className="section-subtitle">Residential Solar</h3>
+                <p className="section-content">
+                  Custom solar installations for homes, ensuring 24/7 power and
+                  zero noise pollution.
+                </p>
+                <a href="#">
+                  <div className="btn btn-link">
+                    <span>Learn More</span>
+                  </div>
+                </a>
+              </div>
+              <div className="services-teaser__card">
+                <div className="services-teaser__icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M4 6.28v11.44a1 1 0 0 0 1.243.97l6-1.5a1 1 0 0 0 .757-.97V7.78a1 1 0 0 0-.757-.97l-6-1.5A1 1 0 0 0 4 6.28M8 6v12m4-6H4m16-5l-3 5h4l-3 5"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 className="section-subtitle">Commercial Systems</h3>
+                <p className="section-content">
+                  Scalable energy solutions for businesses to reduce overhead
+                  and increase reliability.
+                </p>
+                <a href="#">
+                  <div className="btn btn-link">
+                    <span>Learn More</span>
+                  </div>
+                </a>
+              </div>
+              <div className="services-teaser__card">
+                <div className="services-teaser__icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M22 14v-4"></path>
+                      <rect x="2" y="6" rx="2" width="16" height="12"></rect>
+                    </g>
+                  </svg>
+                </div>
+                <h3 className="section-subtitle">Lithium Battery Supply</h3>
+                <p className="section-content">
+                  Premium high-capacity lithium storage for long-lasting backup
+                  energy.
+                </p>
+                <a href="#">
+                  <div className="btn btn-link">
+                    <span>Learn More</span>
+                  </div>
+                </a>
+              </div>
+              <div className="services-teaser__card">
+                <div className="services-teaser__icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"></path>
+                      <circle r="3" cx="12" cy="13"></circle>
+                    </g>
+                  </svg>
+                </div>
+                <h3 className="section-subtitle">CCTV &amp; Security</h3>
+                <p className="section-content">
+                  Smart security surveillance and electric fencing for total
+                  peace of mind.
+                </p>
+                <a href="#">
+                  <div className="btn btn-link">
+                    <span>Learn More</span>
+                  </div>
+                </a>
+              </div>
+              <div className="services-teaser__card">
+                <div className="services-teaser__icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M5 12H3l9-9l9 9h-2M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"></path>
+                      <path d="M10 12h4v4h-4z"></path>
+                    </g>
+                  </svg>
+                </div>
+                <h3 className="section-subtitle">Smart Home Integration</h3>
+                <p className="section-content">
+                  Automate your lifestyle with intelligent lighting and energy
+                  management.
+                </p>
+                <a href="#">
+                  <div className="btn btn-link">
+                    <span>Learn More</span>
+                  </div>
+                </a>
+              </div>
+              <div className="services-teaser__card">
+                <div className="services-teaser__icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1zm-8-5v4m0 4h.01"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 className="section-subtitle">Maintenance &amp; Support</h3>
+                <p className="section-content">
+                  Lifetime support and regular maintenance for all our energy
+                  installations.
+                </p>
+                <a href="#">
+                  <div className="btn btn-link">
+                    <span>Learn More</span>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -3696,7 +3696,7 @@ to {
             font-size: var(--font-size-sm);
             margin-bottom: var(--spacing-md);
           }
-          .home-thq-btn-elm24 {
+          .home-thq-btn-elm18 {
             margin-top: var(--spacing-sm);
           }
           .home-thq-cart-drawersummary-elm {
@@ -3784,7 +3784,7 @@ to {
           .home-thq-checkout-summaryitems-elm {
             margin-bottom: var(--spacing-md);
           }
-          .home-thq-btn-elm25 {
+          .home-thq-btn-elm19 {
             width: 100%;
             margin-top: var(--spacing-md);
             font-weight: var(--font-weight-medium);
