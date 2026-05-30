@@ -10,7 +10,7 @@ import Footer from '../components/footer'
 const ShopSolarProducts = (props) => {
   return (
     <>
-      <div className="shop-solar-products-container10">
+      <div className="shop-solar-products-container1">
         <Head>
           <title>Shop-Solar-Products - Recent Popular Gerbil</title>
           <meta
@@ -180,11 +180,9 @@ const ShopSolarProducts = (props) => {
                       <span>Lemoex Properties</span>
                     </div>
                   </a>
-                  <a href="#projects">
-                    <div className="page-header-menu-link">
-                      <span>Projects</span>
-                    </div>
-                  </a>
+                  <div className="page-header-menu-link">
+                    <span>Projects</span>
+                  </div>
                   <a href="#contact">
                     <div className="page-header-menu-link">
                       <span>Contact</span>
@@ -1019,38 +1017,6 @@ const ShopSolarProducts = (props) => {
             </div>
           </div>
         </section>
-        <section id="projects" className="projects-portfolio">
-          <div className="container">
-            <div className="section-header-centered">
-              <h2 className="section-title">Our Milestone Projects</h2>
-              <p className="section-content">
-                A showcase of engineering excellence and architectural vision.
-              </p>
-            </div>
-            <div className="portfolio-masonry">
-              <div className="portfolio-item tall">
-                <img
-                  src="https://images.pexels.com/photos/20433881/pexels-photo-20433881.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                  alt="Project 1"
-                />
-                <div className="portfolio-overlay">
-                  <h4>Smart City Solar Grid</h4>
-                  <span>Industrial Installation</span>
-                </div>
-              </div>
-              <div className="portfolio-item">
-                <img
-                  src="https://images.pexels.com/photos/28054868/pexels-photo-28054868.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                  alt="Project 2"
-                />
-                <div className="portfolio-overlay">
-                  <h4>Lemoex Heights</h4>
-                  <span>Real Estate Development</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         <section className="trust-section">
           <div className="container">
             <div className="section-header-centered">
@@ -1299,150 +1265,6 @@ const ShopSolarProducts = (props) => {
             </div>
           </div>
         </section>
-        <footer className="footer-main">
-          <div className="container">
-            <div className="footer-grid">
-              <div className="footer-brand">
-                <h3 className="footer-logo">DON OCH GLOBAL</h3>
-                <p>
-                  Solar Super Powered. Leading the renewable energy revolution
-                  in Nigeria.
-                </p>
-                <div className="footer-socials">
-                  <a href="#">
-                    <div className="footer-social-link">
-                      <span>FB</span>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <div className="footer-social-link">
-                      <span>IG</span>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <div className="footer-social-link">
-                      <span>TW</span>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <div className="footer-social-link">
-                      <span>LI</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div className="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                  <li>
-                    <a href="#">
-                      <div>
-                        <span>Home</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#about">
-                      <div>
-                        <span>About Us</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#services">
-                      <div>
-                        <span>Services</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#products">
-                      <div>
-                        <span>Products</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#lemoex">
-                      <div>
-                        <span>Lemoex Properties</span>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="footer-services">
-                <h4>Our Services</h4>
-                <ul>
-                  <li>
-                    <a href="#">
-                      <div>
-                        <span>Solar Installation</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div>
-                        <span>Inverter Systems</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div>
-                        <span>CCTV Security</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div>
-                        <span>Smart Homes</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div>
-                        <span>Real Estate</span>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="footer-newsletter">
-                <h4>Newsletter</h4>
-                <p>Subscribe for energy tips and new property alerts.</p>
-                <form
-                  data-form-id="fe5b7cfb-cdba-470d-9f1f-a909fe81f2d6"
-                  className="newsletter-form"
-                >
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    required="true"
-                    id="thq_textinput_tY-x"
-                    name="textinput"
-                    data-form-field-id="thq_textinput_tY-x"
-                  />
-                  <button
-                    type="submit"
-                    id="thq_button_ZEDV"
-                    name="button"
-                    data-form-field-id="thq_button_ZEDV"
-                    className="btn btn-sm btn-accent"
-                  >
-                    Join
-                  </button>
-                </form>
-              </div>
-            </div>
-            <div className="footer-bottom">
-              <p>© 2024 DON OCH GLOBAL. All Rights Reserved.</p>
-            </div>
-          </div>
-        </footer>
         <a href="https://wa.me/234000000000">
           <div
             aria-label="Chat on WhatsApp"
@@ -1463,8 +1285,8 @@ const ShopSolarProducts = (props) => {
             </svg>
           </div>
         </a>
-        <div className="shop-solar-products-container21">
-          <div className="shop-solar-products-container22">
+        <div className="shop-solar-products-container2">
+          <div className="shop-solar-products-container3">
             <Script
               html={`<script defer data-name="don-och-global-logic">
 (function(){
@@ -1609,7 +1431,7 @@ const ShopSolarProducts = (props) => {
       </div>
       <style jsx>
         {`
-          .shop-solar-products-container10 {
+          .shop-solar-products-container1 {
             width: 100%;
             min-height: 100vh;
           }
@@ -1625,10 +1447,10 @@ const ShopSolarProducts = (props) => {
           .shop-solar-products-iframe {
             border: 0;
           }
-          .shop-solar-products-container21 {
+          .shop-solar-products-container2 {
             display: none;
           }
-          .shop-solar-products-container22 {
+          .shop-solar-products-container3 {
             display: contents;
           }
         `}
