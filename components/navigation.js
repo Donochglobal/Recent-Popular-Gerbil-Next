@@ -351,7 +351,7 @@ const Navigation = (props) => {
                   </div>
                 </a>
               </li>
-              <Link href="/shop-now">
+              <Link href="/shop-solar-products">
                 <a>
                   <li className="navigation-thq-navigation-mobile-item-elm3 navigation-mobile-item list-item">
                     <div>
