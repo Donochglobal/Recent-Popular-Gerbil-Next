@@ -274,10 +274,10 @@ const Navigation = (props) => {
                       className="navigation-thq-dropdown-list1"
                     >
                       <li className="navigation-menu-item">
-                        <Link href="/about-us">
+                        <Link href="/profile">
                           <a>
                             <div className="navigation-menu-link">
-                              <span>About Us</span>
+                              <span>Profile</span>
                             </div>
                           </a>
                         </Link>
@@ -423,10 +423,10 @@ const Navigation = (props) => {
                   className="navigation-thq-dropdown-list2"
                 >
                   <li className="navigation-mobile-item">
-                    <Link href="/about-us">
+                    <Link href="/profile">
                       <a>
                         <div className="navigation-mobile-link">
-                          <span>About Us</span>
+                          <span>Profile</span>
                         </div>
                       </a>
                     </Link>

@@ -150,11 +150,11 @@ const Footer = (props) => {
                       </li>
                     </a>
                   </Link>
-                  <Link href="/about-us">
+                  <Link href="/profile">
                     <a>
                       <li className="footer-li13">
                         <div className="footer-link">
-                          <span>About Us</span>
+                          <span>Profile</span>
                         </div>
                       </li>
                     </a>
