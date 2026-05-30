@@ -1976,6 +1976,7 @@ const Home = (props) => {
                 </div>
                 <button
                   data-action="checkout"
+                  data-role="cart-checkout-btn"
                   className="home-thq-btn-elm25 btn-primary btn"
                 >
                   Proceed to Secure Payment
@@ -2793,7 +2794,6 @@ const Home = (props) => {
             let cart = []
             const cartFab = document.querySelector('[data-action="toggle-cart"]')
             const cartDrawer = document.querySelector('[data-role="cart-drawer"]')
-
             // Dynamic cart FAB positioning based on header height
             const updateCartFabPosition = () => {
               if (!cartFab) return
@@ -2884,17 +2884,17 @@ const Home = (props) => {
               if (!cart.length) {
                 if (cartItems) {
                   cartItems.innerHTML = \`
-                          <div class="cart-drawer__empty">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                              <circle cx="9" cy="21" r="1"></circle>
-                              <circle cx="20" cy="21" r="1"></circle>
-                              <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                            </svg>
-                            <p class="cart-drawer__empty-title">Your cart is empty</p>
-                            <p class="cart-drawer__empty-text">Add products to continue shopping</p>
-                            <button data-action="close-cart" class="btn btn-primary btn-sm cart-drawer__empty-btn">Continue Shopping</button>
-                          </div>
-                        \`
+                            <div class="cart-drawer__empty">
+                              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                              </svg>
+                              <p class="cart-drawer__empty-title">Your cart is empty</p>
+                              <p class="cart-drawer__empty-text">Add products to continue shopping</p>
+                              <button data-action="close-cart" class="btn btn-primary btn-sm cart-drawer__empty-btn">Continue Shopping</button>
+                            </div>
+                          \`
                   cartItems.querySelectorAll('[data-action="close-cart"]').forEach((btn) => {
                     btn.addEventListener("click", () => {
                       if (cartDrawer) cartDrawer.setAttribute("aria-hidden", "true")
@@ -2906,23 +2906,23 @@ const Home = (props) => {
                   cartItems.innerHTML = cart
                     .map(
                       (item, idx) => \`
-                            <div class="cart-item">
-                              <img class="cart-item__thumb" src="\\\${item.image}" alt="\\\${item.name}" />
-                              <div class="cart-item__info">
-                                <div class="cart-item__name">\\\${item.name}</div>
-                                <div class="cart-item__price">\\\${formatPrice(item.price)} &times; \\\${item.qty}</div>
-                                <div class="cart-item__subtotal">\\\${formatPrice(item.price * item.qty)}</div>
+                              <div class="cart-item">
+                                <img class="cart-item__thumb" src="\\\${item.image}" alt="\\\${item.name}" />
+                                <div class="cart-item__info">
+                                  <div class="cart-item__name">\\\${item.name}</div>
+                                  <div class="cart-item__price">\\\${formatPrice(item.price)} &times; \\\${item.qty}</div>
+                                  <div class="cart-item__subtotal">\\\${formatPrice(item.price * item.qty)}</div>
+                                </div>
+                                <div class="cart-item__qty">
+                                  <button class="cart-item__qty-btn" data-idx="\\\${idx}" data-delta="-1" aria-label="Decrease quantity">-</button>
+                                  <span class="cart-item__qty-value">\\\${item.qty}</span>
+                                  <button class="cart-item__qty-btn" data-idx="\\\${idx}" data-delta="1" aria-label="Increase quantity">+</button>
+                                </div>
+                                <button class="cart-item__remove" data-remove="\\\${idx}" aria-label="Remove item">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                                </button>
                               </div>
-                              <div class="cart-item__qty">
-                                <button class="cart-item__qty-btn" data-idx="\\\${idx}" data-delta="-1" aria-label="Decrease quantity">-</button>
-                                <span class="cart-item__qty-value">\\\${item.qty}</span>
-                                <button class="cart-item__qty-btn" data-idx="\\\${idx}" data-delta="1" aria-label="Increase quantity">+</button>
-                              </div>
-                              <button class="cart-item__remove" data-remove="\\\${idx}" aria-label="Remove item">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
-                              </button>
-                            </div>
-                          \`
+                            \`
                     )
                     .join("")
                   cartItems.querySelectorAll("[data-delta]").forEach((btn) => {
@@ -2966,11 +2966,25 @@ const Home = (props) => {
                 if (card) addToCart(card)
               })
             })
+            const cartCheckoutBtn = document.querySelector('[data-role="cart-checkout-btn"]')
+            let isCartOpen = false
+            let bodyOverflow = ""
             const closeCartDrawer = () => {
-              if (cartDrawer) cartDrawer.setAttribute("aria-hidden", "true")
+              isCartOpen = false
+              if (cartDrawer) {
+                cartDrawer.setAttribute("aria-hidden", "true")
+                cartDrawer.setAttribute("data-state", "closed")
+              }
+              document.body.style.overflow = bodyOverflow || ""
             }
             const openCartDrawer = () => {
-              if (cartDrawer) cartDrawer.setAttribute("aria-hidden", "false")
+              isCartOpen = true
+              bodyOverflow = document.body.style.overflow || ""
+              if (cartDrawer) {
+                cartDrawer.setAttribute("aria-hidden", "false")
+                cartDrawer.setAttribute("data-state", "open")
+              }
+              document.body.style.overflow = "hidden"
             }
             document.querySelectorAll('[data-action="close-cart"]').forEach((el) => {
               el.addEventListener("click", closeCartDrawer)
@@ -2980,11 +2994,16 @@ const Home = (props) => {
             }
             if (cartDrawer) {
               cartDrawer.addEventListener("click", (e) => {
-                if (e.target === cartDrawer || e.target.classList.contains("thq-cart-draweroverlay-elm")) {
+                if (e.target === cartDrawer || e.target.classList.contains("thq-cart-draweroverlay-elm") || e.target.dataset.action === "close-cart") {
                   closeCartDrawer()
                 }
               })
             }
+            document.addEventListener("keydown", (e) => {
+              if (e.key === "Escape" && isCartOpen) {
+                closeCartDrawer()
+              }
+            })
             // Initialize: load from storage and render
             loadCart()
             updateCart()
@@ -2997,8 +3016,8 @@ const Home = (props) => {
                   items.innerHTML = cart
                     .map(
                       (i) => \`
-                            <div class="checkout-summary__item"><span>\\\${i.name} \u00D7 \\\${i.qty}</span><span>\\\${formatPrice(i.price * i.qty)}</span></div>
-                          \`
+                              <div class="checkout-summary__item"><span>\\\\\${i.name} \u00D7 \\\\\${i.qty}</span><span>\\\\\${formatPrice(i.price * i.qty)}</span></div>
+                            \`
                     )
                     .join("")
                 }
@@ -3777,7 +3796,7 @@ to {
               max-width: 100%;
               transform: translateY(100%);
               box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.15);
-              max-height: 85vh;
+              max-height: 80vh;
               border-radius: var(--border-radius-xl) var(--border-radius-xl) 0 0;
             }
             .home-thq-checkout-modalpanel-elm {

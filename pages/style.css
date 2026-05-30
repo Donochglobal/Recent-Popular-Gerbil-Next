@@ -8829,6 +8829,20 @@
   margin-top: var(--spacing-sm);
 }
  
+.cart-drawer[data-state="open"] {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+ 
+.cart-drawer[data-state="open"] .thq-cart-draweroverlay-elm {
+  pointer-events: auto;
+}
+ 
+.cart-drawer[data-state="open"] .thq-cart-drawerpanel-elm {
+  transform: translateX(0);
+}
+ 
 .Headings {
   font-size: 2em;
   font-family: Playfair Display;
@@ -9441,6 +9455,9 @@
     order: -1;
   }
   .cart-drawer[aria-hidden="false"] .thq-cart-drawerpanel-elm {
+    transform: translateY(0);
+  }
+  .cart-drawer[data-state="open"] .thq-cart-drawerpanel-elm {
     transform: translateY(0);
   }
   .thq-cart-toast-elm {
