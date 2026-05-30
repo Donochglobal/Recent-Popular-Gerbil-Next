@@ -11,7 +11,7 @@ import Footer from '../components/footer'
 const Home = (props) => {
   return (
     <>
-      <div className="home-container1">
+      <div className="home-container10">
         <Head>
           <title>Recent Popular Gerbil</title>
           <meta property="og:title" content="Recent Popular Gerbil" />
@@ -987,6 +987,159 @@ const Home = (props) => {
                     </div>
                   </div>
                 </div>
+                <div
+                  data-price="850000"
+                  data-stock="in-stock"
+                  data-category="panels"
+                  data-product-id="panel-550"
+                  className="product-card"
+                >
+                  <div className="product-card__img-box">
+                    <img
+                      alt="550W Mono Solar Panel"
+                      src="https://images.pexels.com/photos/9799702/pexels-photo-9799702.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    />
+                    <div className="product-card__dots">
+                      <span></span>
+                      <span></span>
+                      <span className="active"></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="product-card__info">
+                    <h4 className="product-card__name">
+                      550W Mono Solar Panel
+                    </h4>
+                    <div className="product-card__price">
+                      <span>₦850,000</span>
+                    </div>
+                    <div className="product-card__meta">
+                      <span className="stock-dot"></span>
+                      <span className="product-card__stock--in product-card__stock">
+                        In Stock
+                      </span>
+                      <div className="product-card__stars">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                    <div className="product-card__actions">
+                      <button
+                        data-action="add-to-cart"
+                        className="btn-sm button btn-accent btn"
+                      >
+                        Add to Cart
+                      </button>
+                      <button
+                        data-action="quick-view"
+                        className="btn-outline btn-sm button btn"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-price="980000"
+                  data-stock="in-stock"
+                  data-category="panels"
+                  data-product-id="panel-600"
+                  className="product-card"
+                >
+                  <div className="product-card__img-box">
+                    <img
+                      alt="600W Mono Solar Panel"
+                      src="https://images.pexels.com/photos/8853509/pexels-photo-8853509.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    />
+                    <div className="product-card__dots">
+                      <span></span>
+                      <span className="active"></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="product-card__info">
+                    <h4 className="product-card__name">
+                      600W Mono Solar Panel
+                    </h4>
+                    <div className="product-card__price">
+                      <span>₦980,000</span>
+                    </div>
+                    <div className="product-card__meta">
+                      <span className="stock-dot"></span>
+                      <span className="product-card__stock--in product-card__stock">
+                        In Stock
+                      </span>
+                      <div className="product-card__stars">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                    <div className="product-card__actions">
+                      <button
+                        data-action="add-to-cart"
+                        className="btn-sm button btn-accent btn"
+                      >
+                        Add to Cart
+                      </button>
+                      <button
+                        data-action="quick-view"
+                        className="btn-outline btn-sm button btn"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-price="1200000"
+                  data-stock="limited"
+                  data-category="panels"
+                  data-product-id="panel-bifacial"
+                  className="product-card"
+                >
+                  <div className="product-card__img-box">
+                    <img
+                      alt="Bifacial Solar Panels"
+                      src="https://images.pexels.com/photos/7102661/pexels-photo-7102661.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    />
+                    <div className="product-card__dots">
+                      <span className="active"></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="product-card__info">
+                    <h4 className="product-card__name">
+                      Bifacial Solar Panels
+                    </h4>
+                    <div className="product-card__price">
+                      <span>₦1,200,000</span>
+                    </div>
+                    <div className="product-card__meta">
+                      <span className="stock-dot"></span>
+                      <span className="product-card__stock product-card__stock--limited">
+                        Limited Stock
+                      </span>
+                      <div className="product-card__stars">
+                        <span>★★★★☆</span>
+                      </div>
+                    </div>
+                    <div className="product-card__actions">
+                      <button
+                        data-action="add-to-cart"
+                        className="btn-sm button btn-accent btn"
+                      >
+                        Add to Cart
+                      </button>
+                      <button
+                        data-action="quick-view"
+                        className="btn-outline btn-sm button btn"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div
@@ -1157,6 +1310,157 @@ const Home = (props) => {
                             __html: ' ',
                           }}
                         />
+                      </span>
+                      <div className="product-card__stars">
+                        <span>★★★★☆</span>
+                      </div>
+                    </div>
+                    <div className="product-card__actions">
+                      <button
+                        data-action="add-to-cart"
+                        className="btn-sm button btn-accent btn"
+                      >
+                        Add to Cart
+                      </button>
+                      <button
+                        data-action="quick-view"
+                        className="btn-outline btn-sm button btn"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-price="450000"
+                  data-stock="in-stock"
+                  data-category="batteries"
+                  data-product-id="battery-2-5"
+                  className="product-card"
+                >
+                  <div className="product-card__img-box">
+                    <img
+                      alt="2.5kWh Lithium Battery"
+                      src="https://images.pexels.com/photos/698485/pexels-photo-698485.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    />
+                    <div className="product-card__dots">
+                      <span></span>
+                      <span className="active"></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="product-card__info">
+                    <h4 className="product-card__name">
+                      2.5kWh Lithium Battery
+                    </h4>
+                    <div className="product-card__price">
+                      <span>₦450,000</span>
+                    </div>
+                    <div className="product-card__meta">
+                      <span className="stock-dot"></span>
+                      <span className="product-card__stock--in product-card__stock">
+                        In Stock
+                      </span>
+                      <div className="product-card__stars">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                    <div className="product-card__actions">
+                      <button
+                        data-action="add-to-cart"
+                        className="btn-sm button btn-accent btn"
+                      >
+                        Add to Cart
+                      </button>
+                      <button
+                        data-action="quick-view"
+                        className="btn-outline btn-sm button btn"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-price="850000"
+                  data-stock="in-stock"
+                  data-category="batteries"
+                  data-product-id="battery-5"
+                  className="product-card"
+                >
+                  <div className="product-card__img-box">
+                    <img
+                      alt="5kWh Lithium Battery"
+                      src="https://images.pexels.com/photos/3639037/pexels-photo-3639037.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    />
+                    <div className="product-card__dots">
+                      <span></span>
+                      <span></span>
+                      <span className="active"></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="product-card__info">
+                    <h4 className="product-card__name">5kWh Lithium Battery</h4>
+                    <div className="product-card__price">
+                      <span>₦850,000</span>
+                    </div>
+                    <div className="product-card__meta">
+                      <span className="stock-dot"></span>
+                      <span className="product-card__stock--in product-card__stock">
+                        In Stock
+                      </span>
+                      <div className="product-card__stars">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                    <div className="product-card__actions">
+                      <button
+                        data-action="add-to-cart"
+                        className="btn-sm button btn-accent btn"
+                      >
+                        Add to Cart
+                      </button>
+                      <button
+                        data-action="quick-view"
+                        className="btn-outline btn-sm button btn"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-price="1600000"
+                  data-stock="limited"
+                  data-category="batteries"
+                  data-product-id="battery-10"
+                  className="product-card"
+                >
+                  <div className="product-card__img-box">
+                    <img
+                      alt="10kWh Lithium Battery"
+                      src="https://images.pexels.com/photos/33751638/pexels-photo-33751638.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    />
+                    <div className="product-card__dots">
+                      <span className="active"></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div className="product-card__info">
+                    <h4 className="product-card__name">
+                      10kWh Lithium Battery
+                    </h4>
+                    <div className="product-card__price">
+                      <span>₦1,600,000</span>
+                    </div>
+                    <div className="product-card__meta">
+                      <span className="stock-dot"></span>
+                      <span className="product-card__stock product-card__stock--limited">
+                        Limited Stock
                       </span>
                       <div className="product-card__stars">
                         <span>★★★★☆</span>
@@ -1572,7 +1876,7 @@ const Home = (props) => {
           <div
             data-role="cart-toast"
             aria-hidden="true"
-            className="home-thq-cart-toast-elm"
+            className="thq-cart-toast-elm"
           >
             <span className="home-thq-cart-toasticon-elm">✓</span>
             <span className="home-thq-cart-toasttext-elm">
@@ -2359,8 +2663,8 @@ const Home = (props) => {
             </div>
           </div>
         </section>
-        <div className="home-container2">
-          <div className="home-container3">
+        <div className="home-container11">
+          <div className="home-container12">
             <Script
               html={`<script>
         ;(function () {
@@ -2484,7 +2788,8 @@ const Home = (props) => {
           }
           // Modern Mini-Cart System
           const initMarketplace = () => {
-            const cart = []
+            const STORAGE_KEY = "donoch_cart_v1"
+            let cart = []
             const cartFab = document.querySelector('[data-action="toggle-cart"]')
             const cartDrawer = document.querySelector('[data-role="cart-drawer"]')
             const cartItems = document.querySelector('[data-role="cart-items"]')
@@ -2496,13 +2801,40 @@ const Home = (props) => {
             const checkoutModal = document.querySelector('[data-role="checkout-modal"]')
             const paymentSuccess = document.querySelector('[data-role="payment-success"]')
             const paymentFailure = document.querySelector('[data-role="payment-failure"]')
-
             const formatPrice = (n) => "\u20A6" + n.toLocaleString()
             const genRef = () => "DO-" + Math.floor(1000 + Math.random() * 9000)
 
+            const loadCart = () => {
+              try {
+                const raw = localStorage.getItem(STORAGE_KEY)
+                if (raw) {
+                  const parsed = JSON.parse(raw)
+                  if (Array.isArray(parsed)) cart = parsed
+                }
+              } catch (e) {
+                cart = []
+              }
+            }
+
+            const saveCart = () => {
+              try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(cart))
+              } catch (e) {}
+            }
+
+            const updateFabVisibility = () => {
+              if (!cartFab) return
+              const totalQty = cart.reduce((s, i) => s + i.qty, 0)
+              if (totalQty > 0) {
+                cartFab.classList.add("is-visible")
+              } else {
+                cartFab.classList.remove("is-visible")
+              }
+            }
+
             const showToast = (message) => {
               if (!cartToast) return
-              const textEl = cartToast.querySelector(".cart-toast__text")
+              const textEl = cartToast.querySelector(".thq-cart-toasttext-elm")
               if (textEl) textEl.textContent = message
               cartToast.setAttribute("aria-hidden", "false")
               cartToast.classList.add("cart-toast--visible")
@@ -2521,52 +2853,56 @@ const Home = (props) => {
             const updateCart = () => {
               const totalQty = cart.reduce((s, i) => s + i.qty, 0)
               const sub = cart.reduce((s, i) => s + i.price * i.qty, 0)
-
               if (cartCount) cartCount.textContent = totalQty
               if (cartItemsCount) cartItemsCount.textContent = totalQty + (totalQty === 1 ? " item" : " items")
               if (cartSubtotal) cartSubtotal.textContent = formatPrice(sub)
               if (cartTotal) cartTotal.textContent = formatPrice(sub + 5000)
-
+              updateFabVisibility()
+              saveCart()
               if (!cart.length) {
                 if (cartItems) {
                   cartItems.innerHTML = \`
-                      <div class="cart-drawer__empty">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                          <circle cx="9" cy="21" r="1"></circle>
-                          <circle cx="20" cy="21" r="1"></circle>
-                          <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                        </svg>
-                        <p class="cart-drawer__empty-title">Your cart is empty</p>
-                        <p class="cart-drawer__empty-text">Add products to continue shopping</p>
-                        <button data-action="close-cart" class="btn btn-primary btn-sm cart-drawer__empty-btn">Continue Shopping</button>
-                      </div>
-                    \`
+                        <div class="cart-drawer__empty">
+                          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                          </svg>
+                          <p class="cart-drawer__empty-title">Your cart is empty</p>
+                          <p class="cart-drawer__empty-text">Add products to continue shopping</p>
+                          <button data-action="close-cart" class="btn btn-primary btn-sm cart-drawer__empty-btn">Continue Shopping</button>
+                        </div>
+                      \`
+                  cartItems.querySelectorAll('[data-action="close-cart"]').forEach((btn) => {
+                    btn.addEventListener("click", () => {
+                      if (cartDrawer) cartDrawer.setAttribute("aria-hidden", "true")
+                    })
+                  })
                 }
               } else {
                 if (cartItems) {
                   cartItems.innerHTML = cart
                     .map(
                       (item, idx) => \`
-                        <div class="cart-item">
-                          <img class="cart-item__thumb" src="\${item.image}" alt="\${item.name}" />
-                          <div class="cart-item__info">
-                            <div class="cart-item__name">\${item.name}</div>
-                            <div class="cart-item__price">\${formatPrice(item.price)} &times; \${item.qty}</div>
-                            <div class="cart-item__subtotal">\${formatPrice(item.price * item.qty)}</div>
+                          <div class="cart-item">
+                            <img class="cart-item__thumb" src="\${item.image}" alt="\${item.name}" />
+                            <div class="cart-item__info">
+                              <div class="cart-item__name">\${item.name}</div>
+                              <div class="cart-item__price">\${formatPrice(item.price)} &times; \${item.qty}</div>
+                              <div class="cart-item__subtotal">\${formatPrice(item.price * item.qty)}</div>
+                            </div>
+                            <div class="cart-item__qty">
+                              <button class="cart-item__qty-btn" data-idx="\${idx}" data-delta="-1" aria-label="Decrease quantity">-</button>
+                              <span class="cart-item__qty-value">\${item.qty}</span>
+                              <button class="cart-item__qty-btn" data-idx="\${idx}" data-delta="1" aria-label="Increase quantity">+</button>
+                            </div>
+                            <button class="cart-item__remove" data-remove="\${idx}" aria-label="Remove item">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                            </button>
                           </div>
-                          <div class="cart-item__qty">
-                            <button class="cart-item__qty-btn" data-idx="\${idx}" data-delta="-1" aria-label="Decrease quantity">-</button>
-                            <span class="cart-item__qty-value">\${item.qty}</span>
-                            <button class="cart-item__qty-btn" data-idx="\${idx}" data-delta="1" aria-label="Increase quantity">+</button>
-                          </div>
-                          <button class="cart-item__remove" data-remove="\${idx}" aria-label="Remove item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
-                          </button>
-                        </div>
-                      \`
+                        \`
                     )
                     .join("")
-
                   cartItems.querySelectorAll("[data-delta]").forEach((btn) => {
                     btn.addEventListener("click", () => {
                       const idx = parseInt(btn.dataset.idx)
@@ -2580,11 +2916,6 @@ const Home = (props) => {
                     btn.addEventListener("click", () => {
                       cart.splice(parseInt(btn.dataset.remove), 1)
                       updateCart()
-                    })
-                  })
-                  cartItems.querySelectorAll('[data-action="close-cart"]').forEach((btn) => {
-                    btn.addEventListener("click", () => {
-                      cartDrawer.setAttribute("aria-hidden", "true")
                     })
                   })
                 }
@@ -2633,12 +2964,15 @@ const Home = (props) => {
 
             if (cartDrawer) {
               cartDrawer.addEventListener("click", (e) => {
-                if (e.target === cartDrawer || e.target.classList.contains("cart-drawer__overlay")) {
+                if (e.target === cartDrawer || e.target.classList.contains("thq-cart-draweroverlay-elm")) {
                   closeCartDrawer()
                 }
               })
             }
 
+            // Initialize: load from storage and render
+            loadCart()
+            updateCart()
             document.querySelectorAll('[data-action="checkout"]').forEach((btn) => {
               btn.addEventListener("click", () => {
                 if (!cart.length) return
@@ -2648,8 +2982,8 @@ const Home = (props) => {
                   items.innerHTML = cart
                     .map(
                       (i) => \`
-                        <div class="checkout-summary__item"><span>\${i.name} \u00D7 \${i.qty}</span><span>\${formatPrice(i.price * i.qty)}</span></div>
-                      \`
+                          <div class="checkout-summary__item"><span>\\\${i.name} \u00D7 \\\${i.qty}</span><span>\\\${formatPrice(i.price * i.qty)}</span></div>
+                        \`
                     )
                     .join("")
                 }
@@ -2665,34 +2999,28 @@ const Home = (props) => {
                 if (checkoutModal) checkoutModal.setAttribute("aria-hidden", "false")
               })
             })
-
             document.querySelectorAll('[data-action="close-checkout"]').forEach((el) => {
               el.addEventListener("click", () => {
                 if (checkoutModal) checkoutModal.setAttribute("aria-hidden", "true")
               })
             })
-
             document.querySelectorAll('[data-action="proceed-payment"]').forEach((btn) => {
               btn.addEventListener("click", () => {
                 const nameField = document.querySelector('[data-field="name"]')
                 const phoneField = document.querySelector('[data-field="phone"]')
                 const emailField = document.querySelector('[data-field="email"]')
                 const addressField = document.querySelector('[data-field="address"]')
-
                 const name = nameField?.value?.trim() || "Guest"
                 const phone = phoneField?.value?.trim() || ""
                 const email = emailField?.value?.trim() || ""
                 const address = addressField?.value?.trim() || ""
-
                 if (!name || !phone || !email || !address) {
                   alert("Please fill in all required fields: Name, Phone, Email, and Delivery Address.")
                   return
                 }
-
                 const sub = cart.reduce((s, i) => s + i.price * i.qty, 0)
                 const total = sub + 5000
                 const ref = genRef()
-
                 // Generate order summary
                 const orderSummary = {
                   orderNumber: ref,
@@ -2706,7 +3034,6 @@ const Home = (props) => {
                   totalAmount: total,
                   dateTime: new Date().toISOString(),
                 }
-
                 // Flutterwave integration
                 const flutterwaveConfig = {
                   public_key: "FLWPUBK_TEST-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-X", // Replace with live key
@@ -2740,7 +3067,6 @@ const Home = (props) => {
                     // User closed payment modal
                   },
                 }
-
                 // For demo: simulate payment flow
                 if (checkoutModal) checkoutModal.setAttribute("aria-hidden", "true")
                 if (Math.random() > 0.05) {
@@ -2758,27 +3084,23 @@ const Home = (props) => {
                 }
               })
             })
-
             document.querySelectorAll('[data-action="retry-payment"]').forEach((btn) => {
               btn.addEventListener("click", () => {
                 if (paymentFailure) paymentFailure.setAttribute("aria-hidden", "true")
                 if (checkoutModal) checkoutModal.setAttribute("aria-hidden", "false")
               })
             })
-
             document.querySelectorAll('[data-action="continue-shopping"]').forEach((btn) => {
               btn.addEventListener("click", () => {
                 if (paymentSuccess) paymentSuccess.setAttribute("aria-hidden", "true")
               })
             })
-
             document.querySelectorAll('[data-action="close-payment"]').forEach((el) => {
               el.addEventListener("click", () => {
                 if (paymentSuccess) paymentSuccess.setAttribute("aria-hidden", "true")
                 if (paymentFailure) paymentFailure.setAttribute("aria-hidden", "true")
               })
             })
-
             // Filter functionality
             document.querySelectorAll("[data-filter]").forEach((filter) => {
               filter.addEventListener("change", () => {
@@ -2893,8 +3215,8 @@ const Home = (props) => {
             ></Script>
           </div>
         </div>
-        <div className="home-container4">
-          <div className="home-container5">
+        <div className="home-container13">
+          <div className="home-container14">
             <Script
               html={`<script>
 (function(){
@@ -2956,7 +3278,7 @@ const Home = (props) => {
           </div>
         </a>
         <div>
-          <div className="home-container7">
+          <div className="home-container16">
             <Script
               html={`<style>
 @keyframes fadeInUp {
@@ -2974,7 +3296,7 @@ to {
           </div>
         </div>
         <div>
-          <div className="home-container9">
+          <div className="home-container18">
             <Script
               html={`<style>
 @keyframes cartBounce {
@@ -2995,10 +3317,35 @@ to {
             ></Script>
           </div>
         </div>
+        <div>
+          <div className="home-container20">
+            <Script
+              html={`<style>
+@keyframes cartBounce {
+0% {
+  transform: scale(1);
+}
+30% {
+  transform: scale(1.2);
+}
+50% {
+  transform: scale(0.95);
+}
+70% {
+  transform: scale(1.05);
+}
+100% {
+  transform: scale(1);
+}
+}
+</style>`}
+            ></Script>
+          </div>
+        </div>
       </div>
       <style jsx>
         {`
-          .home-container1 {
+          .home-container10 {
             width: 100%;
             min-height: 100vh;
           }
@@ -3173,23 +3520,6 @@ to {
             border-radius: var(--border-radius-full);
             justify-content: center;
           }
-          .home-thq-cart-toast-elm {
-            gap: 10px;
-            right: 24px;
-            bottom: 88px;
-            display: flex;
-            opacity: 0;
-            padding: 12px 20px;
-            z-index: 250;
-            position: fixed;
-            background: var(--color-primary);
-            box-shadow: var(--shadow-level-3);
-            transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
-            visibility: hidden;
-            align-items: center;
-            border-radius: var(--border-radius-lg);
-            pointer-events: none;
-          }
           .home-thq-cart-toasticon-elm {
             color: #2d7a4e;
             width: 24px;
@@ -3209,6 +3539,7 @@ to {
           }
           .home-thq-cart-draweroverlay-elm {
             inset: 0;
+            z-index: 1900;
             position: absolute;
             background: var(--color-scrim);
             pointer-events: none;
@@ -3219,6 +3550,7 @@ to {
             width: 420px;
             height: 100%;
             display: flex;
+            z-index: 2001;
             position: absolute;
             max-width: 100%;
             transform: translateX(100%);
@@ -3365,22 +3697,25 @@ to {
           .home-thq-contact-ctaitem-elm2 {
             text-decoration: none;
           }
-          .home-container2 {
+          .home-container11 {
             display: none;
           }
-          .home-container3 {
+          .home-container12 {
             display: contents;
           }
-          .home-container4 {
+          .home-container13 {
             display: none;
           }
-          .home-container5 {
+          .home-container14 {
             display: contents;
           }
-          .home-container7 {
+          .home-container16 {
             display: contents;
           }
-          .home-container9 {
+          .home-container18 {
+            display: contents;
+          }
+          .home-container20 {
             display: contents;
           }
           @media (max-width: 991px) {
@@ -3415,12 +3750,6 @@ to {
             }
             .home-thq-filter-group-elm1 {
               min-width: 180px;
-            }
-            .home-thq-cart-toast-elm {
-              left: 16px;
-              right: 16px;
-              bottom: 80px;
-              justify-content: center;
             }
             .home-thq-cart-drawerpanel-elm {
               top: auto;
