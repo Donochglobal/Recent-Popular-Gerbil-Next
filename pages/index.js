@@ -1542,7 +1542,7 @@ const Home = (props) => {
           <button
             aria-label="Shopping Cart"
             data-action="toggle-cart"
-            className="marketplace-cart-fab button"
+            className="marketplace-cart-fab"
           >
             <svg
               width="22"
@@ -1570,6 +1570,16 @@ const Home = (props) => {
             </span>
           </button>
           <div
+            data-role="cart-toast"
+            aria-hidden="true"
+            className="home-thq-cart-toast-elm"
+          >
+            <span className="home-thq-cart-toasticon-elm">✓</span>
+            <span className="home-thq-cart-toasttext-elm">
+              Product added to cart
+            </span>
+          </div>
+          <div
             data-role="cart-drawer"
             aria-hidden="true"
             className="cart-drawer"
@@ -1580,11 +1590,21 @@ const Home = (props) => {
             ></div>
             <div className="home-thq-cart-drawerpanel-elm">
               <div className="home-thq-cart-drawerheader-elm">
-                <h3 className="home-thq-cart-drawertitle-elm">Your Cart</h3>
+                <div className="home-thq-cart-drawerheader-title-elm">
+                  <h3 className="home-thq-cart-drawertitle-elm">
+                    Shopping Cart
+                  </h3>
+                  <span
+                    data-role="cart-items-count"
+                    className="home-thq-cart-draweritem-count-elm"
+                  >
+                    0 items
+                  </span>
+                </div>
                 <button
                   aria-label="Close cart"
                   data-action="close-cart"
-                  className="button cart-drawer__close"
+                  className="cart-drawer__close"
                 >
                   <svg
                     width="20"
@@ -1607,9 +1627,34 @@ const Home = (props) => {
                 data-role="cart-items"
                 className="home-thq-cart-draweritems-elm"
               >
-                <p className="home-thq-cart-drawerempty-elm">
-                  Your cart is empty.
-                </p>
+                <div className="cart-drawer__empty">
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                  </svg>
+                  <p className="home-thq-cart-drawerempty-elm2">
+                    Your cart is empty
+                  </p>
+                  <p className="home-thq-cart-drawerempty-text-elm">
+                    Add products to continue shopping
+                  </p>
+                  <button
+                    data-action="close-cart"
+                    className="home-thq-btn-elm24 btn btn-primary btn-sm button"
+                  >
+                    Continue Shopping
+                  </button>
+                </div>
               </div>
               <div className="home-thq-cart-drawersummary-elm">
                 <div className="cart-summary__row">
@@ -1621,109 +1666,15 @@ const Home = (props) => {
                   <span>₦5,000</span>
                 </div>
                 <div className="home-thq-cart-summaryrow-elm3 cart-summary__row">
-                  <span>Grand Total</span>
+                  <span>Total Amount</span>
                   <span data-role="cart-total">₦0</span>
                 </div>
                 <button
                   data-action="checkout"
-                  className="home-thq-btn-elm24 button btn-primary btn"
+                  className="home-thq-btn-elm25 btn-primary btn"
                 >
-                  Proceed to Checkout
+                  Proceed to Secure Payment
                 </button>
-              </div>
-            </div>
-          </div>
-          <div
-            data-role="quick-view-modal"
-            aria-hidden="true"
-            className="quick-view-modal"
-          >
-            <div
-              data-action="close-quick-view"
-              className="home-thq-quick-view-modaloverlay-elm"
-            ></div>
-            <div className="home-thq-quick-view-modalpanel-elm">
-              <button
-                aria-label="Close quick view"
-                data-action="close-quick-view"
-                className="home-thq-quick-view-modalclose-elm button"
-              >
-                <svg
-                  width="20"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="20"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M18 6L6 18M6 6l12 12"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  ></path>
-                </svg>
-              </button>
-              <div className="home-thq-quick-view-modalcontent-elm">
-                <div className="quick-view-modal__img-box">
-                  <img alt="true" src="true" data-role="qv-image" />
-                </div>
-                <div className="home-thq-quick-view-modaldetails-elm">
-                  <h3
-                    data-role="qv-name"
-                    className="home-thq-quick-view-modalname-elm"
-                  >
-                    Product Name
-                  </h3>
-                  <div
-                    data-role="qv-price"
-                    className="home-thq-quick-view-modalprice-elm"
-                  >
-                    <span>₦0</span>
-                  </div>
-                  <div className="home-thq-quick-view-modalstars-elm">
-                    <span>★★★★★</span>
-                  </div>
-                  <div className="quick-view-modal__specs">
-                    <h4>Specifications</h4>
-                    <ul data-role="qv-specs" className="list">
-                      <li className="list-item">
-                        <span>High-efficiency technology</span>
-                      </li>
-                      <li className="list-item">
-                        <span>25-year warranty</span>
-                      </li>
-                      <li className="list-item">
-                        <span>Premium build quality</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="quick-view-modal__features">
-                    <h4>Key Features</h4>
-                    <ul data-role="qv-features" className="list">
-                      <li className="list-item">
-                        <span>Easy installation</span>
-                      </li>
-                      <li className="list-item">
-                        <span>Low maintenance</span>
-                      </li>
-                      <li className="list-item">
-                        <span>Weather resistant</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="home-thq-quick-view-modalwarranty-elm">
-                    <span className="home-thq-warranty-badge-elm">
-                      2 Years Warranty
-                    </span>
-                  </div>
-                  <button
-                    data-action="qv-add-to-cart"
-                    className="home-thq-btn-elm25 button btn-accent btn"
-                  >
-                    Add to Cart
-                  </button>
-                </div>
               </div>
             </div>
           </div>
@@ -1740,7 +1691,7 @@ const Home = (props) => {
               <button
                 aria-label="Close checkout"
                 data-action="close-checkout"
-                className="home-thq-checkout-modalclose-elm button"
+                className="home-thq-checkout-modalclose-elm"
               >
                 <svg
                   width="20"
@@ -1759,8 +1710,10 @@ const Home = (props) => {
                 </svg>
               </button>
               <div className="home-thq-checkout-modalcontent-elm">
-                <div>
-                  <h3 className="home-thq-checkout-modaltitle-elm">Checkout</h3>
+                <div className="home-thq-checkout-form-elm">
+                  <h3 className="home-thq-checkout-modaltitle-elm">
+                    Secure Checkout
+                  </h3>
                   <div className="checkout-form__field">
                     <label>Full Name</label>
                     <input
@@ -1822,7 +1775,7 @@ const Home = (props) => {
                       <span>Delivery</span>
                       <span>₦5,000</span>
                     </div>
-                    <div className="home-thq-checkout-summaryrow-elm3 checkout-summary__row">
+                    <div className="checkout-summary__row">
                       <span>Total</span>
                       <span data-role="checkout-total">₦0</span>
                     </div>
@@ -1851,9 +1804,9 @@ const Home = (props) => {
                   </div>
                   <button
                     data-action="proceed-payment"
-                    className="home-thq-btn-elm26 button btn-accent btn"
+                    className="home-thq-btn-elm26 btn-accent btn"
                   >
-                    Proceed to Payment
+                    Proceed to Secure Payment
                   </button>
                 </div>
               </div>
@@ -1925,7 +1878,7 @@ const Home = (props) => {
               <div className="payment-result__actions">
                 <button
                   data-action="continue-shopping"
-                  className="button btn-primary btn"
+                  className="btn-primary btn"
                 >
                   Continue Shopping
                 </button>
@@ -1971,10 +1924,7 @@ const Home = (props) => {
                 We couldn&apos;t process your payment. Please try again.
               </p>
               <div className="payment-result__actions">
-                <button
-                  data-action="retry-payment"
-                  className="button btn-accent btn"
-                >
+                <button data-action="retry-payment" className="btn-accent btn">
                   Retry Payment
                 </button>
                 <Link href="/contact">
@@ -2532,200 +2482,300 @@ const Home = (props) => {
               startAutoScroll()
             })
           }
-          // Marketplace Cart & Modals
+          // Modern Mini-Cart System
           const initMarketplace = () => {
             const cart = []
             const cartFab = document.querySelector('[data-action="toggle-cart"]')
             const cartDrawer = document.querySelector('[data-role="cart-drawer"]')
             const cartItems = document.querySelector('[data-role="cart-items"]')
             const cartCount = document.querySelector('[data-role="cart-count"]')
+            const cartItemsCount = document.querySelector('[data-role="cart-items-count"]')
             const cartSubtotal = document.querySelector('[data-role="cart-subtotal"]')
             const cartTotal = document.querySelector('[data-role="cart-total"]')
-            const quickViewModal = document.querySelector('[data-role="quick-view-modal"]')
+            const cartToast = document.querySelector('[data-role="cart-toast"]')
             const checkoutModal = document.querySelector('[data-role="checkout-modal"]')
             const paymentSuccess = document.querySelector('[data-role="payment-success"]')
             const paymentFailure = document.querySelector('[data-role="payment-failure"]')
 
-            const formatPrice = (n) => "₦" + n.toLocaleString()
+            const formatPrice = (n) => "\u20A6" + n.toLocaleString()
             const genRef = () => "DO-" + Math.floor(1000 + Math.random() * 9000)
 
+            const showToast = (message) => {
+              if (!cartToast) return
+              const textEl = cartToast.querySelector(".cart-toast__text")
+              if (textEl) textEl.textContent = message
+              cartToast.setAttribute("aria-hidden", "false")
+              cartToast.classList.add("cart-toast--visible")
+              setTimeout(() => {
+                cartToast.classList.remove("cart-toast--visible")
+                cartToast.setAttribute("aria-hidden", "true")
+              }, 2500)
+            }
+
+            const animateCartIcon = () => {
+              if (!cartFab) return
+              cartFab.classList.add("cart-bounce")
+              setTimeout(() => cartFab.classList.remove("cart-bounce"), 400)
+            }
+
             const updateCart = () => {
-              cartCount.textContent = cart.reduce((s, i) => s + i.qty, 0)
+              const totalQty = cart.reduce((s, i) => s + i.qty, 0)
               const sub = cart.reduce((s, i) => s + i.price * i.qty, 0)
-              cartSubtotal.textContent = formatPrice(sub)
-              cartTotal.textContent = formatPrice(sub + 5000)
+
+              if (cartCount) cartCount.textContent = totalQty
+              if (cartItemsCount) cartItemsCount.textContent = totalQty + (totalQty === 1 ? " item" : " items")
+              if (cartSubtotal) cartSubtotal.textContent = formatPrice(sub)
+              if (cartTotal) cartTotal.textContent = formatPrice(sub + 5000)
+
               if (!cart.length) {
-                cartItems.innerHTML = '<p class="cart-drawer__empty">Your cart is empty.</p>'
+                if (cartItems) {
+                  cartItems.innerHTML = \`
+                      <div class="cart-drawer__empty">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                          <circle cx="9" cy="21" r="1"></circle>
+                          <circle cx="20" cy="21" r="1"></circle>
+                          <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                        </svg>
+                        <p class="cart-drawer__empty-title">Your cart is empty</p>
+                        <p class="cart-drawer__empty-text">Add products to continue shopping</p>
+                        <button data-action="close-cart" class="btn btn-primary btn-sm cart-drawer__empty-btn">Continue Shopping</button>
+                      </div>
+                    \`
+                }
               } else {
-                cartItems.innerHTML = cart
-                  .map(
-                    (item, idx) => \`
-                    <div class="cart-item">
-                      <img class="cart-item__thumb" src="\${item.image}" alt="" />
-                      <div class="cart-item__info">
-                        <div class="cart-item__name">\${item.name}</div>
-                        <div class="cart-item__price">\${formatPrice(item.price)}</div>
-                      </div>
-                      <div class="cart-item__qty">
-                        <button data-idx="\${idx}" data-delta="-1">-</button>
-                        <span>\${item.qty}</span>
-                        <button data-idx="\${idx}" data-delta="1">+</button>
-                      </div>
-                      <button class="cart-item__remove" data-remove="\${idx}">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
-                      </button>
-                    </div>
-                  \`
-                  )
-                  .join("")
-                cartItems.querySelectorAll("[data-delta]").forEach((btn) => {
-                  btn.addEventListener("click", () => {
-                    const idx = parseInt(btn.dataset.idx)
-                    const delta = parseInt(btn.dataset.delta)
-                    cart[idx].qty += delta
-                    if (cart[idx].qty <= 0) cart.splice(idx, 1)
-                    updateCart()
+                if (cartItems) {
+                  cartItems.innerHTML = cart
+                    .map(
+                      (item, idx) => \`
+                        <div class="cart-item">
+                          <img class="cart-item__thumb" src="\${item.image}" alt="\${item.name}" />
+                          <div class="cart-item__info">
+                            <div class="cart-item__name">\${item.name}</div>
+                            <div class="cart-item__price">\${formatPrice(item.price)} &times; \${item.qty}</div>
+                            <div class="cart-item__subtotal">\${formatPrice(item.price * item.qty)}</div>
+                          </div>
+                          <div class="cart-item__qty">
+                            <button class="cart-item__qty-btn" data-idx="\${idx}" data-delta="-1" aria-label="Decrease quantity">-</button>
+                            <span class="cart-item__qty-value">\${item.qty}</span>
+                            <button class="cart-item__qty-btn" data-idx="\${idx}" data-delta="1" aria-label="Increase quantity">+</button>
+                          </div>
+                          <button class="cart-item__remove" data-remove="\${idx}" aria-label="Remove item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                          </button>
+                        </div>
+                      \`
+                    )
+                    .join("")
+
+                  cartItems.querySelectorAll("[data-delta]").forEach((btn) => {
+                    btn.addEventListener("click", () => {
+                      const idx = parseInt(btn.dataset.idx)
+                      const delta = parseInt(btn.dataset.delta)
+                      cart[idx].qty += delta
+                      if (cart[idx].qty <= 0) cart.splice(idx, 1)
+                      updateCart()
+                    })
                   })
-                })
-                cartItems.querySelectorAll("[data-remove]").forEach((btn) => {
-                  btn.addEventListener("click", () => {
-                    cart.splice(parseInt(btn.dataset.remove), 1)
-                    updateCart()
+                  cartItems.querySelectorAll("[data-remove]").forEach((btn) => {
+                    btn.addEventListener("click", () => {
+                      cart.splice(parseInt(btn.dataset.remove), 1)
+                      updateCart()
+                    })
                   })
-                })
+                  cartItems.querySelectorAll('[data-action="close-cart"]').forEach((btn) => {
+                    btn.addEventListener("click", () => {
+                      cartDrawer.setAttribute("aria-hidden", "true")
+                    })
+                  })
+                }
               }
             }
 
             const addToCart = (card) => {
               const id = card.dataset.productId
-              const name = card.querySelector(".product-card__name").textContent
+              const name = card.querySelector(".product-card__name").textContent.trim()
               const priceText = card.querySelector(".product-card__price").textContent
               const price = parseInt(priceText.replace(/[^0-9]/g, ""))
               const image = card.querySelector("img").src
               const existing = cart.find((i) => i.id === id)
-              if (existing) existing.qty++
-              else cart.push({ id, name, price, image, qty: 1 })
+              if (existing) {
+                existing.qty++
+              } else {
+                cart.push({ id, name, price, image, qty: 1 })
+              }
               updateCart()
-              cartDrawer.setAttribute("aria-hidden", "false")
+              animateCartIcon()
+              showToast(\`\u2713 \${name} added to cart\`)
             }
 
             document.querySelectorAll('[data-action="add-to-cart"]').forEach((btn) => {
               btn.addEventListener("click", (e) => {
                 e.stopPropagation()
-                addToCart(btn.closest(".product-card"))
-              })
-            })
-
-            document.querySelectorAll('[data-action="qv-add-to-cart"]').forEach((btn) => {
-              btn.addEventListener("click", () => {
-                const modal = btn.closest(".quick-view-modal__panel")
-                const name = modal.querySelector('[data-role="qv-name"]').textContent
-                const priceText = modal.querySelector('[data-role="qv-price"]').textContent
-                const price = parseInt(priceText.replace(/[^0-9]/g, ""))
-                const image = modal.querySelector('[data-role="qv-image"]').src
-                const id = "qv-" + name.replace(/\s+/g, "-").toLowerCase()
-                const existing = cart.find((i) => i.id === id)
-                if (existing) existing.qty++
-                else cart.push({ id, name, price, image, qty: 1 })
-                updateCart()
-                quickViewModal.setAttribute("aria-hidden", "true")
-                cartDrawer.setAttribute("aria-hidden", "false")
-              })
-            })
-
-            document.querySelectorAll('[data-action="quick-view"]').forEach((btn) => {
-              btn.addEventListener("click", (e) => {
-                e.stopPropagation()
                 const card = btn.closest(".product-card")
-                const name = card.querySelector(".product-card__name").textContent
-                const price = card.querySelector(".product-card__price").textContent
-                const image = card.querySelector("img").src
-                quickViewModal.querySelector('[data-role="qv-name"]').textContent = name
-                quickViewModal.querySelector('[data-role="qv-price"]').textContent = price
-                quickViewModal.querySelector('[data-role="qv-image"]').src = image
-                quickViewModal.setAttribute("aria-hidden", "false")
+                if (card) addToCart(card)
               })
             })
 
-            const closeAllModals = () => {
-              cartDrawer.setAttribute("aria-hidden", "true")
-              quickViewModal.setAttribute("aria-hidden", "true")
-              checkoutModal.setAttribute("aria-hidden", "true")
-              paymentSuccess.setAttribute("aria-hidden", "true")
-              paymentFailure.setAttribute("aria-hidden", "true")
+            const closeCartDrawer = () => {
+              if (cartDrawer) cartDrawer.setAttribute("aria-hidden", "true")
+            }
+            const openCartDrawer = () => {
+              if (cartDrawer) cartDrawer.setAttribute("aria-hidden", "false")
             }
 
             document.querySelectorAll('[data-action="close-cart"]').forEach((el) => {
-              el.addEventListener("click", closeAllModals)
-            })
-            document.querySelectorAll('[data-action="close-quick-view"]').forEach((el) => {
-              el.addEventListener("click", () => quickViewModal.setAttribute("aria-hidden", "true"))
-            })
-            document.querySelectorAll('[data-action="close-checkout"]').forEach((el) => {
-              el.addEventListener("click", () => checkoutModal.setAttribute("aria-hidden", "true"))
-            })
-            document.querySelectorAll('[data-action="close-payment"]').forEach((el) => {
-              el.addEventListener("click", () => {
-                paymentSuccess.setAttribute("aria-hidden", "true")
-                paymentFailure.setAttribute("aria-hidden", "true")
-              })
+              el.addEventListener("click", closeCartDrawer)
             })
 
-            cartFab.addEventListener("click", () => {
-              cartDrawer.setAttribute("aria-hidden", "false")
-            })
+            if (cartFab) {
+              cartFab.addEventListener("click", openCartDrawer)
+            }
+
+            if (cartDrawer) {
+              cartDrawer.addEventListener("click", (e) => {
+                if (e.target === cartDrawer || e.target.classList.contains("cart-drawer__overlay")) {
+                  closeCartDrawer()
+                }
+              })
+            }
 
             document.querySelectorAll('[data-action="checkout"]').forEach((btn) => {
               btn.addEventListener("click", () => {
                 if (!cart.length) return
-                cartDrawer.setAttribute("aria-hidden", "true")
+                closeCartDrawer()
                 const items = document.querySelector('[data-role="checkout-items"]')
-                items.innerHTML = cart
-                  .map(
-                    (i) => \`
-                    <div class="checkout-summary__item"><span>\${i.name} x\${i.qty}</span><span>\${formatPrice(i.price * i.qty)}</span></div>
-                  \`
-                  )
-                  .join("")
+                if (items) {
+                  items.innerHTML = cart
+                    .map(
+                      (i) => \`
+                        <div class="checkout-summary__item"><span>\${i.name} \u00D7 \${i.qty}</span><span>\${formatPrice(i.price * i.qty)}</span></div>
+                      \`
+                    )
+                    .join("")
+                }
                 const sub = cart.reduce((s, i) => s + i.price * i.qty, 0)
-                document.querySelector('[data-role="checkout-subtotal"]').textContent = formatPrice(sub)
-                document.querySelector('[data-role="checkout-total"]').textContent = formatPrice(sub + 5000)
-                document.querySelector('[data-role="checkout-ref"]').textContent = genRef()
-                document.querySelector('[data-role="checkout-date"]').textContent = new Date().toLocaleString()
-                checkoutModal.setAttribute("aria-hidden", "false")
+                const checkoutSub = document.querySelector('[data-role="checkout-subtotal"]')
+                const checkoutTot = document.querySelector('[data-role="checkout-total"]')
+                const checkoutRef = document.querySelector('[data-role="checkout-ref"]')
+                const checkoutDate = document.querySelector('[data-role="checkout-date"]')
+                if (checkoutSub) checkoutSub.textContent = formatPrice(sub)
+                if (checkoutTot) checkoutTot.textContent = formatPrice(sub + 5000)
+                if (checkoutRef) checkoutRef.textContent = genRef()
+                if (checkoutDate) checkoutDate.textContent = new Date().toLocaleString()
+                if (checkoutModal) checkoutModal.setAttribute("aria-hidden", "false")
+              })
+            })
+
+            document.querySelectorAll('[data-action="close-checkout"]').forEach((el) => {
+              el.addEventListener("click", () => {
+                if (checkoutModal) checkoutModal.setAttribute("aria-hidden", "true")
               })
             })
 
             document.querySelectorAll('[data-action="proceed-payment"]').forEach((btn) => {
               btn.addEventListener("click", () => {
-                const name = document.querySelector('[data-field="name"]')?.value || "Guest"
+                const nameField = document.querySelector('[data-field="name"]')
+                const phoneField = document.querySelector('[data-field="phone"]')
+                const emailField = document.querySelector('[data-field="email"]')
+                const addressField = document.querySelector('[data-field="address"]')
+
+                const name = nameField?.value?.trim() || "Guest"
+                const phone = phoneField?.value?.trim() || ""
+                const email = emailField?.value?.trim() || ""
+                const address = addressField?.value?.trim() || ""
+
+                if (!name || !phone || !email || !address) {
+                  alert("Please fill in all required fields: Name, Phone, Email, and Delivery Address.")
+                  return
+                }
+
                 const sub = cart.reduce((s, i) => s + i.price * i.qty, 0)
                 const total = sub + 5000
                 const ref = genRef()
-                checkoutModal.setAttribute("aria-hidden", "true")
-                if (Math.random() > 0.1) {
-                  document.querySelector('[data-role="success-ref"]').textContent = ref
-                  document.querySelector('[data-role="success-amount"]').textContent = formatPrice(total)
-                  document.querySelector('[data-role="success-name"]').textContent = name
-                  paymentSuccess.setAttribute("aria-hidden", "false")
+
+                // Generate order summary
+                const orderSummary = {
+                  orderNumber: ref,
+                  customerName: name,
+                  customerPhone: phone,
+                  customerEmail: email,
+                  deliveryAddress: address,
+                  products: cart.map((i) => ({ name: i.name, qty: i.qty, price: i.price, subtotal: i.price * i.qty })),
+                  subtotal: sub,
+                  delivery: 5000,
+                  totalAmount: total,
+                  dateTime: new Date().toISOString(),
+                }
+
+                // Flutterwave integration
+                const flutterwaveConfig = {
+                  public_key: "FLWPUBK_TEST-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-X", // Replace with live key
+                  tx_ref: ref,
+                  amount: total,
+                  currency: "NGN",
+                  payment_options: "card,ussd,banktransfer,mpesa",
+                  customer: {
+                    email: email,
+                    phone_number: phone,
+                    name: name,
+                  },
+                  customizations: {
+                    title: "DON OCH GLOBAL",
+                    description: "Solar Products Purchase",
+                    logo: "https://your-logo-url.com/logo.png",
+                  },
+                  callback: function (payment) {
+                    if (checkoutModal) checkoutModal.setAttribute("aria-hidden", "true")
+                    const successRef = document.querySelector('[data-role="success-ref"]')
+                    const successAmt = document.querySelector('[data-role="success-amount"]')
+                    const successName = document.querySelector('[data-role="success-name"]')
+                    if (successRef) successRef.textContent = ref
+                    if (successAmt) successAmt.textContent = formatPrice(total)
+                    if (successName) successName.textContent = name
+                    if (paymentSuccess) paymentSuccess.setAttribute("aria-hidden", "false")
+                    cart.length = 0
+                    updateCart()
+                  },
+                  onclose: function () {
+                    // User closed payment modal
+                  },
+                }
+
+                // For demo: simulate payment flow
+                if (checkoutModal) checkoutModal.setAttribute("aria-hidden", "true")
+                if (Math.random() > 0.05) {
+                  const successRef = document.querySelector('[data-role="success-ref"]')
+                  const successAmt = document.querySelector('[data-role="success-amount"]')
+                  const successName = document.querySelector('[data-role="success-name"]')
+                  if (successRef) successRef.textContent = ref
+                  if (successAmt) successAmt.textContent = formatPrice(total)
+                  if (successName) successName.textContent = name
+                  if (paymentSuccess) paymentSuccess.setAttribute("aria-hidden", "false")
                   cart.length = 0
                   updateCart()
                 } else {
-                  paymentFailure.setAttribute("aria-hidden", "false")
+                  if (paymentFailure) paymentFailure.setAttribute("aria-hidden", "false")
                 }
               })
             })
 
             document.querySelectorAll('[data-action="retry-payment"]').forEach((btn) => {
               btn.addEventListener("click", () => {
-                paymentFailure.setAttribute("aria-hidden", "true")
-                checkoutModal.setAttribute("aria-hidden", "false")
+                if (paymentFailure) paymentFailure.setAttribute("aria-hidden", "true")
+                if (checkoutModal) checkoutModal.setAttribute("aria-hidden", "false")
               })
             })
 
             document.querySelectorAll('[data-action="continue-shopping"]').forEach((btn) => {
               btn.addEventListener("click", () => {
-                paymentSuccess.setAttribute("aria-hidden", "true")
+                if (paymentSuccess) paymentSuccess.setAttribute("aria-hidden", "true")
+              })
+            })
+
+            document.querySelectorAll('[data-action="close-payment"]').forEach((el) => {
+              el.addEventListener("click", () => {
+                if (paymentSuccess) paymentSuccess.setAttribute("aria-hidden", "true")
+                if (paymentFailure) paymentFailure.setAttribute("aria-hidden", "true")
               })
             })
 
@@ -2923,6 +2973,28 @@ to {
             ></Script>
           </div>
         </div>
+        <div>
+          <div className="home-container9">
+            <Script
+              html={`<style>
+@keyframes cartBounce {
+0% {
+  transform: scale(1);
+}
+30% {
+  transform: scale(1.25);
+}
+60% {
+  transform: scale(0.95);
+}
+100% {
+  transform: scale(1);
+}
+}
+</style>`}
+            ></Script>
+          </div>
+        </div>
       </div>
       <style jsx>
         {`
@@ -3101,6 +3173,40 @@ to {
             border-radius: var(--border-radius-full);
             justify-content: center;
           }
+          .home-thq-cart-toast-elm {
+            gap: 10px;
+            right: 24px;
+            bottom: 88px;
+            display: flex;
+            opacity: 0;
+            padding: 12px 20px;
+            z-index: 250;
+            position: fixed;
+            background: var(--color-primary);
+            box-shadow: var(--shadow-level-3);
+            transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+            visibility: hidden;
+            align-items: center;
+            border-radius: var(--border-radius-lg);
+            pointer-events: none;
+          }
+          .home-thq-cart-toasticon-elm {
+            color: #2d7a4e;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            font-size: 14px;
+            background: rgba(45, 122, 78, 0.15);
+            align-items: center;
+            flex-shrink: 0;
+            border-radius: var(--border-radius-full);
+            justify-content: center;
+          }
+          .home-thq-cart-toasttext-elm {
+            color: var(--color-on-primary);
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-medium);
+          }
           .home-thq-cart-draweroverlay-elm {
             inset: 0;
             position: absolute;
@@ -3108,43 +3214,68 @@ to {
             pointer-events: none;
           }
           .home-thq-cart-drawerpanel-elm {
-            width: 100%;
+            top: 0;
+            right: 0;
+            width: 420px;
             height: 100%;
             display: flex;
-            max-width: 420px;
+            position: absolute;
+            max-width: 100%;
             transform: translateX(100%);
             background: var(--color-surface);
-            box-shadow: var(--shadow-level-3);
-            transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
+            max-height: 100vh;
+            transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
             flex-direction: column;
           }
           .home-thq-cart-drawerheader-elm {
             display: flex;
             padding: var(--spacing-lg) var(--spacing-xl);
             align-items: center;
+            flex-shrink: 0;
             border-bottom: 1px solid var(--color-border);
             justify-content: space-between;
+          }
+          .home-thq-cart-drawerheader-title-elm {
+            gap: 2px;
+            display: flex;
+            flex-direction: column;
           }
           .home-thq-cart-drawertitle-elm {
             color: var(--color-primary);
             font-size: var(--font-size-xl);
             font-family: var(--font-family-heading);
+            line-height: 1.2;
+          }
+          .home-thq-cart-draweritem-count-elm {
+            color: var(--color-on-surface-secondary);
+            font-size: var(--font-size-xs);
           }
           .home-thq-cart-draweritems-elm {
             flex: 1;
             padding: var(--spacing-md) var(--spacing-xl);
+            min-height: 0;
             overflow-y: auto;
           }
-          .home-thq-cart-drawerempty-elm {
-            color: var(--color-outline);
-            padding: var(--spacing-2xl) 0;
-            font-size: var(--font-size-base);
-            text-align: center;
+          .home-thq-cart-drawerempty-elm2 {
+            color: var(--color-on-surface);
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-medium);
+            margin-bottom: 4px;
+          }
+          .home-thq-cart-drawerempty-text-elm {
+            color: var(--color-on-surface-secondary);
+            font-size: var(--font-size-sm);
+            margin-bottom: var(--spacing-md);
+          }
+          .home-thq-btn-elm24 {
+            margin-top: var(--spacing-sm);
           }
           .home-thq-cart-drawersummary-elm {
             padding: var(--spacing-lg) var(--spacing-xl);
             background: rgba(0, 0, 0, 0.02);
             border-top: 1px solid var(--color-border);
+            flex-shrink: 0;
           }
           .home-thq-cart-summaryrow-elm3 {
             color: var(--color-on-surface);
@@ -3154,85 +3285,11 @@ to {
             font-weight: var(--font-weight-heading);
             padding-top: var(--spacing-sm);
           }
-          .home-thq-btn-elm24 {
+          .home-thq-btn-elm25 {
             width: 100%;
             margin-top: var(--spacing-md);
-          }
-          .home-thq-quick-view-modaloverlay-elm {
-            inset: 0;
-            position: absolute;
-            background: var(--color-scrim);
-            pointer-events: none;
-          }
-          .home-thq-quick-view-modalpanel-elm {
-            width: 100%;
-            position: relative;
-            max-width: 800px;
-            transform: scale(0.95);
-            background: var(--color-surface);
-            box-shadow: var(--shadow-level-3);
-            max-height: 90vh;
-            overflow-y: auto;
-            transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-            border-radius: var(--border-radius-xl);
-          }
-          .home-thq-quick-view-modalclose-elm {
-            top: var(--spacing-md);
-            color: var(--color-on-surface);
-            right: var(--spacing-md);
-            width: 36px;
-            border: none;
-            cursor: pointer;
-            height: 36px;
-            display: flex;
-            z-index: 2;
-            position: absolute;
-            background: rgba(255, 255, 255, 0.9);
-            box-shadow: var(--shadow-level-1);
-            align-items: center;
-            border-radius: var(--border-radius-full);
-            justify-content: center;
-          }
-          .home-thq-quick-view-modalcontent-elm {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-          }
-          .home-thq-quick-view-modaldetails-elm {
-            display: flex;
-            padding: var(--spacing-2xl);
-            flex-direction: column;
-          }
-          .home-thq-quick-view-modalname-elm {
-            color: var(--color-primary);
-            font-size: var(--font-size-2xl);
-            font-family: var(--font-family-heading);
-            margin-bottom: var(--spacing-xs);
-          }
-          .home-thq-quick-view-modalprice-elm {
-            color: var(--color-secondary);
-            font-size: var(--font-size-xl);
-            font-weight: var(--font-weight-heading);
-            margin-bottom: var(--spacing-sm);
-          }
-          .home-thq-quick-view-modalstars-elm {
-            color: #d4a017;
-            font-size: var(--font-size-base);
-            margin-bottom: var(--spacing-md);
-          }
-          .home-thq-quick-view-modalwarranty-elm {
-            margin-bottom: var(--spacing-md);
-          }
-          .home-thq-warranty-badge-elm {
-            color: var(--color-primary);
-            border: 1px solid var(--color-primary);
-            display: inline-block;
-            padding: 4px 10px;
-            font-size: 11px;
             font-weight: var(--font-weight-medium);
-            border-radius: var(--border-radius-full);
-          }
-          .home-thq-btn-elm25 {
-            margin-top: auto;
+            letter-spacing: 0.02em;
           }
           .home-thq-checkout-modaloverlay-elm {
             inset: 0;
@@ -3275,6 +3332,10 @@ to {
             padding: var(--spacing-2xl);
             grid-template-columns: 1fr 340px;
           }
+          .home-thq-checkout-form-elm {
+            display: flex;
+            flex-direction: column;
+          }
           .home-thq-checkout-modaltitle-elm {
             color: var(--color-primary);
             font-size: var(--font-size-2xl);
@@ -3284,17 +3345,11 @@ to {
           .home-thq-checkout-summaryitems-elm {
             margin-bottom: var(--spacing-md);
           }
-          .home-thq-checkout-summaryrow-elm3 {
-            color: var(--color-on-surface);
-            font-size: var(--font-size-lg);
-            border-top: 1px dashed var(--color-border);
-            margin-top: var(--spacing-sm);
-            font-weight: var(--font-weight-heading);
-            padding-top: var(--spacing-sm);
-          }
           .home-thq-btn-elm26 {
             width: 100%;
             margin-top: var(--spacing-md);
+            font-weight: var(--font-weight-medium);
+            letter-spacing: 0.02em;
           }
           .home-thq-payment-resulticon-elm1 {
             color: #2d7a4e;
@@ -3323,6 +3378,9 @@ to {
             display: contents;
           }
           .home-container7 {
+            display: contents;
+          }
+          .home-container9 {
             display: contents;
           }
           @media (max-width: 991px) {
@@ -3358,13 +3416,31 @@ to {
             .home-thq-filter-group-elm1 {
               min-width: 180px;
             }
-            .home-thq-cart-drawerpanel-elm {
-              max-width: 100%;
+            .home-thq-cart-toast-elm {
+              left: 16px;
+              right: 16px;
+              bottom: 80px;
+              justify-content: center;
             }
-            .home-thq-quick-view-modalcontent-elm {
-              grid-template-columns: 1fr;
+            .home-thq-cart-drawerpanel-elm {
+              top: auto;
+              left: 0;
+              right: 0;
+              width: 100%;
+              bottom: 0;
+              height: auto;
+              max-width: 100%;
+              transform: translateY(100%);
+              box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.15);
+              max-height: 85vh;
+              border-radius: var(--border-radius-xl) var(--border-radius-xl) 0 0;
+            }
+            .home-thq-checkout-modalpanel-elm {
+              max-height: 95vh;
             }
             .home-thq-checkout-modalcontent-elm {
+              gap: var(--spacing-lg);
+              padding: var(--spacing-lg);
               grid-template-columns: 1fr;
             }
           }
@@ -3374,6 +3450,15 @@ to {
             }
             .home-thq-products-railcontainer-elm {
               padding: 0 var(--spacing-md);
+            }
+            .home-thq-cart-drawerheader-elm {
+              padding: var(--spacing-md) var(--spacing-lg);
+            }
+            .home-thq-cart-draweritems-elm {
+              padding: var(--spacing-sm) var(--spacing-lg);
+            }
+            .home-thq-cart-drawersummary-elm {
+              padding: var(--spacing-md) var(--spacing-lg);
             }
           }
         `}
