@@ -1014,7 +1014,12 @@ const Profile = (props) => {
             min-height: 100vh;
           }
           .profile-thq-about-visual-elm {
+            width: 100%;
             border: 2px dashed rgba(120, 120, 120, 0.4);
+            overflow: hidden;
+            max-width: 100%;
+            min-width: 0;
+            box-sizing: border-box;
           }
           .profile-container2 {
             display: none;
